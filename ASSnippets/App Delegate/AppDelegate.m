@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ASViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,17 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    ASViewController *viewController = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];
+    viewController.title = kApplicationTitle;
+    
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = self.navigationController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -40,6 +49,27 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Helping Method
+
++ (AppDelegate *)appDelegate {
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
+
+#pragma mark - Applause Configuration
+
+- (void)applauseConfiguration {
+    //    /* SignIn Link: https://help.applause.com/access/unauthenticated?return_to=https%3A%2F%2Fhelp.applause.com%2Fhc%2Fen-us%2Farticles%2F201954853-iOS-SDK-Installation-Guide&theme=hc#login */
+    //    /* helping Link: https://help.applause.com/hc/en-us/articles/201954853-iOS-SDK-Installation-Guide */
+    //    [[APLLogger settings] setReportOnShakeEnabled:YES]; // YES by default
+    //    [[APLLogger settings] setWithUTest:NO]; // YES by default
+    //    [[APLLogger settings] setScreenShotsFromGallery:NO]; // NO by default
+    //    [[APLLogger settings] setDefaultUser:APLAnonymousUser];
+    //    /* Starting Applause */
+    //    [APLLogger startNewSessionWithApplicationKey:kApplauseKey];
+    //
+    //     //APLLog(@"ClassName -  Methods: parameters: %@", parameters);
 }
 
 @end

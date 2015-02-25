@@ -6,8 +6,15 @@
 	<dict>
 		<key>ASSnippets.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>ASTestTarget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +25,11 @@
 			<true/>
 		</dict>
 		<key>2ADEF42E1A9C3ED6002D5067</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2ADEF46B1A9CB4FB002D5067</key>
 		<dict>
 			<key>primary</key>
 			<true/>

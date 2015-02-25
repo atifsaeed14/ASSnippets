@@ -1,0 +1,132 @@
+Project Snippets
+
+DESCRIPTION
+------------------------------
+
+This sample project demonstrates different capabilities of iOS SDK.
+
+The following functionality is included in this sample:
+- Upload video (or any file) using multi-part form
+- Get WiFi information (i.e. SSID)
+- Get current IP
+- Get carrier information
+- Get address from geo-location
+- Get geo-location from address
+- Open Maps application with location/directions information
+- Get directions related information using Maps API
+- Get travel time related information using Maps API
+- Get route related information using MapQuest API
+- Optimize the map route using MapQuest API
+- Print web/html content
+- Download and open documents using UIDocumentInteractionController or UIWebView
+- Scan barcodes, and identify the code and type of the scanned barcode
+- BNRXIB inspired subclass for UICollectionViewCell
+- Setup launch images (for iOS 7 and below), and launch screen xib (for iOS 8 and above)
+- Tryout PLCrashReporter and SuperLogger logging and crash reporter frameworks
+
+
+BUILD REQUIREMENTS
+------------------------------
+iOS 8.0 SDK or later
+
+
+RUNTIME REQUIREMENTS
+------------------------------
+iOS 8.0 or later
+
+
+THIRD PARTY TOOLS/ LIBRARIES/ FRAMEWORKS
+------------------------------
+
+Geolocation Utilities for iOS (Last updated Oct 16, 2013)
+A collection of geolocation utilities for iOS.
+https://github.com/phildow/ios-location-utilities
+
+SuperLogger (Last updated Feb 6, 2014)
+Save NSLog() to file and send email to developer (Note: It doesn't work in iOS Simulator)
+https://github.com/yourtion/SuperLogger
+
+PLCrashReporter (Version 1.2)
+Reliable, open-source crash reporting for iOS and Mac OS X.
+Plausible CrashReporter provides an in-process crash reporting framework for use on both iOS and Mac OS X, and powers most of the crash reporting services available for iOS, including HockeyApp, Flurry, and Crittercism.
+See CrashReporter-Readme.txt to learn about symbolicating crash logs produced by PLCrashReporter.
+https://www.plcrashreporter.org
+
+BNRXIBCell (Last updated Apr 22, 2013)
+A UITableViewCell subclass, intended to be subclassed, to forward action messages from cell subviews to a controller.
+https://github.com/bignerdranch/BNRXIBCell
+
+RMUniversalAlert (Last updated Jan 10, 2015)
+Wrapper class for UIAlertView / UIActionSheet / UIAlertController for targeting all iOS versions.
+https://github.com/ryanmaxwell/RMUniversalAlert
+
+MTBBarcodeScanner (Version 1.3.0, Last updated Jan 15, 2015)
+A lightweight, easy-to-use barcode scanning library for iOS 7+
+https://github.com/mikebuss/MTBBarcodeScanner
+
+MBProgressHUD (Version 0.8, Last updated Dec 22, 2014)
+MBProgressHUD is an iOS drop-in class that displays a translucent HUD with an indicator and/or labels while work is being done in a background thread. The HUD is meant as a replacement for the undocumented, private UIKit UIProgressHUD with some additional features.
+https://github.com/jdg/MBProgressHUD
+
+TOWebViewController (Last updated Jan 01, 2015)
+A view controller class for iOS that allows users to view web pages directly within an app.
+https://github.com/TimOliver/TOWebViewController
+
+AFNetworking (Version 2.5.0, Last updated Jan 01, 2015)
+AFNetworking is a delightful networking library for iOS and Mac OS X. It's built on top of the Foundation URL Loading System, extending the powerful high-level networking abstractions built into Cocoa. It has a modular architecture with well-designed, feature-rich APIs that are a joy to use.
+https://github.com/AFNetworking/AFNetworking
+
+Reachability (Version 3.5)
+The Reachability sample application demonstrates how to use the SystemConfiguration framework to monitor the network state of an iOS device. In particular, it demonstrates how to know when IP can be routed and when traffic will be routed through a Wireless Wide Area Network (WWAN) interface such as EDGE or 3G.
+https://developer.apple.com/library/ios/samplecode/Reachability/Introduction/Intro.html
+
+Application Icon Template (Version 4.1, Last updated December 2014)
+This template includes quick rendering of every single iOS 5,6, 7 and 8 sizes along with bundled textures, colors and gradients. Automatically rendered previews of your app icon in the app store and on the homescreen and easy export actions utilizing new and improved bicubic scaling for a smoother output.
+http://appicontemplate.com/ios8
+
+
+HELP/ REFERENCES
+------------------------------
+
+=> Launch Images
+https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LaunchImages.html
+
+=> Add PrefixHeader in xCode 6
+New File -> iOS -> Other -> PCH File -> Save
+Go to Build Settings and search for Precompile Prefix Header and set the value to YES
+Got to Build Settings and serach for Prefix Header and set the path value ASSnippets/Supporting Files/AS-PrefixHeader.pch OR full path $(SRCROOT)/ASSnippets/Supporting Files/AS-PrefixHeader.pch
+
+=>Add Target
+In Targets, Duplicate Target
+Then in Build Settings search for Preprocessor Macros and add Debug value -> ASTest=1 & Release value -> ASTest=1
+In plist you can change Bundle Id aswell
+
+
+TIPS & TRICKS
+------------------------------
+
+=> The easy way to dismiss the keyboard in iOS
+Published by Josh Brown on January 26, 2015
+(h/t http://roadfiresoftware.com/2015/01/the-easy-way-to-dismiss-the-ios-keyboard/)
+
+If you want to dismiss the iOS keyboard programmatically in your app without worrying about which view is the first responder, try the following:
+
+In Swift:
+UIApplication.sharedApplication().sendAction("resignFirstResponder", to:nil, from:nil, forEvent:nil)
+
+In Objective-C:
+[[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 2015 Atif Saeed. All rights reserved.
