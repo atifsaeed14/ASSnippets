@@ -12,5 +12,6 @@
 
 + (CGFloat)getLabelHeight:(UILabel *)label;
 + (NSString*)macAddress;
++ (UINavigationController *)customizedNavigationController:(UIViewController *)viewController;
 
 @end

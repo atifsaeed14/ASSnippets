@@ -21,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Table View";
+    
     /* Load data from text file */
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"trivia" withExtension:@"txt"];
     NSString *textFileData = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
@@ -32,7 +34,7 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,31 +53,63 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     static NSString *cellIdentifier = @"ASTableViewCell";
+    /* method 1
     ASTableViewCell *cell = (ASTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"ASTableViewCell" owner:nil options:nil] objectAtIndex:0];
+    } */
+    
+    /* method 2 */
+    ASTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if(cell == nil) {
+        cell = [[ASTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    cell.testLable.text = [self.trivia objectAtIndex:indexPath.row];
+    cell.aLabel.text = [self.trivia objectAtIndex:indexPath.row];
+    cell.bLabel.text = [self.trivia objectAtIndex:indexPath.row];
     
     return cell;
 }
 
 #pragma mark - TableView Delegate
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    NSString *str = [self.trivia objectAtIndex:indexPath.row];
-//    CGFloat heightText = [ASUtility getLabelHeight:];
-//    return height;
-//}
-//
-//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-//}
-//
-//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    ASTableViewCell *cell = (ASTableViewCell *)[self tableView:tableView cellForRowAtIndexPath:indexPath];
+    
+    CGFloat heightCalculate = 0.0;
+    
+    if (![cell.aLabel.text isEqualToString: @"A"])
+        heightCalculate += [ASUtility getLabelHeight:cell.aLabel];
+    
+    if (![cell.bLabel.text isEqualToString: @"B"] || cell.bLabel.text != nil)
+        heightCalculate += [ASUtility getLabelHeight:cell.bLabel];
+        
+    return heightCalculate;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+        UIColor *color = ((indexPath.row % 2) == 0) ? [UIColor whiteColor] : [UIColor colorWithRed:248.0f/255.0f green:248.0f/255.0f blue:248.0f/255.0f alpha:1];
+        cell.backgroundColor = color;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 60.0f;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return _tableViewSectionHeaderView;
+}
 
 
 /*

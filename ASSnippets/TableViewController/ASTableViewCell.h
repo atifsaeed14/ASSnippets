@@ -10,9 +10,7 @@
 
 @interface ASTableViewCell : UITableViewCell
 
-@property (nonatomic, weak) IBOutlet UILabel *testLable;
-@property (nonatomic, weak) IBOutlet UILabel *textLable;
-
-//+ (CGFloat)heightForCellWithPost:(Post *)post;
+@property (nonatomic, strong) IBOutlet UILabel *aLabel;
+@property (nonatomic, strong) IBOutlet UILabel *bLabel;
 
 @end

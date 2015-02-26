@@ -88,6 +88,12 @@ http://appicontemplate.com/ios8
 HELP/ REFERENCES
 ------------------------------
 
+=> Status Bar
+http://www.appcoda.com/customize-navigation-status-bar-ios-7/
+
+add in appDelegate: [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+add row in plist: View controller-based status bar appearance = NO
+
 => Launch Images
 https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LaunchImages.html
 
@@ -96,7 +102,7 @@ New File -> iOS -> Other -> PCH File -> Save
 Go to Build Settings and search for Precompile Prefix Header and set the value to YES
 Got to Build Settings and serach for Prefix Header and set the path value ASSnippets/Supporting Files/AS-PrefixHeader.pch OR full path $(SRCROOT)/ASSnippets/Supporting Files/AS-PrefixHeader.pch
 
-=>Add Target
+=> Add Target
 In Targets, Duplicate Target
 Then in Build Settings search for Preprocessor Macros and add Debug value -> ASTest=1 & Release value -> ASTest=1
 In plist you can change Bundle Id aswell

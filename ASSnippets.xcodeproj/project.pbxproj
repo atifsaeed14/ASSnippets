@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A478F8C1A9EF6CE00A303FE /* ASNavigationHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A478F8B1A9EF6CE00A303FE /* ASNavigationHeader.m */; };
+		2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A478F8D1A9EF71E00A303FE /* ASNavigationHeader.xib */; };
+		2A478F8F1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A478F8D1A9EF71E00A303FE /* ASNavigationHeader.xib */; };
 		2A93668E1A9D884200B0D650 /* ASTestTarget-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */; };
 		2A9366901A9D9AD100B0D650 /* ASTest.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A93668F1A9D9AD100B0D650 /* ASTest.xcassets */; };
 		2A9366941A9DA1C800B0D650 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */; };
@@ -63,6 +66,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A478F8A1A9EF6CE00A303FE /* ASNavigationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNavigationHeader.h; sourceTree = "<group>"; };
+		2A478F8B1A9EF6CE00A303FE /* ASNavigationHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASNavigationHeader.m; sourceTree = "<group>"; };
+		2A478F8D1A9EF71E00A303FE /* ASNavigationHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASNavigationHeader.xib; sourceTree = "<group>"; };
 		2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ASTestTarget-Info.plist"; sourceTree = "<group>"; };
 		2A93668F1A9D9AD100B0D650 /* ASTest.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ASTest.xcassets; sourceTree = "<group>"; };
 		2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
@@ -260,6 +266,9 @@
 				2ADEF4521A9C9523002D5067 /* ASViewController.h */,
 				2ADEF4531A9C9523002D5067 /* ASViewController.m */,
 				2ADEF4541A9C9523002D5067 /* ASViewController.xib */,
+				2A478F8A1A9EF6CE00A303FE /* ASNavigationHeader.h */,
+				2A478F8B1A9EF6CE00A303FE /* ASNavigationHeader.m */,
+				2A478F8D1A9EF71E00A303FE /* ASNavigationHeader.xib */,
 			);
 			path = ASViewController;
 			sourceTree = "<group>";
@@ -366,6 +375,7 @@
 				2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */,
 				2A93669C1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */,
 				2ADEF4661A9CA3D0002D5067 /* Read Me.txt in Resources */,
+				2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
 				2ADEF4271A9C3ED5002D5067 /* Images.xcassets in Resources */,
 				2A9366D71A9DD0AD00B0D650 /* trivia.txt in Resources */,
 				2A9366CD1A9DCD3F00B0D650 /* ASTableViewController.xib in Resources */,
@@ -385,6 +395,7 @@
 				2A93668E1A9D884200B0D650 /* ASTestTarget-Info.plist in Resources */,
 				2A9366941A9DA1C800B0D650 /* LaunchScreen.xib in Resources */,
 				2ADEF4761A9CB4FB002D5067 /* Read Me.txt in Resources */,
+				2A478F8F1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
 				2A9366CE1A9DCD3F00B0D650 /* ASTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A478F8C1A9EF6CE00A303FE /* ASNavigationHeader.m in Sources */,
 				2A9366C21A9DB6E500B0D650 /* CLLocation+UserInfo.m in Sources */,
 				2A9366B41A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */,
 				2ADEF44E1A9C9341002D5067 /* AppDelegate.m in Sources */,
@@ -543,7 +555,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -558,7 +570,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

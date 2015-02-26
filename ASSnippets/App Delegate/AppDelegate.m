@@ -18,9 +18,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     ASViewController *viewController = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];
-    viewController.title = kApplicationTitle;
+    //viewController.title = kApplicationTitle;
     
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    //self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    //[[self navigationController] setNavigationBarHidden:YES animated:YES];
+    self.navigationController = [ASUtility customizedNavigationController:viewController];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.navigationController;

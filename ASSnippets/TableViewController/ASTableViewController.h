@@ -10,4 +10,6 @@
 
 @interface ASTableViewController : UITableViewController
 
+@property (strong, nonatomic) IBOutlet UIView *tableViewSectionHeaderView;
+
 @end

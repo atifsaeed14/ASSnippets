@@ -9,10 +9,12 @@
 #import "ASViewController.h"
 #import "ASCompassViewController.h"
 #import "ASTableViewController.h"
+#import "ASNavigationHeader.h"
 
 @interface ASViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) ASNavigationHeader *navigationHeader;
 
 @end
 
@@ -21,11 +23,46 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self setUpNavigationBar];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UINavigation Controller
+
+- (void)setUpNavigationBar {
+    
+    self.navigationHeader = [[ASNavigationHeader alloc] initWithFrame:CGRectZero];
+    self.navigationHeader.titleLable.text = kApplicationTitle;
+    [self.navigationItem setTitleView:self.navigationHeader];
+    
+    UIImage *menuImage = [[UIImage imageNamed:@"icn_menu"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIBarButtonItem *menuBarButton = [[UIBarButtonItem alloc] initWithImage:menuImage style:UIBarButtonItemStylePlain target:self action:nil];
+    
+    UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithTitle:@"LeftBTN" style:UIBarButtonItemStyleDone target:self action:nil];
+    leftBarButton.tintColor = kThemeColor;
+    
+    NSArray *leftButtonItems = @[menuBarButton, leftBarButton];
+    self.navigationItem.leftBarButtonItems = leftButtonItems;
+    
+    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:nil];
+
+    UIButton *todayButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [todayButton setTitle:@"Today's" forState:UIControlStateNormal];
+    [todayButton setTitleColor:kThemeColor forState:UIControlStateNormal];
+    [todayButton.titleLabel setFont:[UIFont fontWithName:@"Helvetica" size:15.0]];
+    [todayButton setFrame:CGRectMake(0, 0, 60, 30)];
+    [todayButton addTarget:self action:nil forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *todayBarButton =[[UIBarButtonItem alloc] initWithCustomView:todayButton];
+    todayBarButton.tintColor = kThemeColor;
+    
+    NSArray *actionButtonItems = @[shareItem, todayBarButton];
+    self.navigationItem.rightBarButtonItems = actionButtonItems;
 }
 
 #pragma mark - UITableView DataSource
