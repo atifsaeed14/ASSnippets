@@ -8,28 +8,97 @@
 
 /* Begin PBXBuildFile section */
 		2A93668E1A9D884200B0D650 /* ASTestTarget-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */; };
+		2A9366901A9D9AD100B0D650 /* ASTest.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A93668F1A9D9AD100B0D650 /* ASTest.xcassets */; };
+		2A9366941A9DA1C800B0D650 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */; };
+		2A93669A1A9DB5AF00B0D650 /* ASCompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366971A9DB5AF00B0D650 /* ASCompassViewController.m */; };
+		2A93669B1A9DB5AF00B0D650 /* ASCompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366971A9DB5AF00B0D650 /* ASCompassViewController.m */; };
+		2A93669C1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366981A9DB5AF00B0D650 /* ASCompassViewController.xib */; };
+		2A93669D1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366981A9DB5AF00B0D650 /* ASCompassViewController.xib */; };
+		2A9366B41A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A11A9DB6E500B0D650 /* CLHeading+Formatted.m */; };
+		2A9366B51A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A11A9DB6E500B0D650 /* CLHeading+Formatted.m */; };
+		2A9366B61A9DB6E500B0D650 /* CLLocation+Bearing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A31A9DB6E500B0D650 /* CLLocation+Bearing.m */; };
+		2A9366B71A9DB6E500B0D650 /* CLLocation+Bearing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A31A9DB6E500B0D650 /* CLLocation+Bearing.m */; };
+		2A9366B81A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A51A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m */; };
+		2A9366B91A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A51A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m */; };
+		2A9366BA1A9DB6E500B0D650 /* CLLocation+Degrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A71A9DB6E500B0D650 /* CLLocation+Degrees.m */; };
+		2A9366BB1A9DB6E500B0D650 /* CLLocation+Degrees.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A71A9DB6E500B0D650 /* CLLocation+Degrees.m */; };
+		2A9366BC1A9DB6E500B0D650 /* CLLocation+Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A91A9DB6E500B0D650 /* CLLocation+Direction.m */; };
+		2A9366BD1A9DB6E500B0D650 /* CLLocation+Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A91A9DB6E500B0D650 /* CLLocation+Direction.m */; };
+		2A9366BE1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366AB1A9DB6E500B0D650 /* CLLocation+Distance.m */; };
+		2A9366BF1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366AB1A9DB6E500B0D650 /* CLLocation+Distance.m */; };
+		2A9366C01A9DB6E500B0D650 /* CLLocation+EXIFGPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366AD1A9DB6E500B0D650 /* CLLocation+EXIFGPS.m */; };
+		2A9366C11A9DB6E500B0D650 /* CLLocation+EXIFGPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366AD1A9DB6E500B0D650 /* CLLocation+EXIFGPS.m */; };
+		2A9366C21A9DB6E500B0D650 /* CLLocation+UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366AF1A9DB6E500B0D650 /* CLLocation+UserInfo.m */; };
+		2A9366C31A9DB6E500B0D650 /* CLLocation+UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366AF1A9DB6E500B0D650 /* CLLocation+UserInfo.m */; };
+		2A9366C41A9DB6E500B0D650 /* CLPlacemark+UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366B11A9DB6E500B0D650 /* CLPlacemark+UserInfo.m */; };
+		2A9366C51A9DB6E500B0D650 /* CLPlacemark+UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366B11A9DB6E500B0D650 /* CLPlacemark+UserInfo.m */; };
+		2A9366C61A9DB6E500B0D650 /* LLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366B31A9DB6E500B0D650 /* LLLocationManager.m */; };
+		2A9366C71A9DB6E500B0D650 /* LLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366B31A9DB6E500B0D650 /* LLLocationManager.m */; };
+		2A9366CB1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366C91A9DCD3F00B0D650 /* ASTableViewController.m */; };
+		2A9366CC1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366C91A9DCD3F00B0D650 /* ASTableViewController.m */; };
+		2A9366CD1A9DCD3F00B0D650 /* ASTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366CA1A9DCD3F00B0D650 /* ASTableViewController.xib */; };
+		2A9366CE1A9DCD3F00B0D650 /* ASTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366CA1A9DCD3F00B0D650 /* ASTableViewController.xib */; };
+		2A9366D71A9DD0AD00B0D650 /* trivia.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366D61A9DD0AD00B0D650 /* trivia.txt */; };
+		2A9366D81A9DD0AD00B0D650 /* trivia.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366D61A9DD0AD00B0D650 /* trivia.txt */; };
+		2A9366E31A9DF38B00B0D650 /* ASUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366E21A9DF38B00B0D650 /* ASUtility.m */; };
+		2A9366E41A9DF38B00B0D650 /* ASUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366E21A9DF38B00B0D650 /* ASUtility.m */; };
+		2A9366E81A9DF47C00B0D650 /* ASTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */; };
+		2A9366E91A9DF47C00B0D650 /* ASTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */; };
+		2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */; };
+		2A9366EB1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */; };
 		2ADEF4271A9C3ED5002D5067 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4261A9C3ED5002D5067 /* Images.xcassets */; };
 		2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4281A9C3ED5002D5067 /* LaunchScreen.xib */; };
 		2ADEF44E1A9C9341002D5067 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADEF44A1A9C9341002D5067 /* AppDelegate.m */; };
 		2ADEF4551A9C9523002D5067 /* ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADEF4531A9C9523002D5067 /* ASViewController.m */; };
 		2ADEF4561A9C9523002D5067 /* ASViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4541A9C9523002D5067 /* ASViewController.xib */; };
-		2ADEF45B1A9C9A37002D5067 /* ASUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADEF45A1A9C9A37002D5067 /* ASUtility.m */; };
 		2ADEF4641A9CA3D0002D5067 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4611A9CA3D0002D5067 /* Info.plist */; };
 		2ADEF4651A9CA3D0002D5067 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADEF4621A9CA3D0002D5067 /* main.m */; };
 		2ADEF4661A9CA3D0002D5067 /* Read Me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4631A9CA3D0002D5067 /* Read Me.txt */; };
 		2ADEF46D1A9CB4FB002D5067 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADEF44A1A9C9341002D5067 /* AppDelegate.m */; };
 		2ADEF46E1A9CB4FB002D5067 /* ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADEF4531A9C9523002D5067 /* ASViewController.m */; };
 		2ADEF46F1A9CB4FB002D5067 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADEF4621A9CA3D0002D5067 /* main.m */; };
-		2ADEF4701A9CB4FB002D5067 /* ASUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADEF45A1A9C9A37002D5067 /* ASUtility.m */; };
 		2ADEF4731A9CB4FB002D5067 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4611A9CA3D0002D5067 /* Info.plist */; };
 		2ADEF4741A9CB4FB002D5067 /* ASViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4541A9C9523002D5067 /* ASViewController.xib */; };
-		2ADEF4751A9CB4FB002D5067 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4281A9C3ED5002D5067 /* LaunchScreen.xib */; };
 		2ADEF4761A9CB4FB002D5067 /* Read Me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4631A9CA3D0002D5067 /* Read Me.txt */; };
-		2ADEF4771A9CB4FB002D5067 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4261A9C3ED5002D5067 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ASTestTarget-Info.plist"; sourceTree = "<group>"; };
+		2A93668F1A9D9AD100B0D650 /* ASTest.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ASTest.xcassets; sourceTree = "<group>"; };
+		2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		2A9366961A9DB5AF00B0D650 /* ASCompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCompassViewController.h; sourceTree = "<group>"; };
+		2A9366971A9DB5AF00B0D650 /* ASCompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCompassViewController.m; sourceTree = "<group>"; };
+		2A9366981A9DB5AF00B0D650 /* ASCompassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASCompassViewController.xib; sourceTree = "<group>"; };
+		2A93669F1A9DB6E500B0D650 /* CLDegreesAndRadians.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDegreesAndRadians.h; sourceTree = "<group>"; };
+		2A9366A01A9DB6E500B0D650 /* CLHeading+Formatted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLHeading+Formatted.h"; sourceTree = "<group>"; };
+		2A9366A11A9DB6E500B0D650 /* CLHeading+Formatted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLHeading+Formatted.m"; sourceTree = "<group>"; };
+		2A9366A21A9DB6E500B0D650 /* CLLocation+Bearing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Bearing.h"; sourceTree = "<group>"; };
+		2A9366A31A9DB6E500B0D650 /* CLLocation+Bearing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Bearing.m"; sourceTree = "<group>"; };
+		2A9366A41A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+DecimalDegreesConversion.h"; sourceTree = "<group>"; };
+		2A9366A51A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+DecimalDegreesConversion.m"; sourceTree = "<group>"; };
+		2A9366A61A9DB6E500B0D650 /* CLLocation+Degrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Degrees.h"; sourceTree = "<group>"; };
+		2A9366A71A9DB6E500B0D650 /* CLLocation+Degrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Degrees.m"; sourceTree = "<group>"; };
+		2A9366A81A9DB6E500B0D650 /* CLLocation+Direction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Direction.h"; sourceTree = "<group>"; };
+		2A9366A91A9DB6E500B0D650 /* CLLocation+Direction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Direction.m"; sourceTree = "<group>"; };
+		2A9366AA1A9DB6E500B0D650 /* CLLocation+Distance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Distance.h"; sourceTree = "<group>"; };
+		2A9366AB1A9DB6E500B0D650 /* CLLocation+Distance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Distance.m"; sourceTree = "<group>"; };
+		2A9366AC1A9DB6E500B0D650 /* CLLocation+EXIFGPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+EXIFGPS.h"; sourceTree = "<group>"; };
+		2A9366AD1A9DB6E500B0D650 /* CLLocation+EXIFGPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+EXIFGPS.m"; sourceTree = "<group>"; };
+		2A9366AE1A9DB6E500B0D650 /* CLLocation+UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+UserInfo.h"; sourceTree = "<group>"; };
+		2A9366AF1A9DB6E500B0D650 /* CLLocation+UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+UserInfo.m"; sourceTree = "<group>"; };
+		2A9366B01A9DB6E500B0D650 /* CLPlacemark+UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLPlacemark+UserInfo.h"; sourceTree = "<group>"; };
+		2A9366B11A9DB6E500B0D650 /* CLPlacemark+UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLPlacemark+UserInfo.m"; sourceTree = "<group>"; };
+		2A9366B21A9DB6E500B0D650 /* LLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLLocationManager.h; sourceTree = "<group>"; };
+		2A9366B31A9DB6E500B0D650 /* LLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLLocationManager.m; sourceTree = "<group>"; };
+		2A9366C81A9DCD3F00B0D650 /* ASTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTableViewController.h; sourceTree = "<group>"; };
+		2A9366C91A9DCD3F00B0D650 /* ASTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTableViewController.m; sourceTree = "<group>"; };
+		2A9366CA1A9DCD3F00B0D650 /* ASTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTableViewController.xib; sourceTree = "<group>"; };
+		2A9366D61A9DD0AD00B0D650 /* trivia.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trivia.txt; sourceTree = "<group>"; };
+		2A9366E11A9DF38B00B0D650 /* ASUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASUtility.h; sourceTree = "<group>"; };
+		2A9366E21A9DF38B00B0D650 /* ASUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUtility.m; sourceTree = "<group>"; };
+		2A9366E51A9DF47C00B0D650 /* ASTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTableViewCell.h; sourceTree = "<group>"; };
+		2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTableViewCell.m; sourceTree = "<group>"; };
+		2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTableViewCell.xib; sourceTree = "<group>"; };
 		2ADEF4161A9C3ED5002D5067 /* ASSnippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASSnippets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADEF4261A9C3ED5002D5067 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2ADEF4291A9C3ED5002D5067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -38,14 +107,12 @@
 		2ADEF4521A9C9523002D5067 /* ASViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASViewController.h; sourceTree = "<group>"; };
 		2ADEF4531A9C9523002D5067 /* ASViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASViewController.m; sourceTree = "<group>"; };
 		2ADEF4541A9C9523002D5067 /* ASViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASViewController.xib; sourceTree = "<group>"; };
-		2ADEF4591A9C9A37002D5067 /* ASUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASUtility.h; sourceTree = "<group>"; };
-		2ADEF45A1A9C9A37002D5067 /* ASUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUtility.m; sourceTree = "<group>"; };
 		2ADEF45D1A9C9AC3002D5067 /* ASConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASConstant.h; sourceTree = "<group>"; };
 		2ADEF4601A9CA3CF002D5067 /* AS-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AS-PrefixHeader.pch"; sourceTree = "<group>"; };
 		2ADEF4611A9CA3D0002D5067 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ADEF4621A9CA3D0002D5067 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADEF4631A9CA3D0002D5067 /* Read Me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Read Me.txt"; sourceTree = "<group>"; };
-		2ADEF47B1A9CB4FB002D5067 /* ASSnippets copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASSnippets copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADEF47B1A9CB4FB002D5067 /* ASTestTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASTestTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +133,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A9366951A9DB5AF00B0D650 /* CompassViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A9366961A9DB5AF00B0D650 /* ASCompassViewController.h */,
+				2A9366971A9DB5AF00B0D650 /* ASCompassViewController.m */,
+				2A9366981A9DB5AF00B0D650 /* ASCompassViewController.xib */,
+			);
+			path = CompassViewController;
+			sourceTree = "<group>";
+		};
+		2A9366991A9DB5AF00B0D650 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A9366D61A9DD0AD00B0D650 /* trivia.txt */,
+				2A9366E51A9DF47C00B0D650 /* ASTableViewCell.h */,
+				2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */,
+				2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */,
+				2A9366C81A9DCD3F00B0D650 /* ASTableViewController.h */,
+				2A9366C91A9DCD3F00B0D650 /* ASTableViewController.m */,
+				2A9366CA1A9DCD3F00B0D650 /* ASTableViewController.xib */,
+			);
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		2A93669E1A9DB6E500B0D650 /* CLLocationUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				2A93669F1A9DB6E500B0D650 /* CLDegreesAndRadians.h */,
+				2A9366A01A9DB6E500B0D650 /* CLHeading+Formatted.h */,
+				2A9366A11A9DB6E500B0D650 /* CLHeading+Formatted.m */,
+				2A9366A21A9DB6E500B0D650 /* CLLocation+Bearing.h */,
+				2A9366A31A9DB6E500B0D650 /* CLLocation+Bearing.m */,
+				2A9366A41A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.h */,
+				2A9366A51A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m */,
+				2A9366A61A9DB6E500B0D650 /* CLLocation+Degrees.h */,
+				2A9366A71A9DB6E500B0D650 /* CLLocation+Degrees.m */,
+				2A9366A81A9DB6E500B0D650 /* CLLocation+Direction.h */,
+				2A9366A91A9DB6E500B0D650 /* CLLocation+Direction.m */,
+				2A9366AA1A9DB6E500B0D650 /* CLLocation+Distance.h */,
+				2A9366AB1A9DB6E500B0D650 /* CLLocation+Distance.m */,
+				2A9366AC1A9DB6E500B0D650 /* CLLocation+EXIFGPS.h */,
+				2A9366AD1A9DB6E500B0D650 /* CLLocation+EXIFGPS.m */,
+				2A9366AE1A9DB6E500B0D650 /* CLLocation+UserInfo.h */,
+				2A9366AF1A9DB6E500B0D650 /* CLLocation+UserInfo.m */,
+				2A9366B01A9DB6E500B0D650 /* CLPlacemark+UserInfo.h */,
+				2A9366B11A9DB6E500B0D650 /* CLPlacemark+UserInfo.m */,
+				2A9366B21A9DB6E500B0D650 /* LLLocationManager.h */,
+				2A9366B31A9DB6E500B0D650 /* LLLocationManager.m */,
+			);
+			path = CLLocationUtilities;
+			sourceTree = "<group>";
+		};
 		2ADEF40D1A9C3ED5002D5067 = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				2ADEF4161A9C3ED5002D5067 /* ASSnippets.app */,
-				2ADEF47B1A9CB4FB002D5067 /* ASSnippets copy.app */,
+				2ADEF47B1A9CB4FB002D5067 /* ASTestTarget.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,12 +207,16 @@
 			children = (
 				2ADEF4481A9C9341002D5067 /* App Delegate */,
 				2ADEF4511A9C94E6002D5067 /* ASViewController */,
+				2A9366951A9DB5AF00B0D650 /* CompassViewController */,
+				2A9366991A9DB5AF00B0D650 /* TableViewController */,
 				2ADEF44B1A9C9341002D5067 /* Categories */,
 				2ADEF44C1A9C9341002D5067 /* Helpers */,
 				2ADEF44D1A9C9341002D5067 /* Resources */,
 				2ADEF45F1A9CA3CF002D5067 /* Supporting Files */,
+				2A93668F1A9D9AD100B0D650 /* ASTest.xcassets */,
 				2ADEF4261A9C3ED5002D5067 /* Images.xcassets */,
 				2ADEF4281A9C3ED5002D5067 /* LaunchScreen.xib */,
+				2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */,
 			);
 			path = ASSnippets;
 			sourceTree = "<group>";
@@ -119,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				2ADEF4581A9C9A05002D5067 /* Utilities */,
+				2A93669E1A9DB6E500B0D650 /* CLLocationUtilities */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -143,8 +267,8 @@
 		2ADEF4581A9C9A05002D5067 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				2ADEF4591A9C9A37002D5067 /* ASUtility.h */,
-				2ADEF45A1A9C9A37002D5067 /* ASUtility.m */,
+				2A9366E11A9DF38B00B0D650 /* ASUtility.h */,
+				2A9366E21A9DF38B00B0D650 /* ASUtility.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -195,7 +319,7 @@
 			);
 			name = ASTestTarget;
 			productName = ASSnippets;
-			productReference = 2ADEF47B1A9CB4FB002D5067 /* ASSnippets copy.app */;
+			productReference = 2ADEF47B1A9CB4FB002D5067 /* ASTestTarget.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -238,9 +362,13 @@
 			files = (
 				2ADEF4641A9CA3D0002D5067 /* Info.plist in Resources */,
 				2ADEF4561A9C9523002D5067 /* ASViewController.xib in Resources */,
+				2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,
 				2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */,
+				2A93669C1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */,
 				2ADEF4661A9CA3D0002D5067 /* Read Me.txt in Resources */,
 				2ADEF4271A9C3ED5002D5067 /* Images.xcassets in Resources */,
+				2A9366D71A9DD0AD00B0D650 /* trivia.txt in Resources */,
+				2A9366CD1A9DCD3F00B0D650 /* ASTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,12 +376,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A93669D1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */,
+				2A9366D81A9DD0AD00B0D650 /* trivia.txt in Resources */,
 				2ADEF4731A9CB4FB002D5067 /* Info.plist in Resources */,
+				2A9366901A9D9AD100B0D650 /* ASTest.xcassets in Resources */,
 				2ADEF4741A9CB4FB002D5067 /* ASViewController.xib in Resources */,
-				2ADEF4751A9CB4FB002D5067 /* LaunchScreen.xib in Resources */,
+				2A9366EB1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,
 				2A93668E1A9D884200B0D650 /* ASTestTarget-Info.plist in Resources */,
+				2A9366941A9DA1C800B0D650 /* LaunchScreen.xib in Resources */,
 				2ADEF4761A9CB4FB002D5067 /* Read Me.txt in Resources */,
-				2ADEF4771A9CB4FB002D5067 /* Images.xcassets in Resources */,
+				2A9366CE1A9DCD3F00B0D650 /* ASTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,10 +396,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9366C21A9DB6E500B0D650 /* CLLocation+UserInfo.m in Sources */,
+				2A9366B41A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */,
 				2ADEF44E1A9C9341002D5067 /* AppDelegate.m in Sources */,
 				2ADEF4551A9C9523002D5067 /* ASViewController.m in Sources */,
 				2ADEF4651A9CA3D0002D5067 /* main.m in Sources */,
-				2ADEF45B1A9C9A37002D5067 /* ASUtility.m in Sources */,
+				2A9366C01A9DB6E500B0D650 /* CLLocation+EXIFGPS.m in Sources */,
+				2A9366BA1A9DB6E500B0D650 /* CLLocation+Degrees.m in Sources */,
+				2A9366CB1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */,
+				2A9366C41A9DB6E500B0D650 /* CLPlacemark+UserInfo.m in Sources */,
+				2A9366E81A9DF47C00B0D650 /* ASTableViewCell.m in Sources */,
+				2A9366B61A9DB6E500B0D650 /* CLLocation+Bearing.m in Sources */,
+				2A9366E31A9DF38B00B0D650 /* ASUtility.m in Sources */,
+				2A93669A1A9DB5AF00B0D650 /* ASCompassViewController.m in Sources */,
+				2A9366B81A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m in Sources */,
+				2A9366BE1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */,
+				2A9366BC1A9DB6E500B0D650 /* CLLocation+Direction.m in Sources */,
+				2A9366C61A9DB6E500B0D650 /* LLLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +420,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9366C31A9DB6E500B0D650 /* CLLocation+UserInfo.m in Sources */,
+				2A9366B51A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */,
 				2ADEF46D1A9CB4FB002D5067 /* AppDelegate.m in Sources */,
 				2ADEF46E1A9CB4FB002D5067 /* ASViewController.m in Sources */,
 				2ADEF46F1A9CB4FB002D5067 /* main.m in Sources */,
-				2ADEF4701A9CB4FB002D5067 /* ASUtility.m in Sources */,
+				2A9366C11A9DB6E500B0D650 /* CLLocation+EXIFGPS.m in Sources */,
+				2A9366BB1A9DB6E500B0D650 /* CLLocation+Degrees.m in Sources */,
+				2A9366CC1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */,
+				2A9366C51A9DB6E500B0D650 /* CLPlacemark+UserInfo.m in Sources */,
+				2A9366E91A9DF47C00B0D650 /* ASTableViewCell.m in Sources */,
+				2A9366B71A9DB6E500B0D650 /* CLLocation+Bearing.m in Sources */,
+				2A9366E41A9DF38B00B0D650 /* ASUtility.m in Sources */,
+				2A93669B1A9DB5AF00B0D650 /* ASCompassViewController.m in Sources */,
+				2A9366B91A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m in Sources */,
+				2A9366BF1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */,
+				2A9366BD1A9DB6E500B0D650 /* CLLocation+Direction.m in Sources */,
+				2A9366C71A9DB6E500B0D650 /* LLLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -366,7 +524,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -419,7 +577,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ASSnippets/Supporting Files/ASTestTarget-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "ASSnippets copy";
+				PRODUCT_NAME = ASTestTarget;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -435,7 +593,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ASSnippets/Supporting Files/ASTestTarget-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "ASSnippets copy";
+				PRODUCT_NAME = ASTestTarget;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

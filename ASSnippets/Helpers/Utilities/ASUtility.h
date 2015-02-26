@@ -10,4 +10,7 @@
 
 @interface ASUtility : NSObject
 
++ (CGFloat)getLabelHeight:(UILabel *)label;
++ (NSString*)macAddress;
+
 @end

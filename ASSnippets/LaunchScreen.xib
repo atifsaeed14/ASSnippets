@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="TQT-N7-rm1">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gm_logo" translatesAutoresizingMaskIntoConstraints="NO" id="HH0-YU-fBH">
+                    <rect key="frame" x="236" y="236" width="128" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="jnZ-Ny-GwY"/>
+                        <constraint firstAttribute="height" constant="128" id="mgG-Ai-Zb2"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2015 Mustafa. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddg-Px-kPq">
+                    <rect key="frame" x="20" y="559" width="560" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="8wB-jD-z4O"/>
+                        <constraint firstAttribute="width" constant="560" id="XWP-vb-lj9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="XWP-vb-lj9"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="HH0-YU-fBH" secondAttribute="centerX" id="KAD-Q5-iMq"/>
+                <constraint firstAttribute="centerY" secondItem="HH0-YU-fBH" secondAttribute="centerY" id="deB-hO-U3Q"/>
+                <constraint firstAttribute="trailing" secondItem="Ddg-Px-kPq" secondAttribute="trailing" constant="20" id="fVq-Sh-Cx0"/>
+                <constraint firstItem="Ddg-Px-kPq" firstAttribute="leading" secondItem="TQT-N7-rm1" secondAttribute="leading" constant="20" id="q8L-XV-kQr"/>
+                <constraint firstAttribute="bottom" secondItem="Ddg-Px-kPq" secondAttribute="bottom" constant="20" id="t2c-TQ-18t"/>
+            </constraints>
+            <point key="canvasLocation" x="177" y="220"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gm_logo" width="128" height="128"/>
+    </resources>
+</document>

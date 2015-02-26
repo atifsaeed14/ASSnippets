@@ -31,4 +31,12 @@
 #endif
 
 
+
+typedef enum kASAction {
+    kASActionTableView,
+    kASActionCompass,
+    kASActionCount
+};
+
+
 #endif
