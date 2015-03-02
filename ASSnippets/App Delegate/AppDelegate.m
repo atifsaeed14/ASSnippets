@@ -36,6 +36,10 @@
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     
+    
+    
+    /* Blogs */
+    
     return YES;
 }
 
