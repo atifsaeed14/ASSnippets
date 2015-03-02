@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "M13ProgressViewBorderedBar.h"
 
 @interface ASViewController : UIViewController 
+
+@property (nonatomic, retain) IBOutlet M13ProgressViewBorderedBar *progressViewVertical;
 
 @end

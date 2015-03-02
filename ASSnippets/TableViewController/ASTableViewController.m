@@ -9,7 +9,10 @@
 #import "ASTableViewCell.h"
 #import "ASTableViewController.h"
 
-@interface ASTableViewController ()
+@interface ASTableViewController () {
+    BOOL isRefreshing;
+    UIRefreshControl *refreshControl;
+}
 
 @property (nonatomic, copy) NSArray *trivia;
 @property (nonatomic, strong) NSMutableArray *heights;
@@ -36,7 +39,16 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
   //  self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    [self.tableView setEditing:YES animated:YES];
+    [self.tableView setEditing:NO animated:YES];
+    
+    /* add refresh control */
+    //http://stackoverflow.com/questions/12607015/uirefreshcontrol-ios-6-xcode
+    refreshControl = [[UIRefreshControl alloc] init];
+    //[refreshControl setTintColor:[UIColor colorWithRed:139.0/255.0 green:174.0/255.0 blue:214.0/255.0 alpha:1.0]];
+    [refreshControl setTintColor:[UIColor redColor]];
+    refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Last UPdated at 02/02/2014 05:00 PM"];
+    [refreshControl addTarget:self action:@selector(refreshData:) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:refreshControl];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,14 +56,38 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Refresh Data
+- (void)refreshData:(id)sender{
+    
+    if(!isRefreshing) {
+        isRefreshing = YES;
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    }
+    else {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        [refreshControl endRefreshing];
+        isRefreshing = NO;
+    }
+    
+}
+
+
 #pragma mark - TableView DataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    
+    return 2;
+    
+    return [self.trivia count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-   return [self.trivia count];
+    
+    switch (section) {
+        case 0: return 1; break;
+        case 1: return 15; break;
+    }
+   return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -106,7 +142,10 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 60.0f;
+    
+    if (section == 1)
+        return 60.0f;
+    return 0.0f;
 }
 
 - (UITableViewCellEditingStyle) tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -114,20 +153,21 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    return _tableViewSectionHeaderView;
+    
+    if (section == 1)
+        return _tableViewSectionHeaderView;
+    
+    return nil;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
 
-
-
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-    //Even if the method is empty you should be seeing both rearrangement icon and animation.
-}
+//- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+//{
+//    //Even if the method is empty you should be seeing both rearrangement icon and animation.
+//}
 
 
 //

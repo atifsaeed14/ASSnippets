@@ -12,7 +12,14 @@
 #import "ASNavigationHeader.h"
 #import "ASBookmarkViewController.h"
 
-@interface ASViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ASViewController () <UITableViewDelegate, UITableViewDataSource> {
+    
+    NSTimer *timer;
+}
+
+@property (nonatomic, strong) IBOutlet UILabel *myCounterLabel;
+- (void)updateCounter:(NSTimer *)theTimer;
+- (void)countdownTimer;
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) ASNavigationHeader *navigationHeader;
@@ -21,11 +28,29 @@
 
 @implementation ASViewController
 
+int hours, minutes, seconds;
+int secondsLeft;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
     [self setUpNavigationBar];
+    
+    /* add local notification */
+    [self addNotification];
+
+    /* progress view */
+    _progressViewVertical.progressDirection = M13ProgressViewBorderedBarProgressDirectionLeftToRight;
+    [_progressViewVertical setProgress:.44 animated:NO];
+    _progressViewVertical.cornerType = M13ProgressViewBorderedBarCornerTypeCircle;
+    _progressViewVertical.successColor = [UIColor redColor];
+    [_progressViewVertical performAction:M13ProgressViewActionSuccess animated:NO];
+    
+    /* counter */
+    secondsLeft = 16925;
+    [self countdownTimer];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -135,7 +160,6 @@
     }
 }
 
-
 #pragma mark - Action Methods
 
 - (void)showTableViewViewController {
@@ -151,6 +175,57 @@
 - (void)showBookmarkViewController {
     ASBookmarkViewController *bookmarkViewController = [ASBookmarkViewController new];
     [self.navigationController pushViewController:bookmarkViewController animated:YES];
+}
+
+#pragma mark - Local Notificaiton
+
+- (void)addNotification {
+    
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    
+    localNotification.alertAction = @"View";
+    localNotification.alertBody = NSLocalizedString(@"ALERT_MESSAGE", nil);
+    localNotification.soundName = UILocalNotificationDefaultSoundName;
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM-dd-yyyy HH:mm"];
+    [dateFormatter setTimeZone:[NSTimeZone defaultTimeZone]];
+    
+    // Notification fire times are set by creating a notification whose fire date
+    // is an arbitrary weekday at the correct time, and having it repeat every weekday
+    NSDate *fireDate = [dateFormatter dateFromString:@"01-04-2012 23:05"];
+    
+    localNotification.fireDate = fireDate;
+    localNotification.repeatInterval = NSCalendarUnitDay;
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+}
+
+#pragma mark - Timer Methods
+
+- (void)updateCounter:(NSTimer *)theTimer {
+    
+    if(secondsLeft > 0 ){
+        secondsLeft -- ;
+        hours = secondsLeft / 3600;
+        minutes = (secondsLeft % 3600) / 60;
+        seconds = (secondsLeft %3600) % 60;
+        self.myCounterLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d", hours, minutes, seconds];
+    }
+    else{
+        secondsLeft = 16925;
+    }
+}
+
+-(void)countdownTimer{
+    
+    secondsLeft = hours = minutes = seconds = 0;
+    //    if([timer isValid])
+    //    {
+    //        [timer release];
+    //    }
+    //  NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(updateCounter:) userInfo:nil repeats:YES];
+    //  [pool release];
 }
 
 

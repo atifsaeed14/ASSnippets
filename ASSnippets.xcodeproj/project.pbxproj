@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A11C6A41AA4877100D4D57A /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A11AA4877100D4D57A /* M13ProgressView.m */; };
+		2A11C6A51AA4877100D4D57A /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A11AA4877100D4D57A /* M13ProgressView.m */; };
+		2A11C6A61AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */; };
+		2A11C6A71AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */; };
 		2A478F8C1A9EF6CE00A303FE /* ASNavigationHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A478F8B1A9EF6CE00A303FE /* ASNavigationHeader.m */; };
 		2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A478F8D1A9EF71E00A303FE /* ASNavigationHeader.xib */; };
 		2A478F8F1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A478F8D1A9EF71E00A303FE /* ASNavigationHeader.xib */; };
@@ -94,6 +98,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A11C6A01AA4877100D4D57A /* M13ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressView.h; sourceTree = "<group>"; };
+		2A11C6A11AA4877100D4D57A /* M13ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressView.m; sourceTree = "<group>"; };
+		2A11C6A21AA4877100D4D57A /* M13ProgressViewBorderedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewBorderedBar.h; sourceTree = "<group>"; };
+		2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewBorderedBar.m; sourceTree = "<group>"; };
 		2A478F8A1A9EF6CE00A303FE /* ASNavigationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNavigationHeader.h; sourceTree = "<group>"; };
 		2A478F8B1A9EF6CE00A303FE /* ASNavigationHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASNavigationHeader.m; sourceTree = "<group>"; };
 		2A478F8D1A9EF71E00A303FE /* ASNavigationHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASNavigationHeader.xib; sourceTree = "<group>"; };
@@ -393,6 +401,10 @@
 		2ADEF4511A9C94E6002D5067 /* ASViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2A11C6A01AA4877100D4D57A /* M13ProgressView.h */,
+				2A11C6A11AA4877100D4D57A /* M13ProgressView.m */,
+				2A11C6A21AA4877100D4D57A /* M13ProgressViewBorderedBar.h */,
+				2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */,
 				2ADEF4521A9C9523002D5067 /* ASViewController.h */,
 				2ADEF4531A9C9523002D5067 /* ASViewController.m */,
 				2ADEF4541A9C9523002D5067 /* ASViewController.xib */,
@@ -555,11 +567,13 @@
 				2A9366BA1A9DB6E500B0D650 /* CLLocation+Degrees.m in Sources */,
 				2A9366CB1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */,
 				2A478F961A9F47C300A303FE /* ASBookmarkViewController.m in Sources */,
+				2A11C6A41AA4877100D4D57A /* M13ProgressView.m in Sources */,
 				2A9366C41A9DB6E500B0D650 /* CLPlacemark+UserInfo.m in Sources */,
 				2A9366E81A9DF47C00B0D650 /* ASTableViewCell.m in Sources */,
 				2A9366B61A9DB6E500B0D650 /* CLLocation+Bearing.m in Sources */,
 				2A9366E31A9DF38B00B0D650 /* ASUtility.m in Sources */,
 				2A93669A1A9DB5AF00B0D650 /* ASCompassViewController.m in Sources */,
+				2A11C6A61AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */,
 				2A478FC81A9F4D6800A303FE /* JSONHTTPClient.m in Sources */,
 				2A478FCA1A9F4D6800A303FE /* JSONModel+networking.m in Sources */,
 				2A478FC01A9F4D6800A303FE /* JSONModelClassProperty.m in Sources */,
@@ -581,6 +595,7 @@
 				2A9366C31A9DB6E500B0D650 /* CLLocation+UserInfo.m in Sources */,
 				2A9366B51A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */,
 				2ADEF46D1A9CB4FB002D5067 /* AppDelegate.m in Sources */,
+				2A11C6A71AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */,
 				2A478FC71A9F4D6800A303FE /* JSONAPI.m in Sources */,
 				2ADEF46E1A9CB4FB002D5067 /* ASViewController.m in Sources */,
 				2A478FC51A9F4D6800A303FE /* NSArray+JSONModel.m in Sources */,
@@ -607,6 +622,7 @@
 				2A9366BF1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */,
 				2A9366BD1A9DB6E500B0D650 /* CLLocation+Direction.m in Sources */,
 				2A9366C71A9DB6E500B0D650 /* LLLocationManager.m in Sources */,
+				2A11C6A51AA4877100D4D57A /* M13ProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
