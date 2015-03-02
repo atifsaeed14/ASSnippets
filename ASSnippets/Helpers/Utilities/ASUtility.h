@@ -10,8 +10,11 @@
 
 @interface ASUtility : NSObject
 
-+ (CGFloat)getLabelHeight:(UILabel *)label;
++ (BOOL)iPad;
++ (float)systemVersion;
 + (NSString*)macAddress;
++ (CGFloat)getLabelHeight:(UILabel *)label;
++ (NSString *)applicationDocumentsDirectory;
 + (UINavigationController *)customizedNavigationController:(UIViewController *)viewController;
 
 @end

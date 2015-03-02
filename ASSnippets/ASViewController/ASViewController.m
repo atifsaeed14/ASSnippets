@@ -10,6 +10,7 @@
 #import "ASCompassViewController.h"
 #import "ASTableViewController.h"
 #import "ASNavigationHeader.h"
+#import "ASBookmarkViewController.h"
 
 @interface ASViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -50,7 +51,7 @@
     self.navigationItem.leftBarButtonItems = leftButtonItems;
     
     UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:nil];
-
+    
     UIButton *todayButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [todayButton setTitle:@"Today's" forState:UIControlStateNormal];
     [todayButton setTitleColor:kThemeColor forState:UIControlStateNormal];
@@ -100,6 +101,11 @@
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             break;
             
+        case kASBookmark:
+            cell.textLabel.text = @"To Do List";
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            break;
+            
         default:
             cell.textLabel.text = @"N/A";
             break;
@@ -120,6 +126,10 @@
             [self showCompassViewController];
             break;
             
+        case kASBookmark:
+            [self showBookmarkViewController];
+            break;
+            
         default:
             break;
     }
@@ -136,6 +146,11 @@
 - (void)showCompassViewController {
     ASCompassViewController *compassViewController = [ASCompassViewController new];
     [self.navigationController pushViewController:compassViewController animated:YES];
+}
+
+- (void)showBookmarkViewController {
+    ASBookmarkViewController *bookmarkViewController = [ASBookmarkViewController new];
+    [self.navigationController pushViewController:bookmarkViewController animated:YES];
 }
 
 

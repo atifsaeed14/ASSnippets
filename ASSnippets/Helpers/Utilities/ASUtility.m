@@ -29,6 +29,16 @@
     return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
 }
 
++ (float)systemVersion {
+    return [[[UIDevice currentDevice] systemVersion] floatValue];
+}
+
++ (BOOL)iPad {
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        return YES;
+    return NO;
+}
+
 + (UINavigationController *)customizedNavigationController:(UIViewController *)viewController {
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
@@ -40,6 +50,7 @@
     
     [navController.navigationBar setBackgroundColor:kThemeColor];
     [[UINavigationBar appearance] setBarTintColor:kTintColor];
+    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 
     NSShadow *shadow = [[NSShadow alloc] init];
@@ -54,8 +65,14 @@
     [navController.navigationBar setTitleTextAttributes:titleDictionary];
     //[[UINavigationBar appearance] setTitleTextAttributes:titleDictionary];
     
+
     return navController;
 }
 
++ (NSString *) applicationDocumentsDirectory {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
+    return basePath;
+}
 
 @end

@@ -18,6 +18,7 @@
 typedef enum kASAction {
     kASActionTableView,
     kASActionCompass,
+    kASBookmark,
     kASActionCount
 }kASAction;
 

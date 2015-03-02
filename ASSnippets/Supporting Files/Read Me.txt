@@ -42,6 +42,9 @@ Geolocation Utilities for iOS (Last updated Oct 16, 2013)
 A collection of geolocation utilities for iOS.
 https://github.com/phildow/ios-location-utilities
 
+Json Model
+https://github.com/icanzilb/JSONModel
+
 SuperLogger (Last updated Feb 6, 2014)
 Save NSLog() to file and send email to developer (Note: It doesn't work in iOS Simulator)
 https://github.com/yourtion/SuperLogger

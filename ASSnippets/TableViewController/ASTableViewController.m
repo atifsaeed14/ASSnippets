@@ -34,7 +34,9 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  //  self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self.tableView setEditing:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -107,10 +109,34 @@
     return 60.0f;
 }
 
+- (UITableViewCellEditingStyle) tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewCellEditingStyleNone;
+}
+
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     return _tableViewSectionHeaderView;
 }
 
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+
+
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+{
+    //Even if the method is empty you should be seeing both rearrangement icon and animation.
+}
+
+
+//
+//- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+//{
+//    [label1array exchangeObjectAtIndex:fromIndexPath.row withObjectAtIndex:toIndexPath.row];
+//    [label2array exchangeObjectAtIndex:fromIndexPath.row withObjectAtIndex:toIndexPath.row];
+//    [label3array exchangeObjectAtIndex:fromIndexPath.row withObjectAtIndex:toIndexPath.row];
+//}
 
 /*
 // Override to support conditional editing of the table view.
