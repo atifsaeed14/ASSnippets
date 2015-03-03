@@ -12,6 +12,9 @@
 #import "ASNavigationHeader.h"
 #import "ASBookmarkViewController.h"
 
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
+
 @interface ASViewController () <UITableViewDelegate, UITableViewDataSource> {
     
     NSTimer *timer;
@@ -50,6 +53,25 @@ int secondsLeft;
     /* counter */
     secondsLeft = 16925;
     [self countdownTimer];
+    
+    //http://stackoverflow.com/questions/14950896/showing-nearby-restaurants-in-mkmap-view
+    //http://jeffreysambells.com/2013/01/28/mklocalsearch-example
+    
+    // http://nshipster.com/mklocalsearch/
+    MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
+//    request.naturalLanguageQuery = @"Mosque";
+    request.naturalLanguageQuery = @"restuarts";
+    
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(33.7167, 73.0667);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 1500, 1500);
+    request.region = region;
+    
+    MKLocalSearch *search = [[MKLocalSearch alloc] initWithRequest:request];
+    [search startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error) {
+        NSLog(@"%@", response.mapItems);
+        NSLog(@"Error : %@", error);
+    }];
+
 
 }
 
