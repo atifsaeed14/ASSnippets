@@ -54,6 +54,9 @@ int secondsLeft;
     secondsLeft = 16925;
     [self countdownTimer];
     
+    
+    /* get locaiton for apple api*/
+    
     //http://stackoverflow.com/questions/14950896/showing-nearby-restaurants-in-mkmap-view
     //http://jeffreysambells.com/2013/01/28/mklocalsearch-example
     
@@ -71,6 +74,12 @@ int secondsLeft;
         NSLog(@"%@", response.mapItems);
         NSLog(@"Error : %@", error);
     }];
+
+    /* get near by location from google */
+    //  http://stackoverflow.com/questions/14950896/showing-nearby-restaurants-in-mkmap-view
+    //  https://developers.google.com/places/documentation/search#PlaceSearchRequests
+    //     https://maps.googleapis.com/maps/api/place/search/json?location=10.009890,76.316013&radius=5000&types=restaurant&sensor=false&key=AIzaSyCd_coP8f7TbdlcVavbgUku2S81pgAz_bs&pagetoken=CmRTAAAAIrTPdzdJzqNYSCw7p4D4ThGHh0srcyUpZ9LfvXRJJA1wR-DOsiXZ07V9TzdTu9HJdCwq2kRFIftm_FCzo4ofboAN95CjpX-6e41G_oXYQph5YIrP6HzM2hzrMw2G7phhEhDx6vzp9KlRo15w4Knd8L3QGhQBlsszX43YRC6Q-NbhFDcjDvu_eQ
+
 
 
 }
