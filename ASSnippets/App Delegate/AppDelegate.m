@@ -17,12 +17,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    ASViewController *viewController = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];
+        ASViewController *viewController = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];
     //viewController.title = kApplicationTitle;
     
     //self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     //[[self navigationController] setNavigationBarHidden:YES animated:YES];
     self.navigationController = [ASUtility customizedNavigationController:viewController];
+    
+    
+    
+    UIViewController *menuController = [UIViewController new];
+    
+    UINavigationController *menuNavController = [[UINavigationController alloc]
+                                                 initWithRootViewController:menuController];
+    [[menuController view] setBackgroundColor:[UIColor redColor]];
+    
+    
+    UITableViewController *tableViewController = [UITableViewController new];
+    UINavigationController *contentViewController = [[UINavigationController alloc]
+                                                     initWithRootViewController:tableViewController];
+    
+    _sideMenuController = [[IQSideMenuController alloc] initWithMenuViewController:self.navigationController
+                                                                               andContentViewController:contentViewController];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
@@ -33,10 +49,8 @@
     
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = self.navigationController;
+    self.window.rootViewController = _sideMenuController;
     [self.window makeKeyAndVisible];
-    
-    
     
     /* Blogs */
     

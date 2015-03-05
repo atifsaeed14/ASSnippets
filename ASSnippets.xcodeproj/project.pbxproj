@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A052AA81AA70EE700580BF0 /* GDIMockDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A052AA71AA70EE700580BF0 /* GDIMockDataModel.m */; };
+		2A052AA91AA70EE700580BF0 /* GDIMockDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A052AA71AA70EE700580BF0 /* GDIMockDataModel.m */; };
+		2A052AAB1AA7180100580BF0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2A052AAA1AA7180100580BF0 /* README.md */; };
+		2A052AAC1AA7180100580BF0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2A052AAA1AA7180100580BF0 /* README.md */; };
+		2A052AB01AA7234E00580BF0 /* ASScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A052AAE1AA7234E00580BF0 /* ASScrollViewController.m */; };
+		2A052AB11AA7234E00580BF0 /* ASScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A052AAE1AA7234E00580BF0 /* ASScrollViewController.m */; };
+		2A052AB21AA7234E00580BF0 /* ASScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A052AAF1AA7234E00580BF0 /* ASScrollViewController.xib */; };
+		2A052AB31AA7234E00580BF0 /* ASScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A052AAF1AA7234E00580BF0 /* ASScrollViewController.xib */; };
 		2A11C6A41AA4877100D4D57A /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A11AA4877100D4D57A /* M13ProgressView.m */; };
 		2A11C6A51AA4877100D4D57A /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A11AA4877100D4D57A /* M13ProgressView.m */; };
 		2A11C6A61AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */; };
 		2A11C6A71AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */; };
+		2A322BFB1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */; };
+		2A322BFC1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */; };
 		2A478F8C1A9EF6CE00A303FE /* ASNavigationHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A478F8B1A9EF6CE00A303FE /* ASNavigationHeader.m */; };
 		2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A478F8D1A9EF71E00A303FE /* ASNavigationHeader.xib */; };
 		2A478F8F1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A478F8D1A9EF71E00A303FE /* ASNavigationHeader.xib */; };
@@ -98,10 +108,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A052AA61AA70EE700580BF0 /* GDIMockDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDIMockDataModel.h; sourceTree = "<group>"; };
+		2A052AA71AA70EE700580BF0 /* GDIMockDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDIMockDataModel.m; sourceTree = "<group>"; };
+		2A052AAA1AA7180100580BF0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2A052AAD1AA7234E00580BF0 /* ASScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASScrollViewController.h; sourceTree = "<group>"; };
+		2A052AAE1AA7234E00580BF0 /* ASScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASScrollViewController.m; sourceTree = "<group>"; };
+		2A052AAF1AA7234E00580BF0 /* ASScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASScrollViewController.xib; sourceTree = "<group>"; };
 		2A11C6A01AA4877100D4D57A /* M13ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressView.h; sourceTree = "<group>"; };
 		2A11C6A11AA4877100D4D57A /* M13ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressView.m; sourceTree = "<group>"; };
 		2A11C6A21AA4877100D4D57A /* M13ProgressViewBorderedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewBorderedBar.h; sourceTree = "<group>"; };
 		2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewBorderedBar.m; sourceTree = "<group>"; };
+		2A322BF91AA86FE20003D7D5 /* IQSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSideMenuController.h; sourceTree = "<group>"; };
+		2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSideMenuController.m; sourceTree = "<group>"; };
 		2A478F8A1A9EF6CE00A303FE /* ASNavigationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNavigationHeader.h; sourceTree = "<group>"; };
 		2A478F8B1A9EF6CE00A303FE /* ASNavigationHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASNavigationHeader.m; sourceTree = "<group>"; };
 		2A478F8D1A9EF71E00A303FE /* ASNavigationHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASNavigationHeader.xib; sourceTree = "<group>"; };
@@ -202,6 +220,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A322BF81AA86FE20003D7D5 /* IQSideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				2A322BF91AA86FE20003D7D5 /* IQSideMenuController.h */,
+				2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */,
+			);
+			path = IQSideMenuController;
+			sourceTree = "<group>";
+		};
 		2A478F921A9F47A300A303FE /* BookmarkViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +322,11 @@
 				2A9366C81A9DCD3F00B0D650 /* ASTableViewController.h */,
 				2A9366C91A9DCD3F00B0D650 /* ASTableViewController.m */,
 				2A9366CA1A9DCD3F00B0D650 /* ASTableViewController.xib */,
+				2A052AA61AA70EE700580BF0 /* GDIMockDataModel.h */,
+				2A052AA71AA70EE700580BF0 /* GDIMockDataModel.m */,
+				2A052AAD1AA7234E00580BF0 /* ASScrollViewController.h */,
+				2A052AAE1AA7234E00580BF0 /* ASScrollViewController.m */,
+				2A052AAF1AA7234E00580BF0 /* ASScrollViewController.xib */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -330,6 +362,7 @@
 		2ADEF40D1A9C3ED5002D5067 = {
 			isa = PBXGroup;
 			children = (
+				2A052AAA1AA7180100580BF0 /* README.md */,
 				2ADEF4181A9C3ED5002D5067 /* ASSnippets */,
 				2ADEF4171A9C3ED5002D5067 /* Products */,
 			);
@@ -349,6 +382,7 @@
 			children = (
 				2AD58FBF1AA0566F0092E3CC /* ASTest.xcassets */,
 				2AD58FBD1AA0564F0092E3CC /* Images.xcassets */,
+				2A322BF81AA86FE20003D7D5 /* IQSideMenuController */,
 				2ADEF4481A9C9341002D5067 /* App Delegate */,
 				2ADEF4511A9C94E6002D5067 /* ASViewController */,
 				2A9366951A9DB5AF00B0D650 /* CompassViewController */,
@@ -521,6 +555,7 @@
 				2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
 				2A9366D71A9DD0AD00B0D650 /* trivia.txt in Resources */,
 				2AD58FBE1AA0564F0092E3CC /* Images.xcassets in Resources */,
+				2A052AB21AA7234E00580BF0 /* ASScrollViewController.xib in Resources */,
 				2A478FD11A9F4EA800A303FE /* Bookmark.plist in Resources */,
 				2A9366CD1A9DCD3F00B0D650 /* ASTableViewController.xib in Resources */,
 			);
@@ -535,6 +570,7 @@
 				2ADEF4731A9CB4FB002D5067 /* Info.plist in Resources */,
 				2ADEF4741A9CB4FB002D5067 /* ASViewController.xib in Resources */,
 				2A9366EB1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,
+				2A052AB31AA7234E00580BF0 /* ASScrollViewController.xib in Resources */,
 				2A478FD21A9F4EA800A303FE /* Bookmark.plist in Resources */,
 				2A93668E1A9D884200B0D650 /* ASTestTarget-Info.plist in Resources */,
 				2A9366941A9DA1C800B0D650 /* LaunchScreen.xib in Resources */,
@@ -555,6 +591,7 @@
 			files = (
 				2A478FC21A9F4D6800A303FE /* JSONModelError.m in Sources */,
 				2A478FC41A9F4D6800A303FE /* NSArray+JSONModel.m in Sources */,
+				2A052AB01AA7234E00580BF0 /* ASScrollViewController.m in Sources */,
 				2A478FBC1A9F4D6800A303FE /* JSONModel.m in Sources */,
 				2A478F8C1A9EF6CE00A303FE /* ASNavigationHeader.m in Sources */,
 				2A9366C21A9DB6E500B0D650 /* CLLocation+UserInfo.m in Sources */,
@@ -577,13 +614,16 @@
 				2A478FC81A9F4D6800A303FE /* JSONHTTPClient.m in Sources */,
 				2A478FCA1A9F4D6800A303FE /* JSONModel+networking.m in Sources */,
 				2A478FC01A9F4D6800A303FE /* JSONModelClassProperty.m in Sources */,
+				2A322BFB1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */,
 				2A9366B81A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m in Sources */,
 				2A478FCE1A9F4D6800A303FE /* JSONValueTransformer.m in Sources */,
 				2A478FC61A9F4D6800A303FE /* JSONAPI.m in Sources */,
 				2A9366BE1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */,
+				2A052AAB1AA7180100580BF0 /* README.md in Sources */,
 				2A478FA01A9F4ACD00A303FE /* ASBookmark.m in Sources */,
 				2A9366BC1A9DB6E500B0D650 /* CLLocation+Direction.m in Sources */,
 				2A9366C61A9DB6E500B0D650 /* LLLocationManager.m in Sources */,
+				2A052AA81AA70EE700580BF0 /* GDIMockDataModel.m in Sources */,
 				2A478FBE1A9F4D6800A303FE /* JSONModelArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,9 +641,11 @@
 				2A478FC51A9F4D6800A303FE /* NSArray+JSONModel.m in Sources */,
 				2ADEF46F1A9CB4FB002D5067 /* main.m in Sources */,
 				2A9366C11A9DB6E500B0D650 /* CLLocation+EXIFGPS.m in Sources */,
+				2A052AAC1AA7180100580BF0 /* README.md in Sources */,
 				2A478FBF1A9F4D6800A303FE /* JSONModelArray.m in Sources */,
 				2A9366BB1A9DB6E500B0D650 /* CLLocation+Degrees.m in Sources */,
 				2A9366CC1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */,
+				2A052AB11AA7234E00580BF0 /* ASScrollViewController.m in Sources */,
 				2A478FA11A9F4ACD00A303FE /* ASBookmark.m in Sources */,
 				2A478FBD1A9F4D6800A303FE /* JSONModel.m in Sources */,
 				2A478F971A9F47C300A303FE /* ASBookmarkViewController.m in Sources */,
@@ -614,6 +656,8 @@
 				2A478FC31A9F4D6800A303FE /* JSONModelError.m in Sources */,
 				2A478FCD1A9F4D6800A303FE /* JSONKeyMapper.m in Sources */,
 				2A478FC11A9F4D6800A303FE /* JSONModelClassProperty.m in Sources */,
+				2A322BFC1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */,
+				2A052AA91AA70EE700580BF0 /* GDIMockDataModel.m in Sources */,
 				2A9366E41A9DF38B00B0D650 /* ASUtility.m in Sources */,
 				2A478FC91A9F4D6800A303FE /* JSONHTTPClient.m in Sources */,
 				2A93669B1A9DB5AF00B0D650 /* ASCompassViewController.m in Sources */,

@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "IQSideMenuController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 + (AppDelegate *)appDelegate;
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UINavigationController *navigationController;
-
+@property (strong, nonatomic) IQSideMenuController *sideMenuController;
+    
 @end
 

@@ -11,7 +11,7 @@
 #import "ASTableViewController.h"
 #import "ASNavigationHeader.h"
 #import "ASBookmarkViewController.h"
-
+#import "ASScrollViewController.h"
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 
@@ -162,6 +162,11 @@ int secondsLeft;
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             break;
             
+        case kASScrollTableView:
+            cell.textLabel.text = @"Customer TableView";
+            cell.accessoryType = UITableViewCellAccessoryDetailButton;
+            break;
+            
         default:
             cell.textLabel.text = @"N/A";
             break;
@@ -173,9 +178,18 @@ int secondsLeft;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [appDelegate.sideMenuController toggleMenuAnimated:YES];
+    
     switch (indexPath.row) {
-        case kASActionTableView:
-            [self showTableViewViewController];
+        case kASActionTableView: {
+            
+            ASTableViewController *tableViewController = [ASTableViewController new];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+            //[self.navigationController pushViewController:tableViewController animated:YES];
+            [appDelegate.sideMenuController setContentViewController:nav];
+            //[self showTableViewViewController];
+        }
             break;
             
         case kASActionCompass:
@@ -184,6 +198,15 @@ int secondsLeft;
             
         case kASBookmark:
             [self showBookmarkViewController];
+            break;
+            
+        case kASScrollTableView: {
+            
+            ASScrollViewController *scrollViewController = [ASScrollViewController new];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:scrollViewController];
+            [appDelegate.sideMenuController setContentViewController:nav];
+        }
+            //[self showScrollTablViewController];
             break;
             
         default:
@@ -206,6 +229,11 @@ int secondsLeft;
 - (void)showBookmarkViewController {
     ASBookmarkViewController *bookmarkViewController = [ASBookmarkViewController new];
     [self.navigationController pushViewController:bookmarkViewController animated:YES];
+}
+
+- (void)showScrollTablViewController {
+    ASScrollViewController *scrollViewController = [ASScrollViewController new];
+    [self.navigationController pushViewController:scrollViewController animated:YES];
 }
 
 #pragma mark - Local Notificaiton

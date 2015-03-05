@@ -68,9 +68,7 @@
         [refreshControl endRefreshing];
         isRefreshing = NO;
     }
-    
 }
-
 
 #pragma mark - TableView DataSource
 
