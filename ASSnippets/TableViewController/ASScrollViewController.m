@@ -10,6 +10,8 @@
 
 @interface ASScrollViewController ()
 
+@property (nonatomic, strong) NSArray *indexTitlesArray;
+@property (nonatomic, strong) NSMutableArray *indexTitles;
 @end
 
 @implementation ASScrollViewController
@@ -20,6 +22,15 @@
     self.dataModel = [[GDIMockDataModel alloc] init];
     self.title = @"Scroll Table View";
     
+    NSString *numbers = @"1 2 3 4 5 6 7 8 9 10 11 12 13 14 15";
+    self.indexTitlesArray = [numbers componentsSeparatedByString:@" "];
+    
+    
+    self.indexTitles = [NSMutableArray new];
+    
+    for (int i = 1 in self.dataModel.dataArray) {
+        [self.indexTitles addObject:[NSString stringWithFormat:@"%d",i]];
+    }
     
      UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(sideMenu)];
     self.navigationItem.leftBarButtonItem = shareItem;
@@ -57,8 +68,25 @@
 //    NSString *letter = [self.dataModel.sectionNames objectAtIndex:section];
 //    NSArray *namesByLetter = [self.dataModel.data objectForKey:letter];
 //    return namesByLetter.count;
+    //return [self.dataModel.dataArray count];
+    return 1;
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return [self.dataModel.dataArray count];
 }
+
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
+{
+    return self.indexTitlesArray;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
+{
+    return [self.indexTitlesArray indexOfObject:title];
+}
+
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"CellIdentifier";
@@ -74,7 +102,7 @@
 //    cell.textLabel.text = [namesByLetter objectAtIndex:indexPath.row];
     
     //cell.textLabel.text = [self.dataModel.dataArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld %@",(long)indexPath.row,[self.dataModel.dataArray objectAtIndex:indexPath.row]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld %@",(long)indexPath.section,[self.dataModel.dataArray objectAtIndex:indexPath.section]];
     return cell;
 }
 
