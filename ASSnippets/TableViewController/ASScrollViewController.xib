@@ -25,7 +25,7 @@
                         <outlet property="delegate" destination="-1" id="Nya-Hb-fl2"/>
                     </connections>
                 </tableView>
-                <view contentMode="scaleToFill" id="jba-fb-Nmr">
+                <view hidden="YES" contentMode="scaleToFill" id="jba-fb-Nmr">
                     <rect key="frame" x="0.0" y="142" width="42" height="284"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.5450980392" green="0.68627450980000004" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>

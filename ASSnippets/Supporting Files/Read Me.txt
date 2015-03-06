@@ -41,6 +41,9 @@ THIRD PARTY TOOLS/ LIBRARIES/ FRAMEWORKS
 SideMenu
 https://github.com/IQCoders/IQSideMenu
 
+Location Manager
+https://github.com/intuit/LocationManager
+
 Geolocation Utilities for iOS (Last updated Oct 16, 2013)
 A collection of geolocation utilities for iOS.
 https://github.com/phildow/ios-location-utilities

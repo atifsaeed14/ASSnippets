@@ -28,7 +28,7 @@
     
     self.indexTitles = [NSMutableArray new];
     
-    for (int i = 1 in self.dataModel.dataArray) {
+    for (int i = 1; i < [self.dataModel.dataArray count]; i++) {
         [self.indexTitles addObject:[NSString stringWithFormat:@"%d",i]];
     }
     

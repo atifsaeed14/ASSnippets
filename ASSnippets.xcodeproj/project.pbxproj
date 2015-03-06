@@ -90,6 +90,10 @@
 		2A9366E91A9DF47C00B0D650 /* ASTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */; };
 		2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */; };
 		2A9366EB1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */; };
+		2ACB10C31AA97CDC0029C1F7 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB10C21AA97CDC0029C1F7 /* bg.png */; };
+		2ACB10C41AA97CDC0029C1F7 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB10C21AA97CDC0029C1F7 /* bg.png */; };
+		2ACB10C61AA97F2F0029C1F7 /* bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB10C51AA97F2F0029C1F7 /* bg1.jpg */; };
+		2ACB10C71AA97F2F0029C1F7 /* bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB10C51AA97F2F0029C1F7 /* bg1.jpg */; };
 		2AD58FBE1AA0564F0092E3CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD58FBD1AA0564F0092E3CC /* Images.xcassets */; };
 		2AD58FC01AA0566F0092E3CC /* ASTest.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD58FBF1AA0566F0092E3CC /* ASTest.xcassets */; };
 		2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4281A9C3ED5002D5067 /* LaunchScreen.xib */; };
@@ -185,6 +189,8 @@
 		2A9366E51A9DF47C00B0D650 /* ASTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTableViewCell.h; sourceTree = "<group>"; };
 		2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTableViewCell.m; sourceTree = "<group>"; };
 		2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTableViewCell.xib; sourceTree = "<group>"; };
+		2ACB10C21AA97CDC0029C1F7 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		2ACB10C51AA97F2F0029C1F7 /* bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg1.jpg; sourceTree = "<group>"; };
 		2AD58FBD1AA0564F0092E3CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2AD58FBF1AA0566F0092E3CC /* ASTest.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ASTest.xcassets; sourceTree = "<group>"; };
 		2ADEF4161A9C3ED5002D5067 /* ASSnippets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASSnippets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -428,6 +434,8 @@
 		2ADEF44D1A9C9341002D5067 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2ACB10C51AA97F2F0029C1F7 /* bg1.jpg */,
+				2ACB10C21AA97CDC0029C1F7 /* bg.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -549,10 +557,12 @@
 				2ADEF4641A9CA3D0002D5067 /* Info.plist in Resources */,
 				2ADEF4561A9C9523002D5067 /* ASViewController.xib in Resources */,
 				2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,
+				2ACB10C31AA97CDC0029C1F7 /* bg.png in Resources */,
 				2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */,
 				2A93669C1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */,
 				2ADEF4661A9CA3D0002D5067 /* Read Me.txt in Resources */,
 				2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
+				2ACB10C61AA97F2F0029C1F7 /* bg1.jpg in Resources */,
 				2A9366D71A9DD0AD00B0D650 /* trivia.txt in Resources */,
 				2AD58FBE1AA0564F0092E3CC /* Images.xcassets in Resources */,
 				2A052AB21AA7234E00580BF0 /* ASScrollViewController.xib in Resources */,
@@ -565,11 +575,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ACB10C71AA97F2F0029C1F7 /* bg1.jpg in Resources */,
 				2A93669D1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */,
 				2A9366D81A9DD0AD00B0D650 /* trivia.txt in Resources */,
 				2ADEF4731A9CB4FB002D5067 /* Info.plist in Resources */,
 				2ADEF4741A9CB4FB002D5067 /* ASViewController.xib in Resources */,
 				2A9366EB1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,
+				2ACB10C41AA97CDC0029C1F7 /* bg.png in Resources */,
 				2A052AB31AA7234E00580BF0 /* ASScrollViewController.xib in Resources */,
 				2A478FD21A9F4EA800A303FE /* Bookmark.plist in Resources */,
 				2A93668E1A9D884200B0D650 /* ASTestTarget-Info.plist in Resources */,

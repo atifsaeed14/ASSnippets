@@ -63,10 +63,13 @@ int secondsLeft;
     // http://nshipster.com/mklocalsearch/
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
 //    request.naturalLanguageQuery = @"Mosque";
-    request.naturalLanguageQuery = @"restuarts";
+    request.naturalLanguageQuery = @"Restaurants";
     
-    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(33.7167, 73.0667);
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 1500, 1500);
+//    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(33.7167, 73.0667);
+
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(40.7127, 74.0059);
+
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 15000, 15000);
     request.region = region;
     
     MKLocalSearch *search = [[MKLocalSearch alloc] initWithRequest:request];
@@ -79,8 +82,23 @@ int secondsLeft;
     //  http://stackoverflow.com/questions/14950896/showing-nearby-restaurants-in-mkmap-view
     //  https://developers.google.com/places/documentation/search#PlaceSearchRequests
     //     https://maps.googleapis.com/maps/api/place/search/json?location=10.009890,76.316013&radius=5000&types=restaurant&sensor=false&key=AIzaSyCd_coP8f7TbdlcVavbgUku2S81pgAz_bs&pagetoken=CmRTAAAAIrTPdzdJzqNYSCw7p4D4ThGHh0srcyUpZ9LfvXRJJA1wR-DOsiXZ07V9TzdTu9HJdCwq2kRFIftm_FCzo4ofboAN95CjpX-6e41G_oXYQph5YIrP6HzM2hzrMw2G7phhEhDx6vzp9KlRo15w4Knd8L3QGhQBlsszX43YRC6Q-NbhFDcjDvu_eQ
+    
+    
+    /* view blue */
+//    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+//    UIVisualEffectView *blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+//    [blurEffectView setFrame:self.view.bounds];
+//    [self.view addSubview:blurEffectView];
 
-
+    /* image blue */
+//    UIVisualEffect *blurEffect;
+//    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+//    
+//    UIVisualEffectView *visualEffectView;
+//    visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+//    
+//    visualEffectView.frame = _imageView.bounds;
+//    [_imageView addSubview:visualEffectView];
 
 }
 
@@ -204,6 +222,8 @@ int secondsLeft;
             
             ASScrollViewController *scrollViewController = [ASScrollViewController new];
             UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:scrollViewController];
+            [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavigationBG"] forBarMetrics:UIBarMetricsDefault];
+
             [appDelegate.sideMenuController setContentViewController:nav];
         }
             //[self showScrollTablViewController];

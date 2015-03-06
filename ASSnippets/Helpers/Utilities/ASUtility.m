@@ -53,6 +53,8 @@
     [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 
+    [[UINavigationBar appearance]setTintColor:UIColorFromRGB(0x52b3c1)];
+    
     NSShadow *shadow = [[NSShadow alloc] init];
     shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
     shadow.shadowOffset = CGSizeMake(0, 1);
@@ -65,6 +67,11 @@
     [navController.navigationBar setTitleTextAttributes:titleDictionary];
     //[[UINavigationBar appearance] setTitleTextAttributes:titleDictionary];
     
+    
+    /* NavigationBG */
+    //[navController.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavigationBG"] forBarMetrics:UIBarMetricsDefault];
+  //  [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav_bg.png"] forBarMetrics:UIBarMetricsDefault];
+
 
     return navController;
 }
