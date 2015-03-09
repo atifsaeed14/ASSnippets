@@ -90,6 +90,9 @@
 		2A9366E91A9DF47C00B0D650 /* ASTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */; };
 		2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */; };
 		2A9366EB1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */; };
+		2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 2AC8AB031AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet */; };
+		2AC8AB071AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 2AC8AB041AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet */; };
+		2AC8AB081AAD89570040F84D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2AC8AB051AAD89570040F84D /* README.md */; };
 		2ACB10C31AA97CDC0029C1F7 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB10C21AA97CDC0029C1F7 /* bg.png */; };
 		2ACB10C41AA97CDC0029C1F7 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB10C21AA97CDC0029C1F7 /* bg.png */; };
 		2ACB10C61AA97F2F0029C1F7 /* bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB10C51AA97F2F0029C1F7 /* bg1.jpg */; };
@@ -189,6 +192,9 @@
 		2A9366E51A9DF47C00B0D650 /* ASTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTableViewCell.h; sourceTree = "<group>"; };
 		2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTableViewCell.m; sourceTree = "<group>"; };
 		2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTableViewCell.xib; sourceTree = "<group>"; };
+		2AC8AB031AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet"; sourceTree = "<group>"; };
+		2AC8AB041AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet"; sourceTree = "<group>"; };
+		2AC8AB051AAD89570040F84D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2ACB10C21AA97CDC0029C1F7 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		2ACB10C51AA97F2F0029C1F7 /* bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg1.jpg; sourceTree = "<group>"; };
 		2AD58FBD1AA0564F0092E3CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -365,9 +371,20 @@
 			path = CLLocationUtilities;
 			sourceTree = "<group>";
 		};
+		2AC8AB021AAD89570040F84D /* xCodeSnippets */ = {
+			isa = PBXGroup;
+			children = (
+				2AC8AB031AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet */,
+				2AC8AB041AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet */,
+				2AC8AB051AAD89570040F84D /* README.md */,
+			);
+			path = xCodeSnippets;
+			sourceTree = "<group>";
+		};
 		2ADEF40D1A9C3ED5002D5067 = {
 			isa = PBXGroup;
 			children = (
+				2AC8AB021AAD89570040F84D /* xCodeSnippets */,
 				2A052AAA1AA7180100580BF0 /* README.md */,
 				2ADEF4181A9C3ED5002D5067 /* ASSnippets */,
 				2ADEF4171A9C3ED5002D5067 /* Products */,
@@ -554,11 +571,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A478F9A1A9F47CC00A303FE /* ASBookmarkViewController.xib in Resources */,
+				2AC8AB071AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet in Resources */,
 				2ADEF4641A9CA3D0002D5067 /* Info.plist in Resources */,
 				2ADEF4561A9C9523002D5067 /* ASViewController.xib in Resources */,
 				2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,
 				2ACB10C31AA97CDC0029C1F7 /* bg.png in Resources */,
 				2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */,
+				2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */,
 				2A93669C1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */,
 				2ADEF4661A9CA3D0002D5067 /* Read Me.txt in Resources */,
 				2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
@@ -630,6 +649,7 @@
 				2A9366B81A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m in Sources */,
 				2A478FCE1A9F4D6800A303FE /* JSONValueTransformer.m in Sources */,
 				2A478FC61A9F4D6800A303FE /* JSONAPI.m in Sources */,
+				2AC8AB081AAD89570040F84D /* README.md in Sources */,
 				2A9366BE1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */,
 				2A052AAB1AA7180100580BF0 /* README.md in Sources */,
 				2A478FA01A9F4ACD00A303FE /* ASBookmark.m in Sources */,
