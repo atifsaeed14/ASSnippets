@@ -14,6 +14,7 @@
 #import "ASScrollViewController.h"
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "ASNWViewController.h"
 
 @interface ASViewController () <UITableViewDelegate, UITableViewDataSource> {
     
@@ -185,6 +186,11 @@ int secondsLeft;
             cell.accessoryType = UITableViewCellAccessoryDetailButton;
             break;
             
+        case kANWViewController:
+            cell.textLabel.text = @"AF Networking";
+            cell.accessoryType = UITableViewCellAccessoryDetailButton;
+            break;
+            
         default:
             cell.textLabel.text = @"N/A";
             break;
@@ -228,6 +234,18 @@ int secondsLeft;
         }
             //[self showScrollTablViewController];
             break;
+
+        case kANWViewController: {
+            
+            ASNWViewController *nwViewController = [ASNWViewController new];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:nwViewController];
+            [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavigationBG"] forBarMetrics:UIBarMetricsDefault];
+            
+            [appDelegate.sideMenuController setContentViewController:nav];
+        }
+            //[self showScrollTablViewController];
+            break;
+
             
         default:
             break;

@@ -20,6 +20,7 @@ typedef enum kASAction {
     kASActionCompass,
     kASBookmark,
     kASScrollTableView,
+    kANWViewController,
     kASActionCount
 }kASAction;
 

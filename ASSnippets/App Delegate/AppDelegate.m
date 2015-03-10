@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ASViewController.h"
+ #import "AFNetworkActivityIndicatorManager.h"
 
 @interface AppDelegate ()
 
@@ -25,7 +26,8 @@
     self.navigationController = [ASUtility customizedNavigationController:viewController];
     
     
-    
+    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
+
     UIViewController *menuController = [UIViewController new];
     
     UINavigationController *menuNavController = [[UINavigationController alloc]
