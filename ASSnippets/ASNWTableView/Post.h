@@ -36,5 +36,10 @@
 
 - (instancetype)initWithAttributes:(NSDictionary *)attributes;
 + (NSMutableArray *)setData:(NSArray *)dataArray;
++ (NSMutableArray *)retrieveItems:(NSArray *)dataArray;
+
+-(NSArray *)imagesFromContent;
+@property (retain,nonatomic) NSString *content;
+
 
 @end

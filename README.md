@@ -55,3 +55,8 @@ https://github.com/pkluz/PKRevealController
 Swift
 =============
 https://github.com/cnoon/Swift-Introduction
+
+
+Email
+=============
+https://github.com/remirobert/RRMessageController

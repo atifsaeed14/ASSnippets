@@ -325,14 +325,7 @@ int secondsLeft;
     //  [pool release];
 }
 
-#pragma mark - Block Sample
 
-+ (void)isBlock:(void(^)(NSArray *posts, NSError *error))block {
-    
-    if (block) {
-        block(nil, nil);
-    }
-}
 
 
 @end

@@ -13,6 +13,5 @@
 
 @property (nonatomic, retain) IBOutlet M13ProgressViewBorderedBar *progressViewVertical;
 
-+ (void)isBlock:(void(^)(NSArray *posts, NSError *error))block;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @end

@@ -48,4 +48,49 @@
     return mutablePosts;
 }
 
++ (NSMutableArray *)retrieveItems:(NSArray *)dataArray {
+    
+    NSMutableArray *mutablePosts = [NSMutableArray new];
+    [dataArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        Post *post = [[Post alloc] initWithAttributes:obj];
+        [mutablePosts addObject:post];
+    }];
+    
+    return mutablePosts;
+}
+
+
+-(NSArray *)imagesFromContent {
+    
+    if (self.content) {
+        return [self imagesFromHTMLString:self.content];
+    }
+    
+    return nil;
+}
+
+#pragma mark - retrieve images from html string using regexp (private methode)
+
+-(NSArray *)imagesFromHTMLString:(NSString *)htmlstr
+{
+    NSMutableArray *imagesURLStringArray = [[NSMutableArray alloc] init];
+    
+    NSError *error;
+    
+    NSRegularExpression *regex = [NSRegularExpression
+                                  regularExpressionWithPattern:@"(https?)\\S*(png|jpg|jpeg|gif)"
+                                  options:NSRegularExpressionCaseInsensitive
+                                  error:&error];
+    
+    [regex enumerateMatchesInString:htmlstr
+                            options:0
+                              range:NSMakeRange(0, htmlstr.length)
+                         usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
+                             [imagesURLStringArray addObject:[htmlstr substringWithRange:result.range]];
+                         }];
+    
+    return [NSArray arrayWithArray:imagesURLStringArray];
+}
+
+
 @end

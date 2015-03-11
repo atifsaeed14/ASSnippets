@@ -6,19 +6,19 @@
 //  Copyright (c) 2015 atti14. All rights reserved.
 //
 
-#import "ApiHTTPClient.h"
+#import "ApiHTTPClientSessioin.h"
 
 static NSString * const APIBaseURLString = @"https://api.app.net/";
 
-@implementation ApiHTTPClient
+@implementation ApiHTTPClientSessioin
 
 + (instancetype)sharedClient {
     
-    static ApiHTTPClient *sharedClient = nil;
+    static ApiHTTPClientSessioin *sharedClient = nil;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedClient = [[ApiHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:APIBaseURLString]];
+        sharedClient = [[ApiHTTPClientSessioin alloc] initWithBaseURL:[NSURL URLWithString:APIBaseURLString]];
         //sharedClient.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     });
     

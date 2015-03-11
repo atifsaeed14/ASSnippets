@@ -11,13 +11,20 @@
 #import "Post.h"
 
 #import "PostTableViewCell.h"
-#import "ApiHTTPClient.h"
+#import "ApiHTTPClientSessioin.h"
 #import "UIRefreshControl+AFNetworking.h"
 #import "UIAlertView+AFNetworking.h"
 
-@interface ASNWViewController ()
+#import "UserClient.h"
+#import "UserModel.h"
 
+@interface ASNWViewController () {
+    UserClient *_userClient;
+}
 @property (readwrite, nonatomic, strong) NSArray *posts;
+@property (nonatomic, strong) NSString *(^blockAsAMemberVar)(void);
++ (void)isBlock:(void(^)(NSArray *posts, NSError *error))block;
+@property (strong, nonatomic) NSArray* jokes;
 
 @end
 
@@ -37,12 +44,99 @@
     
     [self reload:nil];
     
+    
+    /* test http api clien manager */
+    _userClient = [UserClient client];
+    
+    [_userClient getUser:^(AFHTTPRequestOperation *operation, id responseObject) {
+        if ( [responseObject succeeded] ) {
+            UserModel *user = [[UserModel alloc] initWithDictionary:responseObject[@"user"]];
+            
+            NSLog(@"------------------------------");
+            NSLog(@"• %@", user.userId.stringValue);
+            NSLog(@"• %@", user.username);
+            NSLog(@"• %@", user.name);
+            NSLog(@"• %@", user.surname);
+            NSLog(@"• %@", user.about);
+            NSLog(@"• %@", user.git);
+            NSLog(@"------------------------------");
+        }
+    }];
+    
+    [_userClient getError:^(AFHTTPRequestOperation *operation, id responseObject) {
+       
+        if ( ![responseObject succeeded] ) {
+            NSLog(@"------------------------------");
+            NSLog(@"• %@", [responseObject errorMessage] );
+            NSLog(@"------------------------------");
+        }
+    }];
+    
+    /* block learn */
+    // returnType(^blockName)(Parameters)
+    void(^blockName)(void);
+    blockName = ^(void) {
+        NSLog(@"What's up, Doc?");
+    };
+    
+    _blockAsAMemberVar = ^(void){
+        return @"This block is declared as a member variable!";
+    };
+    
+    //-(returnType)methodNameWithParams:(parameterType)parameterName ...<more params>... andCompletionHandler:(void(^)(<any block params>))completionHandler;
+    
+    [UIView animateWithDuration:0.5
+                     animations:^{
+                         [self.view setAlpha:0.5];
+                     } completion:^(BOOL finished) {
+                         NSLog(@"Animation is over.");
+                     }];
+    
+}
+
+
+- (void)showNextJoke {
+    
+    [UIView animateWithDuration:1.0 animations:^{
+     //   self.label.alpha = 1.0;
+    } completion:^(BOOL finished) {
+        [self performSelector:@selector(hideJoke) withObject:nil afterDelay:5.0];
+    }];
+}
+
+- (void)hideJoke {
+    [UIView animateWithDuration:1.0 animations:^{
+   //     self.label.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        [self showNextJoke];
+    }];
+}
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    
+    [UIView animateWithDuration:0.0
+                     animations:^{
+                         [self.view setAlpha:1.0];
+                     } completion:^(BOOL finished) {
+                         NSLog(@"Animation is over.");
+                     }];
+}
+
+#pragma mark - Block Sample
+
++ (void)isBlock:(void(^)(NSArray *posts, NSError *error))block {
+    
+    if (block) {
+        block(nil, nil);
+    }
 }
 
 - (void)reload:(__unused id)sender {
     self.navigationItem.rightBarButtonItem.enabled = NO;
     
-    NSURLSessionTask *task = [ApiHTTPClient globalTimelinePostsWithBlock:^(NSArray *posts, NSError *error) {
+    NSURLSessionTask *task = [ApiHTTPClientSessioin globalTimelinePostsWithBlock:^(NSArray *posts, NSError *error) {
         if (!error) {
             self.posts = [Post setData:posts];
             [self.tableView reloadData];

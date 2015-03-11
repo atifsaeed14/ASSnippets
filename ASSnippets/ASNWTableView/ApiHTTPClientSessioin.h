@@ -8,7 +8,7 @@
 
 #import "AFHTTPSessionManager.h"
 
-@interface ApiHTTPClient : AFHTTPSessionManager
+@interface ApiHTTPClientSessioin : AFHTTPSessionManager
 
 + (instancetype)sharedClient;
 

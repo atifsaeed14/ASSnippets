@@ -94,8 +94,8 @@
 		2A5CC9991AAF095600C2BB20 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9951AAF095600C2BB20 /* Post.m */; };
 		2A5CC99A1AAF095600C2BB20 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9971AAF095600C2BB20 /* User.m */; };
 		2A5CC99B1AAF095600C2BB20 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9971AAF095600C2BB20 /* User.m */; };
-		2A5CC99E1AAF0A7400C2BB20 /* ApiHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC99D1AAF0A7400C2BB20 /* ApiHTTPClient.m */; };
-		2A5CC99F1AAF0A7400C2BB20 /* ApiHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC99D1AAF0A7400C2BB20 /* ApiHTTPClient.m */; };
+		2A5CC99E1AAF0A7400C2BB20 /* ApiHTTPClientSessioin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC99D1AAF0A7400C2BB20 /* ApiHTTPClientSessioin.m */; };
+		2A5CC99F1AAF0A7400C2BB20 /* ApiHTTPClientSessioin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC99D1AAF0A7400C2BB20 /* ApiHTTPClientSessioin.m */; };
 		2A5CC9A21AAF0D8F00C2BB20 /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9A11AAF0D8F00C2BB20 /* PostTableViewCell.m */; };
 		2A5CC9A31AAF0D8F00C2BB20 /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9A11AAF0D8F00C2BB20 /* PostTableViewCell.m */; };
 		2A5CC9AB1AAF1BA600C2BB20 /* INTULocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9A71AAF1BA600C2BB20 /* INTULocationManager.m */; };
@@ -162,6 +162,14 @@
 		2ADEF4731A9CB4FB002D5067 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4611A9CA3D0002D5067 /* Info.plist */; };
 		2ADEF4741A9CB4FB002D5067 /* ASViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4541A9C9523002D5067 /* ASViewController.xib */; };
 		2ADEF4761A9CB4FB002D5067 /* Read Me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4631A9CA3D0002D5067 /* Read Me.txt */; };
+		2AEF329D1AB0045F00E18550 /* ApiHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32961AB0045F00E18550 /* ApiHTTPClient.m */; };
+		2AEF329E1AB0045F00E18550 /* ApiHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32961AB0045F00E18550 /* ApiHTTPClient.m */; };
+		2AEF329F1AB0045F00E18550 /* UserClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32991AB0045F00E18550 /* UserClient.m */; };
+		2AEF32A01AB0045F00E18550 /* UserClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32991AB0045F00E18550 /* UserClient.m */; };
+		2AEF32A11AB0045F00E18550 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF329C1AB0045F00E18550 /* UserModel.m */; };
+		2AEF32A21AB0045F00E18550 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF329C1AB0045F00E18550 /* UserModel.m */; };
+		2AEF32A91AB00AF200E18550 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32A81AB00AF200E18550 /* BaseModel.m */; };
+		2AEF32AA1AB00AF200E18550 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32A81AB00AF200E18550 /* BaseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -250,8 +258,8 @@
 		2A5CC9951AAF095600C2BB20 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		2A5CC9961AAF095600C2BB20 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		2A5CC9971AAF095600C2BB20 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		2A5CC99C1AAF0A7400C2BB20 /* ApiHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiHTTPClient.h; sourceTree = "<group>"; };
-		2A5CC99D1AAF0A7400C2BB20 /* ApiHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiHTTPClient.m; sourceTree = "<group>"; };
+		2A5CC99C1AAF0A7400C2BB20 /* ApiHTTPClientSessioin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiHTTPClientSessioin.h; sourceTree = "<group>"; };
+		2A5CC99D1AAF0A7400C2BB20 /* ApiHTTPClientSessioin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiHTTPClientSessioin.m; sourceTree = "<group>"; };
 		2A5CC9A01AAF0D8F00C2BB20 /* PostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
 		2A5CC9A11AAF0D8F00C2BB20 /* PostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
 		2A5CC9A51AAF1BA600C2BB20 /* INTULocationManager+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INTULocationManager+Internal.h"; sourceTree = "<group>"; };
@@ -315,6 +323,14 @@
 		2ADEF4621A9CA3D0002D5067 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADEF4631A9CA3D0002D5067 /* Read Me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Read Me.txt"; sourceTree = "<group>"; };
 		2ADEF47B1A9CB4FB002D5067 /* ASTestTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASTestTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AEF32951AB0045F00E18550 /* ApiHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiHTTPClient.h; sourceTree = "<group>"; };
+		2AEF32961AB0045F00E18550 /* ApiHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiHTTPClient.m; sourceTree = "<group>"; };
+		2AEF32981AB0045F00E18550 /* UserClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserClient.h; sourceTree = "<group>"; };
+		2AEF32991AB0045F00E18550 /* UserClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserClient.m; sourceTree = "<group>"; };
+		2AEF329B1AB0045F00E18550 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		2AEF329C1AB0045F00E18550 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		2AEF32A71AB00AF200E18550 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		2AEF32A81AB00AF200E18550 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -479,8 +495,8 @@
 				2A5CC98A1AAF066A00C2BB20 /* ASNWViewController.h */,
 				2A5CC98B1AAF066A00C2BB20 /* ASNWViewController.m */,
 				2A5CC9911AAF071200C2BB20 /* ASNWViewController.xib */,
-				2A5CC99C1AAF0A7400C2BB20 /* ApiHTTPClient.h */,
-				2A5CC99D1AAF0A7400C2BB20 /* ApiHTTPClient.m */,
+				2A5CC99C1AAF0A7400C2BB20 /* ApiHTTPClientSessioin.h */,
+				2A5CC99D1AAF0A7400C2BB20 /* ApiHTTPClientSessioin.m */,
 			);
 			path = ASNWTableView;
 			sourceTree = "<group>";
@@ -587,10 +603,10 @@
 		2ADEF4181A9C3ED5002D5067 /* ASSnippets */ = {
 			isa = PBXGroup;
 			children = (
-				2A5CC9891AAF05A200C2BB20 /* ASNWTableView */,
 				2AD58FBF1AA0566F0092E3CC /* ASTest.xcassets */,
 				2AD58FBD1AA0564F0092E3CC /* Images.xcassets */,
 				2A322BF81AA86FE20003D7D5 /* IQSideMenuController */,
+				2A5CC9891AAF05A200C2BB20 /* ASNWTableView */,
 				2ADEF4481A9C9341002D5067 /* App Delegate */,
 				2ADEF4511A9C94E6002D5067 /* ASViewController */,
 				2A9366951A9DB5AF00B0D650 /* CompassViewController */,
@@ -626,6 +642,7 @@
 		2ADEF44C1A9C9341002D5067 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2AEF32931AB0045F00E18550 /* APIHTTPClient */,
 				2A5CC9A41AAF1BA600C2BB20 /* LocationManager */,
 				2A5CC9411AAEB6A300C2BB20 /* AFNetworking */,
 				2A5CC9551AAEB6A300C2BB20 /* UIKit+AFNetworking */,
@@ -681,6 +698,53 @@
 				2ADEF4601A9CA3CF002D5067 /* AS-PrefixHeader.pch */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2AEF32931AB0045F00E18550 /* APIHTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				2AEF32A61AB00AF200E18550 /* BaseModel */,
+				2AEF32941AB0045F00E18550 /* ApiHTTPClient */,
+				2AEF32971AB0045F00E18550 /* UserClient */,
+				2AEF329A1AB0045F00E18550 /* UserModel */,
+			);
+			path = APIHTTPClient;
+			sourceTree = "<group>";
+		};
+		2AEF32941AB0045F00E18550 /* ApiHTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				2AEF32951AB0045F00E18550 /* ApiHTTPClient.h */,
+				2AEF32961AB0045F00E18550 /* ApiHTTPClient.m */,
+			);
+			path = ApiHTTPClient;
+			sourceTree = "<group>";
+		};
+		2AEF32971AB0045F00E18550 /* UserClient */ = {
+			isa = PBXGroup;
+			children = (
+				2AEF32981AB0045F00E18550 /* UserClient.h */,
+				2AEF32991AB0045F00E18550 /* UserClient.m */,
+			);
+			path = UserClient;
+			sourceTree = "<group>";
+		};
+		2AEF329A1AB0045F00E18550 /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				2AEF329B1AB0045F00E18550 /* UserModel.h */,
+				2AEF329C1AB0045F00E18550 /* UserModel.m */,
+			);
+			path = UserModel;
+			sourceTree = "<group>";
+		};
+		2AEF32A61AB00AF200E18550 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				2AEF32A71AB00AF200E18550 /* BaseModel.h */,
+				2AEF32A81AB00AF200E18550 /* BaseModel.m */,
+			);
+			path = BaseModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -831,6 +895,7 @@
 				2ADEF4551A9C9523002D5067 /* ASViewController.m in Sources */,
 				2ADEF4651A9CA3D0002D5067 /* main.m in Sources */,
 				2A9366C01A9DB6E500B0D650 /* CLLocation+EXIFGPS.m in Sources */,
+				2AEF329D1AB0045F00E18550 /* ApiHTTPClient.m in Sources */,
 				2A9366BA1A9DB6E500B0D650 /* CLLocation+Degrees.m in Sources */,
 				2A9366CB1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */,
 				2A478F961A9F47C300A303FE /* ASBookmarkViewController.m in Sources */,
@@ -841,7 +906,8 @@
 				2A5CC97D1AAEB6A300C2BB20 /* UIAlertView+AFNetworking.m in Sources */,
 				2A9366B61A9DB6E500B0D650 /* CLLocation+Bearing.m in Sources */,
 				2A5CC9791AAEB6A300C2BB20 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				2A5CC99E1AAF0A7400C2BB20 /* ApiHTTPClient.m in Sources */,
+				2A5CC99E1AAF0A7400C2BB20 /* ApiHTTPClientSessioin.m in Sources */,
+				2AEF32A91AB00AF200E18550 /* BaseModel.m in Sources */,
 				2A5CC97F1AAEB6A300C2BB20 /* UIButton+AFNetworking.m in Sources */,
 				2A5CC9691AAEB6A300C2BB20 /* AFHTTPRequestOperationManager.m in Sources */,
 				2A9366E31A9DF38B00B0D650 /* ASUtility.m in Sources */,
@@ -854,6 +920,7 @@
 				2A5CC9871AAEB6A300C2BB20 /* UIWebView+AFNetworking.m in Sources */,
 				2A5CC96F1AAEB6A300C2BB20 /* AFSecurityPolicy.m in Sources */,
 				2A322BFB1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */,
+				2AEF329F1AB0045F00E18550 /* UserClient.m in Sources */,
 				2A9366B81A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m in Sources */,
 				2A478FCE1A9F4D6800A303FE /* JSONValueTransformer.m in Sources */,
 				2A478FC61A9F4D6800A303FE /* JSONAPI.m in Sources */,
@@ -862,6 +929,7 @@
 				2A9366BE1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */,
 				2A5CC98D1AAF066A00C2BB20 /* ASNWViewController.m in Sources */,
 				2A052AAB1AA7180100580BF0 /* README.md in Sources */,
+				2AEF32A11AB0045F00E18550 /* UserModel.m in Sources */,
 				2A478FA01A9F4ACD00A303FE /* ASBookmark.m in Sources */,
 				2A9366BC1A9DB6E500B0D650 /* CLLocation+Direction.m in Sources */,
 				2A9366C61A9DB6E500B0D650 /* LLLocationManager.m in Sources */,
@@ -886,11 +954,13 @@
 				2A9366B51A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */,
 				2ADEF46D1A9CB4FB002D5067 /* AppDelegate.m in Sources */,
 				2A11C6A71AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */,
+				2AEF32A01AB0045F00E18550 /* UserClient.m in Sources */,
 				2A5CC9881AAEB6A300C2BB20 /* UIWebView+AFNetworking.m in Sources */,
 				2A478FC71A9F4D6800A303FE /* JSONAPI.m in Sources */,
 				2ADEF46E1A9CB4FB002D5067 /* ASViewController.m in Sources */,
 				2A5CC9761AAEB6A300C2BB20 /* AFURLResponseSerialization.m in Sources */,
 				2A478FC51A9F4D6800A303FE /* NSArray+JSONModel.m in Sources */,
+				2AEF32A21AB0045F00E18550 /* UserModel.m in Sources */,
 				2A5CC9991AAF095600C2BB20 /* Post.m in Sources */,
 				2ADEF46F1A9CB4FB002D5067 /* main.m in Sources */,
 				2A9366C11A9DB6E500B0D650 /* CLLocation+EXIFGPS.m in Sources */,
@@ -913,13 +983,15 @@
 				2A478FCD1A9F4D6800A303FE /* JSONKeyMapper.m in Sources */,
 				2A478FC11A9F4D6800A303FE /* JSONModelClassProperty.m in Sources */,
 				2A322BFC1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */,
+				2AEF329E1AB0045F00E18550 /* ApiHTTPClient.m in Sources */,
 				2A052AA91AA70EE700580BF0 /* GDIMockDataModel.m in Sources */,
-				2A5CC99F1AAF0A7400C2BB20 /* ApiHTTPClient.m in Sources */,
+				2A5CC99F1AAF0A7400C2BB20 /* ApiHTTPClientSessioin.m in Sources */,
 				2A9366E41A9DF38B00B0D650 /* ASUtility.m in Sources */,
 				2A5CC9A31AAF0D8F00C2BB20 /* PostTableViewCell.m in Sources */,
 				2A5CC9821AAEB6A300C2BB20 /* UIImageView+AFNetworking.m in Sources */,
 				2A5CC98E1AAF066A00C2BB20 /* ASNWViewController.m in Sources */,
 				2A478FC91A9F4D6800A303FE /* JSONHTTPClient.m in Sources */,
+				2AEF32AA1AB00AF200E18550 /* BaseModel.m in Sources */,
 				2A93669B1A9DB5AF00B0D650 /* ASCompassViewController.m in Sources */,
 				2A5CC9741AAEB6A300C2BB20 /* AFURLRequestSerialization.m in Sources */,
 				2A478FCB1A9F4D6800A303FE /* JSONModel+networking.m in Sources */,
