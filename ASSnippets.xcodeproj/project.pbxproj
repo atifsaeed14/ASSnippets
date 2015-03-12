@@ -52,6 +52,11 @@
 		2A478FCF1A9F4D6800A303FE /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A478FBB1A9F4D6800A303FE /* JSONValueTransformer.m */; };
 		2A478FD11A9F4EA800A303FE /* Bookmark.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A478FD01A9F4EA800A303FE /* Bookmark.plist */; };
 		2A478FD21A9F4EA800A303FE /* Bookmark.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A478FD01A9F4EA800A303FE /* Bookmark.plist */; };
+		2A591AA91AB1A08A00B0C461 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A591AA81AB1A08A00B0C461 /* MBProgressHUD.m */; };
+		2A591AAF1AB1A10B00B0C461 /* ASWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A591AAC1AB1A10B00B0C461 /* ASWebViewController.m */; };
+		2A591AB01AB1A10B00B0C461 /* ASWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A591AAD1AB1A10B00B0C461 /* ASWebViewController.xib */; };
+		2A591AB11AB1A10B00B0C461 /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 2A591AAE1AB1A10B00B0C461 /* demo.html */; };
+		2A591AB31AB1C09000B0C461 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A591AB21AB1C09000B0C461 /* Social.framework */; };
 		2A5CC9671AAEB6A300C2BB20 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9431AAEB6A300C2BB20 /* AFHTTPRequestOperation.m */; };
 		2A5CC9681AAEB6A300C2BB20 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9431AAEB6A300C2BB20 /* AFHTTPRequestOperation.m */; };
 		2A5CC9691AAEB6A300C2BB20 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9451AAEB6A300C2BB20 /* AFHTTPRequestOperationManager.m */; };
@@ -215,6 +220,13 @@
 		2A478FBA1A9F4D6800A303FE /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
 		2A478FBB1A9F4D6800A303FE /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
 		2A478FD01A9F4EA800A303FE /* Bookmark.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Bookmark.plist; sourceTree = "<group>"; };
+		2A591AA71AB1A08A00B0C461 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		2A591AA81AB1A08A00B0C461 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2A591AAB1AB1A10B00B0C461 /* ASWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASWebViewController.h; sourceTree = "<group>"; };
+		2A591AAC1AB1A10B00B0C461 /* ASWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASWebViewController.m; sourceTree = "<group>"; };
+		2A591AAD1AB1A10B00B0C461 /* ASWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASWebViewController.xib; sourceTree = "<group>"; };
+		2A591AAE1AB1A10B00B0C461 /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
+		2A591AB21AB1C09000B0C461 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		2A5CC9421AAEB6A300C2BB20 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		2A5CC9431AAEB6A300C2BB20 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		2A5CC9441AAEB6A300C2BB20 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -338,6 +350,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A591AB31AB1C09000B0C461 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +444,26 @@
 				2A478FBB1A9F4D6800A303FE /* JSONValueTransformer.m */,
 			);
 			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		2A591AA61AB1A08A00B0C461 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2A591AA71AB1A08A00B0C461 /* MBProgressHUD.h */,
+				2A591AA81AB1A08A00B0C461 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		2A591AAA1AB1A10B00B0C461 /* ASWebView */ = {
+			isa = PBXGroup;
+			children = (
+				2A591AAB1AB1A10B00B0C461 /* ASWebViewController.h */,
+				2A591AAC1AB1A10B00B0C461 /* ASWebViewController.m */,
+				2A591AAD1AB1A10B00B0C461 /* ASWebViewController.xib */,
+				2A591AAE1AB1A10B00B0C461 /* demo.html */,
+			);
+			path = ASWebView;
 			sourceTree = "<group>";
 		};
 		2A5CC9411AAEB6A300C2BB20 /* AFNetworking */ = {
@@ -584,6 +617,7 @@
 		2ADEF40D1A9C3ED5002D5067 = {
 			isa = PBXGroup;
 			children = (
+				2A591AB21AB1C09000B0C461 /* Social.framework */,
 				2AC8AB021AAD89570040F84D /* xCodeSnippets */,
 				2A052AAA1AA7180100580BF0 /* README.md */,
 				2ADEF4181A9C3ED5002D5067 /* ASSnippets */,
@@ -605,6 +639,7 @@
 			children = (
 				2AD58FBF1AA0566F0092E3CC /* ASTest.xcassets */,
 				2AD58FBD1AA0564F0092E3CC /* Images.xcassets */,
+				2A591AAA1AB1A10B00B0C461 /* ASWebView */,
 				2A322BF81AA86FE20003D7D5 /* IQSideMenuController */,
 				2A5CC9891AAF05A200C2BB20 /* ASNWTableView */,
 				2ADEF4481A9C9341002D5067 /* App Delegate */,
@@ -642,6 +677,7 @@
 		2ADEF44C1A9C9341002D5067 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2A591AA61AB1A08A00B0C461 /* MBProgressHUD */,
 				2AEF32931AB0045F00E18550 /* APIHTTPClient */,
 				2A5CC9A41AAF1BA600C2BB20 /* LocationManager */,
 				2A5CC9411AAEB6A300C2BB20 /* AFNetworking */,
@@ -831,6 +867,8 @@
 				2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */,
 				2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */,
 				2A93669C1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */,
+				2A591AB11AB1A10B00B0C461 /* demo.html in Resources */,
+				2A591AB01AB1A10B00B0C461 /* ASWebViewController.xib in Resources */,
 				2A5CC9921AAF071200C2BB20 /* ASNWViewController.xib in Resources */,
 				2ADEF4661A9CA3D0002D5067 /* Read Me.txt in Resources */,
 				2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
@@ -911,6 +949,7 @@
 				2A5CC97F1AAEB6A300C2BB20 /* UIButton+AFNetworking.m in Sources */,
 				2A5CC9691AAEB6A300C2BB20 /* AFHTTPRequestOperationManager.m in Sources */,
 				2A9366E31A9DF38B00B0D650 /* ASUtility.m in Sources */,
+				2A591AA91AB1A08A00B0C461 /* MBProgressHUD.m in Sources */,
 				2A93669A1A9DB5AF00B0D650 /* ASCompassViewController.m in Sources */,
 				2A11C6A61AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */,
 				2A478FC81A9F4D6800A303FE /* JSONHTTPClient.m in Sources */,
@@ -938,6 +977,7 @@
 				2A478FBE1A9F4D6800A303FE /* JSONModelArray.m in Sources */,
 				2A5CC9771AAEB6A300C2BB20 /* AFURLSessionManager.m in Sources */,
 				2A5CC9AD1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */,
+				2A591AAF1AB1A10B00B0C461 /* ASWebViewController.m in Sources */,
 				2A5CC9981AAF095600C2BB20 /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

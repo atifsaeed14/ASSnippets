@@ -15,6 +15,7 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "ASNWViewController.h"
+#import "ASWebViewController.h"
 
 @interface ASViewController () <UITableViewDelegate, UITableViewDataSource> {
     
@@ -191,6 +192,11 @@ int secondsLeft;
             cell.accessoryType = UITableViewCellAccessoryDetailButton;
             break;
             
+        case kASWebViewController:
+            cell.textLabel.text = @"Web ViewController";
+            cell.accessoryType = UITableViewCellAccessoryDetailButton;
+            break;
+            
         default:
             cell.textLabel.text = @"N/A";
             break;
@@ -246,6 +252,16 @@ int secondsLeft;
             //[self showScrollTablViewController];
             break;
 
+        case kASWebViewController: {
+            
+            ASWebViewController *nwViewController = [ASWebViewController new];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:nwViewController];
+            [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavigationBG"] forBarMetrics:UIBarMetricsDefault];
+            
+            [appDelegate.sideMenuController setContentViewController:nav];
+        }
+            //[self showScrollTablViewController];
+            break;
             
         default:
             break;

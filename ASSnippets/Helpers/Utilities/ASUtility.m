@@ -7,6 +7,9 @@
 //
 
 #import "ASUtility.h"
+#import "MBProgressHUD.h"
+
+static MBProgressHUD *mbProgressHUD = nil;
 
 @implementation ASUtility
 
@@ -80,6 +83,27 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
     return basePath;
+}
+
++ (void)showMBProgressInView:(UIView *)view WithText:(NSString *)text {
+
+    if (mbProgressHUD != nil) {
+        [mbProgressHUD hide:YES];
+    }
+    
+    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    
+    mbProgressHUD = [[MBProgressHUD alloc] initWithView:keyWindow];
+    mbProgressHUD.labelText = @"Doing funky stuff...";
+
+    mbProgressHUD.detailsLabelText = @"Just relax";
+    mbProgressHUD.mode = MBProgressHUDModeAnnularDeterminate;
+    mbProgressHUD.dimBackground = YES;
+    [mbProgressHUD show:YES];
+}
+
++ (void)hideMBProgressView {
+    [mbProgressHUD hide:YES];
 }
 
 @end

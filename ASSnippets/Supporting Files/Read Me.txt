@@ -88,9 +88,10 @@ MTBBarcodeScanner (Version 1.3.0, Last updated Jan 15, 2015)
 A lightweight, easy-to-use barcode scanning library for iOS 7+
 https://github.com/mikebuss/MTBBarcodeScanner
 
-MBProgressHUD (Version 0.8, Last updated Dec 22, 2014)
+MBProgressHUD (Version 0.9.1, Last updated Mar 5, 2015)
 MBProgressHUD is an iOS drop-in class that displays a translucent HUD with an indicator and/or labels while work is being done in a background thread. The HUD is meant as a replacement for the undocumented, private UIKit UIProgressHUD with some additional features.
 https://github.com/jdg/MBProgressHUD
+
 
 TOWebViewController (Last updated Jan 01, 2015)
 A view controller class for iOS that allows users to view web pages directly within an app.

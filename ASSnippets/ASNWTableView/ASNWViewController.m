@@ -136,11 +136,14 @@
 - (void)reload:(__unused id)sender {
     self.navigationItem.rightBarButtonItem.enabled = NO;
     
+    [ASUtility showMBProgressInView:self.view WithText:@"Testing..."];
+    
     NSURLSessionTask *task = [ApiHTTPClientSessioin globalTimelinePostsWithBlock:^(NSArray *posts, NSError *error) {
         if (!error) {
             self.posts = [Post setData:posts];
             [self.tableView reloadData];
         }
+        //[ASUtility hideMBProgressView];
     }];
     
     [UIAlertView showAlertViewForTaskWithErrorOnCompletion:task delegate:nil];

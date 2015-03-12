@@ -17,4 +17,7 @@
 + (NSString *)applicationDocumentsDirectory;
 + (UINavigationController *)customizedNavigationController:(UIViewController *)viewController;
 
++ (void)showMBProgressInView:(UIView *)view WithText:(NSString *)text ;
++ (void)hideMBProgressView;
+
 @end
