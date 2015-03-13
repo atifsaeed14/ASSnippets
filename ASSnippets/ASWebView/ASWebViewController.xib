@@ -23,24 +23,62 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="64" id="T24-Os-0lZ"/>
                         <constraint firstAttribute="width" constant="481" id="jnv-oI-oZb"/>
+                        <constraint firstAttribute="height" constant="64" id="pB1-Fc-aht"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="T24-Os-0lZ"/>
+                            <exclude reference="jnv-oI-oZb"/>
+                        </mask>
+                    </variation>
                 </label>
-                <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZd-lM-Je8">
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZd-lM-Je8">
                     <rect key="frame" x="55" y="156" width="481" height="215"/>
                     <color key="backgroundColor" red="0.96078431369999995" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="481" id="NTG-KX-dZE"/>
                         <constraint firstAttribute="height" constant="215" id="bWF-1T-XEn"/>
+                        <constraint firstAttribute="height" constant="215" id="vd0-FM-dqI"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="NTG-KX-dZE"/>
+                            <exclude reference="bWF-1T-XEn"/>
+                        </mask>
+                    </variation>
                     <connections>
                         <outlet property="delegate" destination="-1" id="m2T-l1-Kpy"/>
                     </connections>
                 </webView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0s-gt-vnD">
-                    <rect key="frame" x="63" y="379" width="482" height="128"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VpC-84-HNB">
+                    <rect key="frame" x="63" y="118" width="77" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="77" id="AjJ-Ya-f8a"/>
+                    </constraints>
+                    <state key="normal" title="FaceBook">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="postToFacebook:" destination="-1" eventType="touchUpInside" id="zku-MB-vvJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctk-WV-0OU">
+                    <rect key="frame" x="459" y="118" width="77" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="77" id="ima-FX-gIY"/>
+                    </constraints>
+                    <state key="normal" title="Twitter">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="postToTwitter:" destination="-1" eventType="touchUpInside" id="be1-a5-WEZ"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0s-gt-vnD">
+                    <rect key="frame" x="55" y="406" width="482" height="128"/>
                     <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="eWd-gI-amI"/>
@@ -49,38 +87,63 @@
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="eWd-gI-amI"/>
+                            <exclude reference="j8g-49-crI"/>
+                        </mask>
+                    </variation>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VpC-84-HNB">
-                    <rect key="frame" x="63" y="118" width="77" height="30"/>
-                    <state key="normal" title="FaceBook">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="postToFacebook:" destination="-1" eventType="touchUpInside" id="zku-MB-vvJ"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctk-WV-0OU">
-                    <rect key="frame" x="154" y="115" width="77" height="30"/>
-                    <state key="normal" title="Twitter">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="postToTwitter:" destination="-1" eventType="touchUpInside" id="be1-a5-WEZ"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="centerY" secondItem="2R5-hQ-oRJ" secondAttribute="centerY" id="0sx-Y0-8hs"/>
                 <constraint firstAttribute="centerY" secondItem="lZd-lM-Je8" secondAttribute="centerY" id="1JL-zq-TeW"/>
+                <constraint firstItem="r0s-gt-vnD" firstAttribute="top" secondItem="lZd-lM-Je8" secondAttribute="bottom" constant="35" id="62B-er-gHZ"/>
                 <constraint firstAttribute="trailing" secondItem="r0s-gt-vnD" secondAttribute="trailing" constant="55" id="64I-2E-j7e"/>
+                <constraint firstAttribute="trailing" secondItem="r0s-gt-vnD" secondAttribute="trailing" constant="63" id="7ib-6i-Woe"/>
+                <constraint firstItem="r0s-gt-vnD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="9YS-Zr-UcO"/>
+                <constraint firstItem="ctk-WV-0OU" firstAttribute="top" secondItem="2R5-hQ-oRJ" secondAttribute="bottom" constant="8" id="Ces-X0-UCI"/>
                 <constraint firstItem="2R5-hQ-oRJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="46" id="FZW-WU-5wm"/>
+                <constraint firstAttribute="bottom" secondItem="r0s-gt-vnD" secondAttribute="bottom" constant="66" id="N7Z-iz-an6"/>
+                <constraint firstAttribute="trailing" secondItem="ctk-WV-0OU" secondAttribute="trailing" constant="64" id="O1y-ji-dAx"/>
                 <constraint firstItem="2R5-hQ-oRJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="RYE-0v-mRh"/>
                 <constraint firstItem="r0s-gt-vnD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="63" id="VME-Wj-kjw"/>
+                <constraint firstItem="lZd-lM-Je8" firstAttribute="top" secondItem="VpC-84-HNB" secondAttribute="bottom" constant="8" id="WGU-FB-jeM"/>
+                <constraint firstAttribute="trailing" secondItem="lZd-lM-Je8" secondAttribute="trailing" constant="64" id="XMh-yy-w8i"/>
+                <constraint firstItem="r0s-gt-vnD" firstAttribute="top" secondItem="lZd-lM-Je8" secondAttribute="bottom" constant="35" id="ayF-bE-AWM"/>
+                <constraint firstItem="lZd-lM-Je8" firstAttribute="top" secondItem="ctk-WV-0OU" secondAttribute="bottom" constant="8" id="c7t-6V-isa"/>
+                <constraint firstItem="lZd-lM-Je8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="cFA-h9-gdS"/>
                 <constraint firstAttribute="centerX" secondItem="lZd-lM-Je8" secondAttribute="centerX" id="dnt-s2-B0w"/>
+                <constraint firstAttribute="trailing" secondItem="r0s-gt-vnD" secondAttribute="trailing" constant="63" id="gGL-83-onZ"/>
+                <constraint firstAttribute="trailing" secondItem="2R5-hQ-oRJ" secondAttribute="trailing" constant="64" id="ghN-6O-Lgw"/>
+                <constraint firstItem="VpC-84-HNB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="63" id="hoL-QD-Fra"/>
+                <constraint firstItem="2R5-hQ-oRJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="46" id="j7h-se-1iJ"/>
+                <constraint firstItem="r0s-gt-vnD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="jKH-Qa-F5y"/>
                 <constraint firstAttribute="trailing" secondItem="2R5-hQ-oRJ" secondAttribute="trailing" constant="64" id="mwi-Q7-2No"/>
                 <constraint firstAttribute="centerX" secondItem="2R5-hQ-oRJ" secondAttribute="centerX" id="otR-rm-Scd"/>
+                <constraint firstItem="2R5-hQ-oRJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="55" id="p6u-kD-2gU"/>
+                <constraint firstAttribute="bottom" secondItem="r0s-gt-vnD" secondAttribute="bottom" constant="66" id="pY2-Ha-9MY"/>
+                <constraint firstItem="VpC-84-HNB" firstAttribute="top" secondItem="2R5-hQ-oRJ" secondAttribute="bottom" constant="8" id="tq4-Ko-4li"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0sx-Y0-8hs"/>
+                    <exclude reference="FZW-WU-5wm"/>
+                    <exclude reference="RYE-0v-mRh"/>
+                    <exclude reference="mwi-Q7-2No"/>
+                    <exclude reference="otR-rm-Scd"/>
+                    <exclude reference="1JL-zq-TeW"/>
+                    <exclude reference="WGU-FB-jeM"/>
+                    <exclude reference="dnt-s2-B0w"/>
+                    <exclude reference="62B-er-gHZ"/>
+                    <exclude reference="64I-2E-j7e"/>
+                    <exclude reference="9YS-Zr-UcO"/>
+                    <exclude reference="VME-Wj-kjw"/>
+                    <exclude reference="gGL-83-onZ"/>
+                    <exclude reference="pY2-Ha-9MY"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="256" y="339"/>
         </view>
     </objects>

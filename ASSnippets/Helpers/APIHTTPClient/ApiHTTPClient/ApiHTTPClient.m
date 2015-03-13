@@ -269,8 +269,7 @@
     return self && self[@"error"] ? self[@"error"] : @"";
 }
 
-- (void) showError
-{
+- (void) showError {
     dispatch_async(dispatch_get_main_queue(), ^{
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Attention", @"Attention") message:[self errorMessage] delegate:nil cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"Ok", @"Ok"), nil] show];
     });

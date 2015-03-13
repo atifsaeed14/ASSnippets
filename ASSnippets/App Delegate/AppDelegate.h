@@ -14,6 +14,8 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UINavigationController *navigationController;
 @property (strong, nonatomic) IQSideMenuController *sideMenuController;
-    
+
++ (void)downloadDataFromURL:(NSURL *)url withCompletionHandler:(void(^)(NSData *data, NSError *error, BOOL success))completionHandler;
+
 @end
 

@@ -78,4 +78,6 @@
     self.detailTextLabel.frame = detailTextLabelFrame;
 }
 
+
+
 @end

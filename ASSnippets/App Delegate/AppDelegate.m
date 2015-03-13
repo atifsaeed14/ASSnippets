@@ -55,7 +55,11 @@
     [self.window makeKeyAndVisible];
     
     /* Blogs */
-    
+//    [self sendLoginRequest:@"myUsername" password:@"password" callback:^(NSString *error, BOOL success) {
+//        if (success) {
+//            NSLog([@"My response back from the server after an unknown amount of time";
+//                  }
+//    }];
     return YES;
 }
 
@@ -118,4 +122,119 @@
     //     //APLLog(@"ClassName -  Methods: parameters: %@", parameters);
 }
 
+#pragma mark - Class method implementation
+
++ (void)downloadDataFromURL:(NSURL *)url withCompletionHandler:(void(^)(NSData *data, NSError *error, BOOL success))completionHandler {
+    
+    // Instantiate a session configuration object.
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    
+    // Instantiate a session object.
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+    
+    // Create a data task object to perform the data downloading.
+    NSURLSessionDataTask *task = [session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        
+        if (error != nil) {
+            
+            // If any error occurs then just display its description on the console.
+            NSLog(@"%@", [error localizedDescription]);
+            
+        } else {
+            
+            // If no error occurs, check the HTTP status code.
+            NSInteger HTTPStatusCode = [(NSHTTPURLResponse *)response statusCode];
+            
+            // If it's other than 200, then show it on the console.
+            if (HTTPStatusCode != 200) {
+                NSLog(@"HTTP status code = %ld", (long)HTTPStatusCode);
+            }
+        }
+        
+        // Call the completion handler with the returned data on the main thread.
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            completionHandler(data, error, YES);
+        }];
+        
+    }];
+    
+    // Resume the task.
+    [task resume];
+    
+}
+
+                  
+// http://www.raywenderlich.com/67081/cookbook-using-nsurlsession
+// http://stackoverflow.com/questions/19099448/send-post-request-using-nsurlsession?rq=1
+
+- (void) sendLoginRequest:(NSString*) username withPassword:(NSString *) password callback:(void (^)(NSError *error, BOOL success))callback
+{
+    // Instantiate a session configuration object.
+//    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+//    
+//    // Instantiate a session object.
+//    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+//    
+//    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler: ^(NSData *data, NSURLResponse *response, NSError *error){
+//        if (error) {
+//            // Handle error
+//        }
+//        else {
+//            callback(error, YES);
+//        }
+//    }];
+//    
+//    [dataTask resume];
+//    
+}
+
+/* download image */
+- (void)downloadImage {
+                      //1
+                      NSURL *url = [NSURL URLWithString:
+                                    @"http://upload.wikimedia.org/wikipedia/commons/7/7f/Williams_River-27527.jpg"];
+                      
+                      // 2
+                      NSURLSessionDownloadTask *downloadPhotoTask = [[NSURLSession sharedSession]
+                                                                     downloadTaskWithURL:url completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
+                                                                         // 3 
+                                                                         UIImage *downloadedImage = [UIImage imageWithData:
+                                                                                                     [NSData dataWithContentsOfURL:location]];
+                                                                     }];
+                      
+                      // 4	
+                      [downloadPhotoTask resume];
+}
+       
+                  - (void)postRequest {
+                      
+                      NSURL *url = [NSURL URLWithString:@"YOUR_WEBSERVICE_URL"];
+                      NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+                      NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+                      
+                      // 2
+                      NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+                      request.HTTPMethod = @"POST";
+                      
+                      // 3
+                      NSDictionary *dictionary = @{@"key1": @"value1"};
+                      NSError *error = nil;
+                      NSData *data = [NSJSONSerialization dataWithJSONObject:dictionary
+                                                                     options:kNilOptions error:&error];
+                      
+                      if (!error) {
+                          // 4
+                          NSURLSessionUploadTask *uploadTask = [session uploadTaskWithRequest:request
+                                                                                     fromData:data completionHandler:^(NSData *data,NSURLResponse *response,NSError *error) {
+                                                                                         // Handle response here
+                                                                                     }];
+                          
+                          // 5
+                          [uploadTask resume];
+                      }
+
+                      
+                      
+                  }// 1
+                  
 @end

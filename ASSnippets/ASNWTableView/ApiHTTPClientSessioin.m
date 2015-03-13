@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 atti14. All rights reserved.
 //
 
+
+// https://api.app.net/stream/0/posts/stream/global
 #import "ApiHTTPClientSessioin.h"
 
 static NSString * const APIBaseURLString = @"https://api.app.net/";

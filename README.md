@@ -56,6 +56,13 @@ Swift
 =============
 https://github.com/cnoon/Swift-Introduction
 
+Passcode
+=============
+https://github.com/rolandleth/LTHPasscodeViewController
+
+POP
+========
+https://github.com/facebook/pop
 
 Email
 =============

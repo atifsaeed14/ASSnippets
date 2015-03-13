@@ -9,7 +9,7 @@
 #import "ASNWViewController.h"
 
 #import "Post.h"
-
+#import "AppDelegate.h"
 #import "PostTableViewCell.h"
 #import "ApiHTTPClientSessioin.h"
 #import "UIRefreshControl+AFNetworking.h"
@@ -26,6 +26,7 @@
 + (void)isBlock:(void(^)(NSArray *posts, NSError *error))block;
 @property (strong, nonatomic) NSArray* jokes;
 
+
 @end
 
 @implementation ASNWViewController
@@ -33,6 +34,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self download];
+    
+    
     
     self.title = NSLocalizedString(@"AFNetworking", nil);
     
@@ -47,7 +52,7 @@
     
     /* test http api clien manager */
     _userClient = [UserClient client];
-    
+
     [_userClient getUser:^(AFHTTPRequestOperation *operation, id responseObject) {
         if ( [responseObject succeeded] ) {
             UserModel *user = [[UserModel alloc] initWithDictionary:responseObject[@"user"]];
@@ -123,6 +128,51 @@
                          NSLog(@"Animation is over.");
                      }];
 }
+
+#pragma mark - Private method implementation
+
+- (void)download {
+    
+    // Prepare the URL that we'll get the neighbour countries from.
+    NSString *URLString = [NSString stringWithFormat:@"https://api.app.net/stream/0/posts/stream/global"];
+    
+    NSURL *url = [NSURL URLWithString:URLString];
+    
+    // Download the data.
+    [AppDelegate downloadDataFromURL:url withCompletionHandler:^(NSData *data, NSError *error, BOOL success) {
+  
+        // Make sure that there is data.
+        if (data != nil) {
+            
+            // Convert the returned data into a dictionary.
+            NSError *error;
+            id JSON = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+            
+            if (error != nil) {
+                NSLog(@"%@", [error localizedDescription]);
+            }
+            else{
+                
+                NSArray *postsFromResponse = [JSON valueForKeyPath:@"data"];
+
+              //  self.countryDetailsDictionary = [[returnedDict objectForKey:@"geonames"] objectAtIndex:0];
+                
+                // Set the country name to the respective label.
+              //  self.lblCountry.text = [NSString stringWithFormat:@"%@ (%@)", [self.countryDetailsDictionary objectForKey:@"countryName"], [self.countryDetailsDictionary objectForKey:@"countryCode"]];
+                
+                // Reload the table view.
+              //  [self.tblCountryDetails reloadData];
+                
+                // Show the table view.
+              //  self.tblCountryDetails.hidden = NO;
+            }
+
+
+        }
+        
+    }];
+}
+
 
 #pragma mark - Block Sample
 
