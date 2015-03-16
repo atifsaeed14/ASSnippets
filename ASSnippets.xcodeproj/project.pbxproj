@@ -167,6 +167,8 @@
 		2ADEF4731A9CB4FB002D5067 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4611A9CA3D0002D5067 /* Info.plist */; };
 		2ADEF4741A9CB4FB002D5067 /* ASViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4541A9C9523002D5067 /* ASViewController.xib */; };
 		2ADEF4761A9CB4FB002D5067 /* Read Me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4631A9CA3D0002D5067 /* Read Me.txt */; };
+		2AE1D0DD1AB6E55200FAC26A /* ASLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1D0DC1AB6E55200FAC26A /* ASLabel.m */; };
+		2AE1D0DE1AB6E55200FAC26A /* ASLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1D0DC1AB6E55200FAC26A /* ASLabel.m */; };
 		2AEF329D1AB0045F00E18550 /* ApiHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32961AB0045F00E18550 /* ApiHTTPClient.m */; };
 		2AEF329E1AB0045F00E18550 /* ApiHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32961AB0045F00E18550 /* ApiHTTPClient.m */; };
 		2AEF329F1AB0045F00E18550 /* UserClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32991AB0045F00E18550 /* UserClient.m */; };
@@ -313,7 +315,7 @@
 		2A9366E11A9DF38B00B0D650 /* ASUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASUtility.h; sourceTree = "<group>"; };
 		2A9366E21A9DF38B00B0D650 /* ASUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUtility.m; sourceTree = "<group>"; };
 		2A9366E51A9DF47C00B0D650 /* ASTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTableViewCell.h; sourceTree = "<group>"; };
-		2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTableViewCell.m; sourceTree = "<group>"; };
+		2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTableViewCell.m; sourceTree = "<group>"; usesTabs = 0; };
 		2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTableViewCell.xib; sourceTree = "<group>"; };
 		2AC8AB031AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet"; sourceTree = "<group>"; };
 		2AC8AB041AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet"; sourceTree = "<group>"; };
@@ -335,6 +337,8 @@
 		2ADEF4621A9CA3D0002D5067 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADEF4631A9CA3D0002D5067 /* Read Me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Read Me.txt"; sourceTree = "<group>"; };
 		2ADEF47B1A9CB4FB002D5067 /* ASTestTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASTestTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE1D0DB1AB6E55200FAC26A /* ASLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASLabel.h; sourceTree = "<group>"; };
+		2AE1D0DC1AB6E55200FAC26A /* ASLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASLabel.m; sourceTree = "<group>"; };
 		2AEF32951AB0045F00E18550 /* ApiHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiHTTPClient.h; sourceTree = "<group>"; };
 		2AEF32961AB0045F00E18550 /* ApiHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiHTTPClient.m; sourceTree = "<group>"; };
 		2AEF32981AB0045F00E18550 /* UserClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserClient.h; sourceTree = "<group>"; };
@@ -572,6 +576,8 @@
 				2A052AAD1AA7234E00580BF0 /* ASScrollViewController.h */,
 				2A052AAE1AA7234E00580BF0 /* ASScrollViewController.m */,
 				2A052AAF1AA7234E00580BF0 /* ASScrollViewController.xib */,
+				2AE1D0DB1AB6E55200FAC26A /* ASLabel.h */,
+				2AE1D0DC1AB6E55200FAC26A /* ASLabel.m */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -960,6 +966,7 @@
 				2A5CC96F1AAEB6A300C2BB20 /* AFSecurityPolicy.m in Sources */,
 				2A322BFB1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */,
 				2AEF329F1AB0045F00E18550 /* UserClient.m in Sources */,
+				2AE1D0DD1AB6E55200FAC26A /* ASLabel.m in Sources */,
 				2A9366B81A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m in Sources */,
 				2A478FCE1A9F4D6800A303FE /* JSONValueTransformer.m in Sources */,
 				2A478FC61A9F4D6800A303FE /* JSONAPI.m in Sources */,
@@ -1010,6 +1017,7 @@
 				2A5CC9AE1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */,
 				2A9366CC1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */,
 				2A052AB11AA7234E00580BF0 /* ASScrollViewController.m in Sources */,
+				2AE1D0DE1AB6E55200FAC26A /* ASLabel.m in Sources */,
 				2A5CC97C1AAEB6A300C2BB20 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				2A478FA11A9F4ACD00A303FE /* ASBookmark.m in Sources */,
 				2A478FBD1A9F4D6800A303FE /* JSONModel.m in Sources */,

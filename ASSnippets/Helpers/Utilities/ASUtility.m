@@ -25,7 +25,7 @@ static MBProgressHUD *mbProgressHUD = nil;
                                                attributes:@{NSFontAttributeName:label.font}
                                                   context:context].size;
     size = CGSizeMake(ceil(boundingBox.width), ceil(boundingBox.height));
-    return size.height + 5;
+    return size.height + 10;
 }
 
 + (NSString *)macAddress {

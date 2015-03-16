@@ -60,7 +60,7 @@
     self.detailTextLabel.frame = detailTextLabelFrame; */
     
     if (![aLabel.text isEqualToString: @"A"])
-        aLabel.frame = CGRectMake(aLabel.frame.origin.x, aLabel.frame.origin.y, aLabel.frame.size.width, [ASUtility getLabelHeight:aLabel]);
+        aLabel.frame = CGRectMake(aLabel.frame.origin.x, aLabel.frame.origin.y, aLabel.frame.size.width, [ASUtility getLabelHeight:aLabel]+10);
     
     if (![bLabel.text isEqualToString: @"B"] || bLabel.text != nil)
         bLabel.frame = CGRectMake(bLabel.frame.origin.x, aLabel.frame.size.height, bLabel.frame.size.width, [ASUtility getLabelHeight:bLabel]);

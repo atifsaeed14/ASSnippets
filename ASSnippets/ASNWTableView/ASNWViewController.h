@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "GDIMockDataModel.h"
-#import "POP.h"
 
 @interface ASNWViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end

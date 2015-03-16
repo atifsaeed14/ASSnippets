@@ -57,6 +57,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    if (![CLLocationManager locationServicesEnabled]) {
+        // location services is disabled, alert user
+        UIAlertView *servicesDisabledAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"DisabledTitle", @"DisabledTitle")
+                                                                        message:NSLocalizedString(@"DisabledMessage", @"DisabledMessage")
+                                                                       delegate:nil
+                                                              cancelButtonTitle:NSLocalizedString(@"OKButtonTitle", @"OKButtonTitle")
+                                                              otherButtonTitles:nil];
+        [servicesDisabledAlert show];
+    }
+
+    
     // Do any additional setup after loading the view from its nib.
     if ([CLLocationManager headingAvailable]) {
         [self locationManager];
@@ -73,7 +85,7 @@
     double degrees = 180;
     double radians = DegreesToRadians(degrees);
     self.compassArrowBlackView.transform = CGAffineTransformMakeRotation(radians);
-//    [self rotate];
+    //[self rotate];
 }
 
 - (void)rotate {
@@ -207,6 +219,7 @@
     self.headingLabel.text = [NSString stringWithFormat:@"Compass Direction: %@", [CLHeading formattedStringForHeading:theHeading format:nil abbreviate:YES]];
     
     if (self.currentLocation && self.currentHeading && !self.qiblaHeadingFound) {
+        
         CLLocationCoordinate2D fromLocation = CLLocationCoordinate2DMake(self.currentLocation.coordinate.latitude, self.currentLocation.coordinate.longitude);
         CLLocationCoordinate2D toLocation = CLLocationCoordinate2DMake(21.4225268,39.8263737); // (21.422481, 39.826223);
         CLLocationDirection qiblaDirection = [self directionFromLocation:fromLocation toLocation:toLocation];

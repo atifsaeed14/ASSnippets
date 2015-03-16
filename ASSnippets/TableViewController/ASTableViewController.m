@@ -40,6 +40,7 @@
   //  self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     [self.tableView setEditing:NO animated:YES];
+    //[self.tableView setSeparatorInset:UIEdgeInsetsZero];
     
     /* add refresh control */
     //http://stackoverflow.com/questions/12607015/uirefreshcontrol-ios-6-xcode
@@ -121,7 +122,7 @@
     CGFloat heightCalculate = 0.0;
     
     if (![cell.aLabel.text isEqualToString: @"A"])
-        heightCalculate += [ASUtility getLabelHeight:cell.aLabel];
+        heightCalculate += [ASUtility getLabelHeight:cell.aLabel]+10;
     
     if (![cell.bLabel.text isEqualToString: @"B"] || cell.bLabel.text != nil)
         heightCalculate += [ASUtility getLabelHeight:cell.bLabel];
@@ -133,6 +134,22 @@
     
         UIColor *color = ((indexPath.row % 2) == 0) ? [UIColor whiteColor] : [UIColor colorWithRed:248.0f/255.0f green:248.0f/255.0f blue:248.0f/255.0f alpha:1];
         cell.backgroundColor = color;
+    
+    // Remove seperator inset
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+    
+    // Prevent the cell from inheriting the Table View's margin settings
+    if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]) {
+        [cell setPreservesSuperviewLayoutMargins:NO];
+    }
+    
+    // Explictly set your cell's layout margins
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
@@ -161,6 +178,7 @@
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
+
 
 //- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 //{

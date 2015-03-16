@@ -222,8 +222,17 @@ int secondsLeft;
         }
             break;
             
-        case kASActionCompass:
-            [self showCompassViewController];
+        case kASActionCompass: {
+            
+            ASCompassViewController *scrollViewController = [ASCompassViewController new];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:scrollViewController];
+            [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavigationBG"] forBarMetrics:UIBarMetricsDefault];
+            
+            [appDelegate.sideMenuController setContentViewController:nav];
+
+            
+            //[self showCompassViewController];
+        }
             break;
             
         case kASBookmark:
