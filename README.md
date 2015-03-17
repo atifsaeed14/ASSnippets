@@ -13,6 +13,7 @@ https://github.com/intentkit/IntentKit
 https://medium.com/ios-apprentice/9-time-saving-ios-7-libraries-43e943e6627
 https://medium.com/ios-apprentice/working-with-localization-905e4052b9de
 https://github.com/schneiderandre/popping
+https://github.com/rnystrom/RNThemeManager
 
 Collection View
 =============
@@ -63,6 +64,10 @@ https://github.com/rolandleth/LTHPasscodeViewController
 POP
 ========
 https://github.com/facebook/pop
+
+Social
+========
+https://github.com/DigitalLeaves/SocialLoginForiOS
 
 Email
 =============

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GDIMockDataModel.h"
 
-@interface ASNWViewController : UIViewController
+@interface ASNWViewController : UIViewController <UISearchBarDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;

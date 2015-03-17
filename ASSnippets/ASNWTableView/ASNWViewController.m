@@ -9,6 +9,8 @@
 #import "ASNWViewController.h"
 
 #import "Post.h"
+#import "User.h"
+
 #import "AppDelegate.h"
 #import "PostTableViewCell.h"
 #import "ApiHTTPClientSessioin.h"
@@ -20,6 +22,9 @@
 
 @interface ASNWViewController () {
     UserClient *_userClient;
+    
+    BOOL isSearch;
+   NSArray *searchResults;
 }
 @property (readwrite, nonatomic, strong) NSArray *posts;
 @property (nonatomic, strong) NSString *(^blockAsAMemberVar)(void);
@@ -37,7 +42,8 @@
     
     [self download];
     
-    
+    isSearch = NO;
+    searchResults = [[NSArray alloc] init];
     
     self.title = NSLocalizedString(@"AFNetworking", nil);
     
@@ -49,6 +55,7 @@
     
     [self reload:nil];
     
+    [self createFooterViewForTable];
     
     /* test http api clien manager */
     _userClient = [UserClient client];
@@ -96,6 +103,17 @@
                      } completion:^(BOOL finished) {
                          NSLog(@"Animation is over.");
                      }];
+ 
+    
+    
+    [self retrieveGooglePlaceInformation:@"" withCompletion:^(NSArray * results) {
+//        [self.localSearchQueries addObjectsFromArray:results];
+//        NSDictionary *searchResult = @{@"keyword":self.substring,@"results":results};
+//        [self.pastSearchResults addObject:searchResult];
+//        [self.tableView reloadData];
+        
+    }];
+
     
 }
 
@@ -116,7 +134,6 @@
         [self showNextJoke];
     }];
 }
-
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
@@ -211,10 +228,13 @@
 
 #pragma mark - UITableView DataSource
 
-#pragma mark - UITableViewDataSource
-
 - (NSInteger)tableView:(__unused UITableView *)tableView numberOfRowsInSection:(__unused NSInteger)section {
-    return (NSInteger)[self.posts count];
+    
+    if (isSearch) {
+        return (NSInteger)[searchResults count];
+    } else {
+        return (NSInteger)[self.posts count];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -226,7 +246,11 @@
         cell = [[PostTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    cell.post = [self.posts objectAtIndex:(NSUInteger)indexPath.row];
+    if (isSearch) {
+        cell.post = [searchResults objectAtIndex:(NSUInteger)indexPath.row];
+    } else {
+        cell.post = [self.posts objectAtIndex:(NSUInteger)indexPath.row];
+    }
     
     return cell;
 }
@@ -234,11 +258,123 @@
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(__unused UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [PostTableViewCell heightForCellWithPost:[self.posts objectAtIndex:(NSUInteger)indexPath.row]];
+    
+    if (isSearch) {
+        return [PostTableViewCell heightForCellWithPost:[searchResults objectAtIndex:(NSUInteger)indexPath.row]];
+    } else {
+        return [PostTableViewCell heightForCellWithPost:[self.posts objectAtIndex:(NSUInteger)indexPath.row]];
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
+#pragma mark - UISearchBar Delegate
+
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+    [_searchBar setShowsCancelButton:YES animated:YES];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    
+    // http://www.peterfriese.de/using-nspredicate-to-filter-data/
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"self.user.username contains[cd] %@", searchBar.text];
+    searchResults = [self.posts filteredArrayUsingPredicate:resultPredicate];
+    
+    [_searchBar resignFirstResponder];
+    isSearch = YES;
+    [self.tableView reloadData];
+    [_searchBar setShowsCancelButton:YES animated:YES];
+
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    
+    _searchBar.text = @"";
+    [_searchBar resignFirstResponder];
+    isSearch = NO;
+    [_tableView reloadData];
+    [_searchBar setShowsCancelButton:NO animated:YES];
+}
+
+- (void)createFooterViewForTable{
+    UIView *footerView  = [[UIView alloc] initWithFrame:CGRectMake(0, 500, 320, 70)];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"powered-by-google"]];
+    imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+    imageView.frame = CGRectMake(110,10,85,12);
+    [footerView addSubview:imageView];
+    self.tableView.tableFooterView = footerView;
+}
+
+#pragma mark - Google API Requests
+
+
+-(void)retrieveGooglePlaceInformation:(NSString *)searchWord withCompletion:(void (^)(NSArray *))complete{
+    NSString *searchWordProtection = [searchWord stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+//    if (searchWordProtection.length != 0) {
+//        
+//        CLLocation *userLocation = self.locationManager.location;
+//        NSString *currentLatitude = @(userLocation.coordinate.latitude).stringValue;
+//        NSString *currentLongitude = @(userLocation.coordinate.longitude).stringValue;
+//        
+//        NSString *urlString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/autocomplete/json?input=%@&types=establishment|geocode&location=%@,%@&radius=500&language=en&key=%@",searchWord,currentLatitude,currentLongitude,apiKey];
+//        NSLog(@"AutoComplete URL: %@",urlString);
+//        NSURL *url = [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+//        NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+//        NSURLSession *delegateFreeSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: nil delegateQueue: [NSOperationQueue mainQueue]];
+//        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//        NSURLSessionDataTask *task = [delegateFreeSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+//            NSDictionary *jSONresult = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+//            NSArray *results = [jSONresult valueForKey:@"predictions"];
+//            
+//            if (error || [jSONresult[@"status"] isEqualToString:@"NOT_FOUND"] || [jSONresult[@"status"] isEqualToString:@"REQUEST_DENIED"]){
+//                if (!error){
+//                    NSDictionary *userInfo = @{@"error":jSONresult[@"status"]};
+//                    NSError *newError = [NSError errorWithDomain:@"API Error" code:666 userInfo:userInfo];
+//                    complete(@[@"API Error", newError]);
+//                    return;
+//                }
+//                complete(@[@"Actual Error", error]);
+//                return;
+//            }else{
+//                complete(results);
+//            }
+//        }];
+//        
+//        [task resume];
+//    }
+    
+}
+
+-(void)retrieveJSONDetailsAbout:(NSString *)place withCompletion:(void (^)(NSArray *))complete {
+//    NSString *urlString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/details/json?placeid=%@&key=%@",place,apiKey];
+//    NSURL *url = [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+//    NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
+//    NSURLSession *delegateFreeSession = [NSURLSession sessionWithConfiguration: defaultConfigObject delegate: nil delegateQueue: [NSOperationQueue mainQueue]];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    NSURLSessionDataTask *task = [delegateFreeSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+//        NSDictionary *jSONresult = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+//        NSArray *results = [jSONresult valueForKey:@"result"];
+//        
+//        if (error || [jSONresult[@"status"] isEqualToString:@"NOT_FOUND"] || [jSONresult[@"status"] isEqualToString:@"REQUEST_DENIED"]){
+//            if (!error){
+//                NSDictionary *userInfo = @{@"error":jSONresult[@"status"]};
+//                NSError *newError = [NSError errorWithDomain:@"API Error" code:666 userInfo:userInfo];
+//                complete(@[@"API Error", newError]);
+//                return;
+//            }
+//            complete(@[@"Actual Error", error]);
+//            return;
+//        }else{
+//            complete(results);
+//        }
+//    }];
+//    
+//    [task resume];
+}
+
+
 
 @end

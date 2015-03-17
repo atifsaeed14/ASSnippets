@@ -41,6 +41,12 @@ Network Link Conditioner
 http://nshipster.com/network-link-conditioner/
 
 
+THIRD PARTY BROWSER EXTENSION
+-----------------------------
+
+SOA Client for WSDL
+https://addons.mozilla.org/en-US/firefox/addon/soa-client/?src=api
+
 THIRD PARTY TOOLS/ LIBRARIES/ FRAMEWORKS
 ------------------------------
 

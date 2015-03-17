@@ -18,6 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    // <>'/& character that effect web service request replace these
+    NSString *str = @"@ %$*ab&c";
+    str = [str stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"];
+    
+    NSString *name2escaped = @"Nu\\u0161a Florjan\\u010di\\u010d &quot; &amp; &apos; &lt; &gt; ";
+    NSString *name2 = [NSString
+                       stringWithCString:[name2escaped cStringUsingEncoding:NSUTF8StringEncoding]
+                       encoding:NSNonLossyASCIIStringEncoding];
+    NSLog(@"name = %@", name2);
+    
+    
         ASViewController *viewController = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];
     //viewController.title = kApplicationTitle;
     
