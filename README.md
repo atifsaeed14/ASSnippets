@@ -43,11 +43,17 @@ https://github.com/brandonemrich/ForecastKit/blob/master/ForecastKit.h
 http://stackoverflow.com/questions/21364355/filtering-ordering-mklocalsearch-response?rq=1
 http://stackoverflow.com/questions/14950896/showing-nearby-restaurants-in-mkmap-view?lq=1
 
-
 http://nshipster.com/launch-options/
 http://nshipster.com/uiactivityviewcontroller/
 
 https://github.com/objcio/issue-1-lighter-view-controllers
+
+Animation
+===========
+https://github.com/andreamazz
+http://stackoverflow.com/questions/3844557/uiview-shake-animation
+https://github.com/andreamazz/UITextField-Shake
+http://stackoverflow.com/questions/1632364/shake-visual-effect-on-iphone-not-shaking-the-device
 
 SideMenu
 ===========

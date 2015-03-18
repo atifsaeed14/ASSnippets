@@ -169,6 +169,7 @@
 		2ADEF4761A9CB4FB002D5067 /* Read Me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2ADEF4631A9CA3D0002D5067 /* Read Me.txt */; };
 		2AE1D0DD1AB6E55200FAC26A /* ASLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1D0DC1AB6E55200FAC26A /* ASLabel.m */; };
 		2AE1D0DE1AB6E55200FAC26A /* ASLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1D0DC1AB6E55200FAC26A /* ASLabel.m */; };
+		2AE308351AB9ABE8000B95A2 /* Manifest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AE308341AB9ABE8000B95A2 /* Manifest.plist */; };
 		2AEF329D1AB0045F00E18550 /* ApiHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32961AB0045F00E18550 /* ApiHTTPClient.m */; };
 		2AEF329E1AB0045F00E18550 /* ApiHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32961AB0045F00E18550 /* ApiHTTPClient.m */; };
 		2AEF329F1AB0045F00E18550 /* UserClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32991AB0045F00E18550 /* UserClient.m */; };
@@ -339,6 +340,8 @@
 		2ADEF47B1A9CB4FB002D5067 /* ASTestTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASTestTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE1D0DB1AB6E55200FAC26A /* ASLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASLabel.h; sourceTree = "<group>"; };
 		2AE1D0DC1AB6E55200FAC26A /* ASLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASLabel.m; sourceTree = "<group>"; };
+		2AE308331AB998EC000B95A2 /* ASProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASProtocol.h; sourceTree = "<group>"; };
+		2AE308341AB9ABE8000B95A2 /* Manifest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Manifest.plist; sourceTree = "<group>"; };
 		2AEF32951AB0045F00E18550 /* ApiHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiHTTPClient.h; sourceTree = "<group>"; };
 		2AEF32961AB0045F00E18550 /* ApiHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiHTTPClient.m; sourceTree = "<group>"; };
 		2AEF32981AB0045F00E18550 /* UserClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserClient.h; sourceTree = "<group>"; };
@@ -578,6 +581,7 @@
 				2A052AAF1AA7234E00580BF0 /* ASScrollViewController.xib */,
 				2AE1D0DB1AB6E55200FAC26A /* ASLabel.h */,
 				2AE1D0DC1AB6E55200FAC26A /* ASLabel.m */,
+				2AE308331AB998EC000B95A2 /* ASProtocol.h */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -733,6 +737,7 @@
 		2ADEF45F1A9CA3CF002D5067 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2AE308341AB9ABE8000B95A2 /* Manifest.plist */,
 				2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */,
 				2ADEF4611A9CA3D0002D5067 /* Info.plist */,
 				2ADEF4621A9CA3D0002D5067 /* main.m */,
@@ -871,6 +876,7 @@
 				2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,
 				2ACB10C31AA97CDC0029C1F7 /* bg.png in Resources */,
 				2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */,
+				2AE308351AB9ABE8000B95A2 /* Manifest.plist in Resources */,
 				2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */,
 				2A93669C1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */,
 				2A591AB11AB1A10B00B0C461 /* demo.html in Resources */,

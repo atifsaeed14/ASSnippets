@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 atti14. All rights reserved.
 //
 
+#import "ASProtocol.h"
 #import <UIKit/UIKit.h>
 #import "M13ProgressViewBorderedBar.h"
 
@@ -14,4 +15,7 @@
 @property (nonatomic, retain) IBOutlet M13ProgressViewBorderedBar *progressViewVertical;
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
+
+@property (strong, nonatomic) id<ASProtocol> delegate;
+
 @end

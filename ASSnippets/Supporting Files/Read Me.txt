@@ -40,6 +40,17 @@ Software
 Network Link Conditioner
 http://nshipster.com/network-link-conditioner/
 
+APP Install
+------------------------------
+
+http://stackoverflow.com/questions/20276907/enterprise-app-deployment-doesnt-work-on-ios-7-1
+
+-> Create a download.html file with a link formatted as <a href="itms-services://?action=download-manifest&url=https://dl.dropboxusercontent.com/s/qgknrfngaxazm38/app.plist">INSTALL!!</a>
+
+-> Test plist url link: https://gist.github.com/anonymous/3f55f841c7f4e6de1e4b/download#
+
+-> Upload app.plist to dropbox
+
 
 THIRD PARTY BROWSER EXTENSION
 -----------------------------

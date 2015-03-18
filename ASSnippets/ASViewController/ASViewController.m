@@ -120,7 +120,7 @@ int secondsLeft;
     UIImage *menuImage = [[UIImage imageNamed:@"icn_menu"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UIBarButtonItem *menuBarButton = [[UIBarButtonItem alloc] initWithImage:menuImage style:UIBarButtonItemStylePlain target:self action:nil];
     
-    UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithTitle:@"LeftBTN" style:UIBarButtonItemStyleDone target:self action:nil];
+    UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithTitle:@"CloseVC" style:UIBarButtonItemStyleDone target:self action:@selector(closeViewController)];
     leftBarButton.tintColor = kThemeColor;
     
     NSArray *leftButtonItems = @[menuBarButton, leftBarButton];
@@ -140,6 +140,12 @@ int secondsLeft;
     
     NSArray *actionButtonItems = @[shareItem, todayBarButton];
     self.navigationItem.rightBarButtonItems = actionButtonItems;
+}
+
+- (void)closeViewController {
+    
+    if ([_delegate respondsToSelector:@selector(didSelectViewController:)])
+        [self.delegate didSelectViewController:self];
 }
 
 #pragma mark - UITableView DataSource

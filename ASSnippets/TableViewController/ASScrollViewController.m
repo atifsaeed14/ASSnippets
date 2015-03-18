@@ -7,8 +7,10 @@
 //
 
 #import "ASScrollViewController.h"
+#import "ASProtocol.h"
+#import "ASViewController.h"
 
-@interface ASScrollViewController ()
+@interface ASScrollViewController () <ASProtocol>
 
 @property (nonatomic, strong) NSArray *indexTitlesArray;
 @property (nonatomic, strong) NSMutableArray *indexTitles;
@@ -45,6 +47,34 @@
     recognizer.delegate = self;
     [recognizer setDirection:(UISwipeGestureRecognizerDirectionDown)];
     [self.scrollView addGestureRecognizer:recognizer];
+    
+    
+    UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithTitle:@"TableView" style:UIBarButtonItemStyleDone target:self action:@selector(showViewController)];
+    leftBarButton.tintColor = kThemeColor;
+    self.navigationItem.rightBarButtonItem = leftBarButton;
+
+}
+
+- (void)showViewController {
+    
+    ASViewController *vc = [ASViewController new];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    vc.delegate = self;
+    [self presentViewController:nav animated:YES completion:^{
+        
+    }];
+  
+}
+
+- (void)didSelectViewController:(id)VC {
+    
+    [VC dismissViewControllerAnimated:YES completion:^{
+       
+        
+        
+        
+    }];
     
 }
 
@@ -86,15 +116,20 @@
     return [self.indexTitlesArray indexOfObject:title];
 }
 
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"CellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+        
+        // http://stackoverflow.com/questions/3770019/uiswitch-in-a-uitableview-cell
+        UISwitch *switchView = [[UISwitch alloc] init];
+           switchView.frame = CGRectMake(10, 0, switchView.frame.size.height, switchView.frame.size.width);
+        cell.accessoryView = switchView;
+        [switchView setOn:NO animated:NO];
+        [switchView addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
     }
     
 //    NSString *letter = [self.dataModel.sectionNames objectAtIndex:indexPath.section];
@@ -102,8 +137,14 @@
 //    cell.textLabel.text = [namesByLetter objectAtIndex:indexPath.row];
     
     //cell.textLabel.text = [self.dataModel.dataArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld %@",(long)indexPath.section,[self.dataModel.dataArray objectAtIndex:indexPath.section]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.section];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@     ", [self.dataModel.dataArray objectAtIndex:indexPath.section]];
     return cell;
+}
+
+- (void) switchChanged:(id)sender {
+    UISwitch* switchControl = sender;
+    NSLog( @"The switch is %@", switchControl.on ? @"ON" : @"OFF" );
 }
 
 #pragma mark - ScrollView
