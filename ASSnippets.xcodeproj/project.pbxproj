@@ -19,6 +19,18 @@
 		2A11C6A51AA4877100D4D57A /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A11AA4877100D4D57A /* M13ProgressView.m */; };
 		2A11C6A61AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */; };
 		2A11C6A71AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */; };
+		2A254FAD1ABAA57600C1EACB /* ASLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FAB1ABAA57600C1EACB /* ASLoginViewController.m */; };
+		2A254FAE1ABAA57600C1EACB /* ASLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FAB1ABAA57600C1EACB /* ASLoginViewController.m */; };
+		2A254FAF1ABAA57600C1EACB /* ASLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A254FAC1ABAA57600C1EACB /* ASLoginViewController.xib */; };
+		2A254FB01ABAA57600C1EACB /* ASLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A254FAC1ABAA57600C1EACB /* ASLoginViewController.xib */; };
+		2A254FB41ABAA85500C1EACB /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FB31ABAA85500C1EACB /* UITextField+Shake.m */; };
+		2A254FB51ABAA85500C1EACB /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FB31ABAA85500C1EACB /* UITextField+Shake.m */; };
+		2A254FB71ABAA89800C1EACB /* ShakeLoginLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A254FB61ABAA89800C1EACB /* ShakeLoginLogo.png */; };
+		2A254FB81ABAA89800C1EACB /* ShakeLoginLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A254FB61ABAA89800C1EACB /* ShakeLoginLogo.png */; };
+		2A254FBC1ABAB02300C1EACB /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FBB1ABAB02300C1EACB /* UIView+Shake.m */; };
+		2A254FBD1ABAB02300C1EACB /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FBB1ABAB02300C1EACB /* UIView+Shake.m */; };
+		2A254FC01ABACC6000C1EACB /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FBF1ABACC6000C1EACB /* NSDate+Helper.m */; };
+		2A254FC11ABACC6000C1EACB /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FBF1ABACC6000C1EACB /* NSDate+Helper.m */; };
 		2A322BFB1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */; };
 		2A322BFC1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */; };
 		2A478F8C1A9EF6CE00A303FE /* ASNavigationHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A478F8B1A9EF6CE00A303FE /* ASNavigationHeader.m */; };
@@ -191,6 +203,16 @@
 		2A11C6A11AA4877100D4D57A /* M13ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressView.m; sourceTree = "<group>"; };
 		2A11C6A21AA4877100D4D57A /* M13ProgressViewBorderedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewBorderedBar.h; sourceTree = "<group>"; };
 		2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewBorderedBar.m; sourceTree = "<group>"; };
+		2A254FAA1ABAA57600C1EACB /* ASLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASLoginViewController.h; sourceTree = "<group>"; };
+		2A254FAB1ABAA57600C1EACB /* ASLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASLoginViewController.m; sourceTree = "<group>"; };
+		2A254FAC1ABAA57600C1EACB /* ASLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASLoginViewController.xib; sourceTree = "<group>"; };
+		2A254FB21ABAA85500C1EACB /* UITextField+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake.h"; sourceTree = "<group>"; };
+		2A254FB31ABAA85500C1EACB /* UITextField+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake.m"; sourceTree = "<group>"; };
+		2A254FB61ABAA89800C1EACB /* ShakeLoginLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShakeLoginLogo.png; sourceTree = "<group>"; };
+		2A254FBA1ABAB02300C1EACB /* UIView+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake.h"; sourceTree = "<group>"; };
+		2A254FBB1ABAB02300C1EACB /* UIView+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
+		2A254FBE1ABACC6000C1EACB /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		2A254FBF1ABACC6000C1EACB /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
 		2A322BF91AA86FE20003D7D5 /* IQSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSideMenuController.h; sourceTree = "<group>"; };
 		2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSideMenuController.m; sourceTree = "<group>"; };
 		2A478F8A1A9EF6CE00A303FE /* ASNavigationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNavigationHeader.h; sourceTree = "<group>"; };
@@ -371,6 +393,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A254FA91ABAA54F00C1EACB /* ASLoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A254FAA1ABAA57600C1EACB /* ASLoginViewController.h */,
+				2A254FAB1ABAA57600C1EACB /* ASLoginViewController.m */,
+				2A254FAC1ABAA57600C1EACB /* ASLoginViewController.xib */,
+			);
+			path = ASLoginViewController;
+			sourceTree = "<group>";
+		};
+		2A254FB11ABAA85500C1EACB /* UITextField-Shake */ = {
+			isa = PBXGroup;
+			children = (
+				2A254FB21ABAA85500C1EACB /* UITextField+Shake.h */,
+				2A254FB31ABAA85500C1EACB /* UITextField+Shake.m */,
+			);
+			path = "UITextField-Shake";
+			sourceTree = "<group>";
+		};
+		2A254FB91ABAB02300C1EACB /* UIView-Shake */ = {
+			isa = PBXGroup;
+			children = (
+				2A254FBA1ABAB02300C1EACB /* UIView+Shake.h */,
+				2A254FBB1ABAB02300C1EACB /* UIView+Shake.m */,
+			);
+			path = "UIView-Shake";
+			sourceTree = "<group>";
+		};
 		2A322BF81AA86FE20003D7D5 /* IQSideMenuController */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,6 +697,7 @@
 		2ADEF4181A9C3ED5002D5067 /* ASSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				2A254FA91ABAA54F00C1EACB /* ASLoginViewController */,
 				2AD58FBF1AA0566F0092E3CC /* ASTest.xcassets */,
 				2AD58FBD1AA0564F0092E3CC /* Images.xcassets */,
 				2A591AAA1AB1A10B00B0C461 /* ASWebView */,
@@ -680,6 +731,8 @@
 		2ADEF44B1A9C9341002D5067 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				2A254FBE1ABACC6000C1EACB /* NSDate+Helper.h */,
+				2A254FBF1ABACC6000C1EACB /* NSDate+Helper.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -687,6 +740,8 @@
 		2ADEF44C1A9C9341002D5067 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2A254FB91ABAB02300C1EACB /* UIView-Shake */,
+				2A254FB11ABAA85500C1EACB /* UITextField-Shake */,
 				2A591AA61AB1A08A00B0C461 /* MBProgressHUD */,
 				2AEF32931AB0045F00E18550 /* APIHTTPClient */,
 				2A5CC9A41AAF1BA600C2BB20 /* LocationManager */,
@@ -702,6 +757,7 @@
 		2ADEF44D1A9C9341002D5067 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2A254FB61ABAA89800C1EACB /* ShakeLoginLogo.png */,
 				2ACB10C51AA97F2F0029C1F7 /* bg1.jpg */,
 				2ACB10C21AA97CDC0029C1F7 /* bg.png */,
 			);
@@ -871,6 +927,7 @@
 			files = (
 				2A478F9A1A9F47CC00A303FE /* ASBookmarkViewController.xib in Resources */,
 				2AC8AB071AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet in Resources */,
+				2A254FAF1ABAA57600C1EACB /* ASLoginViewController.xib in Resources */,
 				2ADEF4641A9CA3D0002D5067 /* Info.plist in Resources */,
 				2ADEF4561A9C9523002D5067 /* ASViewController.xib in Resources */,
 				2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,
@@ -880,6 +937,7 @@
 				2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */,
 				2A93669C1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */,
 				2A591AB11AB1A10B00B0C461 /* demo.html in Resources */,
+				2A254FB71ABAA89800C1EACB /* ShakeLoginLogo.png in Resources */,
 				2A591AB01AB1A10B00B0C461 /* ASWebViewController.xib in Resources */,
 				2A5CC9921AAF071200C2BB20 /* ASNWViewController.xib in Resources */,
 				2ADEF4661A9CA3D0002D5067 /* Read Me.txt in Resources */,
@@ -909,10 +967,12 @@
 				2A478FD21A9F4EA800A303FE /* Bookmark.plist in Resources */,
 				2A93668E1A9D884200B0D650 /* ASTestTarget-Info.plist in Resources */,
 				2A9366941A9DA1C800B0D650 /* LaunchScreen.xib in Resources */,
+				2A254FB81ABAA89800C1EACB /* ShakeLoginLogo.png in Resources */,
 				2A478F991A9F47C300A303FE /* ASBookmarkViewController.xib in Resources */,
 				2AD58FC01AA0566F0092E3CC /* ASTest.xcassets in Resources */,
 				2ADEF4761A9CB4FB002D5067 /* Read Me.txt in Resources */,
 				2A478F8F1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
+				2A254FB01ABAA57600C1EACB /* ASLoginViewController.xib in Resources */,
 				2A9366CE1A9DCD3F00B0D650 /* ASTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -928,6 +988,7 @@
 				2A478FC21A9F4D6800A303FE /* JSONModelError.m in Sources */,
 				2A5CC9811AAEB6A300C2BB20 /* UIImageView+AFNetworking.m in Sources */,
 				2A478FC41A9F4D6800A303FE /* NSArray+JSONModel.m in Sources */,
+				2A254FB41ABAA85500C1EACB /* UITextField+Shake.m in Sources */,
 				2A5CC9671AAEB6A300C2BB20 /* AFHTTPRequestOperation.m in Sources */,
 				2A052AB01AA7234E00580BF0 /* ASScrollViewController.m in Sources */,
 				2A478FBC1A9F4D6800A303FE /* JSONModel.m in Sources */,
@@ -935,6 +996,7 @@
 				2A5CC9A21AAF0D8F00C2BB20 /* PostTableViewCell.m in Sources */,
 				2A9366C21A9DB6E500B0D650 /* CLLocation+UserInfo.m in Sources */,
 				2A5CC9731AAEB6A300C2BB20 /* AFURLRequestSerialization.m in Sources */,
+				2A254FC01ABACC6000C1EACB /* NSDate+Helper.m in Sources */,
 				2A5CC96B1AAEB6A300C2BB20 /* AFHTTPSessionManager.m in Sources */,
 				2A5CC9851AAEB6A300C2BB20 /* UIRefreshControl+AFNetworking.m in Sources */,
 				2A9366B41A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */,
@@ -955,6 +1017,7 @@
 				2A9366E81A9DF47C00B0D650 /* ASTableViewCell.m in Sources */,
 				2A5CC97D1AAEB6A300C2BB20 /* UIAlertView+AFNetworking.m in Sources */,
 				2A9366B61A9DB6E500B0D650 /* CLLocation+Bearing.m in Sources */,
+				2A254FBC1ABAB02300C1EACB /* UIView+Shake.m in Sources */,
 				2A5CC9791AAEB6A300C2BB20 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				2A5CC99E1AAF0A7400C2BB20 /* ApiHTTPClientSessioin.m in Sources */,
 				2AEF32A91AB00AF200E18550 /* BaseModel.m in Sources */,
@@ -970,6 +1033,7 @@
 				2A478FC01A9F4D6800A303FE /* JSONModelClassProperty.m in Sources */,
 				2A5CC9871AAEB6A300C2BB20 /* UIWebView+AFNetworking.m in Sources */,
 				2A5CC96F1AAEB6A300C2BB20 /* AFSecurityPolicy.m in Sources */,
+				2A254FAD1ABAA57600C1EACB /* ASLoginViewController.m in Sources */,
 				2A322BFB1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */,
 				2AEF329F1AB0045F00E18550 /* UserClient.m in Sources */,
 				2AE1D0DD1AB6E55200FAC26A /* ASLabel.m in Sources */,
@@ -1026,6 +1090,7 @@
 				2AE1D0DE1AB6E55200FAC26A /* ASLabel.m in Sources */,
 				2A5CC97C1AAEB6A300C2BB20 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				2A478FA11A9F4ACD00A303FE /* ASBookmark.m in Sources */,
+				2A254FBD1ABAB02300C1EACB /* UIView+Shake.m in Sources */,
 				2A478FBD1A9F4D6800A303FE /* JSONModel.m in Sources */,
 				2A5CC9721AAEB6A300C2BB20 /* AFURLConnectionOperation.m in Sources */,
 				2A478F971A9F47C300A303FE /* ASBookmarkViewController.m in Sources */,
@@ -1052,10 +1117,13 @@
 				2A5CC97E1AAEB6A300C2BB20 /* UIAlertView+AFNetworking.m in Sources */,
 				2A5CC9801AAEB6A300C2BB20 /* UIButton+AFNetworking.m in Sources */,
 				2A5CC9861AAEB6A300C2BB20 /* UIRefreshControl+AFNetworking.m in Sources */,
+				2A254FAE1ABAA57600C1EACB /* ASLoginViewController.m in Sources */,
 				2A5CC96A1AAEB6A300C2BB20 /* AFHTTPRequestOperationManager.m in Sources */,
 				2A5CC9781AAEB6A300C2BB20 /* AFURLSessionManager.m in Sources */,
+				2A254FB51ABAA85500C1EACB /* UITextField+Shake.m in Sources */,
 				2A9366B91A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m in Sources */,
 				2A9366BF1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */,
+				2A254FC11ABACC6000C1EACB /* NSDate+Helper.m in Sources */,
 				2A5CC9701AAEB6A300C2BB20 /* AFSecurityPolicy.m in Sources */,
 				2A5CC9AC1AAF1BA600C2BB20 /* INTULocationManager.m in Sources */,
 				2A5CC99B1AAF095600C2BB20 /* User.m in Sources */,

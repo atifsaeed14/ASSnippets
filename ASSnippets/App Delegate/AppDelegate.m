@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 atti14. All rights reserved.
 //
 
+#import "NSDate+Helper.h"
 #import "AppDelegate.h"
 #import "ASViewController.h"
  #import "AFNetworkActivityIndicatorManager.h"
@@ -28,6 +29,21 @@
                        encoding:NSNonLossyASCIIStringEncoding];
     NSLog(@"name = %@", name2);
     
+    NSDate *someTime = [NSDate date];
+    
+    if ([someTime isInPast]) {
+        NSLog(@"It's in the past!");
+    } else {
+        NSLog(@"It is yet to come!");
+    }
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setInteger:9001 forKey:@"HighScore"];
+    [defaults synchronize];
+
+    
+    NSUserDefaults *defaultss = [NSUserDefaults standardUserDefaults];
+    NSInteger theHighScore = [defaultss integerForKey:@"HighScore"];
     
         ASViewController *viewController = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];
     //viewController.title = kApplicationTitle;

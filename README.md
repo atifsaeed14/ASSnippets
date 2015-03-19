@@ -7,6 +7,12 @@ A sample iOS application with code snippets.
 Helping Links
 =============
 
+http://ios-blog.co.uk
+
+http://ios-blog.co.uk/resources/a-collection-of-free-ios-7-gui-kits-and-templates/
+
+https://github.com/ariok/BWWalkthrough
+
 https://github.com/boctor/idev-recipes
 https://github.com/ioscreator/ioscreator
 https://github.com/intentkit/IntentKit
@@ -55,6 +61,10 @@ http://stackoverflow.com/questions/3844557/uiview-shake-animation
 https://github.com/andreamazz/UITextField-Shake
 http://stackoverflow.com/questions/1632364/shake-visual-effect-on-iphone-not-shaking-the-device
 
+TextField
+==========
+https://github.com/braker1nine/CBTextFieldView
+
 SideMenu
 ===========
 https://github.com/pkluz/PKRevealController
@@ -66,6 +76,10 @@ https://github.com/cnoon/Swift-Introduction
 Passcode
 =============
 https://github.com/rolandleth/LTHPasscodeViewController
+
+Localizing
+============
+http://code.tutsplus.com/tutorials/localizing-an-ios-application-in-xcode-6--cms-23502
 
 POP
 ========
