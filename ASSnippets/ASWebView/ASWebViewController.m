@@ -34,12 +34,32 @@
     NSURL *Url = [NSURL fileURLWithPath:htmlPath];
     [_webView loadHTMLString:htmlString baseURL:Url];
     
-    NSURL *htmlStr = [[NSBundle mainBundle]  URLForResource: @"demo"     withExtension:@"html"];
-    NSAttributedString *stringWithHTMLAttributes = [[NSAttributedString alloc] initWithFileURL:htmlStr
-                                                                                       options:@{NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType}
-                                                                            documentAttributes:nil
-                                                                                         error:nil];
-    _textView.attributedText = stringWithHTMLAttributes; // attributedText field!
+//    NSURL *htmlStr = [[NSBundle mainBundle]  URLForResource: @"demo"     withExtension:@"html"];
+//    NSAttributedString *stringWithHTMLAttributes = [[NSAttributedString alloc] initWithFileURL:htmlStr
+//                                                                                       options:@{NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType}
+//                                                                            documentAttributes:nil
+//                                                                                         error:nil];
+//    _textView.attributedText = stringWithHTMLAttributes; // attributedText field!
+    
+    
+    
+    NSString *aya = @"خَتَمَ اللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ ۖ وَعَلَىٰ أَبْصَارِهِمْ غِشَاوَةٌ ۖ وَلَهُمْ عَذَابٌ عَظِيمٌ(٧)";
+    NSLog(@"%@",aya);
+    
+    [ASUtility fontsList];
+    
+    UIFont *font = [UIFont fontWithName:@"KFGQPC Uthmanic Script HAFS" size:20];
+    font = [UIFont fontWithName:@"KFGQPCUthmanicScriptHAFS" size:20];
+    font = [UIFont fontWithName:@"me_quran" size:20];
+    font = [UIFont fontWithName:@"_PDMS_Saleem_QuranFont" size:20];
+    //font = [UIFont fontWithName:@"BFantezy" size:20];
+    //font = [UIFont fontWithName:@"DiwanMishafi" size:20];
+    //font = [UIFont fontWithName:@"Scheherazade" size:20];
+
+    
+    _label.font = font;
+    //_label.text = aya;
+    
 }
 
 - (IBAction)postToFacebook:(id)sender {

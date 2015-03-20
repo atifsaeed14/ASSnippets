@@ -17,6 +17,7 @@
 #import "ASNWViewController.h"
 #import "ASWebViewController.h"
 #import "ASLoginViewController.h"
+#import "ASDetailTableView.h"
 
 @interface ASViewController () <UITableViewDelegate, UITableViewDataSource> {
     
@@ -209,6 +210,11 @@ int secondsLeft;
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             break;
             
+        case kASDetailViewController:
+            cell.textLabel.text = @"Detail ViewController";
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            break;
+            
         default:
             cell.textLabel.text = @"N/A";
             break;
@@ -286,14 +292,19 @@ int secondsLeft;
             
             
         case kASLoginViewController: {
-            
             ASLoginViewController *nwViewController = [ASLoginViewController new];
             UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:nwViewController];
             [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics:UIBarMetricsDefault];
-            
             [appDelegate.sideMenuController setContentViewController:nav];
         }
-            //[self showScrollTablViewController];
+            break;
+            
+        case kASDetailViewController: {
+            ASDetailTableView *dViewController = [ASDetailTableView new];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:dViewController];
+            [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics:UIBarMetricsDefault];
+            [appDelegate.sideMenuController setContentViewController:nav];
+        }
             break;
             
         default:

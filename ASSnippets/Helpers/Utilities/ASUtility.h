@@ -20,4 +20,6 @@
 + (void)showMBProgressInView:(UIView *)view WithText:(NSString *)text ;
 + (void)hideMBProgressView;
 
++ (void)fontsList;
+
 @end

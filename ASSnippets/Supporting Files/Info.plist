@@ -43,5 +43,16 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>UthmanicHafs1 Ver08.otf</string>
+		<string>me_quran.ttf</string>
+		<string>BFantezy.ttf</string>
+		<string>Diwanltr.ttf</string>
+		<string>BElham.ttf</string>
+		<string>ScheherazadeRegOT.ttf</string>
+		<string>UthmanicHafs1 Ver09.otf</string>
+		<string>PDMS_Saleem_QuranFont-signed.ttf</string>
+	</array>
 </dict>
 </plist>

@@ -40,6 +40,16 @@ Software
 Network Link Conditioner
 http://nshipster.com/network-link-conditioner/
 
+
+Add CUSTOM fonts
+------------------------------
+-> Add your custom font files into your project using XCode as a resource
+-> Add a key to your info.plist file called "Fonts provided by application"
+-> Make this key an array
+-> For each font you have, enter the full name of your font file (including the extension) as items to theUIAppFonts array
+-> Save info.plist
+-> Now call UIFont *fontCustom = [UIFont fontWithName:@"CustomFontName" size:12];  to get the custom fonts.
+
 APP Install
 ------------------------------
 
@@ -82,6 +92,12 @@ https://github.com/phildow/ios-location-utilities
 
 Json Model
 https://github.com/icanzilb/JSONModel
+
+Color
+https://github.com/MatthewYork/Colours
+
+NSDate Time Ago
+https://github.com/kevinlawler/NSDate-TimeAgo
 
 SuperLogger (Last updated Feb 6, 2014)
 Save NSLog() to file and send email to developer (Note: It doesn't work in iOS Simulator)
@@ -169,8 +185,10 @@ In Objective-C:
 
 
 
-
-
+Quranic Fonts
+--------------
+http://typophile.com/node/82069 
+http://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=6&cad=rja&uact=8&ved=0CEUQFjAF&url=http%3A%2F%2Ftanzil.info%2Fres%2Ffont%2Forg%2Fme_quran.ttf&ei=7ewLVfWZLefW7AalxoHgDg&usg=AFQjCNF7UQnrVN9u715f0DrVnLuiPkjhLw&bvm=bv.88528373,d.ZGU
 
 
 

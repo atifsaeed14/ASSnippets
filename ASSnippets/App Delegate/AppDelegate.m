@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "ASViewController.h"
  #import "AFNetworkActivityIndicatorManager.h"
+#import "NSDate+TimeAgo.h"
 
 @interface AppDelegate ()
 
@@ -45,6 +46,11 @@
     NSUserDefaults *defaultss = [NSUserDefaults standardUserDefaults];
     NSInteger theHighScore = [defaultss integerForKey:@"HighScore"];
     
+    
+    NSDate *date = [[NSDate alloc] initWithTimeIntervalSince1970:0];
+    NSString *ago = [date timeAgo];
+    NSLog(@"Output is: \"%@\"", ago);
+    
         ASViewController *viewController = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];
     //viewController.title = kApplicationTitle;
     
@@ -76,6 +82,8 @@
     UIUserNotificationSettings *mySettings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
     [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
     
+    
+    int n = [[[UIApplication sharedApplication] scheduledLocalNotifications] count];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = _sideMenuController;
@@ -114,6 +122,9 @@
 
 #pragma mark - Local Notification
 
+//   http://www.ios-developer.net/iphone-ipad-programmer/development/local-notifications/creating-local-notifications
+//  http://stackoverflow.com/questions/8682051/ios-application-how-to-clear-notifications
+// http://stackoverflow.com/questions/11137066/update-fire-date-for-local-notification-and-cancel-previous-notification?lq=1
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
     
     UIApplicationState state = [application applicationState];
@@ -124,6 +135,14 @@
                                                        delegate:self cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
         [alert show];
+    }
+    
+    
+    if (state == UIApplicationStateActive) {
+        NSLog(@"UIApplicationStateActive");
+    }
+    else if(state == UIApplicationStateInactive){
+        NSLog(@"UIApplicationStateInActive");
     }
     
 }

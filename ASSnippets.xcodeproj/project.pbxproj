@@ -31,8 +31,45 @@
 		2A254FBD1ABAB02300C1EACB /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FBB1ABAB02300C1EACB /* UIView+Shake.m */; };
 		2A254FC01ABACC6000C1EACB /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FBF1ABACC6000C1EACB /* NSDate+Helper.m */; };
 		2A254FC11ABACC6000C1EACB /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FBF1ABACC6000C1EACB /* NSDate+Helper.m */; };
+		2A254FCA1ABAFB3700C1EACB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2A254FC31ABAFB3700C1EACB /* LICENSE */; };
+		2A254FCB1ABAFB3700C1EACB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2A254FC31ABAFB3700C1EACB /* LICENSE */; };
+		2A254FCC1ABAFB3700C1EACB /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FC41ABAFB3700C1EACB /* NSDate+Extension.swift */; };
+		2A254FCD1ABAFB3700C1EACB /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FC41ABAFB3700C1EACB /* NSDate+Extension.swift */; };
+		2A254FCE1ABAFB3700C1EACB /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FC61ABAFB3700C1EACB /* NSDate+TimeAgo.m */; };
+		2A254FCF1ABAFB3700C1EACB /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FC61ABAFB3700C1EACB /* NSDate+TimeAgo.m */; };
+		2A254FD01ABAFB3700C1EACB /* NSDate+TimeAgo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2A254FC71ABAFB3700C1EACB /* NSDate+TimeAgo.podspec */; };
+		2A254FD11ABAFB3700C1EACB /* NSDate+TimeAgo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2A254FC71ABAFB3700C1EACB /* NSDate+TimeAgo.podspec */; };
+		2A254FD21ABAFB3700C1EACB /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A254FC81ABAFB3700C1EACB /* NSDateTimeAgo.bundle */; };
+		2A254FD31ABAFB3700C1EACB /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A254FC81ABAFB3700C1EACB /* NSDateTimeAgo.bundle */; };
+		2A254FD41ABAFB3700C1EACB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FC91ABAFB3700C1EACB /* README.md */; };
+		2A254FD51ABAFB3700C1EACB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FC91ABAFB3700C1EACB /* README.md */; };
+		2A254FD71ABAFE8700C1EACB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A254FD61ABAFE8700C1EACB /* Settings.bundle */; };
 		2A322BFB1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */; };
 		2A322BFC1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */; };
+		2A420EE71ABC35390093E506 /* BElham.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE01ABC35390093E506 /* BElham.ttf */; };
+		2A420EE81ABC35390093E506 /* BElham.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE01ABC35390093E506 /* BElham.ttf */; };
+		2A420EE91ABC35390093E506 /* BFantezy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE11ABC35390093E506 /* BFantezy.ttf */; };
+		2A420EEA1ABC35390093E506 /* BFantezy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE11ABC35390093E506 /* BFantezy.ttf */; };
+		2A420EEB1ABC35390093E506 /* Diwanltr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE21ABC35390093E506 /* Diwanltr.ttf */; };
+		2A420EEC1ABC35390093E506 /* Diwanltr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE21ABC35390093E506 /* Diwanltr.ttf */; };
+		2A420EED1ABC35390093E506 /* PDMS_Saleem_QuranFont-signed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE31ABC35390093E506 /* PDMS_Saleem_QuranFont-signed.ttf */; };
+		2A420EEE1ABC35390093E506 /* PDMS_Saleem_QuranFont-signed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE31ABC35390093E506 /* PDMS_Saleem_QuranFont-signed.ttf */; };
+		2A420EEF1ABC35390093E506 /* ScheherazadeRegOT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE41ABC35390093E506 /* ScheherazadeRegOT.ttf */; };
+		2A420EF01ABC35390093E506 /* ScheherazadeRegOT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE41ABC35390093E506 /* ScheherazadeRegOT.ttf */; };
+		2A420EF11ABC35390093E506 /* UthmanicHafs1 Ver08.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE51ABC35390093E506 /* UthmanicHafs1 Ver08.otf */; };
+		2A420EF21ABC35390093E506 /* UthmanicHafs1 Ver08.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE51ABC35390093E506 /* UthmanicHafs1 Ver08.otf */; };
+		2A420EF31ABC35390093E506 /* UthmanicHafs1 Ver09.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE61ABC35390093E506 /* UthmanicHafs1 Ver09.otf */; };
+		2A420EF41ABC35390093E506 /* UthmanicHafs1 Ver09.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE61ABC35390093E506 /* UthmanicHafs1 Ver09.otf */; };
+		2A420EF61ABC35840093E506 /* me_quran.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EF51ABC35840093E506 /* me_quran.ttf */; };
+		2A420EF71ABC35840093E506 /* me_quran.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EF51ABC35840093E506 /* me_quran.ttf */; };
+		2A420EFC1ABC42280093E506 /* ASDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A420EFA1ABC42280093E506 /* ASDetailTableView.m */; };
+		2A420EFD1ABC42280093E506 /* ASDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A420EFA1ABC42280093E506 /* ASDetailTableView.m */; };
+		2A420EFE1ABC42280093E506 /* ASDetailTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EFB1ABC42280093E506 /* ASDetailTableView.xib */; };
+		2A420EFF1ABC42280093E506 /* ASDetailTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EFB1ABC42280093E506 /* ASDetailTableView.xib */; };
+		2A420F031ABC44E40093E506 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A420F011ABC44E40093E506 /* DetailTableViewCell.m */; };
+		2A420F041ABC44E40093E506 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A420F011ABC44E40093E506 /* DetailTableViewCell.m */; };
+		2A420F051ABC44E40093E506 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A420F021ABC44E40093E506 /* DetailTableViewCell.xib */; };
+		2A420F061ABC44E40093E506 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A420F021ABC44E40093E506 /* DetailTableViewCell.xib */; };
 		2A478F8C1A9EF6CE00A303FE /* ASNavigationHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A478F8B1A9EF6CE00A303FE /* ASNavigationHeader.m */; };
 		2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A478F8D1A9EF71E00A303FE /* ASNavigationHeader.xib */; };
 		2A478F8F1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A478F8D1A9EF71E00A303FE /* ASNavigationHeader.xib */; };
@@ -213,8 +250,30 @@
 		2A254FBB1ABAB02300C1EACB /* UIView+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
 		2A254FBE1ABACC6000C1EACB /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
 		2A254FBF1ABACC6000C1EACB /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
+		2A254FC31ABAFB3700C1EACB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2A254FC41ABAFB3700C1EACB /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		2A254FC51ABAFB3700C1EACB /* NSDate+TimeAgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeAgo.h"; sourceTree = "<group>"; };
+		2A254FC61ABAFB3700C1EACB /* NSDate+TimeAgo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeAgo.m"; sourceTree = "<group>"; };
+		2A254FC71ABAFB3700C1EACB /* NSDate+TimeAgo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NSDate+TimeAgo.podspec"; sourceTree = "<group>"; };
+		2A254FC81ABAFB3700C1EACB /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NSDateTimeAgo.bundle; sourceTree = "<group>"; };
+		2A254FC91ABAFB3700C1EACB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2A254FD61ABAFE8700C1EACB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2A322BF91AA86FE20003D7D5 /* IQSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSideMenuController.h; sourceTree = "<group>"; };
 		2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSideMenuController.m; sourceTree = "<group>"; };
+		2A420EE01ABC35390093E506 /* BElham.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BElham.ttf; sourceTree = "<group>"; };
+		2A420EE11ABC35390093E506 /* BFantezy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BFantezy.ttf; sourceTree = "<group>"; };
+		2A420EE21ABC35390093E506 /* Diwanltr.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Diwanltr.ttf; sourceTree = "<group>"; };
+		2A420EE31ABC35390093E506 /* PDMS_Saleem_QuranFont-signed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PDMS_Saleem_QuranFont-signed.ttf"; sourceTree = "<group>"; };
+		2A420EE41ABC35390093E506 /* ScheherazadeRegOT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ScheherazadeRegOT.ttf; sourceTree = "<group>"; };
+		2A420EE51ABC35390093E506 /* UthmanicHafs1 Ver08.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UthmanicHafs1 Ver08.otf"; sourceTree = "<group>"; };
+		2A420EE61ABC35390093E506 /* UthmanicHafs1 Ver09.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UthmanicHafs1 Ver09.otf"; sourceTree = "<group>"; };
+		2A420EF51ABC35840093E506 /* me_quran.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = me_quran.ttf; sourceTree = "<group>"; };
+		2A420EF91ABC42280093E506 /* ASDetailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDetailTableView.h; sourceTree = "<group>"; };
+		2A420EFA1ABC42280093E506 /* ASDetailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDetailTableView.m; sourceTree = "<group>"; };
+		2A420EFB1ABC42280093E506 /* ASDetailTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASDetailTableView.xib; sourceTree = "<group>"; };
+		2A420F001ABC44E40093E506 /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		2A420F011ABC44E40093E506 /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
+		2A420F021ABC44E40093E506 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		2A478F8A1A9EF6CE00A303FE /* ASNavigationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASNavigationHeader.h; sourceTree = "<group>"; };
 		2A478F8B1A9EF6CE00A303FE /* ASNavigationHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASNavigationHeader.m; sourceTree = "<group>"; };
 		2A478F8D1A9EF71E00A303FE /* ASNavigationHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASNavigationHeader.xib; sourceTree = "<group>"; };
@@ -421,6 +480,20 @@
 			path = "UIView-Shake";
 			sourceTree = "<group>";
 		};
+		2A254FC21ABAFB3700C1EACB /* NSDate-TimeAgo */ = {
+			isa = PBXGroup;
+			children = (
+				2A254FC31ABAFB3700C1EACB /* LICENSE */,
+				2A254FC41ABAFB3700C1EACB /* NSDate+Extension.swift */,
+				2A254FC51ABAFB3700C1EACB /* NSDate+TimeAgo.h */,
+				2A254FC61ABAFB3700C1EACB /* NSDate+TimeAgo.m */,
+				2A254FC71ABAFB3700C1EACB /* NSDate+TimeAgo.podspec */,
+				2A254FC81ABAFB3700C1EACB /* NSDateTimeAgo.bundle */,
+				2A254FC91ABAFB3700C1EACB /* README.md */,
+			);
+			path = "NSDate-TimeAgo";
+			sourceTree = "<group>";
+		};
 		2A322BF81AA86FE20003D7D5 /* IQSideMenuController */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +501,34 @@
 				2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */,
 			);
 			path = IQSideMenuController;
+			sourceTree = "<group>";
+		};
+		2A420EDF1ABC35390093E506 /* Arabic Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2A420EE01ABC35390093E506 /* BElham.ttf */,
+				2A420EE11ABC35390093E506 /* BFantezy.ttf */,
+				2A420EF51ABC35840093E506 /* me_quran.ttf */,
+				2A420EE21ABC35390093E506 /* Diwanltr.ttf */,
+				2A420EE31ABC35390093E506 /* PDMS_Saleem_QuranFont-signed.ttf */,
+				2A420EE41ABC35390093E506 /* ScheherazadeRegOT.ttf */,
+				2A420EE51ABC35390093E506 /* UthmanicHafs1 Ver08.otf */,
+				2A420EE61ABC35390093E506 /* UthmanicHafs1 Ver09.otf */,
+			);
+			path = "Arabic Fonts";
+			sourceTree = "<group>";
+		};
+		2A420EF81ABC42280093E506 /* ASDetailTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2A420EF91ABC42280093E506 /* ASDetailTableView.h */,
+				2A420EFA1ABC42280093E506 /* ASDetailTableView.m */,
+				2A420EFB1ABC42280093E506 /* ASDetailTableView.xib */,
+				2A420F001ABC44E40093E506 /* DetailTableViewCell.h */,
+				2A420F011ABC44E40093E506 /* DetailTableViewCell.m */,
+				2A420F021ABC44E40093E506 /* DetailTableViewCell.xib */,
+			);
+			path = ASDetailTableView;
 			sourceTree = "<group>";
 		};
 		2A478F921A9F47A300A303FE /* BookmarkViewController */ = {
@@ -697,6 +798,8 @@
 		2ADEF4181A9C3ED5002D5067 /* ASSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				2A420EF81ABC42280093E506 /* ASDetailTableView */,
+				2A420EDF1ABC35390093E506 /* Arabic Fonts */,
 				2A254FA91ABAA54F00C1EACB /* ASLoginViewController */,
 				2AD58FBF1AA0566F0092E3CC /* ASTest.xcassets */,
 				2AD58FBD1AA0564F0092E3CC /* Images.xcassets */,
@@ -740,6 +843,7 @@
 		2ADEF44C1A9C9341002D5067 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2A254FC21ABAFB3700C1EACB /* NSDate-TimeAgo */,
 				2A254FB91ABAB02300C1EACB /* UIView-Shake */,
 				2A254FB11ABAA85500C1EACB /* UITextField-Shake */,
 				2A591AA61AB1A08A00B0C461 /* MBProgressHUD */,
@@ -799,6 +903,7 @@
 				2ADEF4621A9CA3D0002D5067 /* main.m */,
 				2ADEF4631A9CA3D0002D5067 /* Read Me.txt */,
 				2ADEF4601A9CA3CF002D5067 /* AS-PrefixHeader.pch */,
+				2A254FD61ABAFE8700C1EACB /* Settings.bundle */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -925,7 +1030,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A420EF31ABC35390093E506 /* UthmanicHafs1 Ver09.otf in Resources */,
+				2A420EE91ABC35390093E506 /* BFantezy.ttf in Resources */,
 				2A478F9A1A9F47CC00A303FE /* ASBookmarkViewController.xib in Resources */,
+				2A254FD01ABAFB3700C1EACB /* NSDate+TimeAgo.podspec in Resources */,
+				2A420EFE1ABC42280093E506 /* ASDetailTableView.xib in Resources */,
 				2AC8AB071AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet in Resources */,
 				2A254FAF1ABAA57600C1EACB /* ASLoginViewController.xib in Resources */,
 				2ADEF4641A9CA3D0002D5067 /* Info.plist in Resources */,
@@ -939,14 +1048,24 @@
 				2A591AB11AB1A10B00B0C461 /* demo.html in Resources */,
 				2A254FB71ABAA89800C1EACB /* ShakeLoginLogo.png in Resources */,
 				2A591AB01AB1A10B00B0C461 /* ASWebViewController.xib in Resources */,
+				2A420EE71ABC35390093E506 /* BElham.ttf in Resources */,
 				2A5CC9921AAF071200C2BB20 /* ASNWViewController.xib in Resources */,
 				2ADEF4661A9CA3D0002D5067 /* Read Me.txt in Resources */,
+				2A254FD21ABAFB3700C1EACB /* NSDateTimeAgo.bundle in Resources */,
 				2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
 				2ACB10C61AA97F2F0029C1F7 /* bg1.jpg in Resources */,
+				2A254FCA1ABAFB3700C1EACB /* LICENSE in Resources */,
+				2A420EEB1ABC35390093E506 /* Diwanltr.ttf in Resources */,
+				2A420EF61ABC35840093E506 /* me_quran.ttf in Resources */,
+				2A420EED1ABC35390093E506 /* PDMS_Saleem_QuranFont-signed.ttf in Resources */,
+				2A420F051ABC44E40093E506 /* DetailTableViewCell.xib in Resources */,
+				2A420EEF1ABC35390093E506 /* ScheherazadeRegOT.ttf in Resources */,
 				2A9366D71A9DD0AD00B0D650 /* trivia.txt in Resources */,
+				2A420EF11ABC35390093E506 /* UthmanicHafs1 Ver08.otf in Resources */,
 				2AD58FBE1AA0564F0092E3CC /* Images.xcassets in Resources */,
 				2A052AB21AA7234E00580BF0 /* ASScrollViewController.xib in Resources */,
 				2A478FD11A9F4EA800A303FE /* Bookmark.plist in Resources */,
+				2A254FD71ABAFE8700C1EACB /* Settings.bundle in Resources */,
 				2A9366CD1A9DCD3F00B0D650 /* ASTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -956,23 +1075,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ACB10C71AA97F2F0029C1F7 /* bg1.jpg in Resources */,
+				2A254FD11ABAFB3700C1EACB /* NSDate+TimeAgo.podspec in Resources */,
 				2A93669D1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */,
 				2A5CC9931AAF071200C2BB20 /* ASNWViewController.xib in Resources */,
 				2A9366D81A9DD0AD00B0D650 /* trivia.txt in Resources */,
 				2ADEF4731A9CB4FB002D5067 /* Info.plist in Resources */,
 				2ADEF4741A9CB4FB002D5067 /* ASViewController.xib in Resources */,
+				2A420EF21ABC35390093E506 /* UthmanicHafs1 Ver08.otf in Resources */,
 				2A9366EB1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,
+				2A420EEE1ABC35390093E506 /* PDMS_Saleem_QuranFont-signed.ttf in Resources */,
+				2A420EF71ABC35840093E506 /* me_quran.ttf in Resources */,
+				2A420EEC1ABC35390093E506 /* Diwanltr.ttf in Resources */,
 				2ACB10C41AA97CDC0029C1F7 /* bg.png in Resources */,
 				2A052AB31AA7234E00580BF0 /* ASScrollViewController.xib in Resources */,
 				2A478FD21A9F4EA800A303FE /* Bookmark.plist in Resources */,
 				2A93668E1A9D884200B0D650 /* ASTestTarget-Info.plist in Resources */,
 				2A9366941A9DA1C800B0D650 /* LaunchScreen.xib in Resources */,
 				2A254FB81ABAA89800C1EACB /* ShakeLoginLogo.png in Resources */,
+				2A420EF01ABC35390093E506 /* ScheherazadeRegOT.ttf in Resources */,
 				2A478F991A9F47C300A303FE /* ASBookmarkViewController.xib in Resources */,
+				2A254FD31ABAFB3700C1EACB /* NSDateTimeAgo.bundle in Resources */,
+				2A254FCB1ABAFB3700C1EACB /* LICENSE in Resources */,
 				2AD58FC01AA0566F0092E3CC /* ASTest.xcassets in Resources */,
 				2ADEF4761A9CB4FB002D5067 /* Read Me.txt in Resources */,
+				2A420EF41ABC35390093E506 /* UthmanicHafs1 Ver09.otf in Resources */,
+				2A420EEA1ABC35390093E506 /* BFantezy.ttf in Resources */,
 				2A478F8F1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
+				2A420EFF1ABC42280093E506 /* ASDetailTableView.xib in Resources */,
 				2A254FB01ABAA57600C1EACB /* ASLoginViewController.xib in Resources */,
+				2A420EE81ABC35390093E506 /* BElham.ttf in Resources */,
+				2A420F061ABC44E40093E506 /* DetailTableViewCell.xib in Resources */,
 				2A9366CE1A9DCD3F00B0D650 /* ASTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -996,6 +1128,7 @@
 				2A5CC9A21AAF0D8F00C2BB20 /* PostTableViewCell.m in Sources */,
 				2A9366C21A9DB6E500B0D650 /* CLLocation+UserInfo.m in Sources */,
 				2A5CC9731AAEB6A300C2BB20 /* AFURLRequestSerialization.m in Sources */,
+				2A254FD41ABAFB3700C1EACB /* README.md in Sources */,
 				2A254FC01ABACC6000C1EACB /* NSDate+Helper.m in Sources */,
 				2A5CC96B1AAEB6A300C2BB20 /* AFHTTPSessionManager.m in Sources */,
 				2A5CC9851AAEB6A300C2BB20 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -1030,6 +1163,7 @@
 				2A478FC81A9F4D6800A303FE /* JSONHTTPClient.m in Sources */,
 				2A5CC97B1AAEB6A300C2BB20 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				2A478FCA1A9F4D6800A303FE /* JSONModel+networking.m in Sources */,
+				2A254FCC1ABAFB3700C1EACB /* NSDate+Extension.swift in Sources */,
 				2A478FC01A9F4D6800A303FE /* JSONModelClassProperty.m in Sources */,
 				2A5CC9871AAEB6A300C2BB20 /* UIWebView+AFNetworking.m in Sources */,
 				2A5CC96F1AAEB6A300C2BB20 /* AFSecurityPolicy.m in Sources */,
@@ -1042,6 +1176,7 @@
 				2A478FC61A9F4D6800A303FE /* JSONAPI.m in Sources */,
 				2AC8AB081AAD89570040F84D /* README.md in Sources */,
 				2A5CC96D1AAEB6A300C2BB20 /* AFNetworkReachabilityManager.m in Sources */,
+				2A254FCE1ABAFB3700C1EACB /* NSDate+TimeAgo.m in Sources */,
 				2A9366BE1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */,
 				2A5CC98D1AAF066A00C2BB20 /* ASNWViewController.m in Sources */,
 				2A052AAB1AA7180100580BF0 /* README.md in Sources */,
@@ -1050,9 +1185,11 @@
 				2A9366BC1A9DB6E500B0D650 /* CLLocation+Direction.m in Sources */,
 				2A9366C61A9DB6E500B0D650 /* LLLocationManager.m in Sources */,
 				2A052AA81AA70EE700580BF0 /* GDIMockDataModel.m in Sources */,
+				2A420F031ABC44E40093E506 /* DetailTableViewCell.m in Sources */,
 				2A5CC99A1AAF095600C2BB20 /* User.m in Sources */,
 				2A478FBE1A9F4D6800A303FE /* JSONModelArray.m in Sources */,
 				2A5CC9771AAEB6A300C2BB20 /* AFURLSessionManager.m in Sources */,
+				2A420EFC1ABC42280093E506 /* ASDetailTableView.m in Sources */,
 				2A5CC9AD1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */,
 				2A591AAF1AB1A10B00B0C461 /* ASWebViewController.m in Sources */,
 				2A5CC9981AAF095600C2BB20 /* Post.m in Sources */,
@@ -1087,16 +1224,20 @@
 				2A5CC9AE1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */,
 				2A9366CC1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */,
 				2A052AB11AA7234E00580BF0 /* ASScrollViewController.m in Sources */,
+				2A420EFD1ABC42280093E506 /* ASDetailTableView.m in Sources */,
 				2AE1D0DE1AB6E55200FAC26A /* ASLabel.m in Sources */,
 				2A5CC97C1AAEB6A300C2BB20 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				2A478FA11A9F4ACD00A303FE /* ASBookmark.m in Sources */,
+				2A254FCD1ABAFB3700C1EACB /* NSDate+Extension.swift in Sources */,
 				2A254FBD1ABAB02300C1EACB /* UIView+Shake.m in Sources */,
+				2A420F041ABC44E40093E506 /* DetailTableViewCell.m in Sources */,
 				2A478FBD1A9F4D6800A303FE /* JSONModel.m in Sources */,
 				2A5CC9721AAEB6A300C2BB20 /* AFURLConnectionOperation.m in Sources */,
 				2A478F971A9F47C300A303FE /* ASBookmarkViewController.m in Sources */,
 				2A9366C51A9DB6E500B0D650 /* CLPlacemark+UserInfo.m in Sources */,
 				2A478FCF1A9F4D6800A303FE /* JSONValueTransformer.m in Sources */,
 				2A9366E91A9DF47C00B0D650 /* ASTableViewCell.m in Sources */,
+				2A254FCF1ABAFB3700C1EACB /* NSDate+TimeAgo.m in Sources */,
 				2A9366B71A9DB6E500B0D650 /* CLLocation+Bearing.m in Sources */,
 				2A478FC31A9F4D6800A303FE /* JSONModelError.m in Sources */,
 				2A478FCD1A9F4D6800A303FE /* JSONKeyMapper.m in Sources */,
@@ -1115,6 +1256,7 @@
 				2A5CC9741AAEB6A300C2BB20 /* AFURLRequestSerialization.m in Sources */,
 				2A478FCB1A9F4D6800A303FE /* JSONModel+networking.m in Sources */,
 				2A5CC97E1AAEB6A300C2BB20 /* UIAlertView+AFNetworking.m in Sources */,
+				2A254FD51ABAFB3700C1EACB /* README.md in Sources */,
 				2A5CC9801AAEB6A300C2BB20 /* UIButton+AFNetworking.m in Sources */,
 				2A5CC9861AAEB6A300C2BB20 /* UIRefreshControl+AFNetworking.m in Sources */,
 				2A254FAE1ABAA57600C1EACB /* ASLoginViewController.m in Sources */,

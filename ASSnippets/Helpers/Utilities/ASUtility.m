@@ -55,7 +55,7 @@ static MBProgressHUD *mbProgressHUD = nil;
     [[UINavigationBar appearance] setBarTintColor:kTintColor];
     [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-
+    
     [[UINavigationBar appearance]setTintColor:UIColorFromRGB(0x52b3c1)];
     
     NSShadow *shadow = [[NSShadow alloc] init];
@@ -73,9 +73,9 @@ static MBProgressHUD *mbProgressHUD = nil;
     
     /* NavigationBG */
     //[navController.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavigationBG"] forBarMetrics:UIBarMetricsDefault];
-  //  [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav_bg.png"] forBarMetrics:UIBarMetricsDefault];
-
-
+    //  [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav_bg.png"] forBarMetrics:UIBarMetricsDefault];
+    
+    
     return navController;
 }
 
@@ -86,7 +86,7 @@ static MBProgressHUD *mbProgressHUD = nil;
 }
 
 + (void)showMBProgressInView:(UIView *)view WithText:(NSString *)text {
-
+    
     if (mbProgressHUD != nil) {
         [mbProgressHUD hide:YES];
     }
@@ -95,7 +95,7 @@ static MBProgressHUD *mbProgressHUD = nil;
     
     mbProgressHUD = [[MBProgressHUD alloc] initWithView:keyWindow];
     mbProgressHUD.labelText = @"Doing funky stuff...";
-
+    
     mbProgressHUD.detailsLabelText = @"Just relax";
     mbProgressHUD.mode = MBProgressHUDModeAnnularDeterminate;
     mbProgressHUD.dimBackground = YES;
@@ -104,6 +104,16 @@ static MBProgressHUD *mbProgressHUD = nil;
 
 + (void)hideMBProgressView {
     [mbProgressHUD hide:YES];
+}
+
++ (void)fontsList {
+    for (NSString* family in [UIFont familyNames]) {
+        NSLog(@"%@", family);
+        
+        for (NSString* name in [UIFont fontNamesForFamilyName: family]) {
+            NSLog(@"  %@", name);
+        }
+    }
 }
 
 @end
