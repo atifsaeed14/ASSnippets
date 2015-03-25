@@ -111,4 +111,16 @@ http://myapptemplates.com/product/filters-sample-iphone-app-template-ios/
 http://myapptemplates.com/product/filters-sample-iphone-app-template-swift/
 http://iosdesign.ivomynttinen.com/
 
+UIView
+============
+https://github.com/ivoleko/ILTranslucentView
+
+Login 
+============
+https://github.com/antiraum/THPinViewController
+
+TableView
+===========
+https://github.com/ennioma/EMAccordionTableViewController
+
 
