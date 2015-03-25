@@ -34,7 +34,7 @@
     // Do any additional setup after loading the view from its nib.
     
     self.title = NSLocalizedString(@"Detail View Controller", nil);
-    self.tableView.rowHeight = 95.0f;
+    self.tableView.rowHeight = 70.0f;
     [self reload:nil];
 }
 
@@ -83,24 +83,34 @@
     
     DetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
-        cell = [[DetailTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"DetailTableViewCell" owner:self options:nil] objectAtIndex:0];
+        [cell.more addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     
     cell.post = [self.posts objectAtIndex:(NSUInteger)indexPath.row];
-    
+    cell.more.tag = indexPath.row;
     return cell;
 }
 
 #pragma mark - UITableViewDelegate
 
 //- (CGFloat)tableView:(__unused UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//        return [PostTableViewCell heightForCellWithPost:[self.posts objectAtIndex:(NSUInteger)indexPath.row]];
+//        return [PostTableViewCell heightForCellWithPost:[self.posts objec tAtIndex:(NSUInteger)indexPath.row]];
 //}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+- (void)buttonClick:(id)senderParam {
+    
+    NSLog(@"%@",senderParam);
+    
+//    NSIndexPath* rowToReload = [NSIndexPath indexPathForRow:3 inSection:0];
+//    NSArray* rowsToReload = [NSArray arrayWithObjects:rowToReload, nil];
+//    [myUITableView reloadRowsAtIndexPaths:rowsToReload withRowAnimation:UITableViewRowAnimationNone];
+    
+}
 
 
 @end

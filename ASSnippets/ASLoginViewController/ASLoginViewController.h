@@ -10,4 +10,7 @@
 
 @interface ASLoginViewController : UIViewController
 
+@property (weak, nonatomic) UIImage *screenShot;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @end

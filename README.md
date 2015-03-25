@@ -55,6 +55,10 @@ http://nshipster.com/uiactivityviewcontroller/
 
 https://github.com/objcio/issue-1-lighter-view-controllers
 
+Calender
+===========
+http://stackoverflow.com/questions/15864595/programatically-add-a-reminder-to-the-reminders-app
+
 Animation
 ===========
 https://github.com/andreamazz
@@ -97,3 +101,14 @@ https://github.com/DigitalLeaves/SocialLoginForiOS
 Email
 =============
 https://github.com/remirobert/RRMessageController
+
+
+Design
+=============
+http://myapptemplates.com/product/soundfree-radio-ios-app-template/
+http://ivomynttinen.com/blog/the-ios-7-design-cheat-sheet/
+http://myapptemplates.com/product/filters-sample-iphone-app-template-ios/
+http://myapptemplates.com/product/filters-sample-iphone-app-template-swift/
+http://iosdesign.ivomynttinen.com/
+
+

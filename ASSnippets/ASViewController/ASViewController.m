@@ -122,7 +122,7 @@ int secondsLeft;
     UIImage *menuImage = [[UIImage imageNamed:@"icn_menu"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UIBarButtonItem *menuBarButton = [[UIBarButtonItem alloc] initWithImage:menuImage style:UIBarButtonItemStylePlain target:self action:nil];
     
-    UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithTitle:@"CloseVC" style:UIBarButtonItemStyleDone target:self action:@selector(closeViewController)];
+    UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithTitle:@"ViewCon" style:UIBarButtonItemStyleDone target:self action:@selector(presentViewCOntroller)];
     leftBarButton.tintColor = kThemeColor;
     
     NSArray *leftButtonItems = @[menuBarButton, leftBarButton];
@@ -148,6 +148,29 @@ int secondsLeft;
     
     if ([_delegate respondsToSelector:@selector(didSelectViewController:)])
         [self.delegate didSelectViewController:self];
+}
+
+- (void)presentViewCOntroller {
+    
+    // http://stackoverflow.com/questions/2200736/how-to-take-a-screenshot-programmatically
+    
+    /* Capture the screenshot */
+    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, self.view.opaque, 0.0);
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *imageView = UIGraphicsGetImageFromCurrentImageContext();
+
+    UIGraphicsEndImageContext();
+    
+    ASLoginViewController *loginVC = [ASLoginViewController new];
+    loginVC.screenShot = imageView;
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    
+    [self presentViewController:nav animated:YES completion:^{
+        
+    }];
+    
+    
 }
 
 #pragma mark - UITableView DataSource

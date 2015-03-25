@@ -9,6 +9,7 @@
 #import "UITextField+Shake.h"
 #import "UIView+Shake.h"
 #import "ASLoginViewController.h"
+#import <CoreImage/CoreImage.h>
 
 @interface ASLoginViewController () <UITextFieldDelegate, UIScrollViewDelegate>
 
@@ -40,6 +41,20 @@
         [obj setDelegate:self];
     }];
     
+    
+    UIBarButtonItem *closeItem = [[UIBarButtonItem alloc] initWithTitle:@"Close" style:UIBarButtonItemStyleDone target:self action:@selector(dismissViewController)];
+    self.navigationItem.rightBarButtonItem = closeItem;
+    
+    [_imageView setImage:_screenShot];
+    
+}
+
+- (void)dismissViewController {
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,23 +69,23 @@
 
 - (void)shake
 {
-//    [self.username shake:10
-//                withDelta:5
-//                 andSpeed:0.04
-//           shakeDirection:ShakeDirectionHorizontal];
-//    
-//    [self.password shake:10
-//               withDelta:5
-//                andSpeed:0.04
-//          shakeDirection:ShakeDirectionVertical];
+    [self.username shake:10
+                withDelta:5
+                 andSpeed:0.04
+           shakeDirection:ShakeDirectionHorizontal];
+    
+    [self.password shake:10
+               withDelta:5
+                andSpeed:0.04
+          shakeDirection:ShakeDirectionVertical];
     
     
-    [self.view.subviews enumerateObjectsUsingBlock:^(UIView* obj, NSUInteger idx, BOOL *stop) {
-        [obj shake:10
-         withDelta:5
-          andSpeed:0.04
-    shakeDirection:ShakeViewDirectionHorizontal];
-    }];
+//    [self.view.subviews enumerateObjectsUsingBlock:^(UIView* obj, NSUInteger idx, BOOL *stop) {
+//        [obj shake:10
+//         withDelta:5
+//          andSpeed:0.04
+//    shakeDirection:ShakeViewDirectionHorizontal];
+//    }];
 
 }
 

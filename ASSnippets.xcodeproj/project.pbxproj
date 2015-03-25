@@ -194,6 +194,7 @@
 		2A9366E91A9DF47C00B0D650 /* ASTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */; };
 		2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */; };
 		2A9366EB1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */; };
+		2AC761B51AC2DFB200063467 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC761B41AC2DFB200063467 /* CoreImage.framework */; };
 		2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 2AC8AB031AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet */; };
 		2AC8AB071AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 2AC8AB041AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet */; };
 		2AC8AB081AAD89570040F84D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2AC8AB051AAD89570040F84D /* README.md */; };
@@ -399,6 +400,7 @@
 		2A9366E51A9DF47C00B0D650 /* ASTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTableViewCell.h; sourceTree = "<group>"; };
 		2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTableViewCell.m; sourceTree = "<group>"; usesTabs = 0; };
 		2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTableViewCell.xib; sourceTree = "<group>"; };
+		2AC761B41AC2DFB200063467 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		2AC8AB031AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet"; sourceTree = "<group>"; };
 		2AC8AB041AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet"; sourceTree = "<group>"; };
 		2AC8AB051AAD89570040F84D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -438,6 +440,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC761B51AC2DFB200063467 /* CoreImage.framework in Frameworks */,
 				2A591AB31AB1C09000B0C461 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -778,6 +781,7 @@
 		2ADEF40D1A9C3ED5002D5067 = {
 			isa = PBXGroup;
 			children = (
+				2AC761B41AC2DFB200063467 /* CoreImage.framework */,
 				2A591AB21AB1C09000B0C461 /* Social.framework */,
 				2AC8AB021AAD89570040F84D /* xCodeSnippets */,
 				2A052AAA1AA7180100580BF0 /* README.md */,
