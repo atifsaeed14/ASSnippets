@@ -106,6 +106,7 @@
 		2A591AB01AB1A10B00B0C461 /* ASWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A591AAD1AB1A10B00B0C461 /* ASWebViewController.xib */; };
 		2A591AB11AB1A10B00B0C461 /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 2A591AAE1AB1A10B00B0C461 /* demo.html */; };
 		2A591AB31AB1C09000B0C461 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A591AB21AB1C09000B0C461 /* Social.framework */; };
+		2A5AB6FB1AC436250015355B /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A5AB6FA1AC436250015355B /* data.json */; };
 		2A5CC9671AAEB6A300C2BB20 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9431AAEB6A300C2BB20 /* AFHTTPRequestOperation.m */; };
 		2A5CC9681AAEB6A300C2BB20 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9431AAEB6A300C2BB20 /* AFHTTPRequestOperation.m */; };
 		2A5CC9691AAEB6A300C2BB20 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9451AAEB6A300C2BB20 /* AFHTTPRequestOperationManager.m */; };
@@ -312,6 +313,7 @@
 		2A591AAD1AB1A10B00B0C461 /* ASWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASWebViewController.xib; sourceTree = "<group>"; };
 		2A591AAE1AB1A10B00B0C461 /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
 		2A591AB21AB1C09000B0C461 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2A5AB6FA1AC436250015355B /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		2A5CC9421AAEB6A300C2BB20 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		2A5CC9431AAEB6A300C2BB20 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		2A5CC9441AAEB6A300C2BB20 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -901,6 +903,7 @@
 		2ADEF45F1A9CA3CF002D5067 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2A5AB6FA1AC436250015355B /* data.json */,
 				2AE308341AB9ABE8000B95A2 /* Manifest.plist */,
 				2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */,
 				2ADEF4611A9CA3D0002D5067 /* Info.plist */,
@@ -1041,6 +1044,7 @@
 				2A420EFE1ABC42280093E506 /* ASDetailTableView.xib in Resources */,
 				2AC8AB071AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet in Resources */,
 				2A254FAF1ABAA57600C1EACB /* ASLoginViewController.xib in Resources */,
+				2A5AB6FB1AC436250015355B /* data.json in Resources */,
 				2ADEF4641A9CA3D0002D5067 /* Info.plist in Resources */,
 				2ADEF4561A9C9523002D5067 /* ASViewController.xib in Resources */,
 				2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,

@@ -1,0 +1,53 @@
+{
+    "errors": [
+               {
+               "message": "The Twitter REST API v1 is no longer active. Please migrate to API v1.1. https://dev.twitter.com/docs/api/1.1/overview.",
+               "code": 64
+               }
+               ],
+    "customers": [
+                  {
+                  "firstName": "Jason",
+                  "lastName": "Smith"
+                  },
+                  {
+                  "firstName": "Joan",
+                  "lastName": "Smith"
+                  },
+                  {
+                  "firstName": "Jennifer",
+                  "lastName": "Jones"
+                  }
+                  ],
+    "orders": [
+               {
+               "id": "1",
+               "amount": "$10.00"
+               },
+               {
+               "id": "2",
+               " amount ": "$15.00"
+               },
+               {
+               "id": "3",
+               " amount ": "$20.00"
+               }
+               ],
+    "status": "success",
+    "message": "Unable to communicate with database",
+data: {
+    "posts": [
+              {
+              "id": 1,
+              "title": "A blog post",
+              "body": "Some useful content"
+              },
+              {
+              "id": 2,
+              "title": "Another blog post",
+              "body": "More content"
+              },
+              
+              ]
+}
+}

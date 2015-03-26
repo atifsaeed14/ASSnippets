@@ -89,6 +89,11 @@
     self.window.rootViewController = _sideMenuController;
     [self.window makeKeyAndVisible];
     
+    /* json format */
+    // http://labs.omniti.com/labs/jsend
+    
+    [self JSONData];
+    
     /* Blogs */
 //    [self sendLoginRequest:@"myUsername" password:@"password" callback:^(NSString *error, BOOL success) {
 //        if (success) {
@@ -118,6 +123,89 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+- (void)JSONData {
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"json"];
+    
+    NSDictionary *dic = [[NSDictionary alloc] initWithContentsOfFile:filePath];
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
+    id json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+    
+    NSString *jsonString = [[NSString alloc] initWithContentsOfFile:filePath];
+    
+    NSError *errore =  nil;
+    NSDictionary *jsonDic = [NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&errore];
+
+    NSDictionary *dictionary =
+    @{
+      @"First Name" : @"Anthony",
+      @"Last Name" : @"Robbins",
+      @"Age" : @51,
+      @"Children" : @[
+              @"Anthony's Son 1",
+              @"Anthony's Daughter 1",
+              @"Anthony's Son 2",
+              @"Anthony's Son 3",
+              @"Anthony's Daughter 2",
+      ],
+      };
+    
+    NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization
+                        dataWithJSONObject:dictionary
+                        options:NSJSONWritingPrettyPrinted
+                        error:&error];
+    
+    if ([jsonData length] > 0 && error == nil){
+        
+        NSLog(@"Successfully serialized the dictionary into data.");
+        
+        /* Now try to deserialize the JSON object into a dictionary */
+        error = nil;
+        id jsonObject = [NSJSONSerialization
+                         JSONObjectWithData:jsonData
+                         options:NSJSONReadingAllowFragments
+                         error:&error];
+        
+        if (jsonObject != nil && error == nil){
+            
+            NSLog(@"Successfully deserialized...");
+            
+            if ([jsonObject isKindOfClass:[NSDictionary class]]){
+                
+                NSDictionary *deserializedDictionary = jsonObject;
+                NSLog(@"Deserialized JSON Dictionary = %@",
+                      deserializedDictionary);
+                
+            }
+            else if ([jsonObject isKindOfClass:[NSArray class]]){
+                
+                NSArray *deserializedArray = (NSArray *)jsonObject;
+                NSLog(@"Deserialized JSON Array = %@", deserializedArray);
+                
+            }
+            else {
+                /* Some other object was returned. We don't know how to
+                 deal with this situation as the deserializer only
+                 returns dictionaries or arrays */
+            }
+        }
+        else if (error != nil){
+            NSLog(@"An error happened while deserializing the JSON data.");
+        }
+        
+    }
+    else if ([jsonData length] == 0 && error == nil){
+        NSLog(@"No data was returned after serialization.");
+    }
+    else if (error != nil){
+        NSLog(@"An error happened = %@", error);
+    }
+
+    
 }
 
 #pragma mark - Local Notification
