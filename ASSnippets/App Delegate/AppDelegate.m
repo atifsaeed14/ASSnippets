@@ -130,15 +130,27 @@
     
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"json"];
     
-    NSDictionary *dic = [[NSDictionary alloc] initWithContentsOfFile:filePath];
-    NSData *data = [NSData dataWithContentsOfFile:filePath];
-    id json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
     
     NSString *jsonString = [[NSString alloc] initWithContentsOfFile:filePath];
     
     NSError *errore =  nil;
     NSDictionary *jsonDic = [NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&errore];
 
+    
+    NSArray *postsFromResponse = [jsonDic valueForKeyPath:@"data"];
+    NSString *responseSTR = [jsonDic valueForKey:@"status"];
+    
+    if ([[responseSTR lowercaseString]  isEqual: @"success"]) {
+        NSLog(@"Success");
+    }
+    
+    NSError *jsonError;
+    NSData *objectData = [@"{\"2\":\"3\"}" dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:objectData
+                                                         options:NSJSONReadingMutableContainers
+                                                           error:&jsonError];
+    
+    
     NSDictionary *dictionary =
     @{
       @"First Name" : @"Anthony",
