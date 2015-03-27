@@ -61,6 +61,11 @@ http://stackoverflow.com/questions/20276907/enterprise-app-deployment-doesnt-wor
 
 -> Upload app.plist to dropbox
 
+Simulator
+-----------------------------
+Place "iPhoneSimulator7.1.sdk” folder here:
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+
 
 THIRD PARTY BROWSER EXTENSION
 -----------------------------
