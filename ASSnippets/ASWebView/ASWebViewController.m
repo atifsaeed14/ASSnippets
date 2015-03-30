@@ -21,6 +21,9 @@
 - (IBAction)postToTwitter:(id)sender;
 - (IBAction)postToFacebook:(id)sender;
 
+// http://nshipster.com/uiactivityviewcontroller/
+@property (nonatomic, strong) UIActivityViewController *activityViewController;
+
 @end
 
 @implementation ASWebViewController
@@ -237,6 +240,33 @@
     
     // Close the Mail Interface
     [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+
+- (void) handleShare:(id)paramSender{
+    
+/*    if ([self.textField.text length] == 0){
+        NSString *message = @"Please enter a text and then press Share";
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
+                                                            message:message
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+        [alertView show];
+        return;
+    }
+    
+  */
+    
+    self.activityViewController = [[UIActivityViewController alloc]
+                                   initWithActivityItems:@[@"asdfasdf asdf asf sadf sdf sadf saf saf asdf sadf "]
+                                   applicationActivities:nil];
+    [self presentViewController:self.activityViewController
+                       animated:YES
+                     completion:^{
+                         /* Nothing for now */
+                     }];
+    
 }
 
 @end
