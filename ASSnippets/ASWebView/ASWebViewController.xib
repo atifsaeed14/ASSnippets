@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ASWebViewController">
@@ -93,6 +93,15 @@
                         </mask>
                     </variation>
                 </textView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rl8-Ln-dtH">
+                    <rect key="frame" x="277" y="118" width="46" height="30"/>
+                    <state key="normal" title="SMS">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showSMS" destination="-1" eventType="touchUpInside" id="xdN-Es-tic"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -127,14 +136,6 @@
             </constraints>
             <variation key="default">
                 <mask key="constraints">
-                    <exclude reference="0sx-Y0-8hs"/>
-                    <exclude reference="FZW-WU-5wm"/>
-                    <exclude reference="RYE-0v-mRh"/>
-                    <exclude reference="mwi-Q7-2No"/>
-                    <exclude reference="otR-rm-Scd"/>
-                    <exclude reference="1JL-zq-TeW"/>
-                    <exclude reference="WGU-FB-jeM"/>
-                    <exclude reference="dnt-s2-B0w"/>
                     <exclude reference="62B-er-gHZ"/>
                     <exclude reference="64I-2E-j7e"/>
                     <exclude reference="7ib-6i-Woe"/>
@@ -145,6 +146,14 @@
                     <exclude reference="gGL-83-onZ"/>
                     <exclude reference="jKH-Qa-F5y"/>
                     <exclude reference="pY2-Ha-9MY"/>
+                    <exclude reference="0sx-Y0-8hs"/>
+                    <exclude reference="FZW-WU-5wm"/>
+                    <exclude reference="RYE-0v-mRh"/>
+                    <exclude reference="mwi-Q7-2No"/>
+                    <exclude reference="otR-rm-Scd"/>
+                    <exclude reference="1JL-zq-TeW"/>
+                    <exclude reference="WGU-FB-jeM"/>
+                    <exclude reference="dnt-s2-B0w"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="256" y="339"/>

@@ -157,9 +157,6 @@
 		2A5CC9AC1AAF1BA600C2BB20 /* INTULocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9A71AAF1BA600C2BB20 /* INTULocationManager.m */; };
 		2A5CC9AD1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9A91AAF1BA600C2BB20 /* INTULocationRequest.m */; };
 		2A5CC9AE1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9A91AAF1BA600C2BB20 /* INTULocationRequest.m */; };
-		2A71A5B41AC568CB00F2CD12 /* Digital Color Meter.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2A71A5B21AC568CB00F2CD12 /* Digital Color Meter.zip */; };
-		2A71A5B51AC568CB00F2CD12 /* Free Ruler 1.7b5.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2A71A5B31AC568CB00F2CD12 /* Free Ruler 1.7b5.zip */; };
-		2A71A5B71AC5737700F2CD12 /* UnRarX.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2A71A5B61AC5737700F2CD12 /* UnRarX.zip */; };
 		2A93668E1A9D884200B0D650 /* ASTestTarget-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */; };
 		2A9366941A9DA1C800B0D650 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */; };
 		2A93669A1A9DB5AF00B0D650 /* ASCompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366971A9DB5AF00B0D650 /* ASCompassViewController.m */; };
@@ -370,9 +367,6 @@
 		2A5CC9A81AAF1BA600C2BB20 /* INTULocationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequest.h; sourceTree = "<group>"; };
 		2A5CC9A91AAF1BA600C2BB20 /* INTULocationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTULocationRequest.m; sourceTree = "<group>"; };
 		2A5CC9AA1AAF1BA600C2BB20 /* INTULocationRequestDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequestDefines.h; sourceTree = "<group>"; };
-		2A71A5B21AC568CB00F2CD12 /* Digital Color Meter.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "Digital Color Meter.zip"; sourceTree = "<group>"; };
-		2A71A5B31AC568CB00F2CD12 /* Free Ruler 1.7b5.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "Free Ruler 1.7b5.zip"; sourceTree = "<group>"; };
-		2A71A5B61AC5737700F2CD12 /* UnRarX.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = UnRarX.zip; sourceTree = "<group>"; };
 		2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ASTestTarget-Info.plist"; sourceTree = "<group>"; };
 		2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		2A9366961A9DB5AF00B0D650 /* ASCompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCompassViewController.h; sourceTree = "<group>"; };
@@ -716,16 +710,6 @@
 			path = LocationManager;
 			sourceTree = "<group>";
 		};
-		2A71A5B11AC568CB00F2CD12 /* Small Software */ = {
-			isa = PBXGroup;
-			children = (
-				2A71A5B61AC5737700F2CD12 /* UnRarX.zip */,
-				2A71A5B21AC568CB00F2CD12 /* Digital Color Meter.zip */,
-				2A71A5B31AC568CB00F2CD12 /* Free Ruler 1.7b5.zip */,
-			);
-			path = "Small Software";
-			sourceTree = "<group>";
-		};
 		2A9366951A9DB5AF00B0D650 /* CompassViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -820,7 +804,7 @@
 		2ADEF4181A9C3ED5002D5067 /* ASSnippets */ = {
 			isa = PBXGroup;
 			children = (
-				2A71A5B11AC568CB00F2CD12 /* Small Software */,
+				2ADEF4481A9C9341002D5067 /* App Delegate */,
 				2A420EF81ABC42280093E506 /* ASDetailTableView */,
 				2A420EDF1ABC35390093E506 /* Arabic Fonts */,
 				2A254FA91ABAA54F00C1EACB /* ASLoginViewController */,
@@ -829,7 +813,6 @@
 				2A591AAA1AB1A10B00B0C461 /* ASWebView */,
 				2A322BF81AA86FE20003D7D5 /* IQSideMenuController */,
 				2A5CC9891AAF05A200C2BB20 /* ASNWTableView */,
-				2ADEF4481A9C9341002D5067 /* App Delegate */,
 				2ADEF4511A9C94E6002D5067 /* ASViewController */,
 				2A9366951A9DB5AF00B0D650 /* CompassViewController */,
 				2A9366991A9DB5AF00B0D650 /* TableViewController */,
@@ -1081,14 +1064,11 @@
 				2ACB10C61AA97F2F0029C1F7 /* bg1.jpg in Resources */,
 				2A254FCA1ABAFB3700C1EACB /* LICENSE in Resources */,
 				2A420EEB1ABC35390093E506 /* Diwanltr.ttf in Resources */,
-				2A71A5B41AC568CB00F2CD12 /* Digital Color Meter.zip in Resources */,
 				2A420EF61ABC35840093E506 /* me_quran.ttf in Resources */,
 				2A420EED1ABC35390093E506 /* PDMS_Saleem_QuranFont-signed.ttf in Resources */,
-				2A71A5B51AC568CB00F2CD12 /* Free Ruler 1.7b5.zip in Resources */,
 				2A420F051ABC44E40093E506 /* DetailTableViewCell.xib in Resources */,
 				2A420EEF1ABC35390093E506 /* ScheherazadeRegOT.ttf in Resources */,
 				2A9366D71A9DD0AD00B0D650 /* trivia.txt in Resources */,
-				2A71A5B71AC5737700F2CD12 /* UnRarX.zip in Resources */,
 				2A420EF11ABC35390093E506 /* UthmanicHafs1 Ver08.otf in Resources */,
 				2AD58FBE1AA0564F0092E3CC /* Images.xcassets in Resources */,
 				2A052AB21AA7234E00580BF0 /* ASScrollViewController.xib in Resources */,

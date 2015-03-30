@@ -253,6 +253,10 @@
     return (AppDelegate *)[UIApplication sharedApplication].delegate;
 }
 
+
+// + (SLRequest *)requestForServiceType:(NSString *)serviceType requestMethod:(SLRequestMethod)requestMethod URL:(NSURL *)url parameters:(NSDictionary *)parameters;
+
+
 #pragma mark - Applause Configuration
 
 - (void)applauseConfiguration {
@@ -309,15 +313,57 @@
     
 }
 
-                  
+
+
+
++ (void)postToURL:(NSURL *)url from:(NSDictionary *)dictionary withCompletionHandler:(void(^)(NSData *data, NSError *error, BOOL success))completionHandler {
+
+}
+
 // http://www.raywenderlich.com/67081/cookbook-using-nsurlsession
 // http://stackoverflow.com/questions/19099448/send-post-request-using-nsurlsession?rq=1
+
+
+
+
+
++ (void)sendRequestFromURL:(NSURL *)url andParameters:(NSDictionary *)dictionary withCompletionHandler:(void(^)(NSData *data, NSError *error, BOOL success))completionHandler {
+
+    NSURL *urll = [NSURL URLWithString:@"YOUR_WEBSERVICE_URL"];
+    
+    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+    
+    // 2
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    request.HTTPMethod = @"POST";
+    
+    // 3
+    NSDictionary *dictionaryd = @{@"key1": @"value1"};
+    
+    NSError *error = nil;
+    NSData *data = [NSJSONSerialization dataWithJSONObject:dictionary options:kNilOptions error:&error];
+    
+    // 4
+    
+    if (!error) {
+        NSURLSessionUploadTask *uploadTask = [session uploadTaskWithRequest:request fromData:data completionHandler:^(NSData *data,NSURLResponse *response,NSError *error) {
+            
+            // Handle response here
+    
+        }];
+        
+        // 5
+        [uploadTask resume];
+    }
+
+}
 
 - (void) sendLoginRequest:(NSString*) username withPassword:(NSString *) password callback:(void (^)(NSError *error, BOOL success))callback
 {
     // Instantiate a session configuration object.
 //    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-//    
+//
 //    // Instantiate a session object.
 //    NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
 //    
