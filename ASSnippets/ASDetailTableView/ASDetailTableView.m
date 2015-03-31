@@ -36,6 +36,25 @@
     self.title = NSLocalizedString(@"Detail View Controller", nil);
     self.tableView.rowHeight = 70.0f;
     [self reload:nil];
+    
+
+    [_tabbar setTintColor:[UIColor whiteColor]];
+    [_tabbar setBarTintColor:[UIColor whiteColor]];
+    _tabbar.translucent = false;
+    [_tabbar setAlpha:1.0];
+
+    
+    UITabBarItem *tabBarItem = [_tabbar.items objectAtIndex:0];
+    
+    UIImage *unselectedImage = [UIImage imageNamed:@"tHome"];
+    UIImage *selectedImage = [UIImage imageNamed:@"tHome"];
+    
+    [tabBarItem setImage: [unselectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    [tabBarItem setSelectedImage: selectedImage];
+    [tabBarItem setTitle:@"Home"];
+    
+    [tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -112,6 +112,10 @@ http://myapptemplates.com/product/filters-sample-iphone-app-template-ios/
 http://myapptemplates.com/product/filters-sample-iphone-app-template-swift/
 http://iosdesign.ivomynttinen.com/
 
+Tabbar
+=============
+https://github.com/fsjack/JKTabBarController
+
 UIView
 ============
 https://github.com/ivoleko/ILTranslucentView
