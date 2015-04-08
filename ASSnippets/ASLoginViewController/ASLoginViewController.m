@@ -47,6 +47,8 @@
     
     [_imageView setImage:_screenShot];
     
+    // http://stackoverflow.com/questions/3844557/uiview-shake-animation
+    
 }
 
 - (void)dismissViewController {

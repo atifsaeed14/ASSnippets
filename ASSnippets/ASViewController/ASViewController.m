@@ -18,6 +18,7 @@
 #import "ASWebViewController.h"
 #import "ASLoginViewController.h"
 #import "ASDetailTableView.h"
+#import "ASCollectionViewController.h"
 
 @interface ASViewController () <UITableViewDelegate, UITableViewDataSource> {
     
@@ -237,6 +238,11 @@ int secondsLeft;
             cell.textLabel.text = @"Detail ViewController";
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             break;
+        
+        case kASCollectinViewController:
+            cell.textLabel.text = @"Collection ViewController";
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            break;
             
         default:
             cell.textLabel.text = @"N/A";
@@ -330,6 +336,12 @@ int secondsLeft;
         }
             break;
             
+        case kASCollectinViewController: {
+            ASCollectionViewController *cViewController = [ASCollectionViewController new];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:cViewController];
+            [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics:UIBarMetricsDefault];
+            [appDelegate.sideMenuController setContentViewController:nav];
+        }
         default:
             break;
     }
