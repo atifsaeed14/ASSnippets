@@ -12,13 +12,30 @@
  #import "AFNetworkActivityIndicatorManager.h"
 #import "NSDate+TimeAgo.h"
 
+// id UA-62673521-1 UA-XXXXX-Y
+
+/******* Set your tracking ID here *******/
+static NSString *const kTrackingId = @"UA-62673521-1";
+
 @interface AppDelegate ()
+
+// Used for sending Google Analytics traffic in the background.
+@property(nonatomic, assign) BOOL okToWait;
+@property(nonatomic, copy) void (^dispatchHandler)(GAIDispatchResult result);
+
 
 @end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [self googleAnalyticsConfiguration];
+    
+    
+    /* app works in background */
+    [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
+
     
     // <>'/& character that effect web service request replace these
     NSString *str = @"@ %$*ab&c";
@@ -106,11 +123,14 @@
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    // We'll try to dispatch any hits queued for dispatch as the app goes into the background.
+    //[self sendHitsInBackground];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -119,11 +139,48 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    //[GAI sharedInstance].optOut = ![[NSUserDefaults standardUserDefaults] boolForKey:kAllowTracking];
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+// In case the app was sent into the background when there was no network connection, we will use
+// the background data fetching mechanism to send any pending Google Analytics data.  Note that
+// this app has turned on background data fetching in the capabilities section of the project.
+//-(void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+//    [self sendHitsInBackground];
+//    completionHandler(UIBackgroundFetchResultNewData);
+//}
+
+// This method sends hits in the background until either we're told to stop background processing,
+// we run into an error, or we run out of hits.  We use this to send any pending Google Analytics
+// data since the app won't get a chance once it's in the background.
+//- (void)sendHitsInBackground {
+//    self.okToWait = YES;
+//    __weak AppDelegate *weakSelf = self;
+//    __block UIBackgroundTaskIdentifier backgroundTaskId =
+//    [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+//        weakSelf.okToWait = NO;
+//    }];
+//    
+//    if (backgroundTaskId == UIBackgroundTaskInvalid) {
+//        return;
+//    }
+//    
+//    self.dispatchHandler = ^(GAIDispatchResult result) {
+//        // If the last dispatch succeeded, and we're still OK to stay in the background then kick off
+//        // again.
+//        if (result == kGAIDispatchGood && weakSelf.okToWait ) {
+//            [[GAI sharedInstance] dispatchWithCompletionHandler:weakSelf.dispatchHandler];
+//        } else {
+//            [[UIApplication sharedApplication] endBackgroundTask:backgroundTaskId];
+//        }
+//    };
+//    [[GAI sharedInstance] dispatchWithCompletionHandler:self.dispatchHandler];
+//}
 
 
 - (void)JSONData {
@@ -256,6 +313,79 @@
 
 // + (SLRequest *)requestForServiceType:(NSString *)serviceType requestMethod:(SLRequestMethod)requestMethod URL:(NSURL *)url parameters:(NSDictionary *)parameters;
 
+
+#pragma mark - Google Analytics Configuration 
+
+
+- (void)googleAnalyticsConfiguration {
+    // Override point for customization after application launch.
+    
+    // 1 - Optional: automatically send uncaught exceptions to Google Analytics.
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    
+    // 2
+    [[GAI sharedInstance].logger setLogLevel:kGAILogLevelVerbose];
+    
+    
+    // 3 -  Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+    [GAI sharedInstance].dispatchInterval = 10;
+    
+    // Optional: set debug to YES for extra debugging information.
+    //[GAI sharedInstance].debug = YES;
+    
+    // Optional: set Logger to VERBOSE for debug information.
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    
+    // Initialize tracker. Replace with your tracking ID.
+    [[GAI sharedInstance] trackerWithTrackingId:kTrackingId];
+    
+    // **** REPLACE UA-42269122-1 with your own GA Tracking Id **** //
+    // 4 Create tracker instance.
+    //id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:kTrackingId];
+    
+    /********** Sampling Rate **********/
+    NSString *version = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey];
+//    [[GAI sharedInstance] set:kGAIAppVersion value:version];
+//    [tracker set:kGAISampleRate value:@"50.0"]; // sampling rate of 50%
+    
+    
+    
+}
+
+- (void)googleAnalyticsConfigurationextra {
+    
+//    NSDictionary *appDefaults = @{kAllowTracking: @(YES)};
+//    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
+//    
+    // User must be able to opt out of tracking
+    //[GAI sharedInstance].optOut = ![[NSUserDefaults standardUserDefaults] boolForKey:kAllowTracking];
+    
+    // If your app runs for long periods of time in the foreground, you might consider turning
+    // on periodic dispatching.  This app doesn't, so it'll dispatch all traffic when it goes
+    // into the background instead.  If you wish to dispatch periodically, we recommend a 120
+    // second dispatch interval.
+    // [GAI sharedInstance].dispatchInterval = 120;
+    [GAI sharedInstance].dispatchInterval = -1;
+    
+    /* send uncaught exceptions to Google Analytics. */
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    
+    // Optional: set Logger to VERBOSE for debug information.
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+     NSString *trackerName = [NSString stringWithFormat:@"%@ (%@)",[infoDictionary objectForKey:@"CFBundleDisplayName"],[infoDictionary objectForKey:@"CFBundleVersion"]];
+    
+    self.tracker = [[GAI sharedInstance] trackerWithName:@"CuteAnimals"
+                                              trackingId:kTrackingId];
+    
+    
+   
+    
+    
+    
+
+}
 
 #pragma mark - Applause Configuration
 

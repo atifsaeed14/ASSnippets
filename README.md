@@ -25,6 +25,9 @@ https://github.com/FuerteInternational/FTGooglePlacesAPI
 
 https://github.com/alexruperez/objective-c-style-guide
 
+https://github.com/NatashaTheRobot/AppNetClient
+https://github.com/googlemaps/OpenInGoogleMaps-iOS
+
 Collection View
 =============
 https://github.com/Produkt/PDKTStickySectionHeadersCollectionViewLayout/tree/master/Demo
@@ -136,6 +139,12 @@ https://trinitytuts.com/build-first-web-service-php/
 http://chocotech.blogspot.co.uk/2013/12/how-to-create-php-web-service-with-json.html
 http://davidwalsh.name/web-service-php-mysql-xml-json
 
+NSDate
+===========
+https://github.com/novalagung/NVDate
 
+
+Scroller
+https://github.com/AugustRush/TLYShyNavBar
 
 

@@ -19,6 +19,7 @@
 #import "ASLoginViewController.h"
 #import "ASDetailTableView.h"
 #import "ASCollectionViewController.h"
+#import "GAIDictionaryBuilder.h"
 
 @interface ASViewController () <UITableViewDelegate, UITableViewDataSource> {
     
@@ -87,8 +88,30 @@ int secondsLeft;
     //  http://stackoverflow.com/questions/14950896/showing-nearby-restaurants-in-mkmap-view
     //  https://developers.google.com/places/documentation/search#PlaceSearchRequests
     //     https://maps.googleapis.com/maps/api/place/search/json?location=10.009890,76.316013&radius=5000&types=restaurant&sensor=false&key=AIzaSyCd_coP8f7TbdlcVavbgUku2S81pgAz_bs&pagetoken=CmRTAAAAIrTPdzdJzqNYSCw7p4D4ThGHh0srcyUpZ9LfvXRJJA1wR-DOsiXZ07V9TzdTu9HJdCwq2kRFIftm_FCzo4ofboAN95CjpX-6e41G_oXYQph5YIrP6HzM2hzrMw2G7phhEhDx6vzp9KlRo15w4Knd8L3QGhQBlsszX43YRC6Q-NbhFDcjDvu_eQ
+   
+    UIButton *todayButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [todayButton setTitle:@"Today's" forState:UIControlStateNormal];
+    //[todayButton setTitleColor: forState:UIControlStateNormal];
+    [todayButton.titleLabel setFont:[UIFont fontWithName:@"Helvetica" size:15.0]];
+    [todayButton setFrame:CGRectMake(0, 0, 80, 30)];
+    //[productionOrderButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
+    [todayButton addTarget:self action:@selector(todayButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     
+    UIBarButtonItem *todayBarButton =[[UIBarButtonItem alloc] initWithCustomView:todayButton];
+    //todayBarButton.tintColor = ;
     
+    UIImage *arrowDownImage = [[UIImage imageNamed:@"arrow.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImageView *arrowDownImageView = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(todayButton.bounds) - 12, todayButton.frame.origin.y + 13, arrowDownImage.size.width, arrowDownImage.size.height)];
+    [arrowDownImageView setImage:arrowDownImage];
+    
+    [todayButton addSubview:arrowDownImageView];
+
+    
+//    - (CGPoint)convertPoint:(CGPoint)point toView:(UIView *)view;
+//
+//    CGPoint pointVale = [sender convertPoint: CGPointZero]
+//    NSIndexPath *path = [self.view indexPathforrowatpoint]
+//    
     /* view blue */
 //    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
 //    UIVisualEffectView *blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
@@ -104,6 +127,11 @@ int secondsLeft;
 //    
 //    visualEffectView.frame = _imageView.bounds;
 //    [_imageView addSubview:visualEffectView];
+    
+    
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:@"Stopwatch"];
+    [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
 
 }
 
@@ -251,6 +279,29 @@ int secondsLeft;
 }
 
 #pragma mark - UITableView Delegate
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    //UIColor *color = ((indexPath.row % 2) == 0) ? [UIColor whiteColor] : [UIColor colorWithRed:248.0f/255.0f green:248.0f/255.0f blue:248.0f/255.0f alpha:1];
+    //cell.backgroundColor = color;
+    
+    // http://stackoverflow.com/questions/25770119/ios-8-uitableview-separator-inset-0-not-working
+    
+    // Remove seperator inset
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+    
+    // Prevent the cell from inheriting the Table View's margin settings
+    if ([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]) {
+        [cell setPreservesSuperviewLayoutMargins:NO];
+    }
+    
+    // Explictly set your cell's layout margins
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

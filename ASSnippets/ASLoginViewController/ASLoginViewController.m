@@ -24,6 +24,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    /**********Automatic screen recording**********/
+    self.screenName = @"Clock ViewController";
+    
     // Do any additional setup after loading the view from its nib.
     
     self.title = @"Login ViewController";

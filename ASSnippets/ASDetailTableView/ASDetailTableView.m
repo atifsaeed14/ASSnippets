@@ -33,7 +33,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.title = NSLocalizedString(@"Detail View Controller", nil);
+    self.screenName = NSLocalizedString(@"Detail View Controller", nil);
+    
     self.tableView.rowHeight = 70.0f;
     [self reload:nil];
     

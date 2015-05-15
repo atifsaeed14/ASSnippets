@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "IQSideMenuController.h"
+
+#import "GAITracker.h"
+#import "GAI.h"
+#import "GAIFields.h"
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 + (AppDelegate *)appDelegate;
@@ -16,6 +21,8 @@
 @property (strong, nonatomic) IQSideMenuController *sideMenuController;
 
 + (void)downloadDataFromURL:(NSURL *)url withCompletionHandler:(void(^)(NSData *data, NSError *error, BOOL success))completionHandler;
+
+@property(nonatomic, strong) id<GAITracker> tracker;
 
 @end
 

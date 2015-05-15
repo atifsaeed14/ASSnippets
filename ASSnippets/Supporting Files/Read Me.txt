@@ -176,6 +176,14 @@ Then in Build Settings search for Preprocessor Macros and add Debug value -> AST
 In plist you can change Bundle Id aswell
 
 
+=> Google Analytics
+https://developers.google.com/analytics/devguides/collection/ios/v3/
+
+=> Get Postion form Longiture or Latitude
+http://stackoverflow.com/questions/2234204/latitude-longitude-find-nearest-latitude-longitude-complex-sql-or-complex-calc
+http://www.scribd.com/doc/2569355/Geo-Distance-Search-with-MySQL
+
+
 TIPS & TRICKS
 ------------------------------
 

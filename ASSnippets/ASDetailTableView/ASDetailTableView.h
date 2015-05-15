@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASDetailTableView : UIViewController
+@interface ASDetailTableView : GAITrackedViewController
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UITabBar *tabbar;

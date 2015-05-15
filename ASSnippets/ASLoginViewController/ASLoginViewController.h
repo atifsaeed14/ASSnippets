@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAI.h"
 
-@interface ASLoginViewController : UIViewController
+@interface ASLoginViewController : GAITrackedViewController
 
 @property (weak, nonatomic) UIImage *screenShot;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
