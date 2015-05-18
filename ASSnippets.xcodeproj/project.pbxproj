@@ -47,8 +47,6 @@
 		2A2CEAD81B04AD9400BFE22B /* GMEventsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2CEAD71B04AD9400BFE22B /* GMEventsManager.m */; };
 		2A322BFB1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */; };
 		2A322BFC1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */; };
-		2A365EC41AD55C6B007B2F07 /* JOSN.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2A365EC31AD55C6B007B2F07 /* JOSN.zip */; };
-		2A365EC61AD55C82007B2F07 /* Gallery.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2A365EC51AD55C82007B2F07 /* Gallery.zip */; };
 		2A420EE71ABC35390093E506 /* BElham.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE01ABC35390093E506 /* BElham.ttf */; };
 		2A420EE81ABC35390093E506 /* BElham.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE01ABC35390093E506 /* BElham.ttf */; };
 		2A420EE91ABC35390093E506 /* BFantezy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE11ABC35390093E506 /* BFantezy.ttf */; };
@@ -167,10 +165,6 @@
 		2A5CC9AE1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9A91AAF1BA600C2BB20 /* INTULocationRequest.m */; };
 		2A93668E1A9D884200B0D650 /* ASTestTarget-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */; };
 		2A9366941A9DA1C800B0D650 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */; };
-		2A93669A1A9DB5AF00B0D650 /* ASCompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366971A9DB5AF00B0D650 /* ASCompassViewController.m */; };
-		2A93669B1A9DB5AF00B0D650 /* ASCompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366971A9DB5AF00B0D650 /* ASCompassViewController.m */; };
-		2A93669C1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366981A9DB5AF00B0D650 /* ASCompassViewController.xib */; };
-		2A93669D1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366981A9DB5AF00B0D650 /* ASCompassViewController.xib */; };
 		2A9366B41A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A11A9DB6E500B0D650 /* CLHeading+Formatted.m */; };
 		2A9366B51A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A11A9DB6E500B0D650 /* CLHeading+Formatted.m */; };
 		2A9366B61A9DB6E500B0D650 /* CLLocation+Bearing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A31A9DB6E500B0D650 /* CLLocation+Bearing.m */; };
@@ -203,6 +197,10 @@
 		2A9366E91A9DF47C00B0D650 /* ASTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */; };
 		2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */; };
 		2A9366EB1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */; };
+		2AA441C61B09C98600A9BE83 /* EMMarkupProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441BF1B09C98600A9BE83 /* EMMarkupProperty.m */; };
+		2AA441C71B09C98600A9BE83 /* EMStringStylingConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441C11B09C98600A9BE83 /* EMStringStylingConfiguration.m */; };
+		2AA441C81B09C98600A9BE83 /* EMStylingClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441C31B09C98600A9BE83 /* EMStylingClass.m */; };
+		2AA441C91B09C98600A9BE83 /* NSString+EMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441C51B09C98600A9BE83 /* NSString+EMAdditions.m */; };
 		2AAF0B101ACD164E00291726 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF0B0E1ACD164E00291726 /* MyCell.m */; };
 		2AAF0B111ACD164E00291726 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF0B0F1ACD164E00291726 /* MyCell.xib */; };
 		2AAF0B151ACD168800291726 /* ASCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF0B131ACD168800291726 /* ASCollectionViewController.m */; };
@@ -277,8 +275,6 @@
 		2A2CEAD71B04AD9400BFE22B /* GMEventsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMEventsManager.m; sourceTree = "<group>"; };
 		2A322BF91AA86FE20003D7D5 /* IQSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSideMenuController.h; sourceTree = "<group>"; };
 		2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSideMenuController.m; sourceTree = "<group>"; };
-		2A365EC31AD55C6B007B2F07 /* JOSN.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = JOSN.zip; sourceTree = "<group>"; };
-		2A365EC51AD55C82007B2F07 /* Gallery.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Gallery.zip; sourceTree = "<group>"; };
 		2A420EE01ABC35390093E506 /* BElham.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BElham.ttf; sourceTree = "<group>"; };
 		2A420EE11ABC35390093E506 /* BFantezy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BFantezy.ttf; sourceTree = "<group>"; };
 		2A420EE21ABC35390093E506 /* Diwanltr.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Diwanltr.ttf; sourceTree = "<group>"; };
@@ -401,9 +397,6 @@
 		2A5CC9AA1AAF1BA600C2BB20 /* INTULocationRequestDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequestDefines.h; sourceTree = "<group>"; };
 		2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ASTestTarget-Info.plist"; sourceTree = "<group>"; };
 		2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		2A9366961A9DB5AF00B0D650 /* ASCompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCompassViewController.h; sourceTree = "<group>"; };
-		2A9366971A9DB5AF00B0D650 /* ASCompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCompassViewController.m; sourceTree = "<group>"; };
-		2A9366981A9DB5AF00B0D650 /* ASCompassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASCompassViewController.xib; sourceTree = "<group>"; };
 		2A93669F1A9DB6E500B0D650 /* CLDegreesAndRadians.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDegreesAndRadians.h; sourceTree = "<group>"; };
 		2A9366A01A9DB6E500B0D650 /* CLHeading+Formatted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLHeading+Formatted.h"; sourceTree = "<group>"; };
 		2A9366A11A9DB6E500B0D650 /* CLHeading+Formatted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLHeading+Formatted.m"; sourceTree = "<group>"; };
@@ -434,6 +427,14 @@
 		2A9366E51A9DF47C00B0D650 /* ASTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTableViewCell.h; sourceTree = "<group>"; };
 		2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTableViewCell.m; sourceTree = "<group>"; usesTabs = 0; };
 		2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTableViewCell.xib; sourceTree = "<group>"; };
+		2AA441BE1B09C98600A9BE83 /* EMMarkupProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMarkupProperty.h; sourceTree = "<group>"; };
+		2AA441BF1B09C98600A9BE83 /* EMMarkupProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMarkupProperty.m; sourceTree = "<group>"; };
+		2AA441C01B09C98600A9BE83 /* EMStringStylingConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMStringStylingConfiguration.h; sourceTree = "<group>"; };
+		2AA441C11B09C98600A9BE83 /* EMStringStylingConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMStringStylingConfiguration.m; sourceTree = "<group>"; };
+		2AA441C21B09C98600A9BE83 /* EMStylingClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMStylingClass.h; sourceTree = "<group>"; };
+		2AA441C31B09C98600A9BE83 /* EMStylingClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMStylingClass.m; sourceTree = "<group>"; };
+		2AA441C41B09C98600A9BE83 /* NSString+EMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EMAdditions.h"; sourceTree = "<group>"; };
+		2AA441C51B09C98600A9BE83 /* NSString+EMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EMAdditions.m"; sourceTree = "<group>"; };
 		2AAF0B0D1ACD164E00291726 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
 		2AAF0B0E1ACD164E00291726 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 		2AAF0B0F1ACD164E00291726 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
@@ -782,16 +783,6 @@
 			path = LocationManager;
 			sourceTree = "<group>";
 		};
-		2A9366951A9DB5AF00B0D650 /* CompassViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2A9366961A9DB5AF00B0D650 /* ASCompassViewController.h */,
-				2A9366971A9DB5AF00B0D650 /* ASCompassViewController.m */,
-				2A9366981A9DB5AF00B0D650 /* ASCompassViewController.xib */,
-			);
-			path = CompassViewController;
-			sourceTree = "<group>";
-		};
 		2A9366991A9DB5AF00B0D650 /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -842,6 +833,21 @@
 			path = CLLocationUtilities;
 			sourceTree = "<group>";
 		};
+		2AA441BD1B09C98600A9BE83 /* EMString */ = {
+			isa = PBXGroup;
+			children = (
+				2AA441BE1B09C98600A9BE83 /* EMMarkupProperty.h */,
+				2AA441BF1B09C98600A9BE83 /* EMMarkupProperty.m */,
+				2AA441C01B09C98600A9BE83 /* EMStringStylingConfiguration.h */,
+				2AA441C11B09C98600A9BE83 /* EMStringStylingConfiguration.m */,
+				2AA441C21B09C98600A9BE83 /* EMStylingClass.h */,
+				2AA441C31B09C98600A9BE83 /* EMStylingClass.m */,
+				2AA441C41B09C98600A9BE83 /* NSString+EMAdditions.h */,
+				2AA441C51B09C98600A9BE83 /* NSString+EMAdditions.m */,
+			);
+			path = EMString;
+			sourceTree = "<group>";
+		};
 		2AAF0B0C1ACD164E00291726 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -859,10 +865,8 @@
 			isa = PBXGroup;
 			children = (
 				2AC8AB031AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet */,
-				2A365EC31AD55C6B007B2F07 /* JOSN.zip */,
 				2AC8AB041AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet */,
 				2AC8AB051AAD89570040F84D /* README.md */,
-				2A365EC51AD55C82007B2F07 /* Gallery.zip */,
 			);
 			path = xCodeSnippets;
 			sourceTree = "<group>";
@@ -906,7 +910,6 @@
 				2A322BF81AA86FE20003D7D5 /* IQSideMenuController */,
 				2A5CC9891AAF05A200C2BB20 /* ASNWTableView */,
 				2ADEF4511A9C94E6002D5067 /* ASViewController */,
-				2A9366951A9DB5AF00B0D650 /* CompassViewController */,
 				2A9366991A9DB5AF00B0D650 /* TableViewController */,
 				2A478F921A9F47A300A303FE /* BookmarkViewController */,
 				2ADEF44B1A9C9341002D5067 /* Categories */,
@@ -941,6 +944,7 @@
 		2ADEF44C1A9C9341002D5067 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2AA441BD1B09C98600A9BE83 /* EMString */,
 				2A2CEAD51B04AD9400BFE22B /* EventsManager */,
 				2A53D38E1AFA4732006A5EA5 /* GoogleAnalytics */,
 				2A254FC21ABAFB3700C1EACB /* NSDate-TimeAgo */,
@@ -1139,7 +1143,6 @@
 				2A420EF31ABC35390093E506 /* UthmanicHafs1 Ver09.otf in Resources */,
 				2AAF0B111ACD164E00291726 /* MyCell.xib in Resources */,
 				2A53D39A1AFA4732006A5EA5 /* Readme.txt in Resources */,
-				2A365EC61AD55C82007B2F07 /* Gallery.zip in Resources */,
 				2A420EE91ABC35390093E506 /* BFantezy.ttf in Resources */,
 				2A478F9A1A9F47CC00A303FE /* ASBookmarkViewController.xib in Resources */,
 				2A254FD01ABAFB3700C1EACB /* NSDate+TimeAgo.podspec in Resources */,
@@ -1154,7 +1157,6 @@
 				2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */,
 				2AE308351AB9ABE8000B95A2 /* Manifest.plist in Resources */,
 				2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */,
-				2A93669C1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */,
 				2A591AB11AB1A10B00B0C461 /* demo.html in Resources */,
 				2A254FB71ABAA89800C1EACB /* ShakeLoginLogo.png in Resources */,
 				2A591AB01AB1A10B00B0C461 /* ASWebViewController.xib in Resources */,
@@ -1162,7 +1164,6 @@
 				2A5CC9921AAF071200C2BB20 /* ASNWViewController.xib in Resources */,
 				2ADEF4661A9CA3D0002D5067 /* Read Me.txt in Resources */,
 				2A254FD21ABAFB3700C1EACB /* NSDateTimeAgo.bundle in Resources */,
-				2A365EC41AD55C6B007B2F07 /* JOSN.zip in Resources */,
 				2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
 				2ACB10C61AA97F2F0029C1F7 /* bg1.jpg in Resources */,
 				2A254FCA1ABAFB3700C1EACB /* LICENSE in Resources */,
@@ -1188,7 +1189,6 @@
 			files = (
 				2ACB10C71AA97F2F0029C1F7 /* bg1.jpg in Resources */,
 				2A254FD11ABAFB3700C1EACB /* NSDate+TimeAgo.podspec in Resources */,
-				2A93669D1A9DB5AF00B0D650 /* ASCompassViewController.xib in Resources */,
 				2A5CC9931AAF071200C2BB20 /* ASNWViewController.xib in Resources */,
 				2A9366D81A9DD0AD00B0D650 /* trivia.txt in Resources */,
 				2ADEF4731A9CB4FB002D5067 /* Info.plist in Resources */,
@@ -1248,17 +1248,20 @@
 				2A9366B41A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */,
 				2A478FCC1A9F4D6800A303FE /* JSONKeyMapper.m in Sources */,
 				2A5CC9831AAEB6A300C2BB20 /* UIProgressView+AFNetworking.m in Sources */,
+				2AA441C61B09C98600A9BE83 /* EMMarkupProperty.m in Sources */,
 				2A5CC9711AAEB6A300C2BB20 /* AFURLConnectionOperation.m in Sources */,
 				2ADEF44E1A9C9341002D5067 /* AppDelegate.m in Sources */,
 				2ADEF4551A9C9523002D5067 /* ASViewController.m in Sources */,
 				2ADEF4651A9CA3D0002D5067 /* main.m in Sources */,
 				2A9366C01A9DB6E500B0D650 /* CLLocation+EXIFGPS.m in Sources */,
 				2AEF329D1AB0045F00E18550 /* ApiHTTPClient.m in Sources */,
+				2AA441C81B09C98600A9BE83 /* EMStylingClass.m in Sources */,
 				2A9366BA1A9DB6E500B0D650 /* CLLocation+Degrees.m in Sources */,
 				2A9366CB1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */,
 				2A478F961A9F47C300A303FE /* ASBookmarkViewController.m in Sources */,
 				2A5CC9751AAEB6A300C2BB20 /* AFURLResponseSerialization.m in Sources */,
 				2A11C6A41AA4877100D4D57A /* M13ProgressView.m in Sources */,
+				2AA441C71B09C98600A9BE83 /* EMStringStylingConfiguration.m in Sources */,
 				2A9366C41A9DB6E500B0D650 /* CLPlacemark+UserInfo.m in Sources */,
 				2A9366E81A9DF47C00B0D650 /* ASTableViewCell.m in Sources */,
 				2A5CC97D1AAEB6A300C2BB20 /* UIAlertView+AFNetworking.m in Sources */,
@@ -1271,13 +1274,13 @@
 				2A5CC9691AAEB6A300C2BB20 /* AFHTTPRequestOperationManager.m in Sources */,
 				2A9366E31A9DF38B00B0D650 /* ASUtility.m in Sources */,
 				2A591AA91AB1A08A00B0C461 /* MBProgressHUD.m in Sources */,
-				2A93669A1A9DB5AF00B0D650 /* ASCompassViewController.m in Sources */,
 				2A11C6A61AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */,
 				2A478FC81A9F4D6800A303FE /* JSONHTTPClient.m in Sources */,
 				2A5CC97B1AAEB6A300C2BB20 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				2A478FCA1A9F4D6800A303FE /* JSONModel+networking.m in Sources */,
 				2A254FCC1ABAFB3700C1EACB /* NSDate+Extension.swift in Sources */,
 				2A478FC01A9F4D6800A303FE /* JSONModelClassProperty.m in Sources */,
+				2AA441C91B09C98600A9BE83 /* NSString+EMAdditions.m in Sources */,
 				2A5CC9871AAEB6A300C2BB20 /* UIWebView+AFNetworking.m in Sources */,
 				2A5CC96F1AAEB6A300C2BB20 /* AFSecurityPolicy.m in Sources */,
 				2A254FAD1ABAA57600C1EACB /* ASLoginViewController.m in Sources */,
@@ -1367,7 +1370,6 @@
 				2A5CC98E1AAF066A00C2BB20 /* ASNWViewController.m in Sources */,
 				2A478FC91A9F4D6800A303FE /* JSONHTTPClient.m in Sources */,
 				2AEF32AA1AB00AF200E18550 /* BaseModel.m in Sources */,
-				2A93669B1A9DB5AF00B0D650 /* ASCompassViewController.m in Sources */,
 				2A5CC9741AAEB6A300C2BB20 /* AFURLRequestSerialization.m in Sources */,
 				2A478FCB1A9F4D6800A303FE /* JSONModel+networking.m in Sources */,
 				2A5CC97E1AAEB6A300C2BB20 /* UIAlertView+AFNetworking.m in Sources */,

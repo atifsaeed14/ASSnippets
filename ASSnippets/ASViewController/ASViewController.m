@@ -7,7 +7,6 @@
 //
 
 #import "ASViewController.h"
-#import "ASCompassViewController.h"
 #import "ASTableViewController.h"
 #import "ASNavigationHeader.h"
 #import "ASBookmarkViewController.h"
@@ -232,11 +231,6 @@ int secondsLeft;
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             break;
             
-        case kASActionCompass:
-            cell.textLabel.text = @"Compass";
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-            break;
-            
         case kASBookmark:
             cell.textLabel.text = @"To Do List";
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -320,19 +314,6 @@ int secondsLeft;
         }
             break;
             
-        case kASActionCompass: {
-            
-            ASCompassViewController *scrollViewController = [ASCompassViewController new];
-            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:scrollViewController];
-            [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavigationBG"] forBarMetrics:UIBarMetricsDefault];
-            
-            [appDelegate.sideMenuController setContentViewController:nav];
-
-            
-            //[self showCompassViewController];
-        }
-            break;
-            
         case kASBookmark:
             [self showBookmarkViewController];
             break;
@@ -403,11 +384,6 @@ int secondsLeft;
 - (void)showTableViewViewController {
     ASTableViewController *tableViewController = [ASTableViewController new];
     [self.navigationController pushViewController:tableViewController animated:YES];
-}
-
-- (void)showCompassViewController {
-    ASCompassViewController *compassViewController = [ASCompassViewController new];
-    [self.navigationController pushViewController:compassViewController animated:YES];
 }
 
 - (void)showBookmarkViewController {
