@@ -447,6 +447,24 @@ int secondsLeft;
     //  [pool release];
 }
 
+- (IBAction)testCR:(id)sender {
+    
+    [[GMEventsManager sharedManager] eventCalendar];
+    
+    [[GMEventsManager sharedManager] requestAccess:^(BOOL granted, NSError *error) {
+        
+        if (granted) {
+            NSLog(@"Yes");
+            [[GMEventsManager sharedManager] addEventWithTitle:@"Test Calendar" startDate:[NSDate date] endDate:[NSDate date]];
+        } else {
+            NSLog(@"No");
+        }
+        
+    }];
+    
+    
+}
+
 
 
 

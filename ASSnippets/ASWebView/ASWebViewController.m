@@ -43,7 +43,7 @@
     [_webView loadHTMLString:htmlString baseURL:Url];
     
     
-    / Setup styling for demo.
+    // Setup styling for demo.
         
     /**
      *  Seting up styling needs to be done ONE time only to use througout entire app. EMStringStylingConfiguration is a singleton and will help you keep your design

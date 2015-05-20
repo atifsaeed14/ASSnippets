@@ -9,6 +9,7 @@
 #import "ASProtocol.h"
 #import <UIKit/UIKit.h>
 #import "M13ProgressViewBorderedBar.h"
+#import "GMEventsManager.h"
 
 @interface ASViewController : UIViewController 
 
@@ -17,5 +18,10 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (strong, nonatomic) id<ASProtocol> delegate;
+
+
+@property (strong, nonatomic) IBOutlet UIButton *testCRBTN;
+
+- (IBAction)testCR:(id)sender;
 
 @end

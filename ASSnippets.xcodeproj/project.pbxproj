@@ -205,6 +205,7 @@
 		2AAF0B111ACD164E00291726 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF0B0F1ACD164E00291726 /* MyCell.xib */; };
 		2AAF0B151ACD168800291726 /* ASCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF0B131ACD168800291726 /* ASCollectionViewController.m */; };
 		2AAF0B161ACD168800291726 /* ASCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF0B141ACD168800291726 /* ASCollectionViewController.xib */; };
+		2AB598E21B0CABB000A44016 /* STCollapseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB598E11B0CABB000A44016 /* STCollapseTableView.m */; };
 		2AC761B51AC2DFB200063467 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC761B41AC2DFB200063467 /* CoreImage.framework */; };
 		2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 2AC8AB031AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet */; };
 		2AC8AB071AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 2AC8AB041AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet */; };
@@ -441,6 +442,8 @@
 		2AAF0B121ACD168800291726 /* ASCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCollectionViewController.h; sourceTree = "<group>"; };
 		2AAF0B131ACD168800291726 /* ASCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCollectionViewController.m; sourceTree = "<group>"; };
 		2AAF0B141ACD168800291726 /* ASCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASCollectionViewController.xib; sourceTree = "<group>"; };
+		2AB598E01B0CABB000A44016 /* STCollapseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollapseTableView.h; sourceTree = "<group>"; };
+		2AB598E11B0CABB000A44016 /* STCollapseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollapseTableView.m; sourceTree = "<group>"; };
 		2AC761B41AC2DFB200063467 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		2AC8AB031AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet"; sourceTree = "<group>"; };
 		2AC8AB041AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet"; sourceTree = "<group>"; };
@@ -861,6 +864,15 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		2AB598DF1B0CABB000A44016 /* STCollapseTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2AB598E01B0CABB000A44016 /* STCollapseTableView.h */,
+				2AB598E11B0CABB000A44016 /* STCollapseTableView.m */,
+			);
+			path = STCollapseTableView;
+			sourceTree = "<group>";
+		};
 		2AC8AB021AAD89570040F84D /* xCodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
@@ -899,6 +911,7 @@
 		2ADEF4181A9C3ED5002D5067 /* ASSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				2ADEF4511A9C94E6002D5067 /* ASViewController */,
 				2AAF0B0C1ACD164E00291726 /* CollectionView */,
 				2ADEF4481A9C9341002D5067 /* App Delegate */,
 				2A420EF81ABC42280093E506 /* ASDetailTableView */,
@@ -909,7 +922,6 @@
 				2A591AAA1AB1A10B00B0C461 /* ASWebView */,
 				2A322BF81AA86FE20003D7D5 /* IQSideMenuController */,
 				2A5CC9891AAF05A200C2BB20 /* ASNWTableView */,
-				2ADEF4511A9C94E6002D5067 /* ASViewController */,
 				2A9366991A9DB5AF00B0D650 /* TableViewController */,
 				2A478F921A9F47A300A303FE /* BookmarkViewController */,
 				2ADEF44B1A9C9341002D5067 /* Categories */,
@@ -944,6 +956,7 @@
 		2ADEF44C1A9C9341002D5067 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2AB598DF1B0CABB000A44016 /* STCollapseTableView */,
 				2AA441BD1B09C98600A9BE83 /* EMString */,
 				2A2CEAD51B04AD9400BFE22B /* EventsManager */,
 				2A53D38E1AFA4732006A5EA5 /* GoogleAnalytics */,
@@ -1249,6 +1262,7 @@
 				2A478FCC1A9F4D6800A303FE /* JSONKeyMapper.m in Sources */,
 				2A5CC9831AAEB6A300C2BB20 /* UIProgressView+AFNetworking.m in Sources */,
 				2AA441C61B09C98600A9BE83 /* EMMarkupProperty.m in Sources */,
+				2AB598E21B0CABB000A44016 /* STCollapseTableView.m in Sources */,
 				2A5CC9711AAEB6A300C2BB20 /* AFURLConnectionOperation.m in Sources */,
 				2ADEF44E1A9C9341002D5067 /* AppDelegate.m in Sources */,
 				2ADEF4551A9C9523002D5067 /* ASViewController.m in Sources */,
@@ -1506,6 +1520,7 @@
 					"$(PROJECT_DIR)/ASSnippets/Helpers/GoogleAnalytics",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1515,6 +1530,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Netsolace, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Netsolace, Inc.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ASSnippets/Supporting Files/AS-PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/ASSnippets/Supporting Files/Info.plist";
@@ -1525,6 +1542,7 @@
 					"$(PROJECT_DIR)/ASSnippets/Helpers/GoogleAnalytics",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

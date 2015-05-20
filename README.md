@@ -112,6 +112,9 @@ Email
 =============
 https://github.com/remirobert/RRMessageController
 
+UIButton
+============
+https://github.com/sebyddd/SDRoundedButton
 
 Design
 =============
@@ -136,6 +139,7 @@ https://github.com/antiraum/THPinViewController
 TableView
 ===========
 https://github.com/ennioma/EMAccordionTableViewController
+https://github.com/iSofTom/STCollapseTableView
 
 WebServie
 ===========
@@ -146,6 +150,11 @@ http://davidwalsh.name/web-service-php-mysql-xml-json
 NSDate
 ===========
 https://github.com/novalagung/NVDate
+
+
+PopUp
+==========
+https://github.com/ennioma/EMNotificationPopup
 
 
 Scroller
@@ -159,7 +168,10 @@ https://www.behance.net/gallery/18640709/Greeting-Cards-Happy-Eid-al-Fitr-1435H
 https://www.behance.net/gallery/11836723/Le-vieux-Caire
 https://github.com/appsquickly/Typhoon-Swift-Example
 
+https://github.com/sebyddd/WWDC-2015-Submissions
 https://github.com/sebyddd/SDFeedParser
+
+https://github.com/fernandospr/FSParallaxTableView
 
 ALert View custer
 https://github.com/dogo/SCLAlertViewc
