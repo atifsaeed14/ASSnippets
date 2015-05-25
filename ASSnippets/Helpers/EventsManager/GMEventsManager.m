@@ -9,7 +9,8 @@
 #import "GMEventsManager.h"
 
 static EKEventStore *_eventStore = nil;
-
+static NSString *const kCalendarIdentifer = @"GMEventsManagerCalendarIdentifier";
+static NSString *const kCalendarName = @"AS Events Calendar";
 
 @implementation GMEventsManager
 
@@ -39,12 +40,14 @@ static EKEventStore *_eventStore = nil;
 #pragma mark Public methods
 
 - (NSString *)eventCalendarName {
-    return @"GM Events Calendar";
+    return kCalendarName;
 }
 
 - (EKCalendar *)eventCalendar {
+
     EKCalendar *calendar = nil;
-    NSString *calendarIdentifier = [[NSUserDefaults standardUserDefaults] valueForKey:@"GMEventsManagerCalendarIdentifier"];
+    
+    NSString *calendarIdentifier = [[NSUserDefaults standardUserDefaults] valueForKey:kCalendarIdentifer];
     
     // When identifier exists, my calendar probably already exists
     // Note that user can delete my calendar. In that case I have to create it again.
@@ -63,10 +66,10 @@ static EKEventStore *_eventStore = nil;
         // Find appropriate source type. I'm interested only in local calendars but
         // there are also calendars in iCloud, MS Exchange, ...
         // Look for EKSourceType in manual for more options
-        for (EKSource *s in _eventStore.sources) {
+        for (EKSource *source in _eventStore.sources) {
             
-            if (s.sourceType == EKSourceTypeLocal) {
-                calendar.source = s;
+            if (source.sourceType == EKSourceTypeLocal) {
+                calendar.source = source;
                 break;
             }
         }
@@ -80,12 +83,14 @@ static EKEventStore *_eventStore = nil;
         if (saved) {
             // http://stackoverflow.com/questions/1731530/whats-the-easiest-way-to-persist-data-in-an-iphone-app
             // Saved successfuly, store it's identifier in NSUserDefaults
-            [[NSUserDefaults standardUserDefaults] setObject:calendarIdentifier forKey:@"GMEventsManagerCalendarIdentifier"];
+            [[NSUserDefaults standardUserDefaults] setObject:calendarIdentifier forKey:kCalendarIdentifer];
             
         } else {
             // Unable to save calendar
             return nil;
         }
+    } else {
+        NSLog(@"Could not find the calendar we were looking for.");
     }
     
     return calendar;
@@ -113,6 +118,7 @@ static EKEventStore *_eventStore = nil;
                     notes:(NSString *)notes
                  location:(NSString *)location
               alarmBefore:(NSTimeInterval)relativeAlarmOffset {
+    
     EKEvent *event = [EKEvent eventWithEventStore:_eventStore];
     EKCalendar *calendar = [self eventCalendar];
 
@@ -156,5 +162,33 @@ static EKEventStore *_eventStore = nil;
     NSLog(@"Event saved successfully!");
     return YES;
 }
+
+
+- (NSMutableArray *)fetchEvents {
+    
+    NSDate *startDate = [NSDate date];
+    
+    //Create the end date components
+    NSDateComponents *tomorrowDateComponents = [[NSDateComponents alloc] init];
+    //tomorrowDateComponents.day = 5;
+    tomorrowDateComponents.year = 1;
+    NSDate *endDate = [[NSCalendar currentCalendar] dateByAddingComponents:tomorrowDateComponents
+                                                                    toDate:startDate
+                                                                   options:0];
+    
+    // We will only search the create calendar for our events
+    NSArray *calendarArray = [NSArray arrayWithObject:[self eventCalendar]];
+    
+    // Create the predicate
+    NSPredicate *predicate = [_eventStore predicateForEventsWithStartDate:startDate
+                                                                      endDate:endDate
+                                                                    calendars:calendarArray];
+    
+    // Fetch all events that match the predicate
+    NSMutableArray *events = [NSMutableArray arrayWithArray:[_eventStore eventsMatchingPredicate:predicate]];
+    
+    return events;
+}
+
 
 @end

@@ -28,6 +28,10 @@ https://github.com/alexruperez/objective-c-style-guide
 https://github.com/NatashaTheRobot/AppNetClient
 https://github.com/googlemaps/OpenInGoogleMaps-iOS
 
+Formatter
+================
+https://github.com/enriquez/ECPhoneNumberFormatter
+
 Collection View
 =============
 https://github.com/Produkt/PDKTStickySectionHeadersCollectionViewLayout/tree/master/Demo
@@ -68,6 +72,8 @@ https://github.com/objcio/issue-1-lighter-view-controllers
 Calender
 ===========
 http://stackoverflow.com/questions/15864595/programatically-add-a-reminder-to-the-reminders-app
+https://developer.apple.com/library/ios/samplecode/SimpleEKDemo/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010160-Intro-DontLinkElementID_2
+http://www.raywenderlich.com/64513/cookbook-making-calendar-reminder
 
 Animation
 ===========
@@ -123,7 +129,7 @@ http://ivomynttinen.com/blog/the-ios-7-design-cheat-sheet/
 http://myapptemplates.com/product/filters-sample-iphone-app-template-ios/
 http://myapptemplates.com/product/filters-sample-iphone-app-template-swift/
 http://iosdesign.ivomynttinen.com/
-
+https://loveui.co/vowt/
 Tabbar
 =============
 https://github.com/fsjack/JKTabBarController
@@ -131,6 +137,7 @@ https://github.com/fsjack/JKTabBarController
 UIView
 ============
 https://github.com/ivoleko/ILTranslucentView
+https://github.com/PeteC/InteractiveViewControllerTransitions
 
 Login 
 ============

@@ -11,6 +11,8 @@
 #import "ASViewController.h"
  #import "AFNetworkActivityIndicatorManager.h"
 #import "NSDate+TimeAgo.h"
+#import <EventKit/EventKit.h>
+#import "GMEventsManager.h"
 
 // id UA-62673521-1 UA-XXXXX-Y
 
@@ -29,7 +31,9 @@ static NSString *const kTrackingId = @"UA-62673521-1";
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+
+    [self currentDateInDifferntFormate];
+    [self calendarEvent];
     [self googleAnalyticsConfiguration];
     
     
@@ -118,6 +122,107 @@ static NSString *const kTrackingId = @"UA-62673521-1";
 //                  }
 //    }];
     return YES;
+}
+
+
+- (void)currentDateInDifferntFormate {
+    
+    /* http://stackoverflow.com/questions/16194820/converting-a-gregorian-date-string-to-islamic-date-gives-correct-incorrect-res */
+    
+    // Create a Gregorian Calendar
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    
+    // Set up components of a Gregorian date
+    NSDateComponents *gregorianComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
+    
+    NSLog(@"[In Gregorian calendar ->] Day: %ld, Month: %ld, Year:%ld",
+          (long)[gregorianComponents day],
+          (long)[gregorianComponents month],
+          (long)[gregorianComponents year]);
+    
+    
+    gregorianComponents.day = [gregorianComponents day];
+    gregorianComponents.month = [gregorianComponents month];
+    gregorianComponents.year = [gregorianComponents year];
+    
+    // Create the date
+    NSDate *date = [gregorianCalendar dateFromComponents:gregorianComponents];
+    
+    
+    
+    // Then create an Islamic calendar
+    NSCalendar *hijriCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierIslamicCivil];
+    
+    // And grab those date components for the same date
+    NSDateComponents *hijriComponents = [hijriCalendar components:(NSCalendarUnitDay |
+                                                                   NSCalendarUnitMonth |
+                                                                   NSCalendarUnitYear)
+                                                         fromDate:date];
+    
+    
+    NSLog(@"[In Hijri calendar ->] Day: %ld, Month: %ld, Year:%ld",
+          (long)[hijriComponents day],
+          (long)[hijriComponents month],
+          (long)[hijriComponents year]);
+    
+    
+    // Then create an Islamic calendar
+    NSCalendar *civilCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierIslamic];
+    
+    // And grab those date components for the same date
+    NSDateComponents *civilComponents = [civilCalendar components:(NSCalendarUnitDay |
+                                                                   NSCalendarUnitMonth |
+                                                                   NSCalendarUnitYear)
+                                                         fromDate:date];
+    
+    
+    NSLog(@"[In Hijri calendar ->] Day: %ld, Month: %ld, Year:%ld",
+          (long)[civilComponents day],
+          (long)[civilComponents month],
+          (long)[civilComponents year]);
+    
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setCalendar:hijriCalendar];
+    [formatter setDateStyle:NSDateFormatterFullStyle];
+    //[formatter setTimeStyle:kCFDateFormatterNoStyle];
+    
+    NSString *formattedDate = [formatter stringFromDate:[NSDate date]];
+    
+    NSLog(@"%@", formattedDate);
+    
+    
+    [formatter setCalendar:civilCalendar];
+    [formatter setDateStyle:NSDateFormatterFullStyle];
+    //[formatter setTimeStyle:kCFDateFormatterNoStyle];
+    
+    NSString *formattedDateHi = [formatter stringFromDate:[NSDate date]];
+    NSLog(@"%@", formattedDateHi);
+
+    
+}
+
+- (void)calendarEvent {
+    
+    
+    [[GMEventsManager sharedManager] fetchEvents];
+    
+    
+    [[GMEventsManager sharedManager]requestAccess:^(BOOL granted, NSError *error) {
+        if (granted) {
+        
+            NSDate *startDate = [NSDate date];
+            NSDate *endDate = [startDate dateByAddingTimeInterval:24 * 60 * 60];
+            NSString *title = [NSString stringWithFormat:@"Test %@", [NSDate date]];
+            
+            [[GMEventsManager sharedManager] addEventWithTitle:title startDate:startDate endDate:endDate];
+            
+        } else {
+            NSLog(@"Access to the event store is restricted / denied.");
+        }
+    }];
+    
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

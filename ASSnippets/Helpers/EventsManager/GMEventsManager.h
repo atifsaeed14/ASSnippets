@@ -15,6 +15,7 @@
 + (instancetype)sharedManager;
 
 - (EKCalendar *)eventCalendar;
+- (NSMutableArray *)fetchEvents;
 
 - (void)requestAccess:(void (^)(BOOL granted, NSError *error))callback;
 
