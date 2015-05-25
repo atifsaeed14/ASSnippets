@@ -223,6 +223,50 @@ static NSString *const kTrackingId = @"UA-62673521-1";
     }];
     
     
+    
+    /* http://web.archive.org/web/20120730005439/http://blog.blackwhale.at/?p=336
+    
+    //Create the first status image and the indicator view
+    UIImage *statusImage = [UIImage imageNamed:@"status1.png"];
+    UIImageView *activityImageView = [[UIImageView alloc]
+                                      initWithImage:statusImage];
+    
+    
+    //Add more images which will be used for the animation
+    activityImageView.animationImages = [NSArray arrayWithObjects:
+                                         [UIImage imageNamed:@"status1.png"],
+                                         [UIImage imageNamed:@"status2.png"],
+                                         [UIImage imageNamed:@"status3.png"],
+                                         [UIImage imageNamed:@"status4.png"],
+                                         [UIImage imageNamed:@"status5.png"],
+                                         [UIImage imageNamed:@"status6.png"],
+                                         [UIImage imageNamed:@"status7.png"],
+                                         [UIImage imageNamed:@"status8.png"],
+                                         nil];
+    
+    
+    //Set the duration of the animation (play with it
+    //until it looks nice for you)
+    activityImageView.animationDuration = 0.8;
+    
+    
+    //Position the activity image view somewhere in
+    //the middle of your current view
+    activityImageView.frame = CGRectMake(
+                                         self.view.frame.size.width/2
+                                         -statusImage.size.width/2, 
+                                         self.view.frame.size.height/2
+                                         -statusImage.size.height/2, 
+                                         statusImage.size.width, 
+                                         statusImage.size.height);
+    
+    //Start the animation
+    [activityImageView startAnimating];
+    
+    
+    //Add your custom activity indicator to your current view
+    [self.view addSubview:activityImageView]; */
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

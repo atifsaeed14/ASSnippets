@@ -47,6 +47,11 @@ typedef enum kASAction {
 
 #endif
 
+#define 1 [UIColor colorWithRed:20/255.0 green:200/255.0 blue:255/255.0 alpha:1.0]
+#define 2 [UIColor colorWithRed:20/255.0 green:200/255.0 blue:255/255.0 alpha:1.0]
+#define 3 [UIColor colorWithRed:20/255.0 green:200/255.0 blue:255/255.0 alpha:1.0]
+#define 4 [UIColor colorWithRed:20/255.0 green:200/255.0 blue:255/255.0 alpha:1.0]
+#define 5 [UIColor colorWithRed:20/255.0 green:200/255.0 blue:255/255.0 alpha:1.0]
 
 
 #endif
