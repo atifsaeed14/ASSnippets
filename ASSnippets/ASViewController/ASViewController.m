@@ -19,6 +19,8 @@
 #import "ASDetailTableView.h"
 #import "ASCollectionViewController.h"
 #import "GAIDictionaryBuilder.h"
+#import "ASPaypalViewController.h"
+
 
 @interface ASViewController () <UITableViewDelegate, UITableViewDataSource> {
     
@@ -225,6 +227,12 @@ int secondsLeft;
     cell.accessoryType = UITableViewCellAccessoryNone;
     
     switch (indexPath.row) {
+         
+        case kAPayPay:
+            cell.textLabel.text = @"Paypal";
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            break;
+            
             
         case kASActionTableView:
             cell.textLabel.text = @"TableView";
@@ -304,6 +312,19 @@ int secondsLeft;
     [appDelegate.sideMenuController toggleMenuAnimated:YES];
     
     switch (indexPath.row) {
+            
+        case kAPayPay: {
+            
+            ASPaypalViewController *tableViewController = [ASPaypalViewController new];
+            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+            //[self.navigationController pushViewController:tableViewController animated:YES];
+            [appDelegate.sideMenuController setContentViewController:nav];
+            //[self showTableViewViewController];
+        }
+            break;
+
+            
+            
         case kASActionTableView: {
             
             ASTableViewController *tableViewController = [ASTableViewController new];

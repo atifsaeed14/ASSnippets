@@ -14,6 +14,8 @@
 #import <EventKit/EventKit.h>
 #import "GMEventsManager.h"
 
+#import "PayPalMobile.h"
+
 // id UA-62673521-1 UA-XXXXX-Y
 
 /******* Set your tracking ID here *******/
@@ -32,6 +34,11 @@ static NSString *const kTrackingId = @"UA-62673521-1";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    
+    [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : @"YOUR_CLIENT_ID_FOR_PRODUCTION",
+                                                           PayPalEnvironmentSandbox : @"AZVTLykplV7oQC38jFqe_-iZ2BF8BHmoKIMtigzpIFjkaSvDXWHtfnpLIAJ6PXau1sZH3d30naBpO8UR"}];
+    
+    
     [self currentDateInDifferntFormate];
     [self calendarEvent];
     [self googleAnalyticsConfiguration];
