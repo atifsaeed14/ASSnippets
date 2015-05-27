@@ -8,6 +8,7 @@
 
 #import "ASPaypalViewController.h"
 #import "PayPalMobile.h"
+#import "GMMapViewController.h"
 
 @interface ASPaypalViewController () <PayPalPaymentDelegate>
 
@@ -26,6 +27,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(openMapView)];
+    
     // Do any additional setup after loading the view from its nib.
     self.title = @"Paypal";
     
@@ -39,6 +43,20 @@
     NSLog(@"PayPal iOS SDK version: %@", [PayPalMobile libraryVersion]);
 
 }
+
+- (void)openMapView {
+    GMMapViewController *vc = [GMMapViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+
+    
+    /* http://stackoverflow.com/questions/630265/iphone-uiview-animation-best-practice?rq=1
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.75];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:YES];
+    [UIView commitAnimations]; */
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

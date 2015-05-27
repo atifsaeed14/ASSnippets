@@ -173,6 +173,13 @@
 		2A5CC9AC1AAF1BA600C2BB20 /* INTULocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9A71AAF1BA600C2BB20 /* INTULocationManager.m */; };
 		2A5CC9AD1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9A91AAF1BA600C2BB20 /* INTULocationRequest.m */; };
 		2A5CC9AE1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9A91AAF1BA600C2BB20 /* INTULocationRequest.m */; };
+		2A874E0E1B15C12200BE275C /* GMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A874E0C1B15C12200BE275C /* GMMapViewController.m */; };
+		2A874E0F1B15C12200BE275C /* GMMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A874E0D1B15C12200BE275C /* GMMapViewController.xib */; };
+		2A874E1E1B15C16C00BE275C /* RMPopoverPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A874E121B15C16C00BE275C /* RMPopoverPresentationController.m */; };
+		2A874E1F1B15C16C00BE275C /* RMUniversalAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A874E141B15C16C00BE275C /* RMUniversalAlert.m */; };
+		2A874E201B15C16C00BE275C /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A874E171B15C16C00BE275C /* UIActionSheet+Blocks.m */; };
+		2A874E211B15C16C00BE275C /* UIAlertController+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A874E1A1B15C16C00BE275C /* UIAlertController+Blocks.m */; };
+		2A874E221B15C16C00BE275C /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A874E1D1B15C16C00BE275C /* UIAlertView+Blocks.m */; };
 		2A93668E1A9D884200B0D650 /* ASTestTarget-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */; };
 		2A9366941A9DA1C800B0D650 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */; };
 		2A9366B41A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A11A9DB6E500B0D650 /* CLHeading+Formatted.m */; };
@@ -432,6 +439,19 @@
 		2A5CC9A81AAF1BA600C2BB20 /* INTULocationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequest.h; sourceTree = "<group>"; };
 		2A5CC9A91AAF1BA600C2BB20 /* INTULocationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTULocationRequest.m; sourceTree = "<group>"; };
 		2A5CC9AA1AAF1BA600C2BB20 /* INTULocationRequestDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequestDefines.h; sourceTree = "<group>"; };
+		2A874E0B1B15C12200BE275C /* GMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMMapViewController.h; sourceTree = "<group>"; };
+		2A874E0C1B15C12200BE275C /* GMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMMapViewController.m; sourceTree = "<group>"; };
+		2A874E0D1B15C12200BE275C /* GMMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMMapViewController.xib; sourceTree = "<group>"; };
+		2A874E111B15C16C00BE275C /* RMPopoverPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPopoverPresentationController.h; sourceTree = "<group>"; };
+		2A874E121B15C16C00BE275C /* RMPopoverPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPopoverPresentationController.m; sourceTree = "<group>"; };
+		2A874E131B15C16C00BE275C /* RMUniversalAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUniversalAlert.h; sourceTree = "<group>"; };
+		2A874E141B15C16C00BE275C /* RMUniversalAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMUniversalAlert.m; sourceTree = "<group>"; };
+		2A874E161B15C16C00BE275C /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
+		2A874E171B15C16C00BE275C /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		2A874E191B15C16C00BE275C /* UIAlertController+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Blocks.h"; sourceTree = "<group>"; };
+		2A874E1A1B15C16C00BE275C /* UIAlertController+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Blocks.m"; sourceTree = "<group>"; };
+		2A874E1C1B15C16C00BE275C /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		2A874E1D1B15C16C00BE275C /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ASTestTarget-Info.plist"; sourceTree = "<group>"; };
 		2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		2A93669F1A9DB6E500B0D650 /* CLDegreesAndRadians.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDegreesAndRadians.h; sourceTree = "<group>"; };
@@ -884,6 +904,57 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2A874E0A1B15C12200BE275C /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+				2A874E0B1B15C12200BE275C /* GMMapViewController.h */,
+				2A874E0C1B15C12200BE275C /* GMMapViewController.m */,
+				2A874E0D1B15C12200BE275C /* GMMapViewController.xib */,
+			);
+			path = "Map View";
+			sourceTree = "<group>";
+		};
+		2A874E101B15C16C00BE275C /* RMUniversalAlert */ = {
+			isa = PBXGroup;
+			children = (
+				2A874E111B15C16C00BE275C /* RMPopoverPresentationController.h */,
+				2A874E121B15C16C00BE275C /* RMPopoverPresentationController.m */,
+				2A874E131B15C16C00BE275C /* RMUniversalAlert.h */,
+				2A874E141B15C16C00BE275C /* RMUniversalAlert.m */,
+				2A874E151B15C16C00BE275C /* UIActionSheet+Blocks */,
+				2A874E181B15C16C00BE275C /* UIAlertController+Blocks */,
+				2A874E1B1B15C16C00BE275C /* UIAlertView+Blocks */,
+			);
+			path = RMUniversalAlert;
+			sourceTree = "<group>";
+		};
+		2A874E151B15C16C00BE275C /* UIActionSheet+Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				2A874E161B15C16C00BE275C /* UIActionSheet+Blocks.h */,
+				2A874E171B15C16C00BE275C /* UIActionSheet+Blocks.m */,
+			);
+			path = "UIActionSheet+Blocks";
+			sourceTree = "<group>";
+		};
+		2A874E181B15C16C00BE275C /* UIAlertController+Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				2A874E191B15C16C00BE275C /* UIAlertController+Blocks.h */,
+				2A874E1A1B15C16C00BE275C /* UIAlertController+Blocks.m */,
+			);
+			path = "UIAlertController+Blocks";
+			sourceTree = "<group>";
+		};
+		2A874E1B1B15C16C00BE275C /* UIAlertView+Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				2A874E1C1B15C16C00BE275C /* UIAlertView+Blocks.h */,
+				2A874E1D1B15C16C00BE275C /* UIAlertView+Blocks.m */,
+			);
+			path = "UIAlertView+Blocks";
+			sourceTree = "<group>";
+		};
 		2A9366991A9DB5AF00B0D650 /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1004,6 +1075,7 @@
 		2ADEF4181A9C3ED5002D5067 /* ASSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				2A874E0A1B15C12200BE275C /* Map View */,
 				2A5812041B147D0F00F182BB /* Paypal */,
 				2ADEF4481A9C9341002D5067 /* App Delegate */,
 				2ADEF4511A9C94E6002D5067 /* ASViewController */,
@@ -1050,6 +1122,7 @@
 		2ADEF44C1A9C9341002D5067 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2A874E101B15C16C00BE275C /* RMUniversalAlert */,
 				2AB598DF1B0CABB000A44016 /* STCollapseTableView */,
 				2AA441BD1B09C98600A9BE83 /* EMString */,
 				2A2CEAD51B04AD9400BFE22B /* EventsManager */,
@@ -1272,6 +1345,7 @@
 				2A5CC9921AAF071200C2BB20 /* ASNWViewController.xib in Resources */,
 				2ADEF4661A9CA3D0002D5067 /* Read Me.txt in Resources */,
 				2A254FD21ABAFB3700C1EACB /* NSDateTimeAgo.bundle in Resources */,
+				2A874E0F1B15C12200BE275C /* GMMapViewController.xib in Resources */,
 				2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
 				2ACB10C61AA97F2F0029C1F7 /* bg1.jpg in Resources */,
 				2A254FCA1ABAFB3700C1EACB /* LICENSE in Resources */,
@@ -1375,6 +1449,7 @@
 				2A9366C41A9DB6E500B0D650 /* CLPlacemark+UserInfo.m in Sources */,
 				2A9366E81A9DF47C00B0D650 /* ASTableViewCell.m in Sources */,
 				2A5CC97D1AAEB6A300C2BB20 /* UIAlertView+AFNetworking.m in Sources */,
+				2A874E221B15C16C00BE275C /* UIAlertView+Blocks.m in Sources */,
 				2A9366B61A9DB6E500B0D650 /* CLLocation+Bearing.m in Sources */,
 				2A254FBC1ABAB02300C1EACB /* UIView+Shake.m in Sources */,
 				2A5CC9791AAEB6A300C2BB20 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1391,6 +1466,7 @@
 				2A254FCC1ABAFB3700C1EACB /* NSDate+Extension.swift in Sources */,
 				2A478FC01A9F4D6800A303FE /* JSONModelClassProperty.m in Sources */,
 				2AA441C91B09C98600A9BE83 /* NSString+EMAdditions.m in Sources */,
+				2A874E1E1B15C16C00BE275C /* RMPopoverPresentationController.m in Sources */,
 				2A5CC9871AAEB6A300C2BB20 /* UIWebView+AFNetworking.m in Sources */,
 				2A5CC96F1AAEB6A300C2BB20 /* AFSecurityPolicy.m in Sources */,
 				2A254FAD1ABAA57600C1EACB /* ASLoginViewController.m in Sources */,
@@ -1404,6 +1480,7 @@
 				2AC8AB081AAD89570040F84D /* README.md in Sources */,
 				2A5CC96D1AAEB6A300C2BB20 /* AFNetworkReachabilityManager.m in Sources */,
 				2A254FCE1ABAFB3700C1EACB /* NSDate+TimeAgo.m in Sources */,
+				2A874E201B15C16C00BE275C /* UIActionSheet+Blocks.m in Sources */,
 				2A9366BE1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */,
 				2A2CEAD81B04AD9400BFE22B /* GMEventsManager.m in Sources */,
 				2A5CC98D1AAF066A00C2BB20 /* ASNWViewController.m in Sources */,
@@ -1411,14 +1488,17 @@
 				2AEF32A11AB0045F00E18550 /* UserModel.m in Sources */,
 				2A478FA01A9F4ACD00A303FE /* ASBookmark.m in Sources */,
 				2A9366BC1A9DB6E500B0D650 /* CLLocation+Direction.m in Sources */,
+				2A874E0E1B15C12200BE275C /* GMMapViewController.m in Sources */,
 				2A9366C61A9DB6E500B0D650 /* LLLocationManager.m in Sources */,
 				2A052AA81AA70EE700580BF0 /* GDIMockDataModel.m in Sources */,
+				2A874E211B15C16C00BE275C /* UIAlertController+Blocks.m in Sources */,
 				2A420F031ABC44E40093E506 /* DetailTableViewCell.m in Sources */,
 				2A5CC99A1AAF095600C2BB20 /* User.m in Sources */,
 				2A478FBE1A9F4D6800A303FE /* JSONModelArray.m in Sources */,
 				2A5CC9771AAEB6A300C2BB20 /* AFURLSessionManager.m in Sources */,
 				2A420EFC1ABC42280093E506 /* ASDetailTableView.m in Sources */,
 				2A5CC9AD1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */,
+				2A874E1F1B15C16C00BE275C /* RMUniversalAlert.m in Sources */,
 				2A591AAF1AB1A10B00B0C461 /* ASWebViewController.m in Sources */,
 				2A5CC9981AAF095600C2BB20 /* Post.m in Sources */,
 			);
