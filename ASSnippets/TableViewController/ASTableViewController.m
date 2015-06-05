@@ -50,6 +50,12 @@
     refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Last UPdated at 02/02/2014 05:00 PM"];
     [refreshControl addTarget:self action:@selector(refreshData:) forControlEvents:UIControlEventValueChanged];
     [self.tableView addSubview:refreshControl];
+    
+    
+    
+    /* point to get index in tableview
+    CGPoint buttonPoint = [sender convertPoint:CGPointZero toView:self.tableView];
+    NSIndexPath *selectedIndex = [self.tableView indexPathForRowAtPoint:buttonPoint]; */
 }
 
 - (void)didReceiveMemoryWarning {

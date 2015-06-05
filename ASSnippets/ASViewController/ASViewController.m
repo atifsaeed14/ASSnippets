@@ -69,12 +69,12 @@ int secondsLeft;
     
     // http://nshipster.com/mklocalsearch/
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
-//    request.naturalLanguageQuery = @"Mosque";
-    request.naturalLanguageQuery = @"Restaurants";
+    request.naturalLanguageQuery = @"Mosque";
+//    request.naturalLanguageQuery = @"Restaurants";
     
-//    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(33.7167, 73.0667);
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(33.7167, 73.0667);
 
-    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(40.7127, 74.0059);
+//    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(40.7127, 74.0059);
 
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 15000, 15000);
     request.region = region;

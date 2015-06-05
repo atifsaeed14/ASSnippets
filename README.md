@@ -28,6 +28,9 @@ https://github.com/alexruperez/objective-c-style-guide
 https://github.com/NatashaTheRobot/AppNetClient
 https://github.com/googlemaps/OpenInGoogleMaps-iOS
 
+
+https://github.com/colatusso/iOSAppTemplate
+
 Formatter
 ================
 https://github.com/enriquez/ECPhoneNumberFormatter
@@ -89,6 +92,7 @@ https://github.com/braker1nine/CBTextFieldView
 SideMenu
 ===========
 https://github.com/pkluz/PKRevealController
+https://github.com/aryaxt/iOS-Slide-Menu
 
 Swift
 =============
