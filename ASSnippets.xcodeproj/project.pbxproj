@@ -180,6 +180,32 @@
 		2A874E201B15C16C00BE275C /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A874E171B15C16C00BE275C /* UIActionSheet+Blocks.m */; };
 		2A874E211B15C16C00BE275C /* UIAlertController+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A874E1A1B15C16C00BE275C /* UIAlertController+Blocks.m */; };
 		2A874E221B15C16C00BE275C /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A874E1D1B15C16C00BE275C /* UIAlertView+Blocks.m */; };
+		2A8B91341B28126E009A27F9 /* FSParallaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B91321B28126E009A27F9 /* FSParallaxViewController.m */; };
+		2A8B91351B28126E009A27F9 /* FSParallaxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91331B28126E009A27F9 /* FSParallaxViewController.xib */; };
+		2A8B914D1B281482009A27F9 /* img01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91371B281482009A27F9 /* img01.jpg */; };
+		2A8B914E1B281482009A27F9 /* img02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91381B281482009A27F9 /* img02.jpg */; };
+		2A8B914F1B281482009A27F9 /* img03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91391B281482009A27F9 /* img03.jpg */; };
+		2A8B91501B281482009A27F9 /* img04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B913A1B281482009A27F9 /* img04.jpg */; };
+		2A8B91511B281482009A27F9 /* img05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B913B1B281482009A27F9 /* img05.jpg */; };
+		2A8B91521B281482009A27F9 /* img06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B913C1B281482009A27F9 /* img06.jpg */; };
+		2A8B91531B281482009A27F9 /* img07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B913D1B281482009A27F9 /* img07.jpg */; };
+		2A8B91541B281482009A27F9 /* img08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B913E1B281482009A27F9 /* img08.jpg */; };
+		2A8B91551B281482009A27F9 /* img09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B913F1B281482009A27F9 /* img09.jpg */; };
+		2A8B91561B281482009A27F9 /* img10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91401B281482009A27F9 /* img10.jpg */; };
+		2A8B91571B281482009A27F9 /* img11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91411B281482009A27F9 /* img11.jpg */; };
+		2A8B91581B281482009A27F9 /* img01@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91421B281482009A27F9 /* img01@2x.jpg */; };
+		2A8B91591B281482009A27F9 /* img02@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91431B281482009A27F9 /* img02@2x.jpg */; };
+		2A8B915A1B281482009A27F9 /* img03@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91441B281482009A27F9 /* img03@2x.jpg */; };
+		2A8B915B1B281482009A27F9 /* img04@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91451B281482009A27F9 /* img04@2x.jpg */; };
+		2A8B915C1B281482009A27F9 /* img05@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91461B281482009A27F9 /* img05@2x.jpg */; };
+		2A8B915D1B281482009A27F9 /* img06@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91471B281482009A27F9 /* img06@2x.jpg */; };
+		2A8B915E1B281482009A27F9 /* img07@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91481B281482009A27F9 /* img07@2x.jpg */; };
+		2A8B915F1B281482009A27F9 /* img08@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91491B281482009A27F9 /* img08@2x.jpg */; };
+		2A8B91601B281482009A27F9 /* img09@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B914A1B281482009A27F9 /* img09@2x.jpg */; };
+		2A8B91611B281482009A27F9 /* img10@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B914B1B281482009A27F9 /* img10@2x.jpg */; };
+		2A8B91621B281482009A27F9 /* img11@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B914C1B281482009A27F9 /* img11@2x.jpg */; };
+		2A8B91661B2814D6009A27F9 /* FSParallaxTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8B91641B2814D6009A27F9 /* FSParallaxTableViewCell.m */; };
+		2A8B91671B2814D6009A27F9 /* FSParallaxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8B91651B2814D6009A27F9 /* FSParallaxTableViewCell.xib */; };
 		2A93668E1A9D884200B0D650 /* ASTestTarget-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */; };
 		2A9366941A9DA1C800B0D650 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */; };
 		2A9366B41A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366A11A9DB6E500B0D650 /* CLHeading+Formatted.m */; };
@@ -218,10 +244,6 @@
 		2AA441C71B09C98600A9BE83 /* EMStringStylingConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441C11B09C98600A9BE83 /* EMStringStylingConfiguration.m */; };
 		2AA441C81B09C98600A9BE83 /* EMStylingClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441C31B09C98600A9BE83 /* EMStylingClass.m */; };
 		2AA441C91B09C98600A9BE83 /* NSString+EMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441C51B09C98600A9BE83 /* NSString+EMAdditions.m */; };
-		2AA61B821B21C54E006B2177 /* ASNavMenu.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA61B7E1B21C54E006B2177 /* ASNavMenu.zip */; };
-		2AA61B831B21C54E006B2177 /* Gallery 2.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA61B7F1B21C54E006B2177 /* Gallery 2.zip */; };
-		2AA61B841B21C54E006B2177 /* Googel analytic.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA61B801B21C54E006B2177 /* Googel analytic.zip */; };
-		2AA61B851B21C54E006B2177 /* iOSAppTemplate.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA61B811B21C54E006B2177 /* iOSAppTemplate.zip */; };
 		2AA61B961B21C805006B2177 /* CLWeeklyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA61B881B21C805006B2177 /* CLWeeklyCalendarView.m */; };
 		2AA61B971B21C805006B2177 /* DailyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA61B8A1B21C805006B2177 /* DailyCalendarView.m */; };
 		2AA61B981B21C805006B2177 /* DayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA61B8C1B21C805006B2177 /* DayTitleLabel.m */; };
@@ -463,6 +485,34 @@
 		2A874E1A1B15C16C00BE275C /* UIAlertController+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Blocks.m"; sourceTree = "<group>"; };
 		2A874E1C1B15C16C00BE275C /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		2A874E1D1B15C16C00BE275C /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		2A8B91311B28126E009A27F9 /* FSParallaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSParallaxViewController.h; sourceTree = "<group>"; };
+		2A8B91321B28126E009A27F9 /* FSParallaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSParallaxViewController.m; sourceTree = "<group>"; };
+		2A8B91331B28126E009A27F9 /* FSParallaxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSParallaxViewController.xib; sourceTree = "<group>"; };
+		2A8B91371B281482009A27F9 /* img01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img01.jpg; sourceTree = "<group>"; };
+		2A8B91381B281482009A27F9 /* img02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img02.jpg; sourceTree = "<group>"; };
+		2A8B91391B281482009A27F9 /* img03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img03.jpg; sourceTree = "<group>"; };
+		2A8B913A1B281482009A27F9 /* img04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img04.jpg; sourceTree = "<group>"; };
+		2A8B913B1B281482009A27F9 /* img05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img05.jpg; sourceTree = "<group>"; };
+		2A8B913C1B281482009A27F9 /* img06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img06.jpg; sourceTree = "<group>"; };
+		2A8B913D1B281482009A27F9 /* img07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img07.jpg; sourceTree = "<group>"; };
+		2A8B913E1B281482009A27F9 /* img08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img08.jpg; sourceTree = "<group>"; };
+		2A8B913F1B281482009A27F9 /* img09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img09.jpg; sourceTree = "<group>"; };
+		2A8B91401B281482009A27F9 /* img10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img10.jpg; sourceTree = "<group>"; };
+		2A8B91411B281482009A27F9 /* img11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img11.jpg; sourceTree = "<group>"; };
+		2A8B91421B281482009A27F9 /* img01@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img01@2x.jpg"; sourceTree = "<group>"; };
+		2A8B91431B281482009A27F9 /* img02@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img02@2x.jpg"; sourceTree = "<group>"; };
+		2A8B91441B281482009A27F9 /* img03@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img03@2x.jpg"; sourceTree = "<group>"; };
+		2A8B91451B281482009A27F9 /* img04@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img04@2x.jpg"; sourceTree = "<group>"; };
+		2A8B91461B281482009A27F9 /* img05@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img05@2x.jpg"; sourceTree = "<group>"; };
+		2A8B91471B281482009A27F9 /* img06@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img06@2x.jpg"; sourceTree = "<group>"; };
+		2A8B91481B281482009A27F9 /* img07@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img07@2x.jpg"; sourceTree = "<group>"; };
+		2A8B91491B281482009A27F9 /* img08@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img08@2x.jpg"; sourceTree = "<group>"; };
+		2A8B914A1B281482009A27F9 /* img09@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img09@2x.jpg"; sourceTree = "<group>"; };
+		2A8B914B1B281482009A27F9 /* img10@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img10@2x.jpg"; sourceTree = "<group>"; };
+		2A8B914C1B281482009A27F9 /* img11@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "img11@2x.jpg"; sourceTree = "<group>"; };
+		2A8B91631B2814D6009A27F9 /* FSParallaxTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSParallaxTableViewCell.h; sourceTree = "<group>"; };
+		2A8B91641B2814D6009A27F9 /* FSParallaxTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSParallaxTableViewCell.m; sourceTree = "<group>"; };
+		2A8B91651B2814D6009A27F9 /* FSParallaxTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSParallaxTableViewCell.xib; sourceTree = "<group>"; };
 		2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ASTestTarget-Info.plist"; sourceTree = "<group>"; };
 		2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		2A93669F1A9DB6E500B0D650 /* CLDegreesAndRadians.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDegreesAndRadians.h; sourceTree = "<group>"; };
@@ -503,10 +553,6 @@
 		2AA441C31B09C98600A9BE83 /* EMStylingClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMStylingClass.m; sourceTree = "<group>"; };
 		2AA441C41B09C98600A9BE83 /* NSString+EMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EMAdditions.h"; sourceTree = "<group>"; };
 		2AA441C51B09C98600A9BE83 /* NSString+EMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EMAdditions.m"; sourceTree = "<group>"; };
-		2AA61B7E1B21C54E006B2177 /* ASNavMenu.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = ASNavMenu.zip; sourceTree = "<group>"; };
-		2AA61B7F1B21C54E006B2177 /* Gallery 2.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "Gallery 2.zip"; sourceTree = "<group>"; };
-		2AA61B801B21C54E006B2177 /* Googel analytic.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "Googel analytic.zip"; sourceTree = "<group>"; };
-		2AA61B811B21C54E006B2177 /* iOSAppTemplate.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = iOSAppTemplate.zip; sourceTree = "<group>"; };
 		2AA61B871B21C805006B2177 /* CLWeeklyCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLWeeklyCalendarView.h; sourceTree = "<group>"; };
 		2AA61B881B21C805006B2177 /* CLWeeklyCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLWeeklyCalendarView.m; sourceTree = "<group>"; };
 		2AA61B891B21C805006B2177 /* DailyCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyCalendarView.h; sourceTree = "<group>"; };
@@ -785,6 +831,7 @@
 				2A5812061B147D3A00F182BB /* ASPaypalViewController.m */,
 				2A5812071B147D3A00F182BB /* ASPaypalViewController.xib */,
 				2A58120A1B147F7800F182BB /* PayPalMobile */,
+				2A8B91361B281277009A27F9 /* FSParallax */,
 			);
 			path = Paypal;
 			sourceTree = "<group>";
@@ -984,6 +1031,19 @@
 			path = "UIAlertView+Blocks";
 			sourceTree = "<group>";
 		};
+		2A8B91361B281277009A27F9 /* FSParallax */ = {
+			isa = PBXGroup;
+			children = (
+				2A8B91311B28126E009A27F9 /* FSParallaxViewController.h */,
+				2A8B91321B28126E009A27F9 /* FSParallaxViewController.m */,
+				2A8B91331B28126E009A27F9 /* FSParallaxViewController.xib */,
+				2A8B91631B2814D6009A27F9 /* FSParallaxTableViewCell.h */,
+				2A8B91641B2814D6009A27F9 /* FSParallaxTableViewCell.m */,
+				2A8B91651B2814D6009A27F9 /* FSParallaxTableViewCell.xib */,
+			);
+			name = FSParallax;
+			sourceTree = "<group>";
+		};
 		2A9366991A9DB5AF00B0D650 /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1047,17 +1107,6 @@
 				2AA441C51B09C98600A9BE83 /* NSString+EMAdditions.m */,
 			);
 			path = EMString;
-			sourceTree = "<group>";
-		};
-		2AA61B7D1B21C54E006B2177 /* Sample */ = {
-			isa = PBXGroup;
-			children = (
-				2AA61B7E1B21C54E006B2177 /* ASNavMenu.zip */,
-				2AA61B7F1B21C54E006B2177 /* Gallery 2.zip */,
-				2AA61B801B21C54E006B2177 /* Googel analytic.zip */,
-				2AA61B811B21C54E006B2177 /* iOSAppTemplate.zip */,
-			);
-			path = Sample;
 			sourceTree = "<group>";
 		};
 		2AA61B861B21C805006B2177 /* CLWeeklyCalendarViewSourceCode */ = {
@@ -1144,7 +1193,6 @@
 		2ADEF4181A9C3ED5002D5067 /* ASSnippets */ = {
 			isa = PBXGroup;
 			children = (
-				2AA61B7D1B21C54E006B2177 /* Sample */,
 				2A874E0A1B15C12200BE275C /* Map View */,
 				2A5812041B147D0F00F182BB /* Paypal */,
 				2ADEF4481A9C9341002D5067 /* App Delegate */,
@@ -1216,6 +1264,28 @@
 		2ADEF44D1A9C9341002D5067 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2A8B91371B281482009A27F9 /* img01.jpg */,
+				2A8B91381B281482009A27F9 /* img02.jpg */,
+				2A8B91391B281482009A27F9 /* img03.jpg */,
+				2A8B913A1B281482009A27F9 /* img04.jpg */,
+				2A8B913B1B281482009A27F9 /* img05.jpg */,
+				2A8B913C1B281482009A27F9 /* img06.jpg */,
+				2A8B913D1B281482009A27F9 /* img07.jpg */,
+				2A8B913E1B281482009A27F9 /* img08.jpg */,
+				2A8B913F1B281482009A27F9 /* img09.jpg */,
+				2A8B91401B281482009A27F9 /* img10.jpg */,
+				2A8B91411B281482009A27F9 /* img11.jpg */,
+				2A8B91421B281482009A27F9 /* img01@2x.jpg */,
+				2A8B91431B281482009A27F9 /* img02@2x.jpg */,
+				2A8B91441B281482009A27F9 /* img03@2x.jpg */,
+				2A8B91451B281482009A27F9 /* img04@2x.jpg */,
+				2A8B91461B281482009A27F9 /* img05@2x.jpg */,
+				2A8B91471B281482009A27F9 /* img06@2x.jpg */,
+				2A8B91481B281482009A27F9 /* img07@2x.jpg */,
+				2A8B91491B281482009A27F9 /* img08@2x.jpg */,
+				2A8B914A1B281482009A27F9 /* img09@2x.jpg */,
+				2A8B914B1B281482009A27F9 /* img10@2x.jpg */,
+				2A8B914C1B281482009A27F9 /* img11@2x.jpg */,
 				2A254FB61ABAA89800C1EACB /* ShakeLoginLogo.png */,
 				2ACB10C51AA97F2F0029C1F7 /* bg1.jpg */,
 				2ACB10C21AA97CDC0029C1F7 /* bg.png */,
@@ -1394,43 +1464,63 @@
 				2A420EF31ABC35390093E506 /* UthmanicHafs1 Ver09.otf in Resources */,
 				2A5812091B147D3A00F182BB /* ASPaypalViewController.xib in Resources */,
 				2AAF0B111ACD164E00291726 /* MyCell.xib in Resources */,
+				2A8B91611B281482009A27F9 /* img10@2x.jpg in Resources */,
 				2A53D39A1AFA4732006A5EA5 /* Readme.txt in Resources */,
 				2A420EE91ABC35390093E506 /* BFantezy.ttf in Resources */,
+				2A8B91541B281482009A27F9 /* img08.jpg in Resources */,
 				2A478F9A1A9F47CC00A303FE /* ASBookmarkViewController.xib in Resources */,
+				2A8B915A1B281482009A27F9 /* img03@2x.jpg in Resources */,
+				2A8B91351B28126E009A27F9 /* FSParallaxViewController.xib in Resources */,
 				2A254FD01ABAFB3700C1EACB /* NSDate+TimeAgo.podspec in Resources */,
+				2A8B914F1B281482009A27F9 /* img03.jpg in Resources */,
+				2A8B91581B281482009A27F9 /* img01@2x.jpg in Resources */,
 				2A420EFE1ABC42280093E506 /* ASDetailTableView.xib in Resources */,
 				2AC8AB071AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet in Resources */,
 				2A254FAF1ABAA57600C1EACB /* ASLoginViewController.xib in Resources */,
 				2A5AB6FB1AC436250015355B /* data.json in Resources */,
 				2ADEF4641A9CA3D0002D5067 /* Info.plist in Resources */,
+				2A8B91601B281482009A27F9 /* img09@2x.jpg in Resources */,
 				2ADEF4561A9C9523002D5067 /* ASViewController.xib in Resources */,
 				2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,
+				2A8B91571B281482009A27F9 /* img11.jpg in Resources */,
 				2ACB10C31AA97CDC0029C1F7 /* bg.png in Resources */,
 				2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */,
 				2AE308351AB9ABE8000B95A2 /* Manifest.plist in Resources */,
 				2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */,
+				2A8B915F1B281482009A27F9 /* img08@2x.jpg in Resources */,
+				2A8B915D1B281482009A27F9 /* img06@2x.jpg in Resources */,
 				2A591AB11AB1A10B00B0C461 /* demo.html in Resources */,
 				2A254FB71ABAA89800C1EACB /* ShakeLoginLogo.png in Resources */,
+				2A8B91521B281482009A27F9 /* img06.jpg in Resources */,
 				2A591AB01AB1A10B00B0C461 /* ASWebViewController.xib in Resources */,
-				2AA61B821B21C54E006B2177 /* ASNavMenu.zip in Resources */,
 				2A420EE71ABC35390093E506 /* BElham.ttf in Resources */,
-				2AA61B841B21C54E006B2177 /* Googel analytic.zip in Resources */,
+				2A8B91591B281482009A27F9 /* img02@2x.jpg in Resources */,
 				2A5CC9921AAF071200C2BB20 /* ASNWViewController.xib in Resources */,
 				2ADEF4661A9CA3D0002D5067 /* Read Me.txt in Resources */,
+				2A8B91561B281482009A27F9 /* img10.jpg in Resources */,
+				2A8B91511B281482009A27F9 /* img05.jpg in Resources */,
 				2A254FD21ABAFB3700C1EACB /* NSDateTimeAgo.bundle in Resources */,
+				2A8B915C1B281482009A27F9 /* img05@2x.jpg in Resources */,
+				2A8B91551B281482009A27F9 /* img09.jpg in Resources */,
+				2A8B914E1B281482009A27F9 /* img02.jpg in Resources */,
 				2A874E0F1B15C12200BE275C /* GMMapViewController.xib in Resources */,
 				2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
+				2A8B915E1B281482009A27F9 /* img07@2x.jpg in Resources */,
 				2ACB10C61AA97F2F0029C1F7 /* bg1.jpg in Resources */,
 				2A254FCA1ABAFB3700C1EACB /* LICENSE in Resources */,
+				2A8B914D1B281482009A27F9 /* img01.jpg in Resources */,
 				2A420EEB1ABC35390093E506 /* Diwanltr.ttf in Resources */,
+				2A8B91531B281482009A27F9 /* img07.jpg in Resources */,
+				2A8B915B1B281482009A27F9 /* img04@2x.jpg in Resources */,
+				2A8B91501B281482009A27F9 /* img04.jpg in Resources */,
 				2A420EF61ABC35840093E506 /* me_quran.ttf in Resources */,
 				2A420EED1ABC35390093E506 /* PDMS_Saleem_QuranFont-signed.ttf in Resources */,
+				2A8B91621B281482009A27F9 /* img11@2x.jpg in Resources */,
 				2A420F051ABC44E40093E506 /* DetailTableViewCell.xib in Resources */,
-				2AA61B851B21C54E006B2177 /* iOSAppTemplate.zip in Resources */,
 				2A420EEF1ABC35390093E506 /* ScheherazadeRegOT.ttf in Resources */,
 				2A9366D71A9DD0AD00B0D650 /* trivia.txt in Resources */,
-				2AA61B831B21C54E006B2177 /* Gallery 2.zip in Resources */,
 				2A420EF11ABC35390093E506 /* UthmanicHafs1 Ver08.otf in Resources */,
+				2A8B91671B2814D6009A27F9 /* FSParallaxTableViewCell.xib in Resources */,
 				2AD58FBE1AA0564F0092E3CC /* Images.xcassets in Resources */,
 				2A052AB21AA7234E00580BF0 /* ASScrollViewController.xib in Resources */,
 				2A478FD11A9F4EA800A303FE /* Bookmark.plist in Resources */,
@@ -1558,6 +1648,7 @@
 				2A478FC61A9F4D6800A303FE /* JSONAPI.m in Sources */,
 				2AC8AB081AAD89570040F84D /* README.md in Sources */,
 				2A5CC96D1AAEB6A300C2BB20 /* AFNetworkReachabilityManager.m in Sources */,
+				2A8B91341B28126E009A27F9 /* FSParallaxViewController.m in Sources */,
 				2A254FCE1ABAFB3700C1EACB /* NSDate+TimeAgo.m in Sources */,
 				2A874E201B15C16C00BE275C /* UIActionSheet+Blocks.m in Sources */,
 				2A9366BE1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */,
@@ -1579,6 +1670,7 @@
 				2A5CC9771AAEB6A300C2BB20 /* AFURLSessionManager.m in Sources */,
 				2A420EFC1ABC42280093E506 /* ASDetailTableView.m in Sources */,
 				2A5CC9AD1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */,
+				2A8B91661B2814D6009A27F9 /* FSParallaxTableViewCell.m in Sources */,
 				2A874E1F1B15C16C00BE275C /* RMUniversalAlert.m in Sources */,
 				2AA61B9A1B21C805006B2177 /* NSDictionary+CL.m in Sources */,
 				2A591AAF1AB1A10B00B0C461 /* ASWebViewController.m in Sources */,

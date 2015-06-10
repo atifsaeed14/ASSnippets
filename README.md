@@ -174,13 +174,19 @@ NSDate
 ===========
 https://github.com/novalagung/NVDate
 
+Navigation Bar
+=====================
+https://github.com/ltebean/LTNavigationBar
+https://github.com/tristanhimmelman/HidingNavigationBar
 
 PopUp
 ==========
 https://github.com/ennioma/EMNotificationPopup
-
+https://github.com/cacmartinez/CCMPopup
+https://github.com/carsonperrotti/CNPPopupController
 
 Scroller
+==========
 https://github.com/AugustRush/TLYShyNavBar
 https://github.com/dogo/SCLAlertView
 

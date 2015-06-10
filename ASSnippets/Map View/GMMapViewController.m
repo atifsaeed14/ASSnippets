@@ -835,7 +835,7 @@
             routeTransportTypeString = @"Walking";
             break;
         case MKDirectionsTransportTypeAny:
-            routeTransportTypeString = @"Any";
+            routeTransportTypeString = @"AÎny";
             break;
         default:
             break;

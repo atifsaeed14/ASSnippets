@@ -32,6 +32,21 @@ static NSString *const kTrackingId = @"UA-62673521-1";
 
 @implementation AppDelegate
 
+
+#pragma mark -
+#pragma mark UINavigationControllerDelegate
+
+//| ----------------------------------------------------------------------------
+//  Force the navigation controller to defer to the topViewController for
+//  its supportedInterfaceOrientations.  This allows some of the demos
+//  to rotate into landscape while keeping others in portrait.
+//
+- (NSUInteger)navigationControllerSupportedInterfaceOrientations:(UINavigationController *)navigationController
+{
+    return navigationController.topViewController.supportedInterfaceOrientations;
+}
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     
@@ -40,7 +55,7 @@ static NSString *const kTrackingId = @"UA-62673521-1";
     
     
     [self currentDateInDifferntFormate];
-    [self calendarEvent];
+    ///[self calendarEvent];
     [self googleAnalyticsConfiguration];
     
     

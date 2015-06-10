@@ -9,14 +9,44 @@
 #import "ASPaypalViewController.h"
 #import "PayPalMobile.h"
 #import "GMMapViewController.h"
+#import "FSParallaxViewController.h"
 
-@interface ASPaypalViewController () <PayPalPaymentDelegate>
+@interface ASPaypalViewController () <PayPalPaymentDelegate,UINavigationControllerDelegate>
 
 @property (nonatomic, strong, readwrite) PayPalConfiguration *payPalConfiguration;
 
 @end
 
 @implementation ASPaypalViewController
+
+
+#pragma mark -
+#pragma mark UINavigationControllerDelegate
+
+
+- (IBAction)parallaxSender:(id)sender {
+
+    FSParallaxViewController *vc = [FSParallaxViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+
+
+//| ----------------------------------------------------------------------------
+//  Force the navigation controller to defer to the topViewController for
+//  its supportedInterfaceOrientations.  This allows some of the demos
+//  to rotate into landscape while keeping others in portrait.
+//
+- (NSUInteger)navigationControllerSupportedInterfaceOrientations:(UINavigationController *)navigationController
+{
+    return navigationController.topViewController.supportedInterfaceOrientations;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -124,6 +154,7 @@
                                                                                                      delegate:self];
     [self presentViewController:paymentViewController animated:YES completion:nil];
 }
+
 
 #pragma mark PayPalPaymentDelegate methods
 

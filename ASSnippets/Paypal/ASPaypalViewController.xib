@@ -24,6 +24,16 @@
                         <action selector="pay" destination="-1" eventType="touchUpInside" id="ubQ-Vi-zfq"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="541-rK-5Oe">
+                    <rect key="frame" x="14" y="101" width="160" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="FSParallaxTableView">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="parallaxSender:" destination="-1" eventType="touchUpInside" id="7Va-JL-mKp"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <point key="canvasLocation" x="441" y="276"/>

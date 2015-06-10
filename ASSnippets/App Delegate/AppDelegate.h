@@ -13,7 +13,7 @@
 #import "GAI.h"
 #import "GAIFields.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UINavigationControllerDelegate>
 
 + (AppDelegate *)appDelegate;
 @property (strong, nonatomic) UIWindow *window;

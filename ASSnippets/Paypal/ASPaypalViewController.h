@@ -12,6 +12,7 @@
 
 - (IBAction)pay ;
 
+- (IBAction)parallaxSender:(id)sender;
     
 @end
 

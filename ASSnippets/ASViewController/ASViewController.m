@@ -203,6 +203,12 @@ int secondsLeft;
     
 }
 
+//| ----------------------------------------------------------------------------
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 #pragma mark - UITableView DataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -470,6 +476,9 @@ int secondsLeft;
 
 - (IBAction)testCR:(id)sender {
     
+    
+    NSLog(@"-[%@ %@]", [self class], NSStringFromSelector(_cmd));
+
     [[GMEventsManager sharedManager] eventCalendar];
     
     [[GMEventsManager sharedManager] requestAccess:^(BOOL granted, NSError *error) {
