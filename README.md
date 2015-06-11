@@ -18,6 +18,9 @@ https://github.com/ioscreator/ioscreator
 https://github.com/intentkit/IntentKit
 https://medium.com/ios-apprentice/9-time-saving-ios-7-libraries-43e943e6627
 https://medium.com/ios-apprentice/working-with-localization-905e4052b9de
+
+https://medium.com/ios-apprentice/11-insanely-great-ios-developers-sites-95686a523ea8
+
 https://github.com/schneiderandre/popping
 https://github.com/rnystrom/RNThemeManager
 http://www.ios-developer.net/iphone-ipad-programmer/development/web-view/web-view-general
@@ -30,6 +33,10 @@ https://github.com/googlemaps/OpenInGoogleMaps-iOS
 
 
 https://github.com/colatusso/iOSAppTemplate
+
+Form
+=======
+https://github.com/xmartlabs/XLForm
 
 Formatter
 ================
@@ -91,6 +98,7 @@ https://github.com/braker1nine/CBTextFieldView
 
 SideMenu
 ===========
+https://github.com/mutualmobile/MMDrawerController
 https://github.com/pkluz/PKRevealController
 https://github.com/aryaxt/iOS-Slide-Menu
 
@@ -189,6 +197,8 @@ Scroller
 ==========
 https://github.com/AugustRush/TLYShyNavBar
 https://github.com/dogo/SCLAlertView
+https://github.com/Dromaguirre/DRPageScrollView
+https://github.com/Dromaguirre/Popsicle
 
 https://www.behance.net/gallery/22162975/Calendar-App
 https://www.behance.net/gallery/23822571/Landmarks-of-Istanbul
@@ -204,3 +214,7 @@ https://github.com/fernandospr/FSParallaxTableView
 
 ALert View custer
 https://github.com/dogo/SCLAlertViewc
+
+Blog
+=======
+http://oleb.net/
