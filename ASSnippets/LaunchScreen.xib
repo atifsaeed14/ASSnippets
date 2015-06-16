@@ -45,6 +45,6 @@
         </view>
     </objects>
     <resources>
-        <image name="gm_logo" width="128" height="128"/>
+        <image name="gm_logo" width="320" height="568"/>
     </resources>
 </document>

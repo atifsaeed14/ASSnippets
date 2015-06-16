@@ -1,0 +1,18 @@
+/* 
+  Localization.strings
+  ASSnippets
+
+  Created by Atif Saeed on 6/11/15.
+  Copyright (c) 2015 atti14. All rights reserved.
+*/
+
+
+/* sample */
+
+"text" = "translator english";
+//myLabel.text = NSLocalizedString(@"my text", @"a tip for translator");
+
+//"You like?" = "You like?";
+//"Yesterday you sold %@ apps" = "Yesterday you sold %@ apps";
+//_salesCountLabel.text = [NSString stringWithFormat:@"Yesterday you sold %@ apps", @(1000000)];
+//[_likeButton setTitle:@"You like?" forState:UIControlStateNormal];

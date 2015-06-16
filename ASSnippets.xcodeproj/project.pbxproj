@@ -107,6 +107,11 @@
 		2A53D38B1AFA4701006A5EA5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A53D38A1AFA4701006A5EA5 /* libz.dylib */; };
 		2A53D38D1AFA470E006A5EA5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A53D38C1AFA470E006A5EA5 /* libsqlite3.dylib */; };
 		2A53D39A1AFA4732006A5EA5 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2A53D3991AFA4732006A5EA5 /* Readme.txt */; };
+		2A573C031B30020200C6D887 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A573BFC1B30020200C6D887 /* downArrow.png */; };
+		2A573C041B30020200C6D887 /* downArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A573BFD1B30020200C6D887 /* downArrow@2x.png */; };
+		2A573C051B30020200C6D887 /* downArrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A573BFE1B30020200C6D887 /* downArrow@3x.png */; };
+		2A573C061B30020200C6D887 /* DownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A573C001B30020200C6D887 /* DownPicker.m */; };
+		2A573C071B30020200C6D887 /* UIDownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A573C021B30020200C6D887 /* UIDownPicker.m */; };
 		2A5812081B147D3A00F182BB /* ASPaypalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5812061B147D3A00F182BB /* ASPaypalViewController.m */; };
 		2A5812091B147D3A00F182BB /* ASPaypalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A5812071B147D3A00F182BB /* ASPaypalViewController.xib */; };
 		2A58121B1B147F7800F182BB /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5812131B147F7800F182BB /* libPayPalMobile.a */; };
@@ -255,6 +260,7 @@
 		2AAF0B111ACD164E00291726 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF0B0F1ACD164E00291726 /* MyCell.xib */; };
 		2AAF0B151ACD168800291726 /* ASCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF0B131ACD168800291726 /* ASCollectionViewController.m */; };
 		2AAF0B161ACD168800291726 /* ASCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF0B141ACD168800291726 /* ASCollectionViewController.xib */; };
+		2AB391171B29BC9E00583CF0 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AB391191B29BC9E00583CF0 /* Localization.strings */; };
 		2AB598E21B0CABB000A44016 /* STCollapseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB598E11B0CABB000A44016 /* STCollapseTableView.m */; };
 		2AC761B51AC2DFB200063467 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC761B41AC2DFB200063467 /* CoreImage.framework */; };
 		2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */ = {isa = PBXBuildFile; fileRef = 2AC8AB031AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet */; };
@@ -385,6 +391,13 @@
 		2A53D3971AFA4732006A5EA5 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
 		2A53D3981AFA4732006A5EA5 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
 		2A53D3991AFA4732006A5EA5 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		2A573BFC1B30020200C6D887 /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrow.png; sourceTree = "<group>"; };
+		2A573BFD1B30020200C6D887 /* downArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "downArrow@2x.png"; sourceTree = "<group>"; };
+		2A573BFE1B30020200C6D887 /* downArrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "downArrow@3x.png"; sourceTree = "<group>"; };
+		2A573BFF1B30020200C6D887 /* DownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownPicker.h; sourceTree = "<group>"; };
+		2A573C001B30020200C6D887 /* DownPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownPicker.m; sourceTree = "<group>"; };
+		2A573C011B30020200C6D887 /* UIDownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDownPicker.h; sourceTree = "<group>"; };
+		2A573C021B30020200C6D887 /* UIDownPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDownPicker.m; sourceTree = "<group>"; };
 		2A5812051B147D3A00F182BB /* ASPaypalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPaypalViewController.h; sourceTree = "<group>"; };
 		2A5812061B147D3A00F182BB /* ASPaypalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPaypalViewController.m; sourceTree = "<group>"; };
 		2A5812071B147D3A00F182BB /* ASPaypalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASPaypalViewController.xib; sourceTree = "<group>"; };
@@ -573,6 +586,10 @@
 		2AAF0B121ACD168800291726 /* ASCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCollectionViewController.h; sourceTree = "<group>"; };
 		2AAF0B131ACD168800291726 /* ASCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCollectionViewController.m; sourceTree = "<group>"; };
 		2AAF0B141ACD168800291726 /* ASCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASCollectionViewController.xib; sourceTree = "<group>"; };
+		2AB391181B29BC9E00583CF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
+		2AB3911A1B29BCB200583CF0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localization.strings; sourceTree = "<group>"; };
+		2AB3911B1B29BCB900583CF0 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localization.strings; sourceTree = "<group>"; };
+		2AB3911C1B29BCC000583CF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localization.strings; sourceTree = "<group>"; };
 		2AB598E01B0CABB000A44016 /* STCollapseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollapseTableView.h; sourceTree = "<group>"; };
 		2AB598E11B0CABB000A44016 /* STCollapseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollapseTableView.m; sourceTree = "<group>"; };
 		2AC761B41AC2DFB200063467 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -822,6 +839,20 @@
 				2A53D3991AFA4732006A5EA5 /* Readme.txt */,
 			);
 			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		2A573BFB1B30020200C6D887 /* DownPicker */ = {
+			isa = PBXGroup;
+			children = (
+				2A573BFC1B30020200C6D887 /* downArrow.png */,
+				2A573BFD1B30020200C6D887 /* downArrow@2x.png */,
+				2A573BFE1B30020200C6D887 /* downArrow@3x.png */,
+				2A573BFF1B30020200C6D887 /* DownPicker.h */,
+				2A573C001B30020200C6D887 /* DownPicker.m */,
+				2A573C011B30020200C6D887 /* UIDownPicker.h */,
+				2A573C021B30020200C6D887 /* UIDownPicker.m */,
+			);
+			path = DownPicker;
 			sourceTree = "<group>";
 		};
 		2A5812041B147D0F00F182BB /* Paypal */ = {
@@ -1214,6 +1245,7 @@
 				2AD58FBD1AA0564F0092E3CC /* Images.xcassets */,
 				2ADEF4281A9C3ED5002D5067 /* LaunchScreen.xib */,
 				2A9366931A9DA1C800B0D650 /* LaunchScreen.xib */,
+				2AB391191B29BC9E00583CF0 /* Localization.strings */,
 			);
 			path = ASSnippets;
 			sourceTree = "<group>";
@@ -1240,6 +1272,7 @@
 		2ADEF44C1A9C9341002D5067 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2A573BFB1B30020200C6D887 /* DownPicker */,
 				2AA61B861B21C805006B2177 /* CLWeeklyCalendarViewSourceCode */,
 				2A874E101B15C16C00BE275C /* RMUniversalAlert */,
 				2AB598DF1B0CABB000A44016 /* STCollapseTableView */,
@@ -1444,6 +1477,8 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				sv,
 			);
 			mainGroup = 2ADEF40D1A9C3ED5002D5067;
 			productRefGroup = 2ADEF4171A9C3ED5002D5067 /* Products */;
@@ -1466,6 +1501,7 @@
 				2AAF0B111ACD164E00291726 /* MyCell.xib in Resources */,
 				2A8B91611B281482009A27F9 /* img10@2x.jpg in Resources */,
 				2A53D39A1AFA4732006A5EA5 /* Readme.txt in Resources */,
+				2A573C041B30020200C6D887 /* downArrow@2x.png in Resources */,
 				2A420EE91ABC35390093E506 /* BFantezy.ttf in Resources */,
 				2A8B91541B281482009A27F9 /* img08.jpg in Resources */,
 				2A478F9A1A9F47CC00A303FE /* ASBookmarkViewController.xib in Resources */,
@@ -1479,6 +1515,7 @@
 				2A254FAF1ABAA57600C1EACB /* ASLoginViewController.xib in Resources */,
 				2A5AB6FB1AC436250015355B /* data.json in Resources */,
 				2ADEF4641A9CA3D0002D5067 /* Info.plist in Resources */,
+				2AB391171B29BC9E00583CF0 /* Localization.strings in Resources */,
 				2A8B91601B281482009A27F9 /* img09@2x.jpg in Resources */,
 				2ADEF4561A9C9523002D5067 /* ASViewController.xib in Resources */,
 				2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,
@@ -1487,6 +1524,7 @@
 				2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */,
 				2AE308351AB9ABE8000B95A2 /* Manifest.plist in Resources */,
 				2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */,
+				2A573C031B30020200C6D887 /* downArrow.png in Resources */,
 				2A8B915F1B281482009A27F9 /* img08@2x.jpg in Resources */,
 				2A8B915D1B281482009A27F9 /* img06@2x.jpg in Resources */,
 				2A591AB11AB1A10B00B0C461 /* demo.html in Resources */,
@@ -1525,6 +1563,7 @@
 				2A052AB21AA7234E00580BF0 /* ASScrollViewController.xib in Resources */,
 				2A478FD11A9F4EA800A303FE /* Bookmark.plist in Resources */,
 				2A254FD71ABAFE8700C1EACB /* Settings.bundle in Resources */,
+				2A573C051B30020200C6D887 /* downArrow@3x.png in Resources */,
 				2AAF0B161ACD168800291726 /* ASCollectionViewController.xib in Resources */,
 				2A9366CD1A9DCD3F00B0D650 /* ASTableViewController.xib in Resources */,
 			);
@@ -1614,6 +1653,7 @@
 				2AA441C71B09C98600A9BE83 /* EMStringStylingConfiguration.m in Sources */,
 				2A9366C41A9DB6E500B0D650 /* CLPlacemark+UserInfo.m in Sources */,
 				2A9366E81A9DF47C00B0D650 /* ASTableViewCell.m in Sources */,
+				2A573C071B30020200C6D887 /* UIDownPicker.m in Sources */,
 				2A5CC97D1AAEB6A300C2BB20 /* UIAlertView+AFNetworking.m in Sources */,
 				2A874E221B15C16C00BE275C /* UIAlertView+Blocks.m in Sources */,
 				2A9366B61A9DB6E500B0D650 /* CLLocation+Bearing.m in Sources */,
@@ -1673,6 +1713,7 @@
 				2A8B91661B2814D6009A27F9 /* FSParallaxTableViewCell.m in Sources */,
 				2A874E1F1B15C16C00BE275C /* RMUniversalAlert.m in Sources */,
 				2AA61B9A1B21C805006B2177 /* NSDictionary+CL.m in Sources */,
+				2A573C061B30020200C6D887 /* DownPicker.m in Sources */,
 				2A591AAF1AB1A10B00B0C461 /* ASWebViewController.m in Sources */,
 				2A5CC9981AAF095600C2BB20 /* Post.m in Sources */,
 			);
@@ -1760,6 +1801,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2AB391191B29BC9E00583CF0 /* Localization.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2AB391181B29BC9E00583CF0 /* en */,
+				2AB3911A1B29BCB200583CF0 /* fr */,
+				2AB3911B1B29BCB900583CF0 /* sv */,
+				2AB3911C1B29BCC000583CF0 /* Base */,
+			);
+			name = Localization.strings;
+			sourceTree = "<group>";
+		};
 		2ADEF4281A9C3ED5002D5067 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

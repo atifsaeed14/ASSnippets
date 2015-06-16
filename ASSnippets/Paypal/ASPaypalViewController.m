@@ -11,7 +11,11 @@
 #import "GMMapViewController.h"
 #import "FSParallaxViewController.h"
 
-@interface ASPaypalViewController () <PayPalPaymentDelegate,UINavigationControllerDelegate>
+@interface ASPaypalViewController () <PayPalPaymentDelegate,UINavigationControllerDelegate,UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate> {
+
+    NSMutableArray* bandArray;
+    
+}
 
 @property (nonatomic, strong, readwrite) PayPalConfiguration *payPalConfiguration;
 
@@ -30,6 +34,31 @@
     [self.navigationController pushViewController:vc animated:YES];
     
 }
+
+
+
+#pragma mark - Picker View Delegate
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView;
+{
+    return 1;
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    _textFieldPV.text = [bandArray objectAtIndex:row];
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component;
+{
+    return [bandArray count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+{
+    return [bandArray objectAtIndex:row];
+}
+
 
 
 
@@ -63,6 +92,8 @@
     // Do any additional setup after loading the view from its nib.
     self.title = @"Paypal";
     
+    _textLabel.text = NSLocalizedString(@"text", @"translator english");
+    
     // Set up payPalConfig
     _payPalConfiguration = [[PayPalConfiguration alloc] init];
     _payPalConfiguration.acceptCreditCards = YES;
@@ -72,7 +103,43 @@
     
     NSLog(@"PayPal iOS SDK version: %@", [PayPalMobile libraryVersion]);
 
+    
+    /* drop down */
+    // create the array of data
+    bandArray = [[NSMutableArray alloc] init];
+    
+    // add some sample data
+    [bandArray addObject:@"Offsprings"];
+    [bandArray addObject:@"Radiohead"];
+    [bandArray addObject:@"Muse"];
+    [bandArray addObject:@"R.E.M."];
+    [bandArray addObject:@"The Killers"];
+    [bandArray addObject:@"Social Distortion"];
+    
+    // bind yourTextField to DownPicker
+    self.downPicker = [[DownPicker alloc] initWithTextField:self.dropdoweField withData:bandArray];
+    
+    
+    /* Picker View */
+    
+    _textFieldPV.placeholder = @"Tap to choose...";
+    
+    
+    // show the arrow image
+    _textFieldPV.rightView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"downArrow.png"]];
+    _textFieldPV.rightView.contentMode = UIViewContentModeScaleAspectFit;
+    _textFieldPV.rightView.clipsToBounds = YES;
+    
+    
+    [self setArrowImage:[UIImage imageNamed:@"downArrow.png"]];
+//    [self showArrowImage:YES];
+    
 }
+
+- (void) setArrowImage:(UIImage*)image {
+    [(UIImageView*)_textFieldPV.rightView setImage:image];
+}
+
 
 - (void)openMapView {
     GMMapViewController *vc = [GMMapViewController new];

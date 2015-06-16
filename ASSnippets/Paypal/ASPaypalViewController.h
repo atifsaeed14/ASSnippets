@@ -7,13 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DownPicker.h";
 
 @interface ASPaypalViewController : UIViewController
 
 - (IBAction)pay ;
 
 - (IBAction)parallaxSender:(id)sender;
-    
+
+@property (strong, nonatomic) IBOutlet UILabel *textLabel;
+@property (strong, nonatomic) DownPicker *downPicker;
+
+@property (strong,nonatomic) IBOutlet UITextField *dropdoweField;
+
+
+
+/* pick view */
+@property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
+
+@property (strong, nonatomic) IBOutlet UITextField *textFieldPV;
+
 @end
 
 

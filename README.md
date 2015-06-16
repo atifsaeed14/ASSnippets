@@ -8,8 +8,12 @@ Helping Links
 =============
 
 http://ios-blog.co.uk
-
+https://github.com/jaredsinclair/JTSReachability
 http://ios-blog.co.uk/resources/a-collection-of-free-ios-7-gui-kits-and-templates/
+
+
+https://github.com/andrealufino/ALSystemUtilities
+
 
 https://github.com/ariok/BWWalkthrough
 
@@ -101,6 +105,12 @@ SideMenu
 https://github.com/mutualmobile/MMDrawerController
 https://github.com/pkluz/PKRevealController
 https://github.com/aryaxt/iOS-Slide-Menu
+https://www.cocoacontrols.com/controls/msdynamicsdrawerviewcontroller
+https://github.com/adamdebono/ADSlidingViewController
+https://github.com/mutualmobile/MMDrawerController
+https://github.com/kolyvan/kxmenu
+https://github.com/erichoracek/MSDynamicsDrawerViewController
+https://github.com/rnystrom/RNSwipeViewController
 
 Swift
 =============
@@ -121,6 +131,7 @@ https://github.com/lmirosevic/GBDeviceInfo
 POP
 ========
 https://github.com/facebook/pop
+https://github.com/nicolaschengdev/WYPopoverController
 
 Social
 ========
@@ -171,6 +182,8 @@ TableView
 ===========
 https://github.com/ennioma/EMAccordionTableViewController
 https://github.com/iSofTom/STCollapseTableView
+https://github.com/otaviocc/OCBorghettiView
+https://www.cocoacontrols.com/controls/sdnestedtable
 
 WebServie
 ===========
@@ -186,6 +199,7 @@ Navigation Bar
 =====================
 https://github.com/ltebean/LTNavigationBar
 https://github.com/tristanhimmelman/HidingNavigationBar
+https://github.com/chroman/CRGradientNavigationBar
 
 PopUp
 ==========
@@ -211,10 +225,28 @@ https://github.com/sebyddd/WWDC-2015-Submissions
 https://github.com/sebyddd/SDFeedParser
 
 https://github.com/fernandospr/FSParallaxTableView
+https://github.com/quemb/QMBParallaxScrollViewController
 
 ALert View custer
 https://github.com/dogo/SCLAlertViewc
 
+ScrollerMenu
+===============
+https://github.com/recruit-mp/RMPScrollingMenuBarController
+https://github.com/shabib87/SHViewPagerExample
+https://github.com/nakajijapan/NKJPagerViewController
+https://github.com/hons82/THSegmentedPager
+https://github.com/malcommac/DMPagerViewController
+
 Blog
 =======
 http://oleb.net/
+
+CoreData
+
+===========
+https://www.cocoacontrols.com/controls/iqdatabasemanager
+
+dropdown
+===
+https://github.com/Darkseal/DownPicker
