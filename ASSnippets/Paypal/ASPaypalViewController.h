@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DownPicker.h";
+#import "DownPicker.h"
 
 @interface ASPaypalViewController : UIViewController
 

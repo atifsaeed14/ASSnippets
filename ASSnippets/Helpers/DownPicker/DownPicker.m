@@ -77,7 +77,7 @@
     return [dataArray objectAtIndex:row];
 }
 
-- (void)doneClicked:(id) sender {
+- (void)doneClicked:(id)sender {
     [textField resignFirstResponder];
     if (self->textField.text.length == 0) {
         self->textField.text = [dataArray objectAtIndex:0];
@@ -85,7 +85,15 @@
     [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
-- (IBAction)showPicker:(id)sender {
+- (void)cancelClicked:(id)sender {
+    [textField resignFirstResponder];
+//    if (self->textField.text.length == 0) {
+//        self->textField.text = [dataArray objectAtIndex:0];
+//    }
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
+}
+
+- (void)showPicker:(id)sender {
     pickerView = [[UIPickerView alloc] init];
     pickerView.showsSelectionIndicator = YES;
     pickerView.dataSource = self;
@@ -98,24 +106,54 @@
         [self->pickerView selectRow:[self->dataArray indexOfObject:self->textField.text] inComponent:0 animated:YES];
     }
     
-    UIToolbar* toolbar = [[UIToolbar alloc] init];
+    
+    UINavigationBar *navigationBar = [[UINavigationBar alloc] init];
+    
+    navigationBar.backgroundColor = [UIColor redColor];
+        [navigationBar setTintColor:[UIColor yellowColor]];
+        [navigationBar setTranslucent:YES];
+    [navigationBar setTintColor:[UIColor redColor]];
+    [navigationBar sizeToFit];
+    navigationBar.topItem.title = @"PickView";
+    
+    
+    UIToolbar *toolbar = [[UIToolbar alloc] init];
     toolbar.barStyle = self->toolbarStyle;
     [toolbar sizeToFit];
     
-    //to make the done button aligned to the right
-    UIBarButtonItem *flexibleSpaceLeft = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     
-    UIBarButtonItem* doneButton = [[UIBarButtonItem alloc]
+    
+    //to make the done button aligned to the right
+    //UIBarButtonItem *flexibleSpaceLeft = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc]
                                    initWithTitle:self->toolbarDoneButtonText
                                    style:UIBarButtonItemStyleDone
                                    target:self
                                    action:@selector(doneClicked:)];
     
-    [toolbar setItems:[NSArray arrayWithObjects:flexibleSpaceLeft, doneButton, nil]];
+    //to make the done button aligned to the left
+    
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc]
+                                     initWithTitle:@"Cancel"
+                                     style:UIBarButtonItemStyleDone
+                                     target:self
+                                     action:@selector(cancelClicked:)];
+    
+    navigationBar.barStyle = self->toolbarStyle;
+    navigationBar.topItem.leftBarButtonItem = cancelButton;
+    navigationBar.topItem.rightBarButtonItem = doneButton;
+    
+    [navigationBar setAutoresizingMask:(UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight)];
+
+//    [toolbar setItems:[NSArray arrayWithObjects:flexibleSpaceLeft, doneButton, nil]];
+//[toolbar setItems:[NSArray arrayWithObjects:cancelButton, flexibleSpaceLeft, nil]];
     
     //custom input view
     textField.inputView = pickerView;
-    textField.inputAccessoryView = toolbar;
+    textField.inputAccessoryView = navigationBar;
+  // textField.inputAccessoryView = toolbar;
+
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)aTextField {

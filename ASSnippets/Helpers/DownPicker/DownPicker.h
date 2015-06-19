@@ -18,7 +18,8 @@
     NSString *placeholder;
     NSString *placeholderWhileSelecting;
 	NSString *toolbarDoneButtonText;
-	UIBarStyle toolbarStyle;
+    NSString *toolbarCancelButtonText;
+    UIBarStyle toolbarStyle;
 }
 
 @property (nonatomic, readonly) NSString *text;

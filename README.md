@@ -35,7 +35,7 @@ https://github.com/alexruperez/objective-c-style-guide
 https://github.com/NatashaTheRobot/AppNetClient
 https://github.com/googlemaps/OpenInGoogleMaps-iOS
 
-
+https://github.com/cbpowell/MarqueeLabel
 https://github.com/colatusso/iOSAppTemplate
 
 Form
@@ -88,7 +88,7 @@ Calender
 http://stackoverflow.com/questions/15864595/programatically-add-a-reminder-to-the-reminders-app
 https://developer.apple.com/library/ios/samplecode/SimpleEKDemo/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010160-Intro-DontLinkElementID_2
 http://www.raywenderlich.com/64513/cookbook-making-calendar-reminder
-
+https://github.com/leverdeterre/CalendarIOS7
 Animation
 ===========
 https://github.com/andreamazz
@@ -111,6 +111,7 @@ https://github.com/mutualmobile/MMDrawerController
 https://github.com/kolyvan/kxmenu
 https://github.com/erichoracek/MSDynamicsDrawerViewController
 https://github.com/rnystrom/RNSwipeViewController
+https://github.com/gloubibou/HHTabListController
 
 Swift
 =============
@@ -119,6 +120,7 @@ https://github.com/cnoon/Swift-Introduction
 Passcode
 =============
 https://github.com/rolandleth/LTHPasscodeViewController
+https://github.com/abury/ABPadLockScreen
 
 Localizing
 ============
@@ -184,6 +186,7 @@ https://github.com/ennioma/EMAccordionTableViewController
 https://github.com/iSofTom/STCollapseTableView
 https://github.com/otaviocc/OCBorghettiView
 https://www.cocoacontrols.com/controls/sdnestedtable
+https://github.com/vicpenap/VPPDropDown
 
 WebServie
 ===========
@@ -200,6 +203,8 @@ Navigation Bar
 https://github.com/ltebean/LTNavigationBar
 https://github.com/tristanhimmelman/HidingNavigationBar
 https://github.com/chroman/CRGradientNavigationBar
+
+https://github.com/lukegeiger/LGSemiModalNavController
 
 PopUp
 ==========
@@ -250,3 +255,24 @@ https://www.cocoacontrols.com/controls/iqdatabasemanager
 dropdown
 ===
 https://github.com/Darkseal/DownPicker
+
+
+PageContianer
+============
+https://github.com/daria-kopaliani/DAPagesContainer
+https://github.com/shabib87/SHViewPagerExample
+https://github.com/uacaps/PageMenu
+https://github.com/kitasuke/PagingMenuController
+https://github.com/guilhermearaujo/GUITabPagerViewController
+
+https://github.com/ersentekin/ETSegmentedView
+https://github.com/AdityaDeshmane/iOSCustomPageControl
+
+swipe image
+===============
+https://github.com/kitasuke/MDCSwipeToChoose
+
+
+Project setup  bug
+====
+JIRA / Redmine
