@@ -37,7 +37,12 @@ https://github.com/googlemaps/OpenInGoogleMaps-iOS
 
 https://github.com/cbpowell/MarqueeLabel
 https://github.com/colatusso/iOSAppTemplate
+https://github.com/schneiderandre/ASCFlatUIColor
 
+
+https://github.com/airbob/iOS-tableview-of-2014-world-cup
+
+https://www.drupal.org/node/1388470
 Form
 =======
 https://github.com/xmartlabs/XLForm
@@ -66,7 +71,10 @@ https://github.com/molon/MLPresentController
 TableView
 ============
 https://github.com/sideround
-
+https://github.com/romaonthego/RETableViewManager
+https://github.com/DenHeadless
+https://github.com/EugeneTrapeznikov/ETSwipeCell
+https://github.com/matteogobbi/MGSpotyViewControllerpa
 Loacation Manager
 =============
 https://github.com/danielebogo/DBPrivacyHelper
@@ -112,6 +120,9 @@ https://github.com/kolyvan/kxmenu
 https://github.com/erichoracek/MSDynamicsDrawerViewController
 https://github.com/rnystrom/RNSwipeViewController
 https://github.com/gloubibou/HHTabListController
+https://www.cocoacontrols.com/controls/slidenavigationcontroller
+
+https://github.com/NagaMallesh/MLKMenuPopover
 
 Swift
 =============
@@ -134,6 +145,7 @@ POP
 ========
 https://github.com/facebook/pop
 https://github.com/nicolaschengdev/WYPopoverController
+https://github.com/schneiderandre/popping
 
 Social
 ========
@@ -188,6 +200,8 @@ https://github.com/otaviocc/OCBorghettiView
 https://www.cocoacontrols.com/controls/sdnestedtable
 https://github.com/vicpenap/VPPDropDown
 
+https://github.com/matteogobbi/MGSpotyViewController
+
 WebServie
 ===========
 https://trinitytuts.com/build-first-web-service-php/
@@ -234,6 +248,11 @@ https://github.com/quemb/QMBParallaxScrollViewController
 
 ALert View custer
 https://github.com/dogo/SCLAlertViewc
+https://github.com/sdarlington/WSLViewAutoDismiss
+
+segment
+https://github.com/nealyoung/NYSegmentedControl
+
 
 ScrollerMenu
 ===============
@@ -276,3 +295,27 @@ https://github.com/kitasuke/MDCSwipeToChoose
 Project setup  bug
 ====
 JIRA / Redmine
+
+
+Push Notification
+================
+http://www.raywenderlich.com/32960/apple-push-notification-services-in-ios-6-tutorial-part-1
+
+
+Chat
+=================
+https://github.com/AlexandrGraschenkov/MagicPie
+https://github.com/johngraham262/JWGCircleCounter
+https://github.com/yimingtang/TYMActivityIndicatorView
+https://www.cocoacontrols.com/controls/circleprogressview
+https://github.com/sakrist/VBPieChart
+https://github.com/gyetvan-andras/Chart.js-ObjC-Wrapper
+
+Digit clock
+================
+https://github.com/minsOne/DigitClock
+https://github.com/dasdom/DDHTimerControl
+
+
+
+https://github.com/remirobert/Kinder

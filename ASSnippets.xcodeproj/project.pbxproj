@@ -245,6 +245,8 @@
 		2A9366E91A9DF47C00B0D650 /* ASTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */; };
 		2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */; };
 		2A9366EB1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */; };
+		2A98FE331B3A8AE3003AF933 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98FE311B3A8AE3003AF933 /* TestViewController.swift */; };
+		2A98FE341B3A8AE3003AF933 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A98FE321B3A8AE3003AF933 /* TestViewController.xib */; };
 		2AA441C61B09C98600A9BE83 /* EMMarkupProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441BF1B09C98600A9BE83 /* EMMarkupProperty.m */; };
 		2AA441C71B09C98600A9BE83 /* EMStringStylingConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441C11B09C98600A9BE83 /* EMStringStylingConfiguration.m */; };
 		2AA441C81B09C98600A9BE83 /* EMStylingClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441C31B09C98600A9BE83 /* EMStylingClass.m */; };
@@ -558,6 +560,8 @@
 		2A9366E51A9DF47C00B0D650 /* ASTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTableViewCell.h; sourceTree = "<group>"; };
 		2A9366E61A9DF47C00B0D650 /* ASTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTableViewCell.m; sourceTree = "<group>"; usesTabs = 0; };
 		2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTableViewCell.xib; sourceTree = "<group>"; };
+		2A98FE311B3A8AE3003AF933 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		2A98FE321B3A8AE3003AF933 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		2AA441BE1B09C98600A9BE83 /* EMMarkupProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMarkupProperty.h; sourceTree = "<group>"; };
 		2AA441BF1B09C98600A9BE83 /* EMMarkupProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMarkupProperty.m; sourceTree = "<group>"; };
 		2AA441C01B09C98600A9BE83 /* EMStringStylingConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMStringStylingConfiguration.h; sourceTree = "<group>"; };
@@ -1125,6 +1129,15 @@
 			path = CLLocationUtilities;
 			sourceTree = "<group>";
 		};
+		2A98FE301B3A8AB8003AF933 /* Test Swift */ = {
+			isa = PBXGroup;
+			children = (
+				2A98FE311B3A8AE3003AF933 /* TestViewController.swift */,
+				2A98FE321B3A8AE3003AF933 /* TestViewController.xib */,
+			);
+			path = "Test Swift";
+			sourceTree = "<group>";
+		};
 		2AA441BD1B09C98600A9BE83 /* EMString */ = {
 			isa = PBXGroup;
 			children = (
@@ -1224,6 +1237,7 @@
 		2ADEF4181A9C3ED5002D5067 /* ASSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				2A98FE301B3A8AB8003AF933 /* Test Swift */,
 				2A874E0A1B15C12200BE275C /* Map View */,
 				2A5812041B147D0F00F182BB /* Paypal */,
 				2ADEF4481A9C9341002D5067 /* App Delegate */,
@@ -1556,6 +1570,7 @@
 				2A8B91621B281482009A27F9 /* img11@2x.jpg in Resources */,
 				2A420F051ABC44E40093E506 /* DetailTableViewCell.xib in Resources */,
 				2A420EEF1ABC35390093E506 /* ScheherazadeRegOT.ttf in Resources */,
+				2A98FE341B3A8AE3003AF933 /* TestViewController.xib in Resources */,
 				2A9366D71A9DD0AD00B0D650 /* trivia.txt in Resources */,
 				2A420EF11ABC35390093E506 /* UthmanicHafs1 Ver08.otf in Resources */,
 				2A8B91671B2814D6009A27F9 /* FSParallaxTableViewCell.xib in Resources */,
@@ -1707,6 +1722,7 @@
 				2A420F031ABC44E40093E506 /* DetailTableViewCell.m in Sources */,
 				2A5CC99A1AAF095600C2BB20 /* User.m in Sources */,
 				2A478FBE1A9F4D6800A303FE /* JSONModelArray.m in Sources */,
+				2A98FE331B3A8AE3003AF933 /* TestViewController.swift in Sources */,
 				2A5CC9771AAEB6A300C2BB20 /* AFURLSessionManager.m in Sources */,
 				2A420EFC1ABC42280093E506 /* ASDetailTableView.m in Sources */,
 				2A5CC9AD1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */,
@@ -1929,7 +1945,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1956,7 +1972,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

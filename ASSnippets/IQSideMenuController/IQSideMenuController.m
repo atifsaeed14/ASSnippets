@@ -284,6 +284,8 @@ IQSideMenuControllerWidthCalculatorBlock percentCalculator(CGFloat percentOfPare
     }
 
     CGFloat menuViewWidth = currentMenuWidthCalculator([[self view] bounds].size.width);
+    
+    menuViewWidth = 260;
     CGFloat menuViewHeight = [[self view] bounds].size.height;
 
     CGFloat currentContentOffsetX = _currentPercentOfAnimation * menuViewWidth;

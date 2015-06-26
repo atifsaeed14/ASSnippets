@@ -27,7 +27,6 @@ static NSString *const kTrackingId = @"UA-62673521-1";
 @property(nonatomic, assign) BOOL okToWait;
 @property(nonatomic, copy) void (^dispatchHandler)(GAIDispatchResult result);
 
-
 @end
 
 @implementation AppDelegate
@@ -58,10 +57,8 @@ static NSString *const kTrackingId = @"UA-62673521-1";
     ///[self calendarEvent];
     [self googleAnalyticsConfiguration];
     
-    
     /* app works in background */
     [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
-
     
     // <>'/& character that effect web service request replace these
     NSString *str = @"@ %$*ab&c";
@@ -117,7 +114,6 @@ static NSString *const kTrackingId = @"UA-62673521-1";
     
     _sideMenuController = [[IQSideMenuController alloc] initWithMenuViewController:self.navigationController
                                                                                andContentViewController:contentViewController];
-    
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
     /* add local notification setting */

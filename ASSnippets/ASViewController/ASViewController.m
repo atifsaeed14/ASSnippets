@@ -496,6 +496,19 @@ int secondsLeft;
 }
 
 
+/* get table cell point
 
+UIButton *InfoButton = (UIButton *)sender;
+
+CGPoint InfoButtonPoint = [sender convertPoint:CGPointZero toView:self.tableView];
+selectedAtIndexPath = [self.tableView indexPathForRowAtPoint:recipeInfoButtonPoint];
+
+ViewCell *Cell = (ViewCell *)[self.tableView cellForRowAtIndexPath:selectedAtIndexPath];
+
+
+[Cell.InfoButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+[Cell.InfoButton setBackgroundColor:ThemeColor];
+
+*/
 
 @end
