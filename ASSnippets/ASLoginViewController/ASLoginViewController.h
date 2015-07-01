@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "GAI.h"
+#import "SlideNavigationController.h"
 
-@interface ASLoginViewController : GAITrackedViewController
+@interface ASLoginViewController : GAITrackedViewController <SlideNavigationControllerDelegate>
 
 @property (weak, nonatomic) UIImage *screenShot;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;

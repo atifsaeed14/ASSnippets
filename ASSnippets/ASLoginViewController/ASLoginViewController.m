@@ -22,6 +22,19 @@
 
 @implementation ASLoginViewController
 
+
+#pragma mark - SlideNavigationController Methods -
+
+- (BOOL)slideNavigationControllerShouldDisplayLeftMenu
+{
+    return YES;
+}
+
+//- (BOOL)slideNavigationControllerShouldDisplayRightMenu
+//{
+//    return YES;
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

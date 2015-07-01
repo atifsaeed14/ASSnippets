@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "DownPicker.h"
 
-@interface ASPaypalViewController : UIViewController
+@interface ASPaypalViewController : UIViewController <SlideNavigationControllerDelegate>
+
 
 - (IBAction)pay ;
 

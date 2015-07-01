@@ -12,6 +12,8 @@
 #import "GAITracker.h"
 #import "GAI.h"
 #import "GAIFields.h"
+#import "SlideNavigationController.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UINavigationControllerDelegate>
 

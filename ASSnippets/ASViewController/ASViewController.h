@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "M13ProgressViewBorderedBar.h"
 #import "GMEventsManager.h"
+#import "SlideNavigationController.h"
 
 @interface ASViewController : UIViewController 
 
@@ -23,5 +24,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *testCRBTN;
 
 - (IBAction)testCR:(id)sender;
+@property (nonatomic, assign) BOOL slideOutAnimationEnabled;
 
 @end

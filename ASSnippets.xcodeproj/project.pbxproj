@@ -178,6 +178,18 @@
 		2A5CC9AC1AAF1BA600C2BB20 /* INTULocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9A71AAF1BA600C2BB20 /* INTULocationManager.m */; };
 		2A5CC9AD1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9A91AAF1BA600C2BB20 /* INTULocationRequest.m */; };
 		2A5CC9AE1AAF1BA600C2BB20 /* INTULocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC9A91AAF1BA600C2BB20 /* INTULocationRequest.m */; };
+		2A5ECD771B43CE6C00F1054A /* SlideNavigationContorllerAnimatorFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ECD691B43CE6B00F1054A /* SlideNavigationContorllerAnimatorFade.m */; };
+		2A5ECD781B43CE6C00F1054A /* SlideNavigationContorllerAnimatorScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ECD6B1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorScale.m */; };
+		2A5ECD791B43CE6C00F1054A /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ECD6D1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorScaleAndFade.m */; };
+		2A5ECD7A1B43CE6C00F1054A /* SlideNavigationContorllerAnimatorSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ECD6F1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorSlide.m */; };
+		2A5ECD7B1B43CE6C00F1054A /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ECD711B43CE6B00F1054A /* SlideNavigationContorllerAnimatorSlideAndFade.m */; };
+		2A5ECD7C1B43CE6C00F1054A /* menu-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A5ECD731B43CE6B00F1054A /* menu-button.png */; };
+		2A5ECD7D1B43CE6C00F1054A /* menu-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A5ECD741B43CE6C00F1054A /* menu-button@2x.png */; };
+		2A5ECD7E1B43CE6C00F1054A /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5ECD761B43CE6C00F1054A /* SlideNavigationController.m */; };
+		2A5ECD831B43F70800F1054A /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A5ECD7F1B43F70800F1054A /* gear.png */; };
+		2A5ECD841B43F70800F1054A /* rightMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A5ECD801B43F70800F1054A /* rightMenu.jpg */; };
+		2A5ECD851B43F70800F1054A /* leftMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A5ECD811B43F70800F1054A /* leftMenu.jpg */; };
+		2A5ECD861B43F70800F1054A /* animation.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A5ECD821B43F70800F1054A /* animation.png */; };
 		2A874E0E1B15C12200BE275C /* GMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A874E0C1B15C12200BE275C /* GMMapViewController.m */; };
 		2A874E0F1B15C12200BE275C /* GMMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A874E0D1B15C12200BE275C /* GMMapViewController.xib */; };
 		2A874E1E1B15C16C00BE275C /* RMPopoverPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A874E121B15C16C00BE275C /* RMPopoverPresentationController.m */; };
@@ -487,6 +499,25 @@
 		2A5CC9A81AAF1BA600C2BB20 /* INTULocationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequest.h; sourceTree = "<group>"; };
 		2A5CC9A91AAF1BA600C2BB20 /* INTULocationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTULocationRequest.m; sourceTree = "<group>"; };
 		2A5CC9AA1AAF1BA600C2BB20 /* INTULocationRequestDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequestDefines.h; sourceTree = "<group>"; };
+		2A5ECD671B43CE6B00F1054A /* SlideNavigationContorllerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimator.h; sourceTree = "<group>"; };
+		2A5ECD681B43CE6B00F1054A /* SlideNavigationContorllerAnimatorFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorFade.h; sourceTree = "<group>"; };
+		2A5ECD691B43CE6B00F1054A /* SlideNavigationContorllerAnimatorFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorFade.m; sourceTree = "<group>"; };
+		2A5ECD6A1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorScale.h; sourceTree = "<group>"; };
+		2A5ECD6B1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorScale.m; sourceTree = "<group>"; };
+		2A5ECD6C1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorScaleAndFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorScaleAndFade.h; sourceTree = "<group>"; };
+		2A5ECD6D1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorScaleAndFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorScaleAndFade.m; sourceTree = "<group>"; };
+		2A5ECD6E1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorSlide.h; sourceTree = "<group>"; };
+		2A5ECD6F1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorSlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorSlide.m; sourceTree = "<group>"; };
+		2A5ECD701B43CE6B00F1054A /* SlideNavigationContorllerAnimatorSlideAndFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorSlideAndFade.h; sourceTree = "<group>"; };
+		2A5ECD711B43CE6B00F1054A /* SlideNavigationContorllerAnimatorSlideAndFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationContorllerAnimatorSlideAndFade.m; sourceTree = "<group>"; };
+		2A5ECD731B43CE6B00F1054A /* menu-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-button.png"; sourceTree = "<group>"; };
+		2A5ECD741B43CE6C00F1054A /* menu-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-button@2x.png"; sourceTree = "<group>"; };
+		2A5ECD751B43CE6C00F1054A /* SlideNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationController.h; sourceTree = "<group>"; };
+		2A5ECD761B43CE6C00F1054A /* SlideNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationController.m; sourceTree = "<group>"; };
+		2A5ECD7F1B43F70800F1054A /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		2A5ECD801B43F70800F1054A /* rightMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rightMenu.jpg; sourceTree = "<group>"; };
+		2A5ECD811B43F70800F1054A /* leftMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leftMenu.jpg; sourceTree = "<group>"; };
+		2A5ECD821B43F70800F1054A /* animation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animation.png; sourceTree = "<group>"; };
 		2A874E0B1B15C12200BE275C /* GMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMMapViewController.h; sourceTree = "<group>"; };
 		2A874E0C1B15C12200BE275C /* GMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMMapViewController.m; sourceTree = "<group>"; };
 		2A874E0D1B15C12200BE275C /* GMMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMMapViewController.xib; sourceTree = "<group>"; };
@@ -995,6 +1026,44 @@
 			path = LocationManager;
 			sourceTree = "<group>";
 		};
+		2A5ECD651B43CE6B00F1054A /* iOS-Slide-Menu */ = {
+			isa = PBXGroup;
+			children = (
+				2A5ECD661B43CE6B00F1054A /* Animations */,
+				2A5ECD721B43CE6B00F1054A /* Assets */,
+				2A5ECD751B43CE6C00F1054A /* SlideNavigationController.h */,
+				2A5ECD761B43CE6C00F1054A /* SlideNavigationController.m */,
+			);
+			path = "iOS-Slide-Menu";
+			sourceTree = "<group>";
+		};
+		2A5ECD661B43CE6B00F1054A /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				2A5ECD671B43CE6B00F1054A /* SlideNavigationContorllerAnimator.h */,
+				2A5ECD681B43CE6B00F1054A /* SlideNavigationContorllerAnimatorFade.h */,
+				2A5ECD691B43CE6B00F1054A /* SlideNavigationContorllerAnimatorFade.m */,
+				2A5ECD6A1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorScale.h */,
+				2A5ECD6B1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorScale.m */,
+				2A5ECD6C1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorScaleAndFade.h */,
+				2A5ECD6D1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorScaleAndFade.m */,
+				2A5ECD6E1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorSlide.h */,
+				2A5ECD6F1B43CE6B00F1054A /* SlideNavigationContorllerAnimatorSlide.m */,
+				2A5ECD701B43CE6B00F1054A /* SlideNavigationContorllerAnimatorSlideAndFade.h */,
+				2A5ECD711B43CE6B00F1054A /* SlideNavigationContorllerAnimatorSlideAndFade.m */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		2A5ECD721B43CE6B00F1054A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2A5ECD731B43CE6B00F1054A /* menu-button.png */,
+				2A5ECD741B43CE6C00F1054A /* menu-button@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		2A805F151B12D90900220876 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1286,6 +1355,7 @@
 		2ADEF44C1A9C9341002D5067 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2A5ECD651B43CE6B00F1054A /* iOS-Slide-Menu */,
 				2A573BFB1B30020200C6D887 /* DownPicker */,
 				2AA61B861B21C805006B2177 /* CLWeeklyCalendarViewSourceCode */,
 				2A874E101B15C16C00BE275C /* RMUniversalAlert */,
@@ -1369,6 +1439,10 @@
 		2ADEF45F1A9CA3CF002D5067 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2A5ECD7F1B43F70800F1054A /* gear.png */,
+				2A5ECD801B43F70800F1054A /* rightMenu.jpg */,
+				2A5ECD811B43F70800F1054A /* leftMenu.jpg */,
+				2A5ECD821B43F70800F1054A /* animation.png */,
 				2A5AB6FA1AC436250015355B /* data.json */,
 				2AE308341AB9ABE8000B95A2 /* Manifest.plist */,
 				2A93668C1A9D884200B0D650 /* ASTestTarget-Info.plist */,
@@ -1536,12 +1610,16 @@
 				2A8B91571B281482009A27F9 /* img11.jpg in Resources */,
 				2ACB10C31AA97CDC0029C1F7 /* bg.png in Resources */,
 				2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */,
+				2A5ECD861B43F70800F1054A /* animation.png in Resources */,
 				2AE308351AB9ABE8000B95A2 /* Manifest.plist in Resources */,
+				2A5ECD851B43F70800F1054A /* leftMenu.jpg in Resources */,
+				2A5ECD7D1B43CE6C00F1054A /* menu-button@2x.png in Resources */,
 				2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */,
 				2A573C031B30020200C6D887 /* downArrow.png in Resources */,
 				2A8B915F1B281482009A27F9 /* img08@2x.jpg in Resources */,
 				2A8B915D1B281482009A27F9 /* img06@2x.jpg in Resources */,
 				2A591AB11AB1A10B00B0C461 /* demo.html in Resources */,
+				2A5ECD7C1B43CE6C00F1054A /* menu-button.png in Resources */,
 				2A254FB71ABAA89800C1EACB /* ShakeLoginLogo.png in Resources */,
 				2A8B91521B281482009A27F9 /* img06.jpg in Resources */,
 				2A591AB01AB1A10B00B0C461 /* ASWebViewController.xib in Resources */,
@@ -1553,6 +1631,7 @@
 				2A8B91511B281482009A27F9 /* img05.jpg in Resources */,
 				2A254FD21ABAFB3700C1EACB /* NSDateTimeAgo.bundle in Resources */,
 				2A8B915C1B281482009A27F9 /* img05@2x.jpg in Resources */,
+				2A5ECD841B43F70800F1054A /* rightMenu.jpg in Resources */,
 				2A8B91551B281482009A27F9 /* img09.jpg in Resources */,
 				2A8B914E1B281482009A27F9 /* img02.jpg in Resources */,
 				2A874E0F1B15C12200BE275C /* GMMapViewController.xib in Resources */,
@@ -1566,6 +1645,7 @@
 				2A8B915B1B281482009A27F9 /* img04@2x.jpg in Resources */,
 				2A8B91501B281482009A27F9 /* img04.jpg in Resources */,
 				2A420EF61ABC35840093E506 /* me_quran.ttf in Resources */,
+				2A5ECD831B43F70800F1054A /* gear.png in Resources */,
 				2A420EED1ABC35390093E506 /* PDMS_Saleem_QuranFont-signed.ttf in Resources */,
 				2A8B91621B281482009A27F9 /* img11@2x.jpg in Resources */,
 				2A420F051ABC44E40093E506 /* DetailTableViewCell.xib in Resources */,
@@ -1631,6 +1711,8 @@
 			files = (
 				2A5CC9AB1AAF1BA600C2BB20 /* INTULocationManager.m in Sources */,
 				2A478FC21A9F4D6800A303FE /* JSONModelError.m in Sources */,
+				2A5ECD7E1B43CE6C00F1054A /* SlideNavigationController.m in Sources */,
+				2A5ECD7A1B43CE6C00F1054A /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				2AA61B971B21C805006B2177 /* DailyCalendarView.m in Sources */,
 				2A5CC9811AAEB6A300C2BB20 /* UIImageView+AFNetworking.m in Sources */,
 				2A478FC41A9F4D6800A303FE /* NSArray+JSONModel.m in Sources */,
@@ -1648,6 +1730,7 @@
 				2A254FC01ABACC6000C1EACB /* NSDate+Helper.m in Sources */,
 				2A5CC96B1AAEB6A300C2BB20 /* AFHTTPSessionManager.m in Sources */,
 				2A5CC9851AAEB6A300C2BB20 /* UIRefreshControl+AFNetworking.m in Sources */,
+				2A5ECD791B43CE6C00F1054A /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				2A9366B41A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */,
 				2A478FCC1A9F4D6800A303FE /* JSONKeyMapper.m in Sources */,
 				2A5CC9831AAEB6A300C2BB20 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1671,6 +1754,7 @@
 				2A573C071B30020200C6D887 /* UIDownPicker.m in Sources */,
 				2A5CC97D1AAEB6A300C2BB20 /* UIAlertView+AFNetworking.m in Sources */,
 				2A874E221B15C16C00BE275C /* UIAlertView+Blocks.m in Sources */,
+				2A5ECD771B43CE6C00F1054A /* SlideNavigationContorllerAnimatorFade.m in Sources */,
 				2A9366B61A9DB6E500B0D650 /* CLLocation+Bearing.m in Sources */,
 				2A254FBC1ABAB02300C1EACB /* UIView+Shake.m in Sources */,
 				2A5CC9791AAEB6A300C2BB20 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1683,6 +1767,7 @@
 				2A9366E31A9DF38B00B0D650 /* ASUtility.m in Sources */,
 				2AA61B981B21C805006B2177 /* DayTitleLabel.m in Sources */,
 				2A591AA91AB1A08A00B0C461 /* MBProgressHUD.m in Sources */,
+				2A5ECD781B43CE6C00F1054A /* SlideNavigationContorllerAnimatorScale.m in Sources */,
 				2A11C6A61AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */,
 				2A478FC81A9F4D6800A303FE /* JSONHTTPClient.m in Sources */,
 				2A5CC97B1AAEB6A300C2BB20 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
@@ -1699,6 +1784,7 @@
 				2AAF0B151ACD168800291726 /* ASCollectionViewController.m in Sources */,
 				2AE1D0DD1AB6E55200FAC26A /* ASLabel.m in Sources */,
 				2A9366B81A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m in Sources */,
+				2A5ECD7B1B43CE6C00F1054A /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
 				2A478FCE1A9F4D6800A303FE /* JSONValueTransformer.m in Sources */,
 				2A478FC61A9F4D6800A303FE /* JSONAPI.m in Sources */,
 				2AC8AB081AAD89570040F84D /* README.md in Sources */,

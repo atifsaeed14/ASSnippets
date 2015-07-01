@@ -21,6 +21,11 @@
 #import "GAIDictionaryBuilder.h"
 #import "ASPaypalViewController.h"
 
+#import "SlideNavigationContorllerAnimatorFade.h"
+#import "SlideNavigationContorllerAnimatorSlide.h"
+#import "SlideNavigationContorllerAnimatorScale.h"
+#import "SlideNavigationContorllerAnimatorScaleAndFade.h"
+#import "SlideNavigationContorllerAnimatorSlideAndFade.h"
 
 @interface ASViewController () <UITableViewDelegate, UITableViewDataSource> {
     
@@ -133,6 +138,9 @@ int secondsLeft;
     id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
     [tracker set:kGAIScreenName value:@"Stopwatch"];
     [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
+
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"leftMenu.jpg"]];
+    self.tableView.backgroundView = imageView;
 
 }
 
@@ -322,9 +330,14 @@ int secondsLeft;
         case kAPayPay: {
             
             ASPaypalViewController *tableViewController = [ASPaypalViewController new];
-            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+            
+            [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:tableViewController
+                                                                     withSlideOutAnimation:self.slideOutAnimationEnabled
+                                                                             andCompletion:nil];
+            
+            //UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tableViewController];
             //[self.navigationController pushViewController:tableViewController animated:YES];
-            [appDelegate.sideMenuController setContentViewController:nav];
+            //[appDelegate.sideMenuController setContentViewController:nav];
             //[self showTableViewViewController];
         }
             break;
@@ -334,9 +347,17 @@ int secondsLeft;
         case kASActionTableView: {
             
             ASTableViewController *tableViewController = [ASTableViewController new];
-            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+            
+            [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:tableViewController
+                                                                     withSlideOutAnimation:self.slideOutAnimationEnabled
+                                                                             andCompletion:nil];
+            
+            
+            //UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+            //[appDelegate.sideMenuController setContentViewController:nav];
+
+            
             //[self.navigationController pushViewController:tableViewController animated:YES];
-            [appDelegate.sideMenuController setContentViewController:nav];
             //[self showTableViewViewController];
         }
             break;
@@ -493,6 +514,16 @@ int secondsLeft;
     }];
     
     
+}
+
+
+#pragma mark - UIViewController Methods -
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self.slideOutAnimationEnabled = YES;
+    
+    return [super initWithCoder:aDecoder];
 }
 
 

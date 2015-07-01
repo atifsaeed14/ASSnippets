@@ -13,6 +13,8 @@
 #import "NSDate+TimeAgo.h"
 #import <EventKit/EventKit.h>
 #import "GMEventsManager.h"
+#import "SlideNavigationController.h"
+#import "ASLoginViewController.h"
 
 #import "PayPalMobile.h"
 
@@ -47,11 +49,54 @@ static NSString *const kTrackingId = @"UA-62673521-1";
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
     
     [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : @"YOUR_CLIENT_ID_FOR_PRODUCTION",
                                                            PayPalEnvironmentSandbox : @"AZVTLykplV7oQC38jFqe_-iZ2BF8BHmoKIMtigzpIFjkaSvDXWHtfnpLIAJ6PXau1sZH3d30naBpO8UR"}];
     
+    
+    if (1) {
+
+        ASViewController *leftMenu = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];;
+        
+          ASLoginViewController *login = [ASLoginViewController new];
+        SlideNavigationController  *slide = [[SlideNavigationController alloc] initWithRootViewController:login];
+        
+        [SlideNavigationController sharedInstance].leftMenu = leftMenu;
+        [SlideNavigationController sharedInstance].menuRevealAnimationDuration = .18;
+
+        
+        // Creating a custom bar button for right menu
+        UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+        [button setImage:[UIImage imageNamed:@"gear"] forState:UIControlStateNormal];
+        [button addTarget:[SlideNavigationController sharedInstance] action:@selector(toggleRightMenu) forControlEvents:UIControlEventTouchUpInside];
+        UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+        [SlideNavigationController sharedInstance].rightBarButtonItem = rightBarButtonItem;
+        
+        [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidClose object:nil queue:nil usingBlock:^(NSNotification *note) {
+            NSString *menu = note.userInfo[@"menu"];
+            NSLog(@"Closed %@", menu);
+        }];
+        
+        [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidOpen object:nil queue:nil usingBlock:^(NSNotification *note) {
+            NSString *menu = note.userInfo[@"menu"];
+            NSLog(@"Opened %@", menu);
+        }];
+        
+        [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidReveal object:nil queue:nil usingBlock:^(NSNotification *note) {
+            NSString *menu = note.userInfo[@"menu"];
+            NSLog(@"Revealed %@", menu);
+        }];
+        
+        
+        
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        self.window.rootViewController = slide;
+        [self.window makeKeyAndVisible];
+        
+    } else {
+    
+    
+     
     
     [self currentDateInDifferntFormate];
     ///[self calendarEvent];
@@ -132,6 +177,9 @@ static NSString *const kTrackingId = @"UA-62673521-1";
     // http://labs.omniti.com/labs/jsend
     
     [self JSONData];
+        
+        
+    }
     
     /* Blogs */
 //    [self sendLoginRequest:@"myUsername" password:@"password" callback:^(NSString *error, BOOL success) {
