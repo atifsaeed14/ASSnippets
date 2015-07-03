@@ -270,6 +270,12 @@
 		2AA61B9A1B21C805006B2177 /* NSDictionary+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA61B911B21C805006B2177 /* NSDictionary+CL.m */; };
 		2AA61B9B1B21C805006B2177 /* UIColor+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA61B931B21C805006B2177 /* UIColor+CL.m */; };
 		2AA61B9C1B21C805006B2177 /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA61B951B21C805006B2177 /* UIImage+CL.m */; };
+		2AA623721B4651A50082AB09 /* AKAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA623671B4651A50082AB09 /* AKAnnotation.m */; };
+		2AA623731B4651A50082AB09 /* AKNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA623691B4651A50082AB09 /* AKNavigationBar.m */; };
+		2AA623741B4651A50082AB09 /* AKTableViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA6236B1B4651A50082AB09 /* AKTableViewContent.m */; };
+		2AA623751B4651A50082AB09 /* MKMapViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA6236D1B4651A50082AB09 /* MKMapViewHelper.m */; };
+		2AA623761B4651A50082AB09 /* NSDate+Simple.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA6236F1B4651A50082AB09 /* NSDate+Simple.m */; };
+		2AA623771B4651A50082AB09 /* UIAlertView+Simple.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA623711B4651A50082AB09 /* UIAlertView+Simple.m */; };
 		2AAF0B101ACD164E00291726 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF0B0E1ACD164E00291726 /* MyCell.m */; };
 		2AAF0B111ACD164E00291726 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF0B0F1ACD164E00291726 /* MyCell.xib */; };
 		2AAF0B151ACD168800291726 /* ASCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF0B131ACD168800291726 /* ASCollectionViewController.m */; };
@@ -615,6 +621,18 @@
 		2AA61B931B21C805006B2177 /* UIColor+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CL.m"; sourceTree = "<group>"; };
 		2AA61B941B21C805006B2177 /* UIImage+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CL.h"; sourceTree = "<group>"; };
 		2AA61B951B21C805006B2177 /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
+		2AA623661B4651A50082AB09 /* AKAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKAnnotation.h; sourceTree = "<group>"; };
+		2AA623671B4651A50082AB09 /* AKAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKAnnotation.m; sourceTree = "<group>"; };
+		2AA623681B4651A50082AB09 /* AKNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNavigationBar.h; sourceTree = "<group>"; };
+		2AA623691B4651A50082AB09 /* AKNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNavigationBar.m; sourceTree = "<group>"; };
+		2AA6236A1B4651A50082AB09 /* AKTableViewContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTableViewContent.h; sourceTree = "<group>"; };
+		2AA6236B1B4651A50082AB09 /* AKTableViewContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTableViewContent.m; sourceTree = "<group>"; };
+		2AA6236C1B4651A50082AB09 /* MKMapViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMapViewHelper.h; sourceTree = "<group>"; };
+		2AA6236D1B4651A50082AB09 /* MKMapViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMapViewHelper.m; sourceTree = "<group>"; };
+		2AA6236E1B4651A50082AB09 /* NSDate+Simple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Simple.h"; sourceTree = "<group>"; };
+		2AA6236F1B4651A50082AB09 /* NSDate+Simple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Simple.m"; sourceTree = "<group>"; };
+		2AA623701B4651A50082AB09 /* UIAlertView+Simple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Simple.h"; sourceTree = "<group>"; };
+		2AA623711B4651A50082AB09 /* UIAlertView+Simple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Simple.m"; sourceTree = "<group>"; };
 		2AAF0B0D1ACD164E00291726 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
 		2AAF0B0E1ACD164E00291726 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 		2AAF0B0F1ACD164E00291726 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
@@ -1346,6 +1364,18 @@
 		2ADEF44B1A9C9341002D5067 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				2AA623661B4651A50082AB09 /* AKAnnotation.h */,
+				2AA623671B4651A50082AB09 /* AKAnnotation.m */,
+				2AA623681B4651A50082AB09 /* AKNavigationBar.h */,
+				2AA623691B4651A50082AB09 /* AKNavigationBar.m */,
+				2AA6236A1B4651A50082AB09 /* AKTableViewContent.h */,
+				2AA6236B1B4651A50082AB09 /* AKTableViewContent.m */,
+				2AA6236C1B4651A50082AB09 /* MKMapViewHelper.h */,
+				2AA6236D1B4651A50082AB09 /* MKMapViewHelper.m */,
+				2AA6236E1B4651A50082AB09 /* NSDate+Simple.h */,
+				2AA6236F1B4651A50082AB09 /* NSDate+Simple.m */,
+				2AA623701B4651A50082AB09 /* UIAlertView+Simple.h */,
+				2AA623711B4651A50082AB09 /* UIAlertView+Simple.m */,
 				2A254FBE1ABACC6000C1EACB /* NSDate+Helper.h */,
 				2A254FBF1ABACC6000C1EACB /* NSDate+Helper.m */,
 			);
@@ -1709,6 +1739,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA623771B4651A50082AB09 /* UIAlertView+Simple.m in Sources */,
 				2A5CC9AB1AAF1BA600C2BB20 /* INTULocationManager.m in Sources */,
 				2A478FC21A9F4D6800A303FE /* JSONModelError.m in Sources */,
 				2A5ECD7E1B43CE6C00F1054A /* SlideNavigationController.m in Sources */,
@@ -1718,7 +1749,9 @@
 				2A478FC41A9F4D6800A303FE /* NSArray+JSONModel.m in Sources */,
 				2A254FB41ABAA85500C1EACB /* UITextField+Shake.m in Sources */,
 				2AAF0B101ACD164E00291726 /* MyCell.m in Sources */,
+				2AA623741B4651A50082AB09 /* AKTableViewContent.m in Sources */,
 				2A5CC9671AAEB6A300C2BB20 /* AFHTTPRequestOperation.m in Sources */,
+				2AA623721B4651A50082AB09 /* AKAnnotation.m in Sources */,
 				2A052AB01AA7234E00580BF0 /* ASScrollViewController.m in Sources */,
 				2A5812081B147D3A00F182BB /* ASPaypalViewController.m in Sources */,
 				2A478FBC1A9F4D6800A303FE /* JSONModel.m in Sources */,
@@ -1730,6 +1763,7 @@
 				2A254FC01ABACC6000C1EACB /* NSDate+Helper.m in Sources */,
 				2A5CC96B1AAEB6A300C2BB20 /* AFHTTPSessionManager.m in Sources */,
 				2A5CC9851AAEB6A300C2BB20 /* UIRefreshControl+AFNetworking.m in Sources */,
+				2AA623751B4651A50082AB09 /* MKMapViewHelper.m in Sources */,
 				2A5ECD791B43CE6C00F1054A /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
 				2A9366B41A9DB6E500B0D650 /* CLHeading+Formatted.m in Sources */,
 				2A478FCC1A9F4D6800A303FE /* JSONKeyMapper.m in Sources */,
@@ -1744,6 +1778,7 @@
 				2AEF329D1AB0045F00E18550 /* ApiHTTPClient.m in Sources */,
 				2AA441C81B09C98600A9BE83 /* EMStylingClass.m in Sources */,
 				2A9366BA1A9DB6E500B0D650 /* CLLocation+Degrees.m in Sources */,
+				2AA623761B4651A50082AB09 /* NSDate+Simple.m in Sources */,
 				2A9366CB1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */,
 				2A478F961A9F47C300A303FE /* ASBookmarkViewController.m in Sources */,
 				2A5CC9751AAEB6A300C2BB20 /* AFURLResponseSerialization.m in Sources */,
@@ -1793,6 +1828,7 @@
 				2A254FCE1ABAFB3700C1EACB /* NSDate+TimeAgo.m in Sources */,
 				2A874E201B15C16C00BE275C /* UIActionSheet+Blocks.m in Sources */,
 				2A9366BE1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */,
+				2AA623731B4651A50082AB09 /* AKNavigationBar.m in Sources */,
 				2A2CEAD81B04AD9400BFE22B /* GMEventsManager.m in Sources */,
 				2AA61B991B21C805006B2177 /* NSDate+CL.m in Sources */,
 				2AA61B9B1B21C805006B2177 /* UIColor+CL.m in Sources */,

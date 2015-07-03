@@ -325,3 +325,11 @@ https://github.com/remirobert/Kinder
 
 Scroller menu
 https://dribbble.com/shots/1706861-Top-Menu-Animation?list=users&offset=23
+
+
+Chat 
+=================
+https://github.com/SocialObjects-Software/SOMessaging
+https://github.com/sibahota059/FlatChatBubble
+https://github.com/sibahota059/SPHChatCollectionView
+https://github.com/medinaonly/DBChatAvatarSample
