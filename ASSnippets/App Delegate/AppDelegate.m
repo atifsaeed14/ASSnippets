@@ -54,7 +54,7 @@ static NSString *const kTrackingId = @"UA-62673521-1";
                                                            PayPalEnvironmentSandbox : @"AZVTLykplV7oQC38jFqe_-iZ2BF8BHmoKIMtigzpIFjkaSvDXWHtfnpLIAJ6PXau1sZH3d30naBpO8UR"}];
     
     
-    if (1) {
+    if (0) {
 
         ASViewController *leftMenu = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];;
         

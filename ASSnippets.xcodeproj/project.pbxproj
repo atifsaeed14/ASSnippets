@@ -15,6 +15,8 @@
 		2A052AB11AA7234E00580BF0 /* ASScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A052AAE1AA7234E00580BF0 /* ASScrollViewController.m */; };
 		2A052AB21AA7234E00580BF0 /* ASScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A052AAF1AA7234E00580BF0 /* ASScrollViewController.xib */; };
 		2A052AB31AA7234E00580BF0 /* ASScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A052AAF1AA7234E00580BF0 /* ASScrollViewController.xib */; };
+		2A1146191B4A9743000C8509 /* icon-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A1146171B4A9743000C8509 /* icon-info.png */; };
+		2A11461A1B4A9743000C8509 /* icon-info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A1146181B4A9743000C8509 /* icon-info@2x.png */; };
 		2A11C6A41AA4877100D4D57A /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A11AA4877100D4D57A /* M13ProgressView.m */; };
 		2A11C6A51AA4877100D4D57A /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A11AA4877100D4D57A /* M13ProgressView.m */; };
 		2A11C6A61AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */; };
@@ -326,6 +328,8 @@
 		2A052AAD1AA7234E00580BF0 /* ASScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASScrollViewController.h; sourceTree = "<group>"; };
 		2A052AAE1AA7234E00580BF0 /* ASScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASScrollViewController.m; sourceTree = "<group>"; };
 		2A052AAF1AA7234E00580BF0 /* ASScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASScrollViewController.xib; sourceTree = "<group>"; };
+		2A1146171B4A9743000C8509 /* icon-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info.png"; sourceTree = "<group>"; };
+		2A1146181B4A9743000C8509 /* icon-info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info@2x.png"; sourceTree = "<group>"; };
 		2A11C6A01AA4877100D4D57A /* M13ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressView.h; sourceTree = "<group>"; };
 		2A11C6A11AA4877100D4D57A /* M13ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressView.m; sourceTree = "<group>"; };
 		2A11C6A21AA4877100D4D57A /* M13ProgressViewBorderedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewBorderedBar.h; sourceTree = "<group>"; };
@@ -777,6 +781,8 @@
 		2A420EDF1ABC35390093E506 /* Arabic Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2A1146171B4A9743000C8509 /* icon-info.png */,
+				2A1146181B4A9743000C8509 /* icon-info@2x.png */,
 				2A420EE01ABC35390093E506 /* BElham.ttf */,
 				2A420EE11ABC35390093E506 /* BFantezy.ttf */,
 				2A420EF51ABC35840093E506 /* me_quran.ttf */,
@@ -1632,6 +1638,7 @@
 				2AC8AB071AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet in Resources */,
 				2A254FAF1ABAA57600C1EACB /* ASLoginViewController.xib in Resources */,
 				2A5AB6FB1AC436250015355B /* data.json in Resources */,
+				2A11461A1B4A9743000C8509 /* icon-info@2x.png in Resources */,
 				2ADEF4641A9CA3D0002D5067 /* Info.plist in Resources */,
 				2AB391171B29BC9E00583CF0 /* Localization.strings in Resources */,
 				2A8B91601B281482009A27F9 /* img09@2x.jpg in Resources */,
@@ -1682,6 +1689,7 @@
 				2A420EEF1ABC35390093E506 /* ScheherazadeRegOT.ttf in Resources */,
 				2A98FE341B3A8AE3003AF933 /* TestViewController.xib in Resources */,
 				2A9366D71A9DD0AD00B0D650 /* trivia.txt in Resources */,
+				2A1146191B4A9743000C8509 /* icon-info.png in Resources */,
 				2A420EF11ABC35390093E506 /* UthmanicHafs1 Ver08.otf in Resources */,
 				2A8B91671B2814D6009A27F9 /* FSParallaxTableViewCell.xib in Resources */,
 				2AD58FBE1AA0564F0092E3CC /* Images.xcassets in Resources */,
