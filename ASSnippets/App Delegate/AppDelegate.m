@@ -15,8 +15,8 @@
 #import "GMEventsManager.h"
 #import "SlideNavigationController.h"
 #import "ASLoginViewController.h"
-
 #import "PayPalMobile.h"
+#import "INTULocationManager.h"
 
 // id UA-62673521-1 UA-XXXXX-Y
 
@@ -34,6 +34,28 @@ static NSString *const kTrackingId = @"UA-62673521-1";
 @implementation AppDelegate
 
 
+
+
+typedef void(^addressCompletion)(NSString *);
+
+-(void)getAddressFromLocation:(CLLocation *)location complationBlock:(addressCompletion)completionBlock
+{
+    __block CLPlacemark* placemark;
+    __block NSString *address = nil;
+    
+    CLGeocoder* geocoder = [CLGeocoder new];
+    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error)
+     {
+         if (error == nil && [placemarks count] > 0)
+         {
+             placemark = [placemarks lastObject];
+             address = [NSString stringWithFormat:@"%@, %@ %@", placemark.name, placemark.postalCode, placemark.locality];
+             completionBlock(address);
+         }
+     }];
+}
+
+
 #pragma mark -
 #pragma mark UINavigationControllerDelegate
 
@@ -49,6 +71,46 @@ static NSString *const kTrackingId = @"UA-62673521-1";
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    INTULocationManager *locMgr = [INTULocationManager sharedInstance];
+    [locMgr requestLocationWithDesiredAccuracy:INTULocationAccuracyCity
+                                       timeout:10.0
+                          delayUntilAuthorized:YES  // This parameter is optional, defaults to NO if omitted
+                                         block:^(CLLocation *currentLocation, INTULocationAccuracy achievedAccuracy, INTULocationStatus status) {
+                                             if (status == INTULocationStatusSuccess) {
+                                                 // Request succeeded, meaning achievedAccuracy is at least the requested accuracy, and
+                                                 
+                                                 NSString *str = [NSString stringWithFormat:@"%@", currentLocation];
+
+                                                 NSLog(@"%@",str);
+                                                 
+                                                 
+                                                 
+                                                // CLLocation* eventLocation = [[CLLocation alloc] initWithLatitude:_latitude longitude:_longitude];
+                                                 
+                                                 [self getAddressFromLocation:currentLocation complationBlock:^(NSString * address) {
+                                                     if(address) {
+                                                         NSLog(@"%@ address",address);
+
+                                                     }
+                                                 }];
+                                                 
+                                                 
+                                                 // currentLocation contains the device's current location.
+                                             }
+                                             else if (status == INTULocationStatusTimedOut) {
+                                                 // Wasn't able to locate the user with the requested accuracy within the timeout interval.
+                                                 // However, currentLocation contains the best location available (if any) as of right now,
+                                                 // and achievedAccuracy has info on the accuracy/recency of the location in currentLocation.
+                                             }
+                                             else {
+                                                 // An error occurred, more info is available by looking at the specific status returned.
+                                             }
+                                         }];
+    
+    
+    
     
     [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : @"YOUR_CLIENT_ID_FOR_PRODUCTION",
                                                            PayPalEnvironmentSandbox : @"AZVTLykplV7oQC38jFqe_-iZ2BF8BHmoKIMtigzpIFjkaSvDXWHtfnpLIAJ6PXau1sZH3d30naBpO8UR"}];

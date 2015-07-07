@@ -318,10 +318,7 @@ Digit clock
 https://github.com/minsOne/DigitClock
 https://github.com/dasdom/DDHTimerControl
 
-
-
 https://github.com/remirobert/Kinder
-
 
 Scroller menu
 https://dribbble.com/shots/1706861-Top-Menu-Animation?list=users&offset=23
@@ -338,6 +335,21 @@ https://github.com/medinaonly/DBChatAvatarSample
 tag
 ===============
 https://github.com/remirobert/RRTagController
+
+
+Web Services
+============
+http://technet.weblineindia.com/mobile/how-to-access-soap-web-services-from-ios-sdk/2/
+http://www.icodeblog.com/2008/11/03/iphone-programming-tutorial-intro-to-soap-web-services/
+https://github.com/priore/SOAPEngine
+http://amoghnatu.net/2014/04/26/consuming-soap-web-services-from-ios-objective-c/
+http://www.makebetterthings.com/iphone/call-soap-web-service-from-iphone/
+
+
+Helping Class
+===
+https://github.com/enormego
+
 
 
 
