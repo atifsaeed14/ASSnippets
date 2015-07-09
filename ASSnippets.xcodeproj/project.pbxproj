@@ -261,6 +261,33 @@
 		2A9366EB1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */; };
 		2A98FE331B3A8AE3003AF933 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98FE311B3A8AE3003AF933 /* TestViewController.swift */; };
 		2A98FE341B3A8AE3003AF933 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A98FE321B3A8AE3003AF933 /* TestViewController.xib */; };
+		2AA213361B4E5DE70000004A /* DIOSComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA213281B4E5DE70000004A /* DIOSComment.m */; };
+		2AA213371B4E5DE70000004A /* DIOSEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA2132A1B4E5DE70000004A /* DIOSEntity.m */; };
+		2AA213381B4E5DE70000004A /* DIOSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA2132C1B4E5DE70000004A /* DIOSNode.m */; };
+		2AA213391B4E5DE70000004A /* DIOSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA2132E1B4E5DE70000004A /* DIOSSession.m */; };
+		2AA2133A1B4E5DE70000004A /* DIOSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA213301B4E5DE70000004A /* DIOSUser.m */; };
+		2AA2133B1B4E5DE70000004A /* DIOSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA213321B4E5DE70000004A /* DIOSView.m */; };
+		2AA2133C1B4E5DE70000004A /* drupal-ios-sdk.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213331B4E5DE70000004A /* drupal-ios-sdk.podspec */; };
+		2AA2133D1B4E5DE70000004A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213341B4E5DE70000004A /* LICENSE */; };
+		2AA2133E1B4E5DE70000004A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2AA213351B4E5DE70000004A /* README.md */; };
+		2AA213561B4E74360000004A /* dios_example.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213401B4E74360000004A /* dios_example.plist */; };
+		2AA213571B4E74360000004A /* DIOSComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA213421B4E74360000004A /* DIOSComment.m */; };
+		2AA213581B4E74360000004A /* DIOSEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA213441B4E74360000004A /* DIOSEntity.m */; };
+		2AA213591B4E74360000004A /* DIOSFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA213461B4E74360000004A /* DIOSFile.m */; };
+		2AA2135A1B4E74360000004A /* DIOSNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA213481B4E74360000004A /* DIOSNode.m */; };
+		2AA2135B1B4E74360000004A /* DIOSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA2134A1B4E74360000004A /* DIOSSession.m */; };
+		2AA2135C1B4E74360000004A /* DIOSSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA2134C1B4E74360000004A /* DIOSSystem.m */; };
+		2AA2135D1B4E74360000004A /* DIOSTaxonomy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA2134E1B4E74360000004A /* DIOSTaxonomy.m */; };
+		2AA2135E1B4E74360000004A /* DIOSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA213501B4E74360000004A /* DIOSUser.m */; };
+		2AA2135F1B4E74360000004A /* DIOSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA213521B4E74360000004A /* DIOSView.m */; };
+		2AA213601B4E74360000004A /* drupal-ios-sdk.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213531B4E74360000004A /* drupal-ios-sdk.podspec */; };
+		2AA213611B4E74360000004A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213541B4E74360000004A /* LICENSE */; };
+		2AA213621B4E74360000004A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2AA213551B4E74360000004A /* README.md */; };
+		2AA213691B4E98FD0000004A /* ASNavMenu.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213641B4E98FD0000004A /* ASNavMenu.zip */; };
+		2AA2136A1B4E98FD0000004A /* Doppio-master.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213651B4E98FD0000004A /* Doppio-master.zip */; };
+		2AA2136B1B4E98FD0000004A /* Gallery 2.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213661B4E98FD0000004A /* Gallery 2.zip */; };
+		2AA2136C1B4E98FD0000004A /* Googel analytic.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213671B4E98FD0000004A /* Googel analytic.zip */; };
+		2AA2136D1B4E98FD0000004A /* iOSAppTemplate.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213681B4E98FD0000004A /* iOSAppTemplate.zip */; };
 		2AA441C61B09C98600A9BE83 /* EMMarkupProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441BF1B09C98600A9BE83 /* EMMarkupProperty.m */; };
 		2AA441C71B09C98600A9BE83 /* EMStringStylingConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441C11B09C98600A9BE83 /* EMStringStylingConfiguration.m */; };
 		2AA441C81B09C98600A9BE83 /* EMStylingClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441C31B09C98600A9BE83 /* EMStylingClass.m */; };
@@ -603,6 +630,48 @@
 		2A9366E71A9DF47C00B0D650 /* ASTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTableViewCell.xib; sourceTree = "<group>"; };
 		2A98FE311B3A8AE3003AF933 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2A98FE321B3A8AE3003AF933 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		2AA213271B4E5DE70000004A /* DIOSComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSComment.h; sourceTree = "<group>"; };
+		2AA213281B4E5DE70000004A /* DIOSComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSComment.m; sourceTree = "<group>"; };
+		2AA213291B4E5DE70000004A /* DIOSEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSEntity.h; sourceTree = "<group>"; };
+		2AA2132A1B4E5DE70000004A /* DIOSEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSEntity.m; sourceTree = "<group>"; };
+		2AA2132B1B4E5DE70000004A /* DIOSNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSNode.h; sourceTree = "<group>"; };
+		2AA2132C1B4E5DE70000004A /* DIOSNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSNode.m; sourceTree = "<group>"; };
+		2AA2132D1B4E5DE70000004A /* DIOSSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSSession.h; sourceTree = "<group>"; };
+		2AA2132E1B4E5DE70000004A /* DIOSSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSSession.m; sourceTree = "<group>"; };
+		2AA2132F1B4E5DE70000004A /* DIOSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSUser.h; sourceTree = "<group>"; };
+		2AA213301B4E5DE70000004A /* DIOSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSUser.m; sourceTree = "<group>"; };
+		2AA213311B4E5DE70000004A /* DIOSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSView.h; sourceTree = "<group>"; };
+		2AA213321B4E5DE70000004A /* DIOSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSView.m; sourceTree = "<group>"; };
+		2AA213331B4E5DE70000004A /* drupal-ios-sdk.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "drupal-ios-sdk.podspec"; sourceTree = "<group>"; };
+		2AA213341B4E5DE70000004A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2AA213351B4E5DE70000004A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2AA213401B4E74360000004A /* dios_example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dios_example.plist; sourceTree = "<group>"; };
+		2AA213411B4E74360000004A /* DIOSComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSComment.h; sourceTree = "<group>"; };
+		2AA213421B4E74360000004A /* DIOSComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSComment.m; sourceTree = "<group>"; };
+		2AA213431B4E74360000004A /* DIOSEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSEntity.h; sourceTree = "<group>"; };
+		2AA213441B4E74360000004A /* DIOSEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSEntity.m; sourceTree = "<group>"; };
+		2AA213451B4E74360000004A /* DIOSFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSFile.h; sourceTree = "<group>"; };
+		2AA213461B4E74360000004A /* DIOSFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSFile.m; sourceTree = "<group>"; };
+		2AA213471B4E74360000004A /* DIOSNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSNode.h; sourceTree = "<group>"; };
+		2AA213481B4E74360000004A /* DIOSNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSNode.m; sourceTree = "<group>"; };
+		2AA213491B4E74360000004A /* DIOSSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSSession.h; sourceTree = "<group>"; };
+		2AA2134A1B4E74360000004A /* DIOSSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSSession.m; sourceTree = "<group>"; };
+		2AA2134B1B4E74360000004A /* DIOSSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSSystem.h; sourceTree = "<group>"; };
+		2AA2134C1B4E74360000004A /* DIOSSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSSystem.m; sourceTree = "<group>"; };
+		2AA2134D1B4E74360000004A /* DIOSTaxonomy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSTaxonomy.h; sourceTree = "<group>"; };
+		2AA2134E1B4E74360000004A /* DIOSTaxonomy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSTaxonomy.m; sourceTree = "<group>"; };
+		2AA2134F1B4E74360000004A /* DIOSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSUser.h; sourceTree = "<group>"; };
+		2AA213501B4E74360000004A /* DIOSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSUser.m; sourceTree = "<group>"; };
+		2AA213511B4E74360000004A /* DIOSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSView.h; sourceTree = "<group>"; };
+		2AA213521B4E74360000004A /* DIOSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSView.m; sourceTree = "<group>"; };
+		2AA213531B4E74360000004A /* drupal-ios-sdk.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "drupal-ios-sdk.podspec"; sourceTree = "<group>"; };
+		2AA213541B4E74360000004A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2AA213551B4E74360000004A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2AA213641B4E98FD0000004A /* ASNavMenu.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = ASNavMenu.zip; sourceTree = "<group>"; };
+		2AA213651B4E98FD0000004A /* Doppio-master.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "Doppio-master.zip"; sourceTree = "<group>"; };
+		2AA213661B4E98FD0000004A /* Gallery 2.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "Gallery 2.zip"; sourceTree = "<group>"; };
+		2AA213671B4E98FD0000004A /* Googel analytic.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "Googel analytic.zip"; sourceTree = "<group>"; };
+		2AA213681B4E98FD0000004A /* iOSAppTemplate.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = iOSAppTemplate.zip; sourceTree = "<group>"; };
 		2AA441BE1B09C98600A9BE83 /* EMMarkupProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMarkupProperty.h; sourceTree = "<group>"; };
 		2AA441BF1B09C98600A9BE83 /* EMMarkupProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMarkupProperty.m; sourceTree = "<group>"; };
 		2AA441C01B09C98600A9BE83 /* EMStringStylingConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMStringStylingConfiguration.h; sourceTree = "<group>"; };
@@ -1231,6 +1300,69 @@
 			path = "Test Swift";
 			sourceTree = "<group>";
 		};
+		2AA213261B4E5DE70000004A /* drupal-ios-sdk-3.x */ = {
+			isa = PBXGroup;
+			children = (
+				2AA213271B4E5DE70000004A /* DIOSComment.h */,
+				2AA213281B4E5DE70000004A /* DIOSComment.m */,
+				2AA213291B4E5DE70000004A /* DIOSEntity.h */,
+				2AA2132A1B4E5DE70000004A /* DIOSEntity.m */,
+				2AA2132B1B4E5DE70000004A /* DIOSNode.h */,
+				2AA2132C1B4E5DE70000004A /* DIOSNode.m */,
+				2AA2132D1B4E5DE70000004A /* DIOSSession.h */,
+				2AA2132E1B4E5DE70000004A /* DIOSSession.m */,
+				2AA2132F1B4E5DE70000004A /* DIOSUser.h */,
+				2AA213301B4E5DE70000004A /* DIOSUser.m */,
+				2AA213311B4E5DE70000004A /* DIOSView.h */,
+				2AA213321B4E5DE70000004A /* DIOSView.m */,
+				2AA213331B4E5DE70000004A /* drupal-ios-sdk.podspec */,
+				2AA213341B4E5DE70000004A /* LICENSE */,
+				2AA213351B4E5DE70000004A /* README.md */,
+			);
+			path = "drupal-ios-sdk-3.x";
+			sourceTree = "<group>";
+		};
+		2AA2133F1B4E74360000004A /* drupal-ios-sdk-master */ = {
+			isa = PBXGroup;
+			children = (
+				2AA213401B4E74360000004A /* dios_example.plist */,
+				2AA213411B4E74360000004A /* DIOSComment.h */,
+				2AA213421B4E74360000004A /* DIOSComment.m */,
+				2AA213431B4E74360000004A /* DIOSEntity.h */,
+				2AA213441B4E74360000004A /* DIOSEntity.m */,
+				2AA213451B4E74360000004A /* DIOSFile.h */,
+				2AA213461B4E74360000004A /* DIOSFile.m */,
+				2AA213471B4E74360000004A /* DIOSNode.h */,
+				2AA213481B4E74360000004A /* DIOSNode.m */,
+				2AA213491B4E74360000004A /* DIOSSession.h */,
+				2AA2134A1B4E74360000004A /* DIOSSession.m */,
+				2AA2134B1B4E74360000004A /* DIOSSystem.h */,
+				2AA2134C1B4E74360000004A /* DIOSSystem.m */,
+				2AA2134D1B4E74360000004A /* DIOSTaxonomy.h */,
+				2AA2134E1B4E74360000004A /* DIOSTaxonomy.m */,
+				2AA2134F1B4E74360000004A /* DIOSUser.h */,
+				2AA213501B4E74360000004A /* DIOSUser.m */,
+				2AA213511B4E74360000004A /* DIOSView.h */,
+				2AA213521B4E74360000004A /* DIOSView.m */,
+				2AA213531B4E74360000004A /* drupal-ios-sdk.podspec */,
+				2AA213541B4E74360000004A /* LICENSE */,
+				2AA213551B4E74360000004A /* README.md */,
+			);
+			path = "drupal-ios-sdk-master";
+			sourceTree = "<group>";
+		};
+		2AA213631B4E98FD0000004A /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				2AA213641B4E98FD0000004A /* ASNavMenu.zip */,
+				2AA213651B4E98FD0000004A /* Doppio-master.zip */,
+				2AA213661B4E98FD0000004A /* Gallery 2.zip */,
+				2AA213671B4E98FD0000004A /* Googel analytic.zip */,
+				2AA213681B4E98FD0000004A /* iOSAppTemplate.zip */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
 		2AA441BD1B09C98600A9BE83 /* EMString */ = {
 			isa = PBXGroup;
 			children = (
@@ -1330,6 +1462,7 @@
 		2ADEF4181A9C3ED5002D5067 /* ASSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				2AA213631B4E98FD0000004A /* Sample */,
 				2A98FE301B3A8AB8003AF933 /* Test Swift */,
 				2A874E0A1B15C12200BE275C /* Map View */,
 				2A5812041B147D0F00F182BB /* Paypal */,
@@ -1391,6 +1524,8 @@
 		2ADEF44C1A9C9341002D5067 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2AA2133F1B4E74360000004A /* drupal-ios-sdk-master */,
+				2AA213261B4E5DE70000004A /* drupal-ios-sdk-3.x */,
 				2A5ECD651B43CE6B00F1054A /* iOS-Slide-Menu */,
 				2A573BFB1B30020200C6D887 /* DownPicker */,
 				2AA61B861B21C805006B2177 /* CLWeeklyCalendarViewSourceCode */,
@@ -1626,6 +1761,8 @@
 				2A8B91611B281482009A27F9 /* img10@2x.jpg in Resources */,
 				2A53D39A1AFA4732006A5EA5 /* Readme.txt in Resources */,
 				2A573C041B30020200C6D887 /* downArrow@2x.png in Resources */,
+				2AA2136D1B4E98FD0000004A /* iOSAppTemplate.zip in Resources */,
+				2AA213561B4E74360000004A /* dios_example.plist in Resources */,
 				2A420EE91ABC35390093E506 /* BFantezy.ttf in Resources */,
 				2A8B91541B281482009A27F9 /* img08.jpg in Resources */,
 				2A478F9A1A9F47CC00A303FE /* ASBookmarkViewController.xib in Resources */,
@@ -1635,8 +1772,10 @@
 				2A8B914F1B281482009A27F9 /* img03.jpg in Resources */,
 				2A8B91581B281482009A27F9 /* img01@2x.jpg in Resources */,
 				2A420EFE1ABC42280093E506 /* ASDetailTableView.xib in Resources */,
+				2AA2133D1B4E5DE70000004A /* LICENSE in Resources */,
 				2AC8AB071AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet in Resources */,
 				2A254FAF1ABAA57600C1EACB /* ASLoginViewController.xib in Resources */,
+				2AA2133C1B4E5DE70000004A /* drupal-ios-sdk.podspec in Resources */,
 				2A5AB6FB1AC436250015355B /* data.json in Resources */,
 				2A11461A1B4A9743000C8509 /* icon-info@2x.png in Resources */,
 				2ADEF4641A9CA3D0002D5067 /* Info.plist in Resources */,
@@ -1644,12 +1783,14 @@
 				2A8B91601B281482009A27F9 /* img09@2x.jpg in Resources */,
 				2ADEF4561A9C9523002D5067 /* ASViewController.xib in Resources */,
 				2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,
+				2AA213691B4E98FD0000004A /* ASNavMenu.zip in Resources */,
 				2A8B91571B281482009A27F9 /* img11.jpg in Resources */,
 				2ACB10C31AA97CDC0029C1F7 /* bg.png in Resources */,
 				2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */,
 				2A5ECD861B43F70800F1054A /* animation.png in Resources */,
 				2AE308351AB9ABE8000B95A2 /* Manifest.plist in Resources */,
 				2A5ECD851B43F70800F1054A /* leftMenu.jpg in Resources */,
+				2AA2136A1B4E98FD0000004A /* Doppio-master.zip in Resources */,
 				2A5ECD7D1B43CE6C00F1054A /* menu-button@2x.png in Resources */,
 				2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */,
 				2A573C031B30020200C6D887 /* downArrow.png in Resources */,
@@ -1670,12 +1811,14 @@
 				2A8B915C1B281482009A27F9 /* img05@2x.jpg in Resources */,
 				2A5ECD841B43F70800F1054A /* rightMenu.jpg in Resources */,
 				2A8B91551B281482009A27F9 /* img09.jpg in Resources */,
+				2AA2136B1B4E98FD0000004A /* Gallery 2.zip in Resources */,
 				2A8B914E1B281482009A27F9 /* img02.jpg in Resources */,
 				2A874E0F1B15C12200BE275C /* GMMapViewController.xib in Resources */,
 				2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
 				2A8B915E1B281482009A27F9 /* img07@2x.jpg in Resources */,
 				2ACB10C61AA97F2F0029C1F7 /* bg1.jpg in Resources */,
 				2A254FCA1ABAFB3700C1EACB /* LICENSE in Resources */,
+				2AA2136C1B4E98FD0000004A /* Googel analytic.zip in Resources */,
 				2A8B914D1B281482009A27F9 /* img01.jpg in Resources */,
 				2A420EEB1ABC35390093E506 /* Diwanltr.ttf in Resources */,
 				2A8B91531B281482009A27F9 /* img07.jpg in Resources */,
@@ -1683,8 +1826,10 @@
 				2A8B91501B281482009A27F9 /* img04.jpg in Resources */,
 				2A420EF61ABC35840093E506 /* me_quran.ttf in Resources */,
 				2A5ECD831B43F70800F1054A /* gear.png in Resources */,
+				2AA213611B4E74360000004A /* LICENSE in Resources */,
 				2A420EED1ABC35390093E506 /* PDMS_Saleem_QuranFont-signed.ttf in Resources */,
 				2A8B91621B281482009A27F9 /* img11@2x.jpg in Resources */,
+				2AA213601B4E74360000004A /* drupal-ios-sdk.podspec in Resources */,
 				2A420F051ABC44E40093E506 /* DetailTableViewCell.xib in Resources */,
 				2A420EEF1ABC35390093E506 /* ScheherazadeRegOT.ttf in Resources */,
 				2A98FE341B3A8AE3003AF933 /* TestViewController.xib in Resources */,
@@ -1753,10 +1898,12 @@
 				2A5ECD7E1B43CE6C00F1054A /* SlideNavigationController.m in Sources */,
 				2A5ECD7A1B43CE6C00F1054A /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				2AA61B971B21C805006B2177 /* DailyCalendarView.m in Sources */,
+				2AA213391B4E5DE70000004A /* DIOSSession.m in Sources */,
 				2A5CC9811AAEB6A300C2BB20 /* UIImageView+AFNetworking.m in Sources */,
 				2A478FC41A9F4D6800A303FE /* NSArray+JSONModel.m in Sources */,
 				2A254FB41ABAA85500C1EACB /* UITextField+Shake.m in Sources */,
 				2AAF0B101ACD164E00291726 /* MyCell.m in Sources */,
+				2AA2133A1B4E5DE70000004A /* DIOSUser.m in Sources */,
 				2AA623741B4651A50082AB09 /* AKTableViewContent.m in Sources */,
 				2A5CC9671AAEB6A300C2BB20 /* AFHTTPRequestOperation.m in Sources */,
 				2AA623721B4651A50082AB09 /* AKAnnotation.m in Sources */,
@@ -1767,6 +1914,7 @@
 				2A5CC9A21AAF0D8F00C2BB20 /* PostTableViewCell.m in Sources */,
 				2A9366C21A9DB6E500B0D650 /* CLLocation+UserInfo.m in Sources */,
 				2A5CC9731AAEB6A300C2BB20 /* AFURLRequestSerialization.m in Sources */,
+				2AA2133E1B4E5DE70000004A /* README.md in Sources */,
 				2A254FD41ABAFB3700C1EACB /* README.md in Sources */,
 				2A254FC01ABACC6000C1EACB /* NSDate+Helper.m in Sources */,
 				2A5CC96B1AAEB6A300C2BB20 /* AFHTTPSessionManager.m in Sources */,
@@ -1785,6 +1933,8 @@
 				2A9366C01A9DB6E500B0D650 /* CLLocation+EXIFGPS.m in Sources */,
 				2AEF329D1AB0045F00E18550 /* ApiHTTPClient.m in Sources */,
 				2AA441C81B09C98600A9BE83 /* EMStylingClass.m in Sources */,
+				2AA2135E1B4E74360000004A /* DIOSUser.m in Sources */,
+				2AA213621B4E74360000004A /* README.md in Sources */,
 				2A9366BA1A9DB6E500B0D650 /* CLLocation+Degrees.m in Sources */,
 				2AA623761B4651A50082AB09 /* NSDate+Simple.m in Sources */,
 				2A9366CB1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */,
@@ -1805,6 +1955,7 @@
 				2AEF32A91AB00AF200E18550 /* BaseModel.m in Sources */,
 				2A5CC97F1AAEB6A300C2BB20 /* UIButton+AFNetworking.m in Sources */,
 				2AA61B961B21C805006B2177 /* CLWeeklyCalendarView.m in Sources */,
+				2AA213571B4E74360000004A /* DIOSComment.m in Sources */,
 				2AA61B9C1B21C805006B2177 /* UIImage+CL.m in Sources */,
 				2A5CC9691AAEB6A300C2BB20 /* AFHTTPRequestOperationManager.m in Sources */,
 				2A9366E31A9DF38B00B0D650 /* ASUtility.m in Sources */,
@@ -1814,22 +1965,29 @@
 				2A11C6A61AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */,
 				2A478FC81A9F4D6800A303FE /* JSONHTTPClient.m in Sources */,
 				2A5CC97B1AAEB6A300C2BB20 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				2AA213581B4E74360000004A /* DIOSEntity.m in Sources */,
 				2A478FCA1A9F4D6800A303FE /* JSONModel+networking.m in Sources */,
 				2A254FCC1ABAFB3700C1EACB /* NSDate+Extension.swift in Sources */,
 				2A478FC01A9F4D6800A303FE /* JSONModelClassProperty.m in Sources */,
 				2AA441C91B09C98600A9BE83 /* NSString+EMAdditions.m in Sources */,
 				2A874E1E1B15C16C00BE275C /* RMPopoverPresentationController.m in Sources */,
+				2AA213381B4E5DE70000004A /* DIOSNode.m in Sources */,
 				2A5CC9871AAEB6A300C2BB20 /* UIWebView+AFNetworking.m in Sources */,
 				2A5CC96F1AAEB6A300C2BB20 /* AFSecurityPolicy.m in Sources */,
 				2A254FAD1ABAA57600C1EACB /* ASLoginViewController.m in Sources */,
 				2A322BFB1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */,
+				2AA213371B4E5DE70000004A /* DIOSEntity.m in Sources */,
 				2AEF329F1AB0045F00E18550 /* UserClient.m in Sources */,
 				2AAF0B151ACD168800291726 /* ASCollectionViewController.m in Sources */,
 				2AE1D0DD1AB6E55200FAC26A /* ASLabel.m in Sources */,
+				2AA2135A1B4E74360000004A /* DIOSNode.m in Sources */,
 				2A9366B81A9DB6E500B0D650 /* CLLocation+DecimalDegreesConversion.m in Sources */,
 				2A5ECD7B1B43CE6C00F1054A /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
 				2A478FCE1A9F4D6800A303FE /* JSONValueTransformer.m in Sources */,
+				2AA213361B4E5DE70000004A /* DIOSComment.m in Sources */,
+				2AA2135C1B4E74360000004A /* DIOSSystem.m in Sources */,
 				2A478FC61A9F4D6800A303FE /* JSONAPI.m in Sources */,
+				2AA2135D1B4E74360000004A /* DIOSTaxonomy.m in Sources */,
 				2AC8AB081AAD89570040F84D /* README.md in Sources */,
 				2A5CC96D1AAEB6A300C2BB20 /* AFNetworkReachabilityManager.m in Sources */,
 				2A8B91341B28126E009A27F9 /* FSParallaxViewController.m in Sources */,
@@ -1837,19 +1995,23 @@
 				2A874E201B15C16C00BE275C /* UIActionSheet+Blocks.m in Sources */,
 				2A9366BE1A9DB6E500B0D650 /* CLLocation+Distance.m in Sources */,
 				2AA623731B4651A50082AB09 /* AKNavigationBar.m in Sources */,
+				2AA2135F1B4E74360000004A /* DIOSView.m in Sources */,
 				2A2CEAD81B04AD9400BFE22B /* GMEventsManager.m in Sources */,
 				2AA61B991B21C805006B2177 /* NSDate+CL.m in Sources */,
 				2AA61B9B1B21C805006B2177 /* UIColor+CL.m in Sources */,
+				2AA213591B4E74360000004A /* DIOSFile.m in Sources */,
 				2A5CC98D1AAF066A00C2BB20 /* ASNWViewController.m in Sources */,
 				2A052AAB1AA7180100580BF0 /* README.md in Sources */,
 				2AEF32A11AB0045F00E18550 /* UserModel.m in Sources */,
 				2A478FA01A9F4ACD00A303FE /* ASBookmark.m in Sources */,
 				2A9366BC1A9DB6E500B0D650 /* CLLocation+Direction.m in Sources */,
+				2AA2133B1B4E5DE70000004A /* DIOSView.m in Sources */,
 				2A874E0E1B15C12200BE275C /* GMMapViewController.m in Sources */,
 				2A9366C61A9DB6E500B0D650 /* LLLocationManager.m in Sources */,
 				2A052AA81AA70EE700580BF0 /* GDIMockDataModel.m in Sources */,
 				2A874E211B15C16C00BE275C /* UIAlertController+Blocks.m in Sources */,
 				2A420F031ABC44E40093E506 /* DetailTableViewCell.m in Sources */,
+				2AA2135B1B4E74360000004A /* DIOSSession.m in Sources */,
 				2A5CC99A1AAF095600C2BB20 /* User.m in Sources */,
 				2A478FBE1A9F4D6800A303FE /* JSONModelArray.m in Sources */,
 				2A98FE331B3A8AE3003AF933 /* TestViewController.swift in Sources */,
