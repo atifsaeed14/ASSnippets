@@ -142,6 +142,9 @@
     return cell;
 }
 
+//self.tableView.contentInset =  UIEdgeInsetsMake(0, 0, 210, 0);
+//[self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:indexPath.row inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+
 - (void) switchChanged:(id)sender {
     UISwitch* switchControl = sender;
     NSLog( @"The switch is %@", switchControl.on ? @"ON" : @"OFF" );

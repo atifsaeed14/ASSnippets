@@ -47,6 +47,9 @@
 		2A254FD51ABAFB3700C1EACB /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FC91ABAFB3700C1EACB /* README.md */; };
 		2A254FD71ABAFE8700C1EACB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A254FD61ABAFE8700C1EACB /* Settings.bundle */; };
 		2A2CEAD81B04AD9400BFE22B /* GMEventsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2CEAD71B04AD9400BFE22B /* GMEventsManager.m */; };
+		2A2EAE5C1B4FA551008F6B51 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EAE5B1B4FA551008F6B51 /* HTTPClient.m */; };
+		2A2EAE601B4FDBDB008F6B51 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EAE5E1B4FDBDB008F6B51 /* Model.xcdatamodeld */; };
+		2A2EAE631B4FDED0008F6B51 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EAE621B4FDED0008F6B51 /* Person.m */; };
 		2A322BFB1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */; };
 		2A322BFC1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */; };
 		2A420EE71ABC35390093E506 /* BElham.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE01ABC35390093E506 /* BElham.ttf */; };
@@ -283,11 +286,6 @@
 		2AA213601B4E74360000004A /* drupal-ios-sdk.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213531B4E74360000004A /* drupal-ios-sdk.podspec */; };
 		2AA213611B4E74360000004A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213541B4E74360000004A /* LICENSE */; };
 		2AA213621B4E74360000004A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2AA213551B4E74360000004A /* README.md */; };
-		2AA213691B4E98FD0000004A /* ASNavMenu.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213641B4E98FD0000004A /* ASNavMenu.zip */; };
-		2AA2136A1B4E98FD0000004A /* Doppio-master.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213651B4E98FD0000004A /* Doppio-master.zip */; };
-		2AA2136B1B4E98FD0000004A /* Gallery 2.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213661B4E98FD0000004A /* Gallery 2.zip */; };
-		2AA2136C1B4E98FD0000004A /* Googel analytic.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213671B4E98FD0000004A /* Googel analytic.zip */; };
-		2AA2136D1B4E98FD0000004A /* iOSAppTemplate.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AA213681B4E98FD0000004A /* iOSAppTemplate.zip */; };
 		2AA441C61B09C98600A9BE83 /* EMMarkupProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441BF1B09C98600A9BE83 /* EMMarkupProperty.m */; };
 		2AA441C71B09C98600A9BE83 /* EMStringStylingConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441C11B09C98600A9BE83 /* EMStringStylingConfiguration.m */; };
 		2AA441C81B09C98600A9BE83 /* EMStylingClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA441C31B09C98600A9BE83 /* EMStylingClass.m */; };
@@ -381,6 +379,11 @@
 		2A254FD61ABAFE8700C1EACB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2A2CEAD61B04AD9400BFE22B /* GMEventsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMEventsManager.h; sourceTree = "<group>"; };
 		2A2CEAD71B04AD9400BFE22B /* GMEventsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMEventsManager.m; sourceTree = "<group>"; };
+		2A2EAE5A1B4FA551008F6B51 /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPClient.h; path = "untitled folder/HTTPClient.h"; sourceTree = "<group>"; };
+		2A2EAE5B1B4FA551008F6B51 /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPClient.m; path = "untitled folder/HTTPClient.m"; sourceTree = "<group>"; };
+		2A2EAE5F1B4FDBDB008F6B51 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		2A2EAE611B4FDED0008F6B51 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		2A2EAE621B4FDED0008F6B51 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		2A322BF91AA86FE20003D7D5 /* IQSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSideMenuController.h; sourceTree = "<group>"; };
 		2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSideMenuController.m; sourceTree = "<group>"; };
 		2A420EE01ABC35390093E506 /* BElham.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BElham.ttf; sourceTree = "<group>"; };
@@ -667,11 +670,6 @@
 		2AA213531B4E74360000004A /* drupal-ios-sdk.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "drupal-ios-sdk.podspec"; sourceTree = "<group>"; };
 		2AA213541B4E74360000004A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2AA213551B4E74360000004A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2AA213641B4E98FD0000004A /* ASNavMenu.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = ASNavMenu.zip; sourceTree = "<group>"; };
-		2AA213651B4E98FD0000004A /* Doppio-master.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "Doppio-master.zip"; sourceTree = "<group>"; };
-		2AA213661B4E98FD0000004A /* Gallery 2.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "Gallery 2.zip"; sourceTree = "<group>"; };
-		2AA213671B4E98FD0000004A /* Googel analytic.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "Googel analytic.zip"; sourceTree = "<group>"; };
-		2AA213681B4E98FD0000004A /* iOSAppTemplate.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = iOSAppTemplate.zip; sourceTree = "<group>"; };
 		2AA441BE1B09C98600A9BE83 /* EMMarkupProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMarkupProperty.h; sourceTree = "<group>"; };
 		2AA441BF1B09C98600A9BE83 /* EMMarkupProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMarkupProperty.m; sourceTree = "<group>"; };
 		2AA441C01B09C98600A9BE83 /* EMStringStylingConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMStringStylingConfiguration.h; sourceTree = "<group>"; };
@@ -836,6 +834,16 @@
 				2A2CEAD71B04AD9400BFE22B /* GMEventsManager.m */,
 			);
 			path = EventsManager;
+			sourceTree = "<group>";
+		};
+		2A2EAE5D1B4FDBBF008F6B51 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2A2EAE5E1B4FDBDB008F6B51 /* Model.xcdatamodeld */,
+				2A2EAE611B4FDED0008F6B51 /* Person.h */,
+				2A2EAE621B4FDED0008F6B51 /* Person.m */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		2A322BF81AA86FE20003D7D5 /* IQSideMenuController */ = {
@@ -1351,18 +1359,6 @@
 			path = "drupal-ios-sdk-master";
 			sourceTree = "<group>";
 		};
-		2AA213631B4E98FD0000004A /* Sample */ = {
-			isa = PBXGroup;
-			children = (
-				2AA213641B4E98FD0000004A /* ASNavMenu.zip */,
-				2AA213651B4E98FD0000004A /* Doppio-master.zip */,
-				2AA213661B4E98FD0000004A /* Gallery 2.zip */,
-				2AA213671B4E98FD0000004A /* Googel analytic.zip */,
-				2AA213681B4E98FD0000004A /* iOSAppTemplate.zip */,
-			);
-			path = Sample;
-			sourceTree = "<group>";
-		};
 		2AA441BD1B09C98600A9BE83 /* EMString */ = {
 			isa = PBXGroup;
 			children = (
@@ -1462,7 +1458,7 @@
 		2ADEF4181A9C3ED5002D5067 /* ASSnippets */ = {
 			isa = PBXGroup;
 			children = (
-				2AA213631B4E98FD0000004A /* Sample */,
+				2A2EAE5D1B4FDBBF008F6B51 /* CoreData */,
 				2A98FE301B3A8AB8003AF933 /* Test Swift */,
 				2A874E0A1B15C12200BE275C /* Map View */,
 				2A5812041B147D0F00F182BB /* Paypal */,
@@ -1545,6 +1541,8 @@
 				2A478FA21A9F4D6800A303FE /* JSONModel */,
 				2ADEF4581A9C9A05002D5067 /* Utilities */,
 				2A93669E1A9DB6E500B0D650 /* CLLocationUtilities */,
+				2A2EAE5A1B4FA551008F6B51 /* HTTPClient.h */,
+				2A2EAE5B1B4FA551008F6B51 /* HTTPClient.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1761,7 +1759,6 @@
 				2A8B91611B281482009A27F9 /* img10@2x.jpg in Resources */,
 				2A53D39A1AFA4732006A5EA5 /* Readme.txt in Resources */,
 				2A573C041B30020200C6D887 /* downArrow@2x.png in Resources */,
-				2AA2136D1B4E98FD0000004A /* iOSAppTemplate.zip in Resources */,
 				2AA213561B4E74360000004A /* dios_example.plist in Resources */,
 				2A420EE91ABC35390093E506 /* BFantezy.ttf in Resources */,
 				2A8B91541B281482009A27F9 /* img08.jpg in Resources */,
@@ -1783,14 +1780,12 @@
 				2A8B91601B281482009A27F9 /* img09@2x.jpg in Resources */,
 				2ADEF4561A9C9523002D5067 /* ASViewController.xib in Resources */,
 				2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,
-				2AA213691B4E98FD0000004A /* ASNavMenu.zip in Resources */,
 				2A8B91571B281482009A27F9 /* img11.jpg in Resources */,
 				2ACB10C31AA97CDC0029C1F7 /* bg.png in Resources */,
 				2ADEF42A1A9C3ED5002D5067 /* LaunchScreen.xib in Resources */,
 				2A5ECD861B43F70800F1054A /* animation.png in Resources */,
 				2AE308351AB9ABE8000B95A2 /* Manifest.plist in Resources */,
 				2A5ECD851B43F70800F1054A /* leftMenu.jpg in Resources */,
-				2AA2136A1B4E98FD0000004A /* Doppio-master.zip in Resources */,
 				2A5ECD7D1B43CE6C00F1054A /* menu-button@2x.png in Resources */,
 				2AC8AB061AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet in Resources */,
 				2A573C031B30020200C6D887 /* downArrow.png in Resources */,
@@ -1811,14 +1806,12 @@
 				2A8B915C1B281482009A27F9 /* img05@2x.jpg in Resources */,
 				2A5ECD841B43F70800F1054A /* rightMenu.jpg in Resources */,
 				2A8B91551B281482009A27F9 /* img09.jpg in Resources */,
-				2AA2136B1B4E98FD0000004A /* Gallery 2.zip in Resources */,
 				2A8B914E1B281482009A27F9 /* img02.jpg in Resources */,
 				2A874E0F1B15C12200BE275C /* GMMapViewController.xib in Resources */,
 				2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
 				2A8B915E1B281482009A27F9 /* img07@2x.jpg in Resources */,
 				2ACB10C61AA97F2F0029C1F7 /* bg1.jpg in Resources */,
 				2A254FCA1ABAFB3700C1EACB /* LICENSE in Resources */,
-				2AA2136C1B4E98FD0000004A /* Googel analytic.zip in Resources */,
 				2A8B914D1B281482009A27F9 /* img01.jpg in Resources */,
 				2A420EEB1ABC35390093E506 /* Diwanltr.ttf in Resources */,
 				2A8B91531B281482009A27F9 /* img07.jpg in Resources */,
@@ -1940,6 +1933,7 @@
 				2A9366CB1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */,
 				2A478F961A9F47C300A303FE /* ASBookmarkViewController.m in Sources */,
 				2A5CC9751AAEB6A300C2BB20 /* AFURLResponseSerialization.m in Sources */,
+				2A2EAE5C1B4FA551008F6B51 /* HTTPClient.m in Sources */,
 				2A11C6A41AA4877100D4D57A /* M13ProgressView.m in Sources */,
 				2AA441C71B09C98600A9BE83 /* EMStringStylingConfiguration.m in Sources */,
 				2A9366C41A9DB6E500B0D650 /* CLPlacemark+UserInfo.m in Sources */,
@@ -1978,6 +1972,7 @@
 				2A322BFB1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */,
 				2AA213371B4E5DE70000004A /* DIOSEntity.m in Sources */,
 				2AEF329F1AB0045F00E18550 /* UserClient.m in Sources */,
+				2A2EAE631B4FDED0008F6B51 /* Person.m in Sources */,
 				2AAF0B151ACD168800291726 /* ASCollectionViewController.m in Sources */,
 				2AE1D0DD1AB6E55200FAC26A /* ASLabel.m in Sources */,
 				2AA2135A1B4E74360000004A /* DIOSNode.m in Sources */,
@@ -2004,6 +1999,7 @@
 				2A052AAB1AA7180100580BF0 /* README.md in Sources */,
 				2AEF32A11AB0045F00E18550 /* UserModel.m in Sources */,
 				2A478FA01A9F4ACD00A303FE /* ASBookmark.m in Sources */,
+				2A2EAE601B4FDBDB008F6B51 /* Model.xcdatamodeld in Sources */,
 				2A9366BC1A9DB6E500B0D650 /* CLLocation+Direction.m in Sources */,
 				2AA2133B1B4E5DE70000004A /* DIOSView.m in Sources */,
 				2A874E0E1B15C12200BE275C /* GMMapViewController.m in Sources */,
@@ -2335,6 +2331,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2A2EAE5E1B4FDBDB008F6B51 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A2EAE5F1B4FDBDB008F6B51 /* Model.xcdatamodel */,
+			);
+			currentVersion = 2A2EAE5F1B4FDBDB008F6B51 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2ADEF40E1A9C3ED5002D5067 /* Project object */;
 }

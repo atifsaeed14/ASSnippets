@@ -834,5 +834,43 @@ typedef void(^addressCompletion)(NSString *);
                       
                       
                   }// 1
-                  
+
+/*
+ 
+ editedImage = (UIImage *) [info objectForKey:UIImagePickerControllerEditedImage];
+ originalImage = (UIImage *) [info objectForKey:UIImagePickerControllerOriginalImage];
+ 
+ if (editedImage) {
+ imageToSave = editedImage;
+ 
+ // Save the new image (original or edited) to the Camera Roll
+ // Even if it was selected from the Camera Roll because user has edited it
+ UIImageWriteToSavedPhotosAlbum (imageToSave, nil, nil , nil);
+ 
+ } else {
+ imageToSave = originalImage;
+ 
+ if (picker.sourceType != UIImagePickerControllerSourceTypeSavedPhotosAlbum) {
+ // Save the new image (original or edited) to the Camera Roll
+ // If it was not selected from the Camera Roll
+ UIImageWriteToSavedPhotosAlbum (imageToSave, nil, nil , nil);
+ }
+ }
+ 
+ if (imageToSave) {
+ }
+ 
+ }
+
+ 
+ */
+
+
+
+
+
+
+
+
+
 @end
