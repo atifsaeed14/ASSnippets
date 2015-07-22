@@ -4,6 +4,11 @@ ASSnippets
 A sample iOS application with code snippets.
 
 
+Guid
+========
+https://github.com/shabib87/objective-c-style-guide
+
+
 Helping Links
 =============
 
@@ -43,6 +48,12 @@ https://github.com/schneiderandre/ASCFlatUIColor
 https://github.com/airbob/iOS-tableview-of-2014-world-cup
 
 https://www.drupal.org/node/1388470
+
+web browser
+================
+https://github.com/dfmuir/KINWebBrowser
+
+
 Form
 =======
 https://github.com/xmartlabs/XLForm
@@ -273,10 +284,10 @@ CoreData
 ===========
 https://www.cocoacontrols.com/controls/iqdatabasemanager
 
-dropdown
+dropdown / picker
 ===
 https://github.com/Darkseal/DownPicker
-
+https://github.com/hons82/THCalendarDatePicker
 
 PageContianer
 ============
@@ -345,6 +356,9 @@ https://github.com/priore/SOAPEngine
 http://amoghnatu.net/2014/04/26/consuming-soap-web-services-from-ios-objective-c/
 http://www.makebetterthings.com/iphone/call-soap-web-service-from-iphone/
 
+action controller
+=============
+https://github.com/CooperRS/RMActionController
 
 Helping Class
 ===
