@@ -39,6 +39,7 @@ https://github.com/alexruperez/objective-c-style-guide
 
 https://github.com/NatashaTheRobot/AppNetClient
 https://github.com/googlemaps/OpenInGoogleMaps-iOS
+https://github.com/AlbertMontserrat/UIPlacePicker
 
 https://github.com/cbpowell/MarqueeLabel
 https://github.com/colatusso/iOSAppTemplate
@@ -280,14 +281,16 @@ Blog
 http://oleb.net/
 
 CoreData
-
 ===========
 https://www.cocoacontrols.com/controls/iqdatabasemanager
+https://github.com/pixyzehn/CoredataPractice
+http://www.raywenderlich.com/14742/core-data-on-ios-5-tutorial-how-to-work-with-relations-and-predicates
 
 dropdown / picker
 ===
 https://github.com/Darkseal/DownPicker
 https://github.com/hons82/THCalendarDatePicker
+https://github.com/Friend-LGA/LGActionSheet
 
 PageContianer
 ============
@@ -323,6 +326,7 @@ https://github.com/yimingtang/TYMActivityIndicatorView
 https://www.cocoacontrols.com/controls/circleprogressview
 https://github.com/sakrist/VBPieChart
 https://github.com/gyetvan-andras/Chart.js-ObjC-Wrapper
+https://github.com/danielgindi
 
 Digit clock
 ================
@@ -369,3 +373,23 @@ Annotation
 https://github.com/jpsim/JPSThumbnailAnnotation
 
 
+
+UIimage extension
+===================
+https://github.com/kubatru/UIImage-JTAdditions //image
+https://github.com/Friend-LGA/LGHelper-NS/tree/master/LGHelper%2BNS //etc
+
+Repositrory
+============
+https://github.com/Friend-LGA?tab=repositories
+
+
+https://github.com/CooperRS/RMMultipleViewsController
+
+https://github.com/rcmcastro/whatsapp-ios
+
+
+Repsitories
+=============
+https://github.com/nicklockwood?tab=repositories
+https://github.com/jessesquires/JSQMessagesViewController
