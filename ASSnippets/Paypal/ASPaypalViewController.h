@@ -25,8 +25,9 @@
 
 /* pick view */
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
-
 @property (strong, nonatomic) IBOutlet UITextField *textFieldPV;
+
+- (IBAction)childViewController:(id)sender;
 
 @end
 

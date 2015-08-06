@@ -10,6 +10,7 @@
 #import "PayPalMobile.h"
 #import "GMMapViewController.h"
 #import "FSParallaxViewController.h"
+#import "PagerViewController.h"
 
 @interface ASPaypalViewController () <PayPalPaymentDelegate,UINavigationControllerDelegate,UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate> {
 
@@ -26,6 +27,10 @@
 
 #pragma mark -
 #pragma mark UINavigationControllerDelegate
+
+- (IBAction)childViewController:(id)sender {
+    [self.navigationController pushViewController:[PagerViewController new] animated:YES];
+}
 
 
 - (IBAction)parallaxSender:(id)sender {

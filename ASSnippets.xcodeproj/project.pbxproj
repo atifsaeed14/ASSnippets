@@ -204,6 +204,8 @@
 		2A6A8FAE1B7369A200157663 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A8FA31B7369A200157663 /* ActionSheetStringPicker.m */; };
 		2A6A8FAF1B7369A200157663 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A8FA51B7369A200157663 /* DistancePickerView.m */; };
 		2A6A8FB01B7369A200157663 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A8FA71B7369A200157663 /* SWActionSheet.m */; };
+		2A6A8FB41B738E8600157663 /* PagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A8FB21B738E8600157663 /* PagerViewController.m */; };
+		2A6A8FB51B738E8600157663 /* PagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A6A8FB31B738E8600157663 /* PagerViewController.xib */; };
 		2A874E0E1B15C12200BE275C /* GMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A874E0C1B15C12200BE275C /* GMMapViewController.m */; };
 		2A874E0F1B15C12200BE275C /* GMMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A874E0D1B15C12200BE275C /* GMMapViewController.xib */; };
 		2A874E1E1B15C16C00BE275C /* RMPopoverPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A874E121B15C16C00BE275C /* RMPopoverPresentationController.m */; };
@@ -574,6 +576,9 @@
 		2A6A8FA51B7369A200157663 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistancePickerView.m; sourceTree = "<group>"; };
 		2A6A8FA61B7369A200157663 /* SWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWActionSheet.h; sourceTree = "<group>"; };
 		2A6A8FA71B7369A200157663 /* SWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWActionSheet.m; sourceTree = "<group>"; };
+		2A6A8FB11B738E8600157663 /* PagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagerViewController.h; sourceTree = "<group>"; };
+		2A6A8FB21B738E8600157663 /* PagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagerViewController.m; sourceTree = "<group>"; };
+		2A6A8FB31B738E8600157663 /* PagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagerViewController.xib; sourceTree = "<group>"; };
 		2A874E0B1B15C12200BE275C /* GMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMMapViewController.h; sourceTree = "<group>"; };
 		2A874E0C1B15C12200BE275C /* GMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMMapViewController.m; sourceTree = "<group>"; };
 		2A874E0D1B15C12200BE275C /* GMMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMMapViewController.xib; sourceTree = "<group>"; };
@@ -993,6 +998,9 @@
 				2A5812071B147D3A00F182BB /* ASPaypalViewController.xib */,
 				2A58120A1B147F7800F182BB /* PayPalMobile */,
 				2A8B91361B281277009A27F9 /* FSParallax */,
+				2A6A8FB11B738E8600157663 /* PagerViewController.h */,
+				2A6A8FB21B738E8600157663 /* PagerViewController.m */,
+				2A6A8FB31B738E8600157663 /* PagerViewController.xib */,
 			);
 			path = Paypal;
 			sourceTree = "<group>";
@@ -1793,6 +1801,7 @@
 				2ADEF4661A9CA3D0002D5067 /* Read Me.txt in Resources */,
 				2A8B91561B281482009A27F9 /* img10.jpg in Resources */,
 				2A8B91511B281482009A27F9 /* img05.jpg in Resources */,
+				2A6A8FB51B738E8600157663 /* PagerViewController.xib in Resources */,
 				2A254FD21ABAFB3700C1EACB /* NSDateTimeAgo.bundle in Resources */,
 				2A8B915C1B281482009A27F9 /* img05@2x.jpg in Resources */,
 				2A5ECD841B43F70800F1054A /* rightMenu.jpg in Resources */,
@@ -1920,6 +1929,7 @@
 				2AEF329D1AB0045F00E18550 /* ApiHTTPClient.m in Sources */,
 				2A6A8FAC1B7369A200157663 /* ActionSheetLocalePicker.m in Sources */,
 				2AA441C81B09C98600A9BE83 /* EMStylingClass.m in Sources */,
+				2A6A8FB41B738E8600157663 /* PagerViewController.m in Sources */,
 				2A9366BA1A9DB6E500B0D650 /* CLLocation+Degrees.m in Sources */,
 				2AA623761B4651A50082AB09 /* NSDate+Simple.m in Sources */,
 				2A9366CB1A9DCD3F00B0D650 /* ASTableViewController.m in Sources */,
