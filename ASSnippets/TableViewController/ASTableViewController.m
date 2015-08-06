@@ -8,6 +8,7 @@
 
 #import "ASTableViewCell.h"
 #import "ASTableViewController.h"
+#import "ActionSheetPicker.h"
 
 @interface ASTableViewController () {
     BOOL isRefreshing;
@@ -214,6 +215,49 @@
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.row == 0) {
+        NSArray *colors = [NSArray arrayWithObjects:@"Red", @"Green", @"Blue", @"Orange", nil];
+        [ActionSheetStringPicker showPickerWithTitle:@"Select a Color"
+                                                rows:colors
+                                    initialSelection:0
+                                           doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+                                               NSLog(@"Picker: %@, Index: %ld, value: %@",
+                                                     picker, (long)selectedIndex, selectedValue);
+                                           }
+                                         cancelBlock:^(ActionSheetStringPicker *picker) {
+                                             NSLog(@"Block Picker Canceled");
+                                         }
+                                              origin:self.view];
+    }
+
+    
+    if (indexPath.row == 1) {
+        NSArray *colors = [NSArray arrayWithObjects:@"Atif", @"Abdul Basit", @"Hashir", nil];
+        [ActionSheetStringPicker showPickerWithTitle:@"Select a Color"
+                                                rows:colors
+                                    initialSelection:0
+                                           doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+                                               NSLog(@"Picker: %@, Index: %ld, value: %@",
+                                                     picker, (long)selectedIndex, selectedValue);
+                                           }
+                                         cancelBlock:^(ActionSheetStringPicker *picker) {
+                                             NSLog(@"Block Picker Canceled");
+                                         }
+                                              origin:self.view];
+    }
+
+    
+    //    UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone  target:picker
+    //                                                                               action:@selector(actionPickerDone:)];
+    //
+    //    [picker setCancelButton:barButton];
+    
+    //[picker showActionSheetPicker];
+    
 }
 
 
