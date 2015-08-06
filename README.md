@@ -291,6 +291,8 @@ dropdown / picker
 https://github.com/Darkseal/DownPicker
 https://github.com/hons82/THCalendarDatePicker
 https://github.com/Friend-LGA/LGActionSheet
+https://github.com/skywinder/ActionSheetPicker-3.0
+https://github.com/CooperRS/RMActionController
 
 PageContianer
 ============
@@ -393,3 +395,4 @@ Repsitories
 =============
 https://github.com/nicklockwood?tab=repositories
 https://github.com/jessesquires/JSQMessagesViewController
+https://github.com/mattt?tab=repositories

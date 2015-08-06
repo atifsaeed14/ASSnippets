@@ -44,3 +44,6 @@
 //To create client id and client secret
 //https://developer.foursquare.com/overview/auth
 
+
+// get parent form child
+// http://stackoverflow.com/questions/1340434/get-to-uiviewcontroller-from-uiview

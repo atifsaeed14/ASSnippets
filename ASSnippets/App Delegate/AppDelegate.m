@@ -116,7 +116,7 @@ typedef void(^addressCompletion)(NSString *);
                                                            PayPalEnvironmentSandbox : @"AZVTLykplV7oQC38jFqe_-iZ2BF8BHmoKIMtigzpIFjkaSvDXWHtfnpLIAJ6PXau1sZH3d30naBpO8UR"}];
     
     
-    if (0) {
+    if (1) {
 
         ASViewController *leftMenu = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];;
         
@@ -834,6 +834,11 @@ typedef void(^addressCompletion)(NSString *);
                       
                       
                   }// 1
+
+
+
+// pinch gesture
+//http://stackoverflow.com/questions/5150642/max-min-scale-of-pinch-zoom-in-uipinchgesturerecognizer-iphone-ios
 
 
 
