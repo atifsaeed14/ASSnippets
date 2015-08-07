@@ -87,6 +87,9 @@ https://github.com/romaonthego/RETableViewManager
 https://github.com/DenHeadless
 https://github.com/EugeneTrapeznikov/ETSwipeCell
 https://github.com/matteogobbi/MGSpotyViewControllerpa
+
+https://github.com/mamaral/MAActionCell
+
 Loacation Manager
 =============
 https://github.com/danielebogo/DBPrivacyHelper

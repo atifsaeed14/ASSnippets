@@ -10,4 +10,9 @@
 
 @interface PagerViewController : UIViewController
 
+- (IBAction)third:(id)sender;
+- (IBAction)second:(id)sender;
+- (IBAction)first:(id)sender;
+@property (strong, nonatomic) IBOutlet UIView *containerView;
+
 @end
