@@ -11,6 +11,8 @@
 #import "GMMapViewController.h"
 #import "FSParallaxViewController.h"
 #import "PagerViewController.h"
+#import "FormViewController.h"
+#import "FormTableViewController.h"
 
 @interface ASPaypalViewController () <PayPalPaymentDelegate,UINavigationControllerDelegate,UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate> {
 
@@ -32,6 +34,13 @@
     [self.navigationController pushViewController:[PagerViewController new] animated:YES];
 }
 
+- (IBAction)formViewController:(id)sender {
+    [self.navigationController pushViewController:[FormViewController new] animated:YES];
+}
+
+- (IBAction)formTableViewController:(id)sender {
+    [self.navigationController pushViewController:[FormTableViewController new] animated:YES];
+}
 
 - (IBAction)parallaxSender:(id)sender {
 
