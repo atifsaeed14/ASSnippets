@@ -72,7 +72,7 @@ typedef void(^addressCompletion)(NSString *);
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    
+    /*
     INTULocationManager *locMgr = [INTULocationManager sharedInstance];
     [locMgr requestLocationWithDesiredAccuracy:INTULocationAccuracyCity
                                        timeout:10.0
@@ -110,13 +110,22 @@ typedef void(^addressCompletion)(NSString *);
                                          }];
     
     
-    
+    */
     
     [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : @"YOUR_CLIENT_ID_FOR_PRODUCTION",
                                                            PayPalEnvironmentSandbox : @"AZVTLykplV7oQC38jFqe_-iZ2BF8BHmoKIMtigzpIFjkaSvDXWHtfnpLIAJ6PXau1sZH3d30naBpO8UR"}];
     
     
     if (1) {
+    
+        //ASViewController *leftMenu = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];;
+        ASLoginViewController *login = [ASLoginViewController new];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:login];
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        self.window.rootViewController = nav;
+        [self.window makeKeyAndVisible];
+
+    }else if(0) {
 
         ASViewController *leftMenu = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];;
         

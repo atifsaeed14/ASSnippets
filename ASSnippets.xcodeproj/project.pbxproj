@@ -29,6 +29,7 @@
 		2A11C6A51AA4877100D4D57A /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A11AA4877100D4D57A /* M13ProgressView.m */; };
 		2A11C6A61AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */; };
 		2A11C6A71AA4877100D4D57A /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */; };
+		2A20BFE91B81E86F00A9858C /* LGHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A20BFE81B81E86F00A9858C /* LGHelper.m */; };
 		2A254FAD1ABAA57600C1EACB /* ASLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FAB1ABAA57600C1EACB /* ASLoginViewController.m */; };
 		2A254FAE1ABAA57600C1EACB /* ASLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A254FAB1ABAA57600C1EACB /* ASLoginViewController.m */; };
 		2A254FAF1ABAA57600C1EACB /* ASLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A254FAC1ABAA57600C1EACB /* ASLoginViewController.xib */; };
@@ -377,6 +378,8 @@
 		2A11C6A11AA4877100D4D57A /* M13ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressView.m; sourceTree = "<group>"; };
 		2A11C6A21AA4877100D4D57A /* M13ProgressViewBorderedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13ProgressViewBorderedBar.h; sourceTree = "<group>"; };
 		2A11C6A31AA4877100D4D57A /* M13ProgressViewBorderedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13ProgressViewBorderedBar.m; sourceTree = "<group>"; };
+		2A20BFE71B81E86F00A9858C /* LGHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGHelper.h; sourceTree = "<group>"; };
+		2A20BFE81B81E86F00A9858C /* LGHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGHelper.m; sourceTree = "<group>"; };
 		2A254FAA1ABAA57600C1EACB /* ASLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASLoginViewController.h; sourceTree = "<group>"; };
 		2A254FAB1ABAA57600C1EACB /* ASLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASLoginViewController.m; sourceTree = "<group>"; };
 		2A254FAC1ABAA57600C1EACB /* ASLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASLoginViewController.xib; sourceTree = "<group>"; };
@@ -804,6 +807,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A20BFE61B81E86F00A9858C /* LGHelper */ = {
+			isa = PBXGroup;
+			children = (
+				2A20BFE71B81E86F00A9858C /* LGHelper.h */,
+				2A20BFE81B81E86F00A9858C /* LGHelper.m */,
+			);
+			path = LGHelper;
+			sourceTree = "<group>";
+		};
 		2A254FA91ABAA54F00C1EACB /* ASLoginViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1552,6 +1564,7 @@
 		2ADEF44C1A9C9341002D5067 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2A20BFE61B81E86F00A9858C /* LGHelper */,
 				2A6A8F931B7369A100157663 /* Pickers */,
 				2AA213261B4E5DE70000004A /* drupal-ios-sdk-3.x */,
 				2A5ECD651B43CE6B00F1054A /* iOS-Slide-Menu */,
@@ -2011,6 +2024,7 @@
 				2A322BFB1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */,
 				2AA213371B4E5DE70000004A /* DIOSEntity.m in Sources */,
 				2AEF329F1AB0045F00E18550 /* UserClient.m in Sources */,
+				2A20BFE91B81E86F00A9858C /* LGHelper.m in Sources */,
 				2A2EAE631B4FDED0008F6B51 /* Person.m in Sources */,
 				2AAF0B151ACD168800291726 /* ASCollectionViewController.m in Sources */,
 				2AE1D0DD1AB6E55200FAC26A /* ASLabel.m in Sources */,

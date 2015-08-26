@@ -192,6 +192,9 @@ https://github.com/sahat/satellizer
 http://veerle.duoh.com/design/article/draw_a_cute_lion_in_illustrator
 https://dribbble.com/shots/1658992-Free-Lined-Icons
 
+https://dribbble.com/InVisionApp
+https://dribbble.com/madebyanton/projects/263083-Secret-Project#attachment-376663
+
 Fonts
 ========
 https://www.behance.net/gallery/21888779/Mad-Squire-typeface-FREE-FONT
@@ -228,6 +231,7 @@ http://davidwalsh.name/web-service-php-mysql-xml-json
 NSDate
 ===========
 https://github.com/novalagung/NVDate
+https://github.com/andjash/DateCellsController (inline date selection)
 
 Navigation Bar
 =====================
@@ -288,6 +292,8 @@ CoreData
 https://www.cocoacontrols.com/controls/iqdatabasemanager
 https://github.com/pixyzehn/CoredataPractice
 http://www.raywenderlich.com/14742/core-data-on-ios-5-tutorial-how-to-work-with-relations-and-predicates
+https://github.com/project-imas/encrypted-core-data
+http://www.raywenderlich.com/934/core-data-tutorial-for-ios-getting-started
 
 dropdown / picker
 ===
@@ -332,7 +338,7 @@ https://www.cocoacontrols.com/controls/circleprogressview
 https://github.com/sakrist/VBPieChart
 https://github.com/gyetvan-andras/Chart.js-ObjC-Wrapper
 https://github.com/danielgindi
-
+https://github.com/danielgindi/ios-chartsd
 Digit clock
 ================
 https://github.com/minsOne/DigitClock
@@ -400,5 +406,17 @@ https://github.com/nicklockwood?tab=repositories
 https://github.com/jessesquires/JSQMessagesViewController
 https://github.com/mattt?tab=repositories
 https://github.com/objcio
+https://github.com/Friend-LGA?tab=repositories
 
+https://github.com/sanketfirodiya
+
+https://github.com/mledoze/countries (country list)
+https://github.com/roroge/LocationPicker (popover)
+https://github.com/MendyK/CoreAnimationClock 
+https://github.com/entotsu (animation)
+
+Plugin
+=========
+https://github.com/sanketfirodiya/awesome-ios-plugins
+http://alcatraz.io/
 

@@ -10,20 +10,37 @@
 #import "UIView+Shake.h"
 #import "ASLoginViewController.h"
 #import <CoreImage/CoreImage.h>
+#import "CLWeeklyCalendarView.h"
+#import "LGHelper.h"
 
-@interface ASLoginViewController () <UITextFieldDelegate, UIScrollViewDelegate>
+@interface ASLoginViewController () <UITextFieldDelegate, UIScrollViewDelegate, CLWeeklyCalendarViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
 
+@property (nonatomic, strong) CLWeeklyCalendarView* calendarView;
+
 @end
+
+static CGFloat CALENDER_VIEW_HEIGHT = 150.f;
 
 @implementation ASLoginViewController
 
 
 #pragma mark - SlideNavigationController Methods -
+
+
+//Initialize
+-(CLWeeklyCalendarView *)calendarView
+{
+    if(!_calendarView){
+        _calendarView = [[CLWeeklyCalendarView alloc] initWithFrame:CGRectMake(0, 70, self.view.bounds.size.width, CALENDER_VIEW_HEIGHT)];
+        _calendarView.delegate = self;
+    }
+    return _calendarView;
+}
 
 - (BOOL)slideNavigationControllerShouldDisplayLeftMenu
 {
@@ -35,8 +52,28 @@
 //    return YES;
 //}
 
+# pragma mark - CLWeeklyCalendarViewDelegate
+-(NSDictionary *)CLCalendarBehaviorAttributes
+{
+    return @{
+             CLCalendarWeekStartDay : @2,                 //Start Day of the week, from 1-7 Mon-Sun -- default 1
+             //             CLCalendarDayTitleTextColor : [UIColor yellowColor],
+             //             CLCalendarSelectedDatePrintColor : [UIColor greenColor],
+             };
+}
+
+
+
+-(void)dailyCalendarViewDidSelect:(NSDate *)date
+{
+    //You can do any logic after the view select the date
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.view addSubview:self.calendarView];
+
     
     /**********Automatic screen recording**********/
     self.screenName = @"Clock ViewController";
@@ -152,6 +189,35 @@
     [UIView setAnimationDuration: movementDuration];
     self.scrollView.frame = CGRectOffset(self.scrollView.frame, 0, movement);
     [UIView commitAnimations];
+}
+
+- (IBAction)pickerView:(id)sender {
+    
+    
+//    [[LGHelper sharedHelper] imagePickerControllerShowWithActionSheetInView:self.view inViewController:self animated:YES setupHandler:^(UIImagePickerController *imagePickerController) {
+//        
+//    } presentCompletionHandler:^{
+//        
+//    } completionHandler:^(UIImage *image) {
+//        
+//    } dismissCompletionHandler:^{
+//        
+//    }];
+    
+    
+    [[LGHelper sharedHelper] imagePickerControllerShowWithSourceType:UIImagePickerControllerSourceTypePhotoLibrary inViewController:self animated:YES setupHandler:^(UIImagePickerController *imagePickerController) {
+        
+        
+    } presentCompletionHandler:^{
+        
+        
+    } completionHandler:^(UIImage *image) {
+        
+        
+    } dismissCompletionHandler:^{
+        
+        
+    }];
 }
 
 @end

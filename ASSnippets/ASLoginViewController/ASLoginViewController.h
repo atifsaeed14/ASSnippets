@@ -15,4 +15,7 @@
 @property (weak, nonatomic) UIImage *screenShot;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+- (IBAction)pickerView:(id)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *imageViwer;
+
 @end
