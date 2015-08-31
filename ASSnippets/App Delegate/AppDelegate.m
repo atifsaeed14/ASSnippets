@@ -116,7 +116,7 @@ typedef void(^addressCompletion)(NSString *);
                                                            PayPalEnvironmentSandbox : @"AZVTLykplV7oQC38jFqe_-iZ2BF8BHmoKIMtigzpIFjkaSvDXWHtfnpLIAJ6PXau1sZH3d30naBpO8UR"}];
     
     
-    if (1) {
+    if (0) {
     
         //ASViewController *leftMenu = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];;
         ASLoginViewController *login = [ASLoginViewController new];
@@ -125,7 +125,7 @@ typedef void(^addressCompletion)(NSString *);
         self.window.rootViewController = nav;
         [self.window makeKeyAndVisible];
 
-    }else if(0) {
+    }else if(1) {
 
         ASViewController *leftMenu = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];;
         

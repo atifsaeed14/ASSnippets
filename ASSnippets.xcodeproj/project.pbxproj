@@ -351,6 +351,7 @@
 		2AEF32A91AB00AF200E18550 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32A81AB00AF200E18550 /* BaseModel.m */; };
 		2AEF32AA1AB00AF200E18550 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF32A81AB00AF200E18550 /* BaseModel.m */; };
 		2AF0CEE01B0365250095DEDC /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF0CEDF1B0365250095DEDC /* libGoogleAnalyticsServices.a */; };
+		2AFE7CB61B94803D009741DF /* To Do List.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2AFE7CB51B94803D009741DF /* To Do List.zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -772,6 +773,7 @@
 		2AEF32A71AB00AF200E18550 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		2AEF32A81AB00AF200E18550 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		2AF0CEDF1B0365250095DEDC /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		2AFE7CB51B94803D009741DF /* To Do List.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "To Do List.zip"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1472,6 +1474,7 @@
 		2AC8AB021AAD89570040F84D /* xCodeSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				2AFE7CB51B94803D009741DF /* To Do List.zip */,
 				2AC8AB031AAD89570040F84D /* 74543E4A-305F-4C48-9B84-B6FA7C2EEB33.codesnippet */,
 				2AC8AB041AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet */,
 				2AC8AB051AAD89570040F84D /* README.md */,
@@ -1858,6 +1861,7 @@
 				2A8B914E1B281482009A27F9 /* img02.jpg in Resources */,
 				2A874E0F1B15C12200BE275C /* GMMapViewController.xib in Resources */,
 				2A478F8E1A9EF71E00A303FE /* ASNavigationHeader.xib in Resources */,
+				2AFE7CB61B94803D009741DF /* To Do List.zip in Resources */,
 				2A8B915E1B281482009A27F9 /* img07@2x.jpg in Resources */,
 				2ACB10C61AA97F2F0029C1F7 /* bg1.jpg in Resources */,
 				2A254FCA1ABAFB3700C1EACB /* LICENSE in Resources */,

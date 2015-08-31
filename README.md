@@ -87,7 +87,7 @@ https://github.com/romaonthego/RETableViewManager
 https://github.com/DenHeadless
 https://github.com/EugeneTrapeznikov/ETSwipeCell
 https://github.com/matteogobbi/MGSpotyViewControllerpa
-
+https://github.com/skywinder/SWTableViewCell
 https://github.com/mamaral/MAActionCell
 
 Loacation Manager
@@ -414,6 +414,7 @@ https://github.com/mledoze/countries (country list)
 https://github.com/roroge/LocationPicker (popover)
 https://github.com/MendyK/CoreAnimationClock 
 https://github.com/entotsu (animation)
+https://github.com/hons82 (hm segments)
 
 Plugin
 =========
