@@ -61,6 +61,8 @@
 		2A2EAE631B4FDED0008F6B51 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EAE621B4FDED0008F6B51 /* Person.m */; };
 		2A322BFB1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */; };
 		2A322BFC1AA86FE20003D7D5 /* IQSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */; };
+		2A3C85741B95B6B400616AE0 /* Screen Shot 2015-09-01 at 11.05.06 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A3C85731B95B6B400616AE0 /* Screen Shot 2015-09-01 at 11.05.06 AM.png */; };
+		2A3C85761B95B6B700616AE0 /* Screen Shot 2015-09-01 at 11.02.22 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A3C85751B95B6B700616AE0 /* Screen Shot 2015-09-01 at 11.02.22 AM.png */; };
 		2A420EE71ABC35390093E506 /* BElham.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE01ABC35390093E506 /* BElham.ttf */; };
 		2A420EE81ABC35390093E506 /* BElham.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE01ABC35390093E506 /* BElham.ttf */; };
 		2A420EE91ABC35390093E506 /* BFantezy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A420EE11ABC35390093E506 /* BFantezy.ttf */; };
@@ -408,6 +410,8 @@
 		2A2EAE621B4FDED0008F6B51 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		2A322BF91AA86FE20003D7D5 /* IQSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQSideMenuController.h; sourceTree = "<group>"; };
 		2A322BFA1AA86FE20003D7D5 /* IQSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQSideMenuController.m; sourceTree = "<group>"; };
+		2A3C85731B95B6B400616AE0 /* Screen Shot 2015-09-01 at 11.05.06 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2015-09-01 at 11.05.06 AM.png"; sourceTree = "<group>"; };
+		2A3C85751B95B6B700616AE0 /* Screen Shot 2015-09-01 at 11.02.22 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2015-09-01 at 11.02.22 AM.png"; sourceTree = "<group>"; };
 		2A420EE01ABC35390093E506 /* BElham.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BElham.ttf; sourceTree = "<group>"; };
 		2A420EE11ABC35390093E506 /* BFantezy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BFantezy.ttf; sourceTree = "<group>"; };
 		2A420EE21ABC35390093E506 /* Diwanltr.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Diwanltr.ttf; sourceTree = "<group>"; };
@@ -1658,7 +1662,9 @@
 			children = (
 				2A5ECD7F1B43F70800F1054A /* gear.png */,
 				2A5ECD801B43F70800F1054A /* rightMenu.jpg */,
+				2A3C85751B95B6B700616AE0 /* Screen Shot 2015-09-01 at 11.02.22 AM.png */,
 				2A5ECD811B43F70800F1054A /* leftMenu.jpg */,
+				2A3C85731B95B6B400616AE0 /* Screen Shot 2015-09-01 at 11.05.06 AM.png */,
 				2A5ECD821B43F70800F1054A /* animation.png */,
 				2A5AB6FA1AC436250015355B /* data.json */,
 				2AE308341AB9ABE8000B95A2 /* Manifest.plist */,
@@ -1819,6 +1825,7 @@
 				2A420EFE1ABC42280093E506 /* ASDetailTableView.xib in Resources */,
 				2AA2133D1B4E5DE70000004A /* LICENSE in Resources */,
 				2AC8AB071AAD89570040F84D /* BAC836BE-CF97-4B38-9511-3D19214811C6.codesnippet in Resources */,
+				2A3C85741B95B6B400616AE0 /* Screen Shot 2015-09-01 at 11.05.06 AM.png in Resources */,
 				2A254FAF1ABAA57600C1EACB /* ASLoginViewController.xib in Resources */,
 				2AA2133C1B4E5DE70000004A /* drupal-ios-sdk.podspec in Resources */,
 				2A5AB6FB1AC436250015355B /* data.json in Resources */,
@@ -1866,6 +1873,7 @@
 				2ACB10C61AA97F2F0029C1F7 /* bg1.jpg in Resources */,
 				2A254FCA1ABAFB3700C1EACB /* LICENSE in Resources */,
 				2A8B914D1B281482009A27F9 /* img01.jpg in Resources */,
+				2A3C85761B95B6B700616AE0 /* Screen Shot 2015-09-01 at 11.02.22 AM.png in Resources */,
 				2A420EEB1ABC35390093E506 /* Diwanltr.ttf in Resources */,
 				2A8B91531B281482009A27F9 /* img07.jpg in Resources */,
 				2A8B915B1B281482009A27F9 /* img04@2x.jpg in Resources */,

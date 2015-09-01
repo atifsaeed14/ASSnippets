@@ -415,9 +415,19 @@ https://github.com/roroge/LocationPicker (popover)
 https://github.com/MendyK/CoreAnimationClock 
 https://github.com/entotsu (animation)
 https://github.com/hons82 (hm segments)
+http://masteringios.com/blog/2015/03/03/in-app-purchase-how-to-download-content-hosted-on-the-apple-server/
 
 Plugin
 =========
 https://github.com/sanketfirodiya/awesome-ios-plugins
 http://alcatraz.io/
+
+
+SoundManager
+============
+https://github.com/AlvaroFranco/AFSoundManager
+https://github.com/willingheart/AZSoundManager
+
+https://www.iconfinder.com/icons/290128/audio_media_multimedia_music_play_player_playlist_sound_icon#size=128
+
 
