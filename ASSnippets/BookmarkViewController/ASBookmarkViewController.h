@@ -10,4 +10,6 @@
 
 @interface ASBookmarkViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIProgressView *progress;
+
 @end

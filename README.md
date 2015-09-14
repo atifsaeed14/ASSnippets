@@ -207,6 +207,7 @@ UIView
 ============
 https://github.com/ivoleko/ILTranslucentView
 https://github.com/PeteC/InteractiveViewControllerTransitions
+https://github.com/moqod/ios-material-design
 
 Login 
 ============
@@ -358,6 +359,9 @@ https://github.com/sibahota059/SPHChatCollectionView
 https://github.com/medinaonly/DBChatAvatarSample
 
 
+
+https://github.com/shams-ahmed/SAScrollTableViewCell
+
 tag
 ===============
 https://github.com/remirobert/RRTagController
@@ -431,3 +435,8 @@ https://github.com/willingheart/AZSoundManager
 https://www.iconfinder.com/icons/290128/audio_media_multimedia_music_play_player_playlist_sound_icon#size=128
 
 
+// https://github.com/ZipArchive/ZipArchive
+http://stackoverflow.com/questions/16105072/how-to-unzip-a-zip-file-on-ios
+
+/ SVN /
+svn co path
