@@ -212,6 +212,7 @@
 		2A5ECD841B43F70800F1054A /* rightMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A5ECD801B43F70800F1054A /* rightMenu.jpg */; };
 		2A5ECD851B43F70800F1054A /* leftMenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A5ECD811B43F70800F1054A /* leftMenu.jpg */; };
 		2A5ECD861B43F70800F1054A /* animation.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A5ECD821B43F70800F1054A /* animation.png */; };
+		2A639B4B1BA99F660097F571 /* AppointmentList-master.zip in Resources */ = {isa = PBXBuildFile; fileRef = 2A639B4A1BA99F660097F571 /* AppointmentList-master.zip */; };
 		2A6A8FA81B7369A200157663 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A8F951B7369A100157663 /* AbstractActionSheetPicker.m */; };
 		2A6A8FA91B7369A200157663 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A8F971B7369A100157663 /* ActionSheetCustomPicker.m */; };
 		2A6A8FAA1B7369A200157663 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A8F9A1B7369A200157663 /* ActionSheetDatePicker.m */; };
@@ -603,6 +604,7 @@
 		2A5ECD801B43F70800F1054A /* rightMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rightMenu.jpg; sourceTree = "<group>"; };
 		2A5ECD811B43F70800F1054A /* leftMenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leftMenu.jpg; sourceTree = "<group>"; };
 		2A5ECD821B43F70800F1054A /* animation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animation.png; sourceTree = "<group>"; };
+		2A639B4A1BA99F660097F571 /* AppointmentList-master.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "AppointmentList-master.zip"; sourceTree = "<group>"; };
 		2A6A8F941B7369A100157663 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
 		2A6A8F951B7369A100157663 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
 		2A6A8F961B7369A100157663 /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPicker.h; sourceTree = "<group>"; };
@@ -1556,6 +1558,7 @@
 		2ADEF4181A9C3ED5002D5067 /* ASSnippets */ = {
 			isa = PBXGroup;
 			children = (
+				2A639B4A1BA99F660097F571 /* AppointmentList-master.zip */,
 				2A2EAE5D1B4FDBBF008F6B51 /* CoreData */,
 				2A98FE301B3A8AB8003AF933 /* Test Swift */,
 				2A874E0A1B15C12200BE275C /* Map View */,
@@ -1880,6 +1883,7 @@
 				2A11461A1B4A9743000C8509 /* icon-info@2x.png in Resources */,
 				2ADEF4641A9CA3D0002D5067 /* Info.plist in Resources */,
 				2AB391171B29BC9E00583CF0 /* Localization.strings in Resources */,
+				2A639B4B1BA99F660097F571 /* AppointmentList-master.zip in Resources */,
 				2A8B91601B281482009A27F9 /* img09@2x.jpg in Resources */,
 				2ADEF4561A9C9523002D5067 /* ASViewController.xib in Resources */,
 				2A9366EA1A9DF47C00B0D650 /* ASTableViewCell.xib in Resources */,

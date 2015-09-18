@@ -440,3 +440,12 @@ http://stackoverflow.com/questions/16105072/how-to-unzip-a-zip-file-on-ios
 
 / SVN /
 svn co path
+
+image picker
+https://github.com/dgileadi/OnlineImagePicker
+https://www.dropbox.com/developers/dropins/chooser/ios
+
+
+// Save image
+http://www.raywenderlich.com/1914/nscoding-tutorial-for-ios-how-to-save-your-app-data
+
