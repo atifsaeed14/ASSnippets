@@ -340,6 +340,7 @@ https://github.com/sakrist/VBPieChart
 https://github.com/gyetvan-andras/Chart.js-ObjC-Wrapper
 https://github.com/danielgindi
 https://github.com/danielgindi/ios-chartsd
+
 Digit clock
 ================
 https://github.com/minsOne/DigitClock
@@ -448,4 +449,10 @@ https://www.dropbox.com/developers/dropins/chooser/ios
 
 // Save image
 http://www.raywenderlich.com/1914/nscoding-tutorial-for-ios-how-to-save-your-app-data
+
+
+HTML Parse
+================
+https://github.com/nolanw/HTMLReader
+https://github.com/dzenbot/DZNWebViewController
 
