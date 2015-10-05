@@ -115,6 +115,7 @@ https://github.com/leverdeterre/CalendarIOS7
 
 Animation
 ===========
+https://github.com/sxyx2008/awesome-ios-animation
 https://github.com/andreamazz
 http://stackoverflow.com/questions/3844557/uiview-shake-animation
 https://github.com/andreamazz/UITextField-Shake
