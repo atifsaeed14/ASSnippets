@@ -457,3 +457,19 @@ HTML Parse
 https://github.com/nolanw/HTMLReader
 https://github.com/dzenbot/DZNWebViewController
 
+https://codyhouse.co/
+http://www.invisionapp.com/
+http://www.uipixels.com/psd-freebies/app-design/
+http://www.iosicontemplate.com
+
+
+site
+http://www.uipixels.com/fashion-store-website-template/
+http://www.uipixels.com/shopping-template-ui-kit/
+http://mokaine.com
+
+http://www.labnol.org/internet/101-useful-websites/
+
+
+images
+https://unsplash.com/search?utf8=✓&keyword=cloth&button=
