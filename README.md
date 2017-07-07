@@ -502,6 +502,11 @@ Then: cd /Applications/MAMP/htdocs
 Then install larval stable version: composer create-project --prefer-dist laravel/laravel ProjectName
 
 Or if you install globally: composer global require "laravel/installer" see doc
+Delete project: rm -rf blog
+Int folder htdocs folder: laravel new blog
+Error: -bash: laravel: command not found
+echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' > ~/.bashrc
+source ~/.bashrc
 
 
 Search packagist nesbot/carbon: composer require nesbot/carbon
@@ -527,3 +532,22 @@ https://imnaveen24.wordpress.com/2016/09/16/install-laravel-on-mac-using-mamp/
 https://grafxflow.co.uk/blog/php-and-html-and-css/installing-laravel5-mac-os-x-mamp/
 
 
+
+Valet - not understand yet
+Download : https://brew.sh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Update Homebrew: brew update
+Update php: brew install homebrew/php/php71
+Install valet: composer global require laravel/valet
+
+
+For db: sequel pro https://sequelpro.com/download
+
+Working with DB
+Mysql -uroot -p
+Database blog;
+Use blog;
+Show tables;
+
+Just for sechama: php artisan migrate
