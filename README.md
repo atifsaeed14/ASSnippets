@@ -475,6 +475,44 @@ images
 https://unsplash.com/search?utf8=✓&keyword=cloth&button=
 https://www.hellomany.com
 
+Laravel
+Packages: https://packagist.org  atti14:delete14
+Install Laravel: https://laravel.com/docs/5.4/installation
 
+install composer: https://getcomposer.org/download/
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '669656bab3166a7aff8a7506b8cb2d1c292f042046c5a994c43155c0be6190fa0355160742ab2e1c88d40d5be660b410') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+
+doc move into bin folder: mv composer.phar /usr/local/bin/composer
+error: mv: rename composer.phar to /usr/local/bin/composer: No such file or directory
+
+sudo mv composer.phar /usr/bin/composer
+error: mv: rename composer.phar to /usr/bin/composer: Operation not permitted
+
+You need to press Cmd + R at boot time, open the terminal and then run csrutil disable and reboot.
+Then: sudo mv composer.phar /usr/bin/composer
+Now again boot again and csrutil enable
+
+Check:  php -v 
+If version larger 5.6
+Then: cd /Applications/MAMP/htdocs
+
+Then install larval stable version: composer create-project --prefer-dist laravel/laravel ProjectName
+
+Or if you install globally: composer global require "laravel/installer" see doc
+
+
+Search packagist nesbot/carbon: composer require nesbot/carbon
+
+
+if receive auth problem  Try to run: 
+composer clear-cache
+composer config --global --unset repositories.packagist
+
+if you receive Content-lenght mismatch follow: https://stackoverflow.com/questions/38635257/composer-content-length-mismatch
+See versin: php artisan -v
+Start server url: php artisan serve
 
 
