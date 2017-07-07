@@ -515,4 +515,15 @@ if you receive Content-lenght mismatch follow: https://stackoverflow.com/questio
 See versin: php artisan -v
 Start server url: php artisan serve
 
+nano .bash_profile
+export PATH=/Applications/MAMP/bin/php/php_version/bin/ :$PATH
+Then hold “Control X” when prompted to save type y and press enter
+Then quit and relaunch Terminal.app
+
+helpingLinks:
+https://medium.com/@kunalnagar/install-laravel-5-on-os-x-23f3578386f1
+https://medium.com/@kunalnagar/deploying-laravel-5-on-godaddy-shared-hosting-888ec96f64cd
+https://imnaveen24.wordpress.com/2016/09/16/install-laravel-on-mac-using-mamp/
+https://grafxflow.co.uk/blog/php-and-html-and-css/installing-laravel5-mac-os-x-mamp/
+
 
