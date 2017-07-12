@@ -713,7 +713,14 @@ Create component:
 ng generate component nav
 ng g c footer
 
-
+Free theme
+https://medialoot.com/blog/10-most-promising-free-bootstrap-4-templates-for-2017/
+https://themes.getbootstrap.com/products/dashboard
+https://www.quackit.com/bootstrap/bootstrap_4/tutorial/bootstrap_forms.cfm
+https://medialoot.com/item/free-bootstrap-4-theme-startup-ui-kit/
+https://github.com/modularcode/modular-admin-html
+https://medialoot.com/browse/?price=free
+https://modularcode.io/modular-admin-html/forms.html
 
 
 Leran Node.js
