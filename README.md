@@ -551,3 +551,173 @@ Use blog;
 Show tables;
 
 Just for sechama: php artisan migrate
+
+
+
+https://medium.com/@MedvedevTheDev/generating-basic-qr-codes-in-swift-63d7222aa011
+
+Sample
+https://coursetro.com/posts/code/54/Angular-4-Firebase-Tutorial:-Make-a-Simple-Angular-4-App
+https://coursetro.com/courses/12/Learn-Angular-4-from-Scratch?utm_source=in_article&utm_campaign=article&utm_medium=Learn+Angular+4+from+Scra
+https://applyhead.com/angular-4-tutorial-make-angular-4-app-using-github-api/
+https://github.com/cornflourblue/angular2-registration-login-example
+https://github.com/gothinkster/angular-realworld-example-app
+
+https://github.com/ng-bootstrap/ng-bootstrap
+https://www.sitepoint.com/angular-2-tutorial/
+
+
+https://github.com/angular/angular-cli
+https://www.npmjs.com/package/angular-cli
+
+dataTable
+
+https://l-lin.github.io/angular-datatables/#/getting-started
+https://github.com/swimlane/ngx-datatable
+https://tablesorter.com/docs/#Examples
+https://datatables.net/examples/index
+
+https://github.com/angular/angular-cli/blob/08bb738af2a3a257e003081caa154f014cb5365b/packages/angular-cli/lib/config/schema.json
+
+
+
+
+https://pdsullivan.github.io
+https://blog.pdsullivan.com/posts/2014/10/06/api-angularjs-tutorial.html
+
+https://github.com/gothinkster/realworld/tree/master/api
+
+Packages: https://packagist.org  atti14:delete14
+Install Laravel: https://laravel.com/docs/5.4/installation
+
+install composer: https://getcomposer.org/download/
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '669656bab3166a7aff8a7506b8cb2d1c292f042046c5a994c43155c0be6190fa0355160742ab2e1c88d40d5be660b410') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+
+doc move into bin folder: mv composer.phar /usr/local/bin/composer
+error: mv: rename composer.phar to /usr/local/bin/composer: No such file or directory
+
+sudo mv composer.phar /usr/bin/composer
+error: mv: rename composer.phar to /usr/bin/composer: Operation not permitted
+
+You need to press Cmd + R at boot time, open the terminal and then run csrutil disable and reboot.
+Then: sudo mv composer.phar /usr/bin/composer
+Now again boot again and csrutil enable
+
+Check:  php -v 
+If version larger 5.6
+Then: cd /Applications/MAMP/htdocs
+
+Then install larval stable version: composer create-project --prefer-dist laravel/laravel ProjectName
+
+Or if you install globally: composer global require "laravel/installer" see doc
+Delete project: rm -rf blog
+Int folder htdocs folder: laravel new blog
+Error: -bash: laravel: command not found
+echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' > ~/.bashrc
+source ~/.bashrc
+
+
+Search packagist nesbot/carbon: composer require nesbot/carbon
+
+
+if receive auth problem  Try to run: 
+composer clear-cache
+composer config --global --unset repositories.packagist
+
+if you receive Content-lenght mismatch follow: https://stackoverflow.com/questions/38635257/composer-content-length-mismatch
+See versin: php artisan -v
+Start server url: php artisan serve
+
+nano .bash_profile
+export PATH=/Applications/MAMP/bin/php/php_version/bin/ :$PATH
+Then hold “Control X” when prompted to save type y and press enter
+Then quit and relaunch Terminal.app
+
+helpingLinks:
+https://medium.com/@kunalnagar/install-laravel-5-on-os-x-23f3578386f1
+https://medium.com/@kunalnagar/deploying-laravel-5-on-godaddy-shared-hosting-888ec96f64cd
+https://imnaveen24.wordpress.com/2016/09/16/install-laravel-on-mac-using-mamp/
+https://grafxflow.co.uk/blog/php-and-html-and-css/installing-laravel5-mac-os-x-mamp/
+
+
+
+Valet - not understand yet
+Download : https://brew.sh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Update Homebrew: brew update
+Update php: brew install homebrew/php/php71
+Install valet: composer global require laravel/valet
+
+
+For angular install node.js using package manager: https://nodejs.org/en/download/package-manager/
+Brew install node
+brew doctor // get brew warning
+
+Install angular global: npm install -g @angular/cli
+Create new project: ng new myApp
+Go to the project directory: cd myApp
+Launch the server: ng serve —-open
+To build app: ng build
+http://localhost:4200/myproject
+ runs the TypeScript compiler in "watch mode", recompiling automatically when the code changes: npm start
+
+Port 4200 is already in use. Use '--port' to specify a different port.
+iMac:myapp atifsaeed$ ng serve --port 1234
+
+
+For file editor: https://www.sublimetext.com/3
+Understand git: https://scotch.io/bar-talk/git-cheat-sheet#toc-updating-and-getting-code-fetchpull
+
+
+git init
+git add -A
+git commit -m 'Added my project'
+git remote add origin git@github.com:scotch-io/my-new-project.git
+git push -u -f origin master
+-f flag stands for force // automacitcally overwrite everything in the remote directly
+-u flag sets the remote origin as the default
+
+
+
+
+For db: sequel pro https://sequelpro.com/download
+
+Working with DB
+Mysql -uroot -p
+Database blog;
+Use blog;
+Show tables;
+
+Just for sechama: php artisan migrate
+
+Port 4200 is already in use. Use '--port' to specify a different port.
+Kill port: sudo lsof -t -i tcp:4200 | xargs kill -9
+sudo kill $(sudo lsof -t -i:4200)
+Start on new port: ng serve --port 1234
+
+
+https://applyhead.com/angular-4-tutorial-make-angular-4-app-using-github-api/
+
+https://api.github.com/search/users?q=location:islamabad
+Angular with bootstrap
+https://medium.com/@beeman/tutorial-add-bootstrap-to-angular-cli-apps-b0a652f2eb2
+
+npm install bootstrap@4.0.0-alpha.6 font-awesome
+npm install bootstrap@3
+
+Create component: 
+ng generate component nav
+ng g c footer
+
+
+
+
+Leran Node.js
+https://www.youtube.com/watch?v=G_-aEXmluq8
+
+
+<?php echo $name?>
