@@ -476,85 +476,33 @@ https://unsplash.com/search?utf8=✓&keyword=cloth&button=
 https://www.hellomany.com
 
 Laravel
-Packages: https://packagist.org  atti14:delete14
-Install Laravel: https://laravel.com/docs/5.4/installation
+===========
 
-install composer: https://getcomposer.org/download/
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('SHA384', 'composer-setup.php') === '669656bab3166a7aff8a7506b8cb2d1c292f042046c5a994c43155c0be6190fa0355160742ab2e1c88d40d5be660b410') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
+https://github.com/Crinsane/LaravelShoppingcart
+https://tutorials.kode-blog.com/laravel-5-rest-api
+http://esbenp.github.io/2017/03/19/modern-rest-api-laravel-part-4/
+https://www.codetutorial.io/laravel-5-rest-api-basic-authentication/
+https://laravel-angular.readme.io/docs
+https://www.codetutorial.io/the-shopping-cart-how-to-craft-an-e-shop-with-laravel/
 
-doc move into bin folder: mv composer.phar /usr/local/bin/composer
-error: mv: rename composer.phar to /usr/local/bin/composer: No such file or directory
-
-sudo mv composer.phar /usr/bin/composer
-error: mv: rename composer.phar to /usr/bin/composer: Operation not permitted
-
-You need to press Cmd + R at boot time, open the terminal and then run csrutil disable and reboot.
-Then: sudo mv composer.phar /usr/bin/composer
-Now again boot again and csrutil enable
-
-Check:  php -v 
-If version larger 5.6
-Then: cd /Applications/MAMP/htdocs
-
-Then install larval stable version: composer create-project --prefer-dist laravel/laravel ProjectName
-
-Or if you install globally: composer global require "laravel/installer" see doc
-Delete project: rm -rf blog
-Int folder htdocs folder: laravel new blog
-Error: -bash: laravel: command not found
-echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' > ~/.bashrc
-source ~/.bashrc
-
-
-Search packagist nesbot/carbon: composer require nesbot/carbon
-
-
-if receive auth problem  Try to run: 
-composer clear-cache
-composer config --global --unset repositories.packagist
-
-if you receive Content-lenght mismatch follow: https://stackoverflow.com/questions/38635257/composer-content-length-mismatch
-See versin: php artisan -v
-Start server url: php artisan serve
-
-nano .bash_profile
-export PATH=/Applications/MAMP/bin/php/php_version/bin/ :$PATH
-Then hold “Control X” when prompted to save type y and press enter
-Then quit and relaunch Terminal.app
-
-helpingLinks:
-https://medium.com/@kunalnagar/install-laravel-5-on-os-x-23f3578386f1
-https://medium.com/@kunalnagar/deploying-laravel-5-on-godaddy-shared-hosting-888ec96f64cd
-https://imnaveen24.wordpress.com/2016/09/16/install-laravel-on-mac-using-mamp/
-https://grafxflow.co.uk/blog/php-and-html-and-css/installing-laravel5-mac-os-x-mamp/
-
-
-
-Valet - not understand yet
-Download : https://brew.sh
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-Update Homebrew: brew update
-Update php: brew install homebrew/php/php71
-Install valet: composer global require laravel/valet
-
-
-For db: sequel pro https://sequelpro.com/download
-
-Working with DB
-Mysql -uroot -p
-Database blog;
-Use blog;
-Show tables;
-
-Just for sechama: php artisan migrate
-
-
+https://datatables.yajrabox.com/eloquent/multi-filter-select
+https://github.com/Tony133/LaravelAPIBoilerplateJWT
+http://www.expertphp.in/article/create-restful-api-using-laravel-5-with-resourceful-routes-example
+https://datatables.net/examples/api/multi_filter.html
+http://labs.infyom.com/laravelgenerator/
 
 https://medium.com/@MedvedevTheDev/generating-basic-qr-codes-in-swift-63d7222aa011
+
+Free theme
+https://medialoot.com/blog/10-most-promising-free-bootstrap-4-templates-for-2017/
+https://themes.getbootstrap.com/products/dashboard
+https://www.quackit.com/bootstrap/bootstrap_4/tutorial/bootstrap_forms.cfm
+https://medialoot.com/item/free-bootstrap-4-theme-startup-ui-kit/
+https://github.com/modularcode/modular-admin-html
+https://medialoot.com/browse/?price=free
+https://modularcode.io/modular-admin-html/forms.html
+https://shapebootstrap.net/free-templates
+
 
 Sample
 https://coursetro.com/posts/code/54/Angular-4-Firebase-Tutorial:-Make-a-Simple-Angular-4-App
@@ -704,27 +652,21 @@ https://applyhead.com/angular-4-tutorial-make-angular-4-app-using-github-api/
 
 https://api.github.com/search/users?q=location:islamabad
 Angular with bootstrap
+https://medium.com/codingthesmartway-com-blog/using-bootstrap-with-angular-c83c3cee3f4a
 https://medium.com/@beeman/tutorial-add-bootstrap-to-angular-cli-apps-b0a652f2eb2
 
 npm install bootstrap@4.0.0-alpha.6 font-awesome
 npm install bootstrap@3
 
+https://ng-bootstrap.github.io/#/home
+
+
 Create component: 
 ng generate component nav
 ng g c footer
 
-Free theme
-https://medialoot.com/blog/10-most-promising-free-bootstrap-4-templates-for-2017/
-https://themes.getbootstrap.com/products/dashboard
-https://www.quackit.com/bootstrap/bootstrap_4/tutorial/bootstrap_forms.cfm
-https://medialoot.com/item/free-bootstrap-4-theme-startup-ui-kit/
-https://github.com/modularcode/modular-admin-html
-https://medialoot.com/browse/?price=free
-https://modularcode.io/modular-admin-html/forms.html
+
 
 
 Leran Node.js
 https://www.youtube.com/watch?v=G_-aEXmluq8
-
-
-<?php echo $name?>
