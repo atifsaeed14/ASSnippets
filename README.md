@@ -478,6 +478,7 @@ https://www.hellomany.com
 Laravel
 ===========
 
+https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/
 https://github.com/Crinsane/LaravelShoppingcart
 https://tutorials.kode-blog.com/laravel-5-rest-api
 http://esbenp.github.io/2017/03/19/modern-rest-api-laravel-part-4/
@@ -493,6 +494,8 @@ http://labs.infyom.com/laravelgenerator/
 
 https://medium.com/@MedvedevTheDev/generating-basic-qr-codes-in-swift-63d7222aa011
 
+https://laracasts.com/series/laravel-from-scratch-2017/episodes/12?autoplay=true
+
 Free theme
 https://medialoot.com/blog/10-most-promising-free-bootstrap-4-templates-for-2017/
 https://themes.getbootstrap.com/products/dashboard
@@ -502,6 +505,9 @@ https://github.com/modularcode/modular-admin-html
 https://medialoot.com/browse/?price=free
 https://modularcode.io/modular-admin-html/forms.html
 https://shapebootstrap.net/free-templates
+
+http://packagist.org
+http://cabinet.laravel.com/latest.zip
 
 
 Sample
@@ -518,7 +524,7 @@ https://www.sitepoint.com/angular-2-tutorial/
 https://github.com/angular/angular-cli
 https://www.npmjs.com/package/angular-cli
 
-dataTable
+ - - — - - - - - - - dataTable - - — - - - - - - - 
 
 https://l-lin.github.io/angular-datatables/#/getting-started
 https://github.com/swimlane/ngx-datatable
@@ -528,15 +534,17 @@ https://datatables.net/examples/index
 https://github.com/angular/angular-cli/blob/08bb738af2a3a257e003081caa154f014cb5365b/packages/angular-cli/lib/config/schema.json
 
 
-
-
 https://pdsullivan.github.io
 https://blog.pdsullivan.com/posts/2014/10/06/api-angularjs-tutorial.html
 
 https://github.com/gothinkster/realworld/tree/master/api
 
 Packages: https://packagist.org  atti14:delete14
-Install Laravel: https://laravel.com/docs/5.4/installation
+
+
+ - - — - - - - - - - LARAVEL - - — - - - - - - - 
+
+Install Laravel: https://laravel.com/docs/5.5/installation
 
 install composer: https://getcomposer.org/download/
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -560,16 +568,29 @@ Then: cd /Applications/MAMP/htdocs
 
 Then install larval stable version: composer create-project --prefer-dist laravel/laravel ProjectName
 
+ - - — - - - - - - - Global install LARAVEL after compose install - - — - - - - - - - 
+
 Or if you install globally: composer global require "laravel/installer" see doc
 Delete project: rm -rf blog
 Int folder htdocs folder: laravel new blog
+// http://cabinet.laravel.com/latest.zip
+
 Error: -bash: laravel: command not found
+// https://stackoverflow.com/questions/26376516/laravel-php-command-not-found?rq=1
+
 echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' > ~/.bashrc
 source ~/.bashrc
+// OR //
+nano .bash_profile
+export PATH=~/.composer/vendor/bin:$PATH
+Then hold “Control X” when prompted to save type y and press enter
+Then quit and relaunch Terminal.app
 
+Got to project folder then type in console: subl then press enter
 
+Error handle https://github.com/filp/whoops: composer require filp/whoops
 Search packagist nesbot/carbon: composer require nesbot/carbon
-
+Composer require phpspec/phpspec
 
 if receive auth problem  Try to run: 
 composer clear-cache
@@ -578,11 +599,154 @@ composer config --global --unset repositories.packagist
 if you receive Content-lenght mismatch follow: https://stackoverflow.com/questions/38635257/composer-content-length-mismatch
 See versin: php artisan -v
 Start server url: php artisan serve
+Error: Failed to listen on 127.0.0.1:8000 (reason: Address already in use)
+Solution change port: php artisan serve --port=8005
+Another kill that process using proces id: sudo netstat -plnt
+Then kill that process using id: kill 9990,PID here 
 
-nano .bash_profile
-export PATH=/Applications/MAMP/bin/php/php_version/bin/ :$PATH
-Then hold “Control X” when prompted to save type y and press enter
-Then quit and relaunch Terminal.app
+Valet - not understand yet
+Download : https://brew.sh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Update Homebrew: brew update
+Update php: brew install homebrew/php/php71
+Remove valet: composer global remove laravel/valet
+Install valet: composer global require laravel/valet
+
+
+install auth moudle: php artisan make:auth
+
+ - - — - - - - - - - DB - - — - - - - - - - 
+
+For db use mysql or sequel pro or UI handle https://sequelpro.com/download
+
+Install sql: brew install mysql
+
+Mysql stop
+Mysql.server start
+
+Mysql -uroot -p
+create Database blog;
+Use blog;
+Show tables;
+
+Exit from sql command X or control x
+
+Just for sechama: php artisan migrate
+
+Php artisan
+php artisan make:migration create_tasts_table
+Then delete it using UI
+
+php artisan make:migration create_tasts_table —-create=tasks
+Error: composer dump-autoload
+Again: php artisan make:migration create_tasts_table —-create=tasks
+
+php artisan help make:migration
+
+New class with name createTaskTable has been created in migrating folder
+Then: php artisan migrate
+If mistage: php artisan migrate:refresh
+
+Php artisan tinker
+$task = new App\Task
+$task->body = ‘test’
+$task->save();
+
+App\User::first()->toArray();
+
+If you access db and return like this, its show jSON
+$tasks = DB::table(‘tasks’)->get();
+$tasks = DB::table(‘tasks’)->latest()->get();
+
+
+
+// route auth
+
+get route list in console: php artisan route:list
+
+
+// make controller
+php artisan make:controller TasksController
+
+
+
+So finally we create post controller
+We required
+// controller => PostsController
+// Eloquent mode => Post
+// migration => create_posts_table
+
+Two ways to create
+Php artisan make:controller PostsController
+Php artisan make:mode Post
+Php artisan make:migration create_posts_table —create=posts
+
+@Second use flag: php artisan help make:mode
+Php artisan make:mode Post -mc
+If mistage: php artisan migrate:refresh
+
+
+@include(‘layout.footer’)
+
+- — - PHP - - - -
+<ul>
+<?php foreach ($tasks as $task) : ?>
+<li> <?= $task;> </li>
+<?php endforeach;?>
+
+@if @endif
+
+@foreach ($tasks as $task) 
+<li> {{ $task }} </li>
+@endforeach
+
+</ul>
+
+// web.php
+Auth::routes();
+
+Route::get('/home', function () {
+$tasks = DB::table('task')->get();
+//$tasks = Task::all();
+//dd($tasks);
+    return view('home', compact('tasks'));
+});
+
+
+Route::get('/home/{task}', function ($id) {
+//dd($id);
+$task = DB::table('task')->find($id);
+//dd($task);
+    return view('layouts.show', compact('task'));
+});
+
+
+// home.php
+<ul>@foreach ($tasks as $task)<li><a href="/home/{{$task->id}}"> {{$task->body}}</li></a>@endforeach</ul>
+
+
+// doc
+php artisan make:mode Task
+php artisan tinker
+App\Task::all()
+App\User::all()
+App\Task::where('id','>',2)->get();
+Get only body: app\task::pluck(‘body’);
+app\task::pluck(‘body’)->first();
+
+
+// create once: php artisan migrate:reset
+composer dump-autoload
+Php artisan make:model Task -m
+Php artisan migrate
+
+
+Facing error:  laravel new
+// https://github.com/laravel/valet/issues/169
+Fatal error: Cannot redeclare info() (previously declared in /Users/atifsaeed/.composer/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php:454) in /Users/atifsaeed/.composer/vendor/laravel/valet/cli/includes/helpers.php on line 24
+
+composer global remove laravel/framework
 
 helpingLinks:
 https://medium.com/@kunalnagar/install-laravel-5-on-os-x-23f3578386f1
@@ -592,14 +756,7 @@ https://grafxflow.co.uk/blog/php-and-html-and-css/installing-laravel5-mac-os-x-m
 
 
 
-Valet - not understand yet
-Download : https://brew.sh
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-Update Homebrew: brew update
-Update php: brew install homebrew/php/php71
-Install valet: composer global require laravel/valet
-
+ - - — - - - - - - - ANGULAR - - — - - - - - - - 
 
 For angular install node.js using package manager: https://nodejs.org/en/download/package-manager/
 Brew install node
@@ -630,20 +787,9 @@ git push -u -f origin master
 -u flag sets the remote origin as the default
 
 
-
-
-For db: sequel pro https://sequelpro.com/download
-
-Working with DB
-Mysql -uroot -p
-Database blog;
-Use blog;
-Show tables;
-
-Just for sechama: php artisan migrate
-
 Port 4200 is already in use. Use '--port' to specify a different port.
 Kill port: sudo lsof -t -i tcp:4200 | xargs kill -9
+Kill port: sudo lsof -t -i tcp:8000 | xargs kill -9
 sudo kill $(sudo lsof -t -i:4200)
 Start on new port: ng serve --port 1234
 
@@ -666,7 +812,22 @@ ng generate component nav
 ng g c footer
 
 
-
-
 Leran Node.js
 https://www.youtube.com/watch?v=G_-aEXmluq8
+
+
+<?php echo $name?>
+
+
+https://github.com/artemnovichkov/TransitionRouter
+https://siftery.com/new-relic/alternatives
+
+Learn MongoDB
+http://adrianmejia.com/blog/2014/10/01/creating-a-restful-api-tutorial-with-nodejs-and-mongodb/
+
+
+Uber/cream
+https://www.appypie.com/taxi-booking-app-builder
+https://theappsolutions.com/blog/development/cost-to-build-taxi-app/
+https://alty.co/blog/how-to-develop-an-app-like-uber-tips-from-taxi-app-developers/
+https://www.quora.com/How-do-I-build-a-real-time-location-app-like-uber
