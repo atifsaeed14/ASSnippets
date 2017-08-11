@@ -493,7 +493,6 @@ https://datatables.net/examples/api/multi_filter.html
 http://labs.infyom.com/laravelgenerator/
 
 https://medium.com/@MedvedevTheDev/generating-basic-qr-codes-in-swift-63d7222aa011
-
 https://laracasts.com/series/laravel-from-scratch-2017/episodes/12?autoplay=true
 
 Free theme
@@ -589,7 +588,7 @@ Then quit and relaunch Terminal.app
 Got to project folder then type in console: subl then press enter
 
 Error handle https://github.com/filp/whoops: composer require filp/whoops
-Search packagist nesbot/carbon: composer require nesbot/carbon
+Search packagist nesbot/carbon for data formate https://carbon.nesbot.com/: composer require nesbot/carbon
 Composer require phpspec/phpspec
 
 if receive auth problem  Try to run: 
@@ -598,7 +597,7 @@ composer config --global --unset repositories.packagist
 
 if you receive Content-lenght mismatch follow: https://stackoverflow.com/questions/38635257/composer-content-length-mismatch
 See versin: php artisan -v
-Start server url: php artisan serve
+Start server url: \
 Error: Failed to listen on 127.0.0.1:8000 (reason: Address already in use)
 Solution change port: php artisan serve --port=8005
 Another kill that process using proces id: sudo netstat -plnt
@@ -659,6 +658,19 @@ If you access db and return like this, its show jSON
 $tasks = DB::table(‘tasks’)->get();
 $tasks = DB::table(‘tasks’)->latest()->get();
 
+Php artisan tinker
+$user = new App\User;
+$user->name = ‘Atif’;
+$user->email = ‘a@a.com’;
+$user->password = “”;
+$user->save();
+// $user->password = bcrypt(“”);
+
+
+
+// wamp with 
+// error: MySQL said: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+// fix: mysql.server start
 
 
 // route auth
@@ -686,6 +698,8 @@ Php artisan make:migration create_posts_table —create=posts
 Php artisan make:mode Post -mc
 If mistage: php artisan migrate:refresh
 
+
+Php artisan make:controller abc -r // that create all methods for you
 
 @include(‘layout.footer’)
 
@@ -729,8 +743,8 @@ $task = DB::table('task')->find($id);
 // doc
 php artisan make:mode Task
 php artisan tinker
-App\Task::all()
-App\User::all()
+App\Task::all();
+App\User::all();
 App\Task::where('id','>',2)->get();
 Get only body: app\task::pluck(‘body’);
 app\task::pluck(‘body’)->first();
@@ -740,6 +754,16 @@ app\task::pluck(‘body’)->first();
 composer dump-autoload
 Php artisan make:model Task -m
 Php artisan migrate
+
+// get post comments
+php artisan tinker
+$post = App\Post::Find(6);
+$post->comments
+
+// get comment associate with post
+php artisan tinker
+$c = App\Comment::first();
+$c->post;
 
 
 Facing error:  laravel new
@@ -831,3 +855,5 @@ https://www.appypie.com/taxi-booking-app-builder
 https://theappsolutions.com/blog/development/cost-to-build-taxi-app/
 https://alty.co/blog/how-to-develop-an-app-like-uber-tips-from-taxi-app-developers/
 https://www.quora.com/How-do-I-build-a-real-time-location-app-like-uber
+
+
